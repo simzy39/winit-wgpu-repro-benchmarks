@@ -1,0 +1,18 @@
+SCENARIO redraw_window_event        | delivered=true | STRANDED=true | about_to_wait_count=2
+  [  600454us] TRIGGER redraw_window_event: set_outer_position(321, 234)
+  [  601967us] about_to_wait(#1, delivered=false)
+  [ 1237773us] new_events(WaitCancelled { start: Instant { t: 4612180323.656358003s }, requested_resume: None })
+  [ 1237830us] DELIVERED Moved(PhysicalPosition { x: 321, y: 234 }) lat=637.437ms stranded=true
+  [ 1237838us] about_to_wait(#2, delivered=true)
+SCENARIO redraw_pump_all            | delivered=true | STRANDED=true | about_to_wait_count=2
+  [  626479us] TRIGGER redraw_pump_all: pumped 2 msgs (thread_msg_target WM_PAINT=1)
+  [  627099us] about_to_wait(#1, delivered=false)
+  [ 1233058us] new_events(WaitCancelled { start: Instant { t: 4612180325.132705403s }, requested_resume: None })
+  [ 1233110us] DELIVERED user_event(id=1) lat=609.270ms stranded=true
+  [ 1233117us] about_to_wait(#2, delivered=true)
+SCENARIO redraw_pump_wakeup_only    | delivered=true | STRANDED=false | about_to_wait_count=2
+  [  601480us] TRIGGER redraw_pump_wakeup_only: pumped 1 msgs
+  [  601598us] about_to_wait(#1, delivered=false)
+  [  601607us] new_events(WaitCancelled { start: Instant { t: 4612180326.441303603s }, requested_resume: None })
+  [  601617us] DELIVERED user_event(id=1) lat=0.791ms stranded=false
+  [  601619us] about_to_wait(#2, delivered=true)

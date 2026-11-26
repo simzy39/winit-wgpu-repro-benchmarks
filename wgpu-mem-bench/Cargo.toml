@@ -1,0 +1,32 @@
+[package]
+name = "wgpu-mem-bench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Baseline (unmodified wgpu trunk, using gpu-allocator 0.28.0 from crates.io):
+wgpu = { git = "https://github.com/gfx-rs/wgpu.git", rev = "60cef2be828e03ba54e2e1598001b4625c0c2163" }
+
+# To test gfx-rs/wgpu#11129 in isolation:
+# wgpu = { git = "https://github.com/simzy39/wgpu.git", rev = "793698d89332250d5abe92e61769625233be9ac9" }
+
+# To test gfx-rs/wgpu#11130 in isolation:
+# wgpu = { git = "https://github.com/simzy39/wgpu.git", rev = "22827ee25285b56c4056fe6bb1de27917caf45a9" }
+
+winit = "0.30.13"
+pollster = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Dxgi",
+    "Win32_System_Memory",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Threading",
+] }
+
+# To test Traverse-Research/gpu-allocator#323 in isolation on unmodified wgpu trunk,
+# uncomment ONE of the patch blocks below (main baseline vs PR #323):
+# [patch.crates-io]
+# gpu-allocator = { git = "https://github.com/Traverse-Research/gpu-allocator.git", rev = "fc22df05140b15ed6d764beabd12a1b807011bc5" }
+# gpu-allocator = { git = "https://github.com/simzy39/gpu-allocator.git", rev = "179ea43f05332c2809addd7922cd056220efc36b" }

@@ -1,0 +1,20 @@
+[package]
+name = "winit-win32-stranding-repro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Baseline (unmodified winit master before fix):
+winit = { git = "https://github.com/rust-windowing/winit.git", rev = "b1a0534633c3afffd604c8ed7156e7d8617b266d" }
+winit-core = { git = "https://github.com/rust-windowing/winit.git", rev = "b1a0534633c3afffd604c8ed7156e7d8617b266d" }
+
+# To test PR #4861 (fix), comment the two lines above and uncomment below:
+# winit = { git = "https://github.com/simzy39/winit.git", rev = "fb3ee36a65e8856ddeccc016fd553f3a60010553" }
+# winit-core = { git = "https://github.com/simzy39/winit.git", rev = "fb3ee36a65e8856ddeccc016fd553f3a60010553" }
+
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Graphics_Gdi",
+    "Win32_System_Threading",
+] }
