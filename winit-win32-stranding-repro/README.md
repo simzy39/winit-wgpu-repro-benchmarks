@@ -20,8 +20,7 @@ foreach ($s in @(
   "about_to_wait_window_event", "about_to_wait_pump_all", "pump_events_redraw",
   "redraw_burst", "multi_window_redraw", "wait_until_redraw", "exit_during_redraw"
 )) {
-  .\target
-elease\winit-win32-stranding-repro.exe $s
+  .\target\release\winit-win32-stranding-repro.exe $s
 }
 ```
 
@@ -29,8 +28,7 @@ Run the stress, idle-CPU, and edge-case modes:
 
 ```powershell
 foreach ($m in @("stress", "idle_cpu", "exit_in_about_to_wait", "destroy_in_redraw", "redraw_in_buffered")) {
-  .\target
-elease\stress.exe $m
+  .\target\release\stress.exe $m
 }
 ```
 

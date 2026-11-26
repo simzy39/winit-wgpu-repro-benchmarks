@@ -17,8 +17,7 @@ Supports isolated A/B reproduction for:
 
 ```powershell
 cargo build --release
-.\target
-elease\wgpu-mem-bench.exe --backend dx12 --hints performance --workload idle --json out.json
+.\target\release\wgpu-mem-bench.exe --backend dx12 --hints performance --workload idle --json out.json
 ```
 
 Supported flags:
