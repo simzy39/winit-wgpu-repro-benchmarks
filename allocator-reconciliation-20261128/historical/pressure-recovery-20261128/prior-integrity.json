@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-28T00:52:02.471328+00:00",
+  "bundles": [
+    {
+      "root": "<workspace>\\research\\upstream\\gpu-allocator-classification",
+      "files": 438,
+      "failures": []
+    },
+    {
+      "root": "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128",
+      "files": 4317,
+      "failures": []
+    }
+  ]
+}

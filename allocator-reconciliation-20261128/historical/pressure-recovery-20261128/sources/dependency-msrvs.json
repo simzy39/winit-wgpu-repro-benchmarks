@@ -1,0 +1,77 @@
+[
+  {
+    "package": "hashbrown-0.15.5",
+    "rust_version": "1.65.0",
+    "edition": "2021"
+  },
+  {
+    "package": "hashbrown-0.16.1",
+    "rust_version": "1.65.0",
+    "edition": "2021"
+  },
+  {
+    "package": "hashbrown-0.17.1",
+    "rust_version": "1.85.0",
+    "edition": "2024"
+  },
+  {
+    "package": "hashbrown-0.17.2",
+    "rust_version": "1.85.0",
+    "edition": "2024"
+  },
+  {
+    "package": "windows-0.62.1",
+    "rust_version": "1.82",
+    "edition": "2021"
+  },
+  {
+    "package": "windows-0.62.2",
+    "rust_version": "1.82",
+    "edition": "2021"
+  },
+  {
+    "package": "thiserror-2.0.16",
+    "rust_version": "1.61",
+    "edition": "2021"
+  },
+  {
+    "package": "thiserror-2.0.18",
+    "rust_version": "1.68",
+    "edition": "2021"
+  },
+  {
+    "package": "thiserror-2.0.20",
+    "rust_version": "1.71",
+    "edition": "2021"
+  },
+  {
+    "package": "thiserror-2.0.21",
+    "rust_version": "1.77",
+    "edition": "2021"
+  },
+  {
+    "package": "env_logger-0.11.11",
+    "rust_version": "1.71",
+    "edition": "2021"
+  },
+  {
+    "package": "env_logger-0.11.12",
+    "rust_version": "1.85",
+    "edition": "2024"
+  },
+  {
+    "package": "env_logger-0.11.8",
+    "rust_version": "1.71",
+    "edition": "2021"
+  },
+  {
+    "package": "syn-3.0.10",
+    "rust_version": "1.71",
+    "edition": "2021"
+  },
+  {
+    "package": "syn-3.0.9",
+    "rust_version": "1.71",
+    "edition": "2021"
+  }
+]

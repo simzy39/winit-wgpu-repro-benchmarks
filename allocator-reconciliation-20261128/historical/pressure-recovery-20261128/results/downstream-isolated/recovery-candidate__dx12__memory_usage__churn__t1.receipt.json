@@ -1,0 +1,19 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin-wgpu-isolated\\recovery-candidate.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "memory_usage",
+    "--workload",
+    "churn",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\results\\downstream-isolated\\recovery-candidate__dx12__memory_usage__churn__t1.json"
+  ],
+  "exe_sha256": "e0dbedf7d1a35861f419d22e198afd6673db530f741e0a329ede18801cd4509a",
+  "wall_s": 0.9414501000428572,
+  "validation_error": false,
+  "utc": "2026-11-28T02:19:15.707368+00:00",
+  "settle_s": 2
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "metal",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-extra\\metal\\Cargo.toml",
+      "--target",
+      "aarch64-apple-darwin"
+    ],
+    "rc": 101
+  },
+  {
+    "name": "visualizer",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-extra\\visualizer\\Cargo.toml"
+    ],
+    "rc": 101
+  }
+]

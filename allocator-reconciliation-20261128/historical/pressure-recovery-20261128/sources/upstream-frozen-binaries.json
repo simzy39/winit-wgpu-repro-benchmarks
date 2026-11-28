@@ -1,0 +1,412 @@
+{
+  "rust-build-meta": {
+    "target-directory": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target",
+    "build-directory": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target",
+    "base-output-directories": [
+      "debug"
+    ],
+    "non-test-binaries": {
+      "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/player#30.0.0": [
+        {
+          "name": "play",
+          "kind": "bin-exe",
+          "path": "debug/play.exe",
+          "build-platform": "target"
+        }
+      ]
+    },
+    "build-script-out-dirs": {
+      "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga#30.0.0": "debug/build/naga-d8bfa787265e7a74/out",
+      "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu#30.0.0": "debug/build/wgpu-9c51c696e275e391/out",
+      "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core#30.0.0": "debug/build/wgpu-core-955bcca42e2f36e3/out",
+      "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-hal#30.0.0": "debug/build/wgpu-hal-2e82b9e55144ce80/out"
+    },
+    "build-script-info": {
+      "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu#30.0.0": {
+        "envs": {
+          "WGPU_DOCS_COMMIT": "60cef2be828e03ba54e2e1598001b4625c0c2163",
+          "WGPU_DOCS_URL_BASE": "file:///<workspace>/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu/src/documentation/images"
+        }
+      }
+    },
+    "linked-paths": [
+      "debug/build/mach-dxcompiler-rs-202af50e79d3b79c/out",
+      "debug/build/nv-flip-sys-2077370f9979469e/out",
+      "debug/build/tracy-client-sys-6275f1bd2f1c91c2/out"
+    ],
+    "platforms": {
+      "host": {
+        "platform": {
+          "triple": "x86_64-pc-windows-msvc",
+          "target-features": "unknown"
+        },
+        "libdir": {
+          "status": "available",
+          "path": "<user-home>\\.rustup\\toolchains\\1.97.1-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        }
+      },
+      "targets": []
+    },
+    "target-platforms": [
+      {
+        "triple": "x86_64-pc-windows-msvc",
+        "target-features": "unknown"
+      }
+    ],
+    "target-platform": null
+  },
+  "rust-binaries": {
+    "hlsl-snapshots": {
+      "binary-id": "hlsl-snapshots",
+      "binary-name": "hlsl_snapshots",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga/hlsl-snapshots#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\hlsl_snapshots-8f41b28e08b6e6a8.exe",
+      "build-platform": "target"
+    },
+    "lock-analyzer::bin/lock-analyzer": {
+      "binary-id": "lock-analyzer::bin/lock-analyzer",
+      "binary-name": "lock-analyzer",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/lock-analyzer#30.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\lock_analyzer-8b11cfa30496e070.exe",
+      "build-platform": "target"
+    },
+    "naga": {
+      "binary-id": "naga",
+      "binary-name": "naga",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\naga-483400ff15750d1f.exe",
+      "build-platform": "target"
+    },
+    "naga::naga": {
+      "binary-id": "naga::naga",
+      "binary-name": "naga",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga#30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\naga-cac86e71ba6eabef.exe",
+      "build-platform": "target"
+    },
+    "naga-cli::bin/naga": {
+      "binary-id": "naga-cli::bin/naga",
+      "binary-name": "naga",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga-cli#30.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\naga-667090a7f8405866.exe",
+      "build-platform": "target"
+    },
+    "naga-test": {
+      "binary-id": "naga-test",
+      "binary-name": "naga_test",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga-test#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\naga_test-d4f5d0cc161f3db8.exe",
+      "build-platform": "target"
+    },
+    "naga-types": {
+      "binary-id": "naga-types",
+      "binary-name": "naga_types",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga-types#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\naga_types-3a79b07d1f89bf49.exe",
+      "build-platform": "target"
+    },
+    "naga-xtask::bin/naga-xtask": {
+      "binary-id": "naga-xtask::bin/naga-xtask",
+      "binary-name": "naga-xtask",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/naga/xtask#naga-xtask@0.1.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\naga_xtask-ecf8f9f189bff593.exe",
+      "build-platform": "target"
+    },
+    "player": {
+      "binary-id": "player",
+      "binary-name": "player",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/player#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\player-5c847b5402c298a1.exe",
+      "build-platform": "target"
+    },
+    "player::player": {
+      "binary-id": "player::player",
+      "binary-name": "player",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/player#30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\player-dcc975cffba0d51d.exe",
+      "build-platform": "target"
+    },
+    "player::bin/play": {
+      "binary-id": "player::bin/play",
+      "binary-name": "play",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/player#30.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\play-1c900787ee225c33.exe",
+      "build-platform": "target"
+    },
+    "wgpu": {
+      "binary-id": "wgpu",
+      "binary-name": "wgpu",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu-635078a5ec6d89e9.exe",
+      "build-platform": "target"
+    },
+    "wgpu::send_sync_recursion": {
+      "binary-id": "wgpu::send_sync_recursion",
+      "binary-name": "send_sync_recursion",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu#30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\send_sync_recursion-4af93cd6adb1f7b5.exe",
+      "build-platform": "target"
+    },
+    "wgpu-benchmark": {
+      "binary-id": "wgpu-benchmark",
+      "binary-name": "wgpu_benchmark",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/benches#wgpu-benchmark@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_benchmark-3791e99461603846.exe",
+      "build-platform": "target"
+    },
+    "wgpu-benchmark::bench/wgpu-benchmark": {
+      "binary-id": "wgpu-benchmark::bench/wgpu-benchmark",
+      "binary-name": "wgpu-benchmark",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/benches#wgpu-benchmark@30.0.0",
+      "kind": "bench",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_benchmark-84140b75fbd8ecd5.exe",
+      "build-platform": "target"
+    },
+    "wgpu-bug-repro-01-texture-atomic-bug::bin/wgpu-bug-repro-01-texture-atomic-bug": {
+      "binary-id": "wgpu-bug-repro-01-texture-atomic-bug::bin/wgpu-bug-repro-01-texture-atomic-bug",
+      "binary-name": "wgpu-bug-repro-01-texture-atomic-bug",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/bug-repro/01_texture_atomic_bug#wgpu-bug-repro-01-texture-atomic-bug@0.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_bug_repro_01_texture_atomic_bug-64f9dc6ce9649593.exe",
+      "build-platform": "target"
+    },
+    "wgpu-bug-repro-02-present-bugs::bin/wgpu-bug-repro-02-present-bugs": {
+      "binary-id": "wgpu-bug-repro-02-present-bugs::bin/wgpu-bug-repro-02-present-bugs",
+      "binary-name": "wgpu-bug-repro-02-present-bugs",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/bug-repro/02_present_bugs#wgpu-bug-repro-02-present-bugs@0.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_bug_repro_02_present_bugs-2c14775e2d9bf92a.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core": {
+      "binary-id": "wgpu-core",
+      "binary-name": "wgpu_core",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core-d1d1cf02508ec950.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-deps-apple": {
+      "binary-id": "wgpu-core-deps-apple",
+      "binary-name": "wgpu_core_deps_apple",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core/platform-deps/apple#wgpu-core-deps-apple@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_deps_apple-2dd00332fd1fcf83.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-deps-emscripten": {
+      "binary-id": "wgpu-core-deps-emscripten",
+      "binary-name": "wgpu_core_deps_emscripten",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core/platform-deps/emscripten#wgpu-core-deps-emscripten@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_deps_emscripten-09edf0756697ef42.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-deps-linux-android-bsd": {
+      "binary-id": "wgpu-core-deps-linux-android-bsd",
+      "binary-name": "wgpu_core_deps_linux_android_bsd",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core/platform-deps/linux-android-bsd#wgpu-core-deps-linux-android-bsd@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_deps_linux_android_bsd-a328085956833391.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-deps-wasm": {
+      "binary-id": "wgpu-core-deps-wasm",
+      "binary-name": "wgpu_core_deps_wasm",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core/platform-deps/wasm#wgpu-core-deps-wasm@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_deps_wasm-f0a6d7878fd3cdc8.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-deps-windows": {
+      "binary-id": "wgpu-core-deps-windows",
+      "binary-name": "wgpu_core_deps_windows",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core/platform-deps/windows#wgpu-core-deps-windows@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_deps_windows-44a04efd6042c2c7.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-remote": {
+      "binary-id": "wgpu-core-remote",
+      "binary-name": "wgpu_core_remote",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core-remote#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_remote-c545f3a595850b2e.exe",
+      "build-platform": "target"
+    },
+    "wgpu-core-remote-types": {
+      "binary-id": "wgpu-core-remote-types",
+      "binary-name": "wgpu_core_remote_types",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-core-remote-types#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_core_remote_types-3e72f11bb2b279d4.exe",
+      "build-platform": "target"
+    },
+    "wgpu-example-01-hello-compute::bin/wgpu-example-01-hello-compute": {
+      "binary-id": "wgpu-example-01-hello-compute::bin/wgpu-example-01-hello-compute",
+      "binary-name": "wgpu-example-01-hello-compute",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/standalone/01_hello_compute#wgpu-example-01-hello-compute@0.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_example_01_hello_compute-ab984ce77f196191.exe",
+      "build-platform": "target"
+    },
+    "wgpu-example-02-hello-window::bin/wgpu-example-02-hello-window": {
+      "binary-id": "wgpu-example-02-hello-window::bin/wgpu-example-02-hello-window",
+      "binary-name": "wgpu-example-02-hello-window",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/standalone/02_hello_window#wgpu-example-02-hello-window@0.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_example_02_hello_window-eb178b0f6f1f07c1.exe",
+      "build-platform": "target"
+    },
+    "wgpu-example-03-hdr-surface::bin/wgpu-example-03-hdr-surface": {
+      "binary-id": "wgpu-example-03-hdr-surface::bin/wgpu-example-03-hdr-surface",
+      "binary-name": "wgpu-example-03-hdr-surface",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/standalone/03_hdr_surface#wgpu-example-03-hdr-surface@0.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_example_03_hdr_surface-5f9a46f1ae3fd162.exe",
+      "build-platform": "target"
+    },
+    "wgpu-example-custom-backend::bin/wgpu-example-custom-backend": {
+      "binary-id": "wgpu-example-custom-backend::bin/wgpu-example-custom-backend",
+      "binary-name": "wgpu-example-custom-backend",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/standalone/custom_backend#wgpu-example-custom-backend@0.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_example_custom_backend-afd4f10725b0f7be.exe",
+      "build-platform": "target"
+    },
+    "wgpu-examples": {
+      "binary-id": "wgpu-examples",
+      "binary-name": "wgpu_examples",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/features#wgpu-examples@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_examples-84fc43c0ebf201c9.exe",
+      "build-platform": "target"
+    },
+    "wgpu-examples::bin/wgpu-examples": {
+      "binary-id": "wgpu-examples::bin/wgpu-examples",
+      "binary-name": "wgpu-examples",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/examples/features#wgpu-examples@30.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_examples-424cb84309a6caa4.exe",
+      "build-platform": "target"
+    },
+    "wgpu-hal": {
+      "binary-id": "wgpu-hal",
+      "binary-name": "wgpu_hal",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-hal#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_hal-42f6eb539aba3984.exe",
+      "build-platform": "target"
+    },
+    "wgpu-info::bin/wgpu-info": {
+      "binary-id": "wgpu-info::bin/wgpu-info",
+      "binary-name": "wgpu-info",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-info#30.0.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_info-0724c66045f360de.exe",
+      "build-platform": "target"
+    },
+    "wgpu-naga-bridge": {
+      "binary-id": "wgpu-naga-bridge",
+      "binary-name": "wgpu_naga_bridge",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-naga-bridge#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_naga_bridge-aa10f44e830476a3.exe",
+      "build-platform": "target"
+    },
+    "wgpu-sync": {
+      "binary-id": "wgpu-sync",
+      "binary-name": "wgpu_sync",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-sync#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_sync-cf6dfac926c1b95a.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test": {
+      "binary-id": "wgpu-test",
+      "binary-name": "wgpu_test",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_test-140a7138f7a70880.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test::wgpu-compile": {
+      "binary-id": "wgpu-test::wgpu-compile",
+      "binary-name": "wgpu-compile",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_compile-28ba3f5414bf27fe.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test::wgpu-dependency": {
+      "binary-id": "wgpu-test::wgpu-dependency",
+      "binary-name": "wgpu-dependency",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_dependency-9072c4dbb6cbb047.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test::wgpu-gpu": {
+      "binary-id": "wgpu-test::wgpu-gpu",
+      "binary-name": "wgpu-gpu",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\upstream-control-bin\\wgpu_gpu-df9c6ae37ba8f6de.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test::wgpu-validation": {
+      "binary-id": "wgpu-test::wgpu-validation",
+      "binary-name": "wgpu-validation",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_validation-f62b4b305ba7ff5a.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test::wgpu_surface": {
+      "binary-id": "wgpu-test::wgpu_surface",
+      "binary-name": "wgpu_surface",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_surface-ab3df89186272277.exe",
+      "build-platform": "target"
+    },
+    "wgpu-test::wgpu_trace": {
+      "binary-id": "wgpu-test::wgpu_trace",
+      "binary-name": "wgpu_trace",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_trace-52303cf1e78ee224.exe",
+      "build-platform": "target"
+    },
+    "wgpu-types": {
+      "binary-id": "wgpu-types",
+      "binary-name": "wgpu_types",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/wgpu-types#30.0.0",
+      "kind": "lib",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_types-d39d9ae33044d45b.exe",
+      "build-platform": "target"
+    },
+    "wgpu-xtask::bin/wgpu-xtask": {
+      "binary-id": "wgpu-xtask::bin/wgpu-xtask",
+      "binary-name": "wgpu-xtask",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/upstream/xtask#wgpu-xtask@0.1.0",
+      "kind": "bin",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_xtask-8800ab85c4685e3c.exe",
+      "build-platform": "target"
+    }
+  }
+}

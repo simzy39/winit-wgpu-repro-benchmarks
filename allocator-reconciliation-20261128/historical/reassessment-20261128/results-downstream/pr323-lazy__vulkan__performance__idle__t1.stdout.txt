@@ -1,0 +1,9 @@
+=== wgpu-mem-bench backend=vulkan hints=performance workload=idle ===
+0_process_start            WS=  10.65 PrivWS=   1.40 PrivCom=   2.23 VA=  4215.1 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+1_instance_new             WS=  23.68 PrivWS=   5.16 PrivCom=  23.17 VA=  4378.3 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+  adapter: Intel(R) Arc(TM) Graphics (Vulkan, IntegratedGpu, driver=Intel Corporation Intel driver)
+2_adapter_request          WS=  23.95 PrivWS=   5.19 PrivCom=  23.21 VA=  4378.3 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+3_device_request           WS= 170.37 PrivWS= 139.23 PrivCom= 174.19 VA=  4599.9 | DXGI L=129.36 NL=  0.00 | Alloc blks=1 res=128.00 alloc=  0.50 unused=127.50 (  0.4%)
+  device_request blocks=[134217728] allocs=[("(wgpu internal) zero init buffer", 524288), ("(wgpu internal) Indirect dispatch validation destination buffer", 64)]
+10_extended_idle           WS= 170.46 PrivWS= 139.23 PrivCom= 174.19 VA=  4599.9 | DXGI L=129.36 NL=  0.00 | Alloc blks=1 res=128.00 alloc=  0.50 unused=127.50 (  0.4%)
+11_device_dropped          WS= 166.77 PrivWS= 135.54 PrivCom= 154.14 VA=  4576.3 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)

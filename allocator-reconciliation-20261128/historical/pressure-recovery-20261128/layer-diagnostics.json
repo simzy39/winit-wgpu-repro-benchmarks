@@ -1,0 +1,84 @@
+[
+  {
+    "mode": "default",
+    "rc": 100,
+    "gpuav_enabled_warning": true,
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ],
+    "layer_lines": [
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "DEBUG | LAYER:     Loading layer library <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Insert instance layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Inserted device layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "DEBUG | LAYER:     Loading layer library <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Insert instance layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Inserted device layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll"
+    ]
+  },
+  {
+    "mode": "long-name-gpuav-off",
+    "rc": 100,
+    "gpuav_enabled_warning": true,
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ],
+    "layer_lines": [
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "DEBUG | LAYER:     Loading layer library <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Insert instance layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Inserted device layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "INFO | LAYER:      Located json file \"<drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json\" from registry \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Khronos\\Vulkan\\ExplicitLayers\"",
+      "DEBUG | LAYER:     Loading layer library <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Insert instance layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll",
+      "INFO | LAYER:      Inserted device layer \"VK_LAYER_KHRONOS_validation\" (<drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll)",
+      "LAYER:                        Manifest: <drive>/VulkanSDK\\1.4.363.0\\Bin\\VkLayer_khronos_validation.json",
+      "LAYER:                        Library:  <drive>/VulkanSDK\\1.4.363.0\\Bin\\.\\VkLayer_khronos_validation.dll"
+    ]
+  }
+]

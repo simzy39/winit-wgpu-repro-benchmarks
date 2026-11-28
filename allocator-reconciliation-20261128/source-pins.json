@@ -1,0 +1,44 @@
+[
+  {
+    "name": "gpa-rollback",
+    "head": "8b08388331e0479c965cd602557bbf8feade500c",
+    "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+    "patch": "gpa-rollback.patch",
+    "committed": true
+  },
+  {
+    "name": "gpa-vulkan",
+    "head": "99e3979dae3a7c4e8300c33cea681a175f1b3747",
+    "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+    "patch": "gpa-vulkan.patch",
+    "committed": true
+  },
+  {
+    "name": "gpa-sizing",
+    "head": "693a9fb44e7d6effa20f988217524c61553f95fe",
+    "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+    "patch": "gpa-sizing.patch",
+    "committed": true
+  },
+  {
+    "name": "wgpu-rollback",
+    "head": "58e05c149e854c2312474182cd0a3ed08e66603f",
+    "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+    "patch": "wgpu-rollback.patch",
+    "committed": true
+  },
+  {
+    "name": "wgpu-lazy",
+    "head": "19244b7c845bfcf17d57d73137a858ebef64eabb",
+    "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+    "patch": "wgpu-lazy.patch",
+    "committed": true
+  },
+  {
+    "name": "wgpu-transient",
+    "head": "219e80584bdf325890a7111e8dc8e07163885fe4",
+    "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+    "patch": "wgpu-transient.patch",
+    "committed": true
+  }
+]

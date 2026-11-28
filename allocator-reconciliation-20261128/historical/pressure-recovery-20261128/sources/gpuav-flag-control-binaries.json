@@ -1,0 +1,46 @@
+{
+  "rust-build-meta": {
+    "target-directory": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-core-validation",
+    "build-directory": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-core-validation",
+    "base-output-directories": [
+      "debug"
+    ],
+    "non-test-binaries": {},
+    "build-script-out-dirs": {},
+    "build-script-info": {},
+    "linked-paths": [
+      "debug/build/mach-dxcompiler-rs-202af50e79d3b79c/out",
+      "debug/build/nv-flip-sys-0107fd5b17fcf281/out"
+    ],
+    "platforms": {
+      "host": {
+        "platform": {
+          "triple": "x86_64-pc-windows-msvc",
+          "target-features": "unknown"
+        },
+        "libdir": {
+          "status": "available",
+          "path": "<user-home>\\.rustup\\toolchains\\1.97.1-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        }
+      },
+      "targets": []
+    },
+    "target-platforms": [
+      {
+        "triple": "x86_64-pc-windows-msvc",
+        "target-features": "unknown"
+      }
+    ],
+    "target-platform": null
+  },
+  "rust-binaries": {
+    "wgpu-test::wgpu-gpu": {
+      "binary-id": "wgpu-test::wgpu-gpu",
+      "binary-name": "wgpu-gpu",
+      "package-id": "path+file:///<drive>/codex%20projects/RustyGUI/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/core-validation/tests#wgpu-test@30.0.0",
+      "kind": "test",
+      "binary-path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\gpuav-flag-control-bin\\wgpu_gpu-536b1e1bb9a20352.exe",
+      "build-platform": "target"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin\\bench-heapcap.exe",
+    "vulkan",
+    "memory_usage",
+    "2",
+    "heapcap"
+  ],
+  "exe_sha256": "78c6e8f570fdc7e1c9ac708b0ffb8d5c91d49b45c8c6d1de32b7267c6bb185d3",
+  "wall_s": 0.8914389999117702,
+  "utc": "2026-11-28T01:47:07.767396+00:00",
+  "settle_s": 2
+}

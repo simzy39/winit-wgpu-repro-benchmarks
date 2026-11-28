@@ -1,0 +1,239 @@
+{
+  "utc": "2026-11-28T00:08:20.940163+00:00",
+  "historical_files_checked": 438,
+  "historical_hash_failures": [],
+  "repository_changes": [],
+  "repositories": {
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\repo": {
+      "status": {
+        "exit": 0,
+        "stdout": "## main...origin/main\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5 refs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b refs/remotes/fork/fix/growable-memblock-dedicated-threshold\n05d184aa217d210ffd5bd800ed31a7b6291633c8 refs/remotes/origin/0.9-stable\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/HEAD\n6a68a5b4c233361c07dfa8865043a16ade7512db refs/remotes/origin/ash-next\neebd52f53230b6d9084c707704130c5c99ee7bca refs/remotes/origin/ash-next-egui-0.37\ne6c5640394331e3dbbebfdb05f3712f58873e4dd refs/remotes/origin/clippy-1.88\nb6d1207a80e8fbe6fc1fb024103f6f12e7606c0c refs/remotes/origin/d3d12-agility\n1cdc08e129da48e649dc0b3bcdd95153414b84dd refs/remotes/origin/d3d12-agility-ash-next\nd3daa48fd9ce2c36e2967fd4e1c420a2d038791d refs/remotes/origin/d3d12-respect-resource-alignment\n9bf64bab93ef4e79a9220d969bc528ac5b5a8266 refs/remotes/origin/d3d12-respect-resource-alignment-ash-next\n4f7930f2038afd9acacbbd1eb32ff4c2a6b2fe38 refs/remotes/origin/d3d12-stomp-allocator\n6c8e1129e96c52c6a2bea6f274d7864f54bccb3e refs/remotes/origin/d3d12-visualizer\n2dcd3c2a0a7c96af5e15a0b000faac46d489c374 refs/remotes/origin/dependabot/cargo/egui-gte-0.24-and-lte-0.37\n2f14218fe932e8c96223899139cd5cc7867bad84 refs/remotes/origin/dependabot/cargo/egui_extras-gte-0.24-and-lte-0.37\n306cf8ec2b00bfa8609b5fd222680ccb926e9473 refs/remotes/origin/dependabot/cargo/hashbrown-0.17.1\n5451d664bcb5f1a6dccc8e09ad1fb549f196b32f refs/remotes/origin/external-memory\n486751478476a7acc1a9d1c26b4a65f0e324d04b refs/remotes/origin/external-memory-allocation\n693ea38b2ac5afb55b3df6dbec0089442e1dade6 refs/remotes/origin/external-memory-allocation-ash-next\n2ccc74905a2b65591596651deb689c365722f174 refs/remotes/origin/external-memory-macos-fix\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/main\n888cd2abc48c76f9233a51fcdd1e32a19b42b728 refs/remotes/origin/mapped-slice-unsafe\nbbb5799065b62403e1b53872a8bed1bb7f0026ee refs/remotes/origin/mark-types-as-pub\nefda8616e21e115e259d461dd88670a9931eafe2 refs/remotes/origin/microsoft-directx\n587ff611e90b359c52e696ce535dad75f1eb3106 refs/remotes/origin/traverse-pub\ndfda44356940ecf8aaa4dfa7708dd9ed892c8eb2 refs/remotes/origin/uninit\ndb0758256c5b0c1046bb410810e157f8301cadc0 refs/remotes/origin/unrestricted-windows\n36cef359cf98c93f8ee473d862cdd296fec59156 refs/tags/0.10.0\n57bce4ddf23da1fe459c7db4b807e93c1f026616 refs/tags/0.11.0\n803ce38ef20f7875d5c64007ee80f76396c52be7 refs/tags/0.12.0\n36aea925c67a97d7f68cca0a7e1cb96250321372 refs/tags/0.13.0\n8da216e94309cc3b7f30e768a8a4d1d78fae8da6 refs/tags/0.14.0\n956220c03b0c53a4318534e5bb92162f53f91efb refs/tags/0.15.0\nbd4270a09e6d7574326c042bdc3df03ee6d57878 refs/tags/0.15.1\n3027298ca859e4cf2e687a19263e465642dee08d refs/tags/0.16.0\na1f337882daa54bd28e7a7c9438587c60d3ae225 refs/tags/0.17.0\n92b489d70af87b9ed33ab878764ec47e68161629 refs/tags/0.18.0\n0fec29ea63dde9484cba29879ebb5c52c4ed72b3 refs/tags/0.19.0\ne25131ae51a29b23f4128ca3ff96d8a3478e19a3 refs/tags/0.19.1\n8b353f3a660249faab6314b839d273800f68010b refs/tags/0.2.0\n8b1a50adeb3c978a1d4a5300f3880933ca4c2afa refs/tags/0.20.0\na32c0548b95ccf5df6ca1f14dfc88468464716d1 refs/tags/0.21.0\n54150823e13e323e1f1a2f1088711e53e817cd10 refs/tags/0.22.0\n5a443c5b01bd85cd2806a51433106118c2212b39 refs/tags/0.23.0\n1b66bf58045673eccb1eda9858da3d1218610628 refs/tags/0.24.0\nc48d8e90b2f405d3499b1305515e70c5ed6af056 refs/tags/0.25.0\n098866e9cc616c1881abdc36fcaabde037288492 refs/tags/0.26.0\nac4506546cf56130d3735bc4ca31f8ddeca90abe refs/tags/0.27.0\nc1d4a8dc44f703a581a8d58d5a7b9593e80dd6d7 refs/tags/0.28.0\n2ba7a3d6688eff43b7489c93869f01301d5a8a33 refs/tags/0.3.0\n49a4dbc6ae75ddd17aa9c7097a6cd17d2161e0cb refs/tags/0.4.0\n9e8971a4e94ab850b528c6e9f20b9a9dcf0651c7 refs/tags/0.5.0\n200bd1c227f0b2b33dad3f5324a753b07d973b53 refs/tags/0.6.0\nb71ff49ffaa496e78036667927b883903b2c3efc refs/tags/0.7.0\nc4631b33d2128eb0e7f07daf425ede134bc1e6c1 refs/tags/0.8.0\nbf3e71415b0732e2df2e1f109e5817bedaff1798 refs/tags/0.9.0\nc06e513da0e2db08bfafbb867895410464f9e4e0 refs/tags/0.9.1\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\ws\\main\\gpu-allocator": {
+      "status": {
+        "exit": 0,
+        "stdout": "## HEAD (no branch)\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5 refs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b refs/remotes/fork/fix/growable-memblock-dedicated-threshold\n05d184aa217d210ffd5bd800ed31a7b6291633c8 refs/remotes/origin/0.9-stable\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/HEAD\n6a68a5b4c233361c07dfa8865043a16ade7512db refs/remotes/origin/ash-next\neebd52f53230b6d9084c707704130c5c99ee7bca refs/remotes/origin/ash-next-egui-0.37\ne6c5640394331e3dbbebfdb05f3712f58873e4dd refs/remotes/origin/clippy-1.88\nb6d1207a80e8fbe6fc1fb024103f6f12e7606c0c refs/remotes/origin/d3d12-agility\n1cdc08e129da48e649dc0b3bcdd95153414b84dd refs/remotes/origin/d3d12-agility-ash-next\nd3daa48fd9ce2c36e2967fd4e1c420a2d038791d refs/remotes/origin/d3d12-respect-resource-alignment\n9bf64bab93ef4e79a9220d969bc528ac5b5a8266 refs/remotes/origin/d3d12-respect-resource-alignment-ash-next\n4f7930f2038afd9acacbbd1eb32ff4c2a6b2fe38 refs/remotes/origin/d3d12-stomp-allocator\n6c8e1129e96c52c6a2bea6f274d7864f54bccb3e refs/remotes/origin/d3d12-visualizer\n2dcd3c2a0a7c96af5e15a0b000faac46d489c374 refs/remotes/origin/dependabot/cargo/egui-gte-0.24-and-lte-0.37\n2f14218fe932e8c96223899139cd5cc7867bad84 refs/remotes/origin/dependabot/cargo/egui_extras-gte-0.24-and-lte-0.37\n306cf8ec2b00bfa8609b5fd222680ccb926e9473 refs/remotes/origin/dependabot/cargo/hashbrown-0.17.1\n5451d664bcb5f1a6dccc8e09ad1fb549f196b32f refs/remotes/origin/external-memory\n486751478476a7acc1a9d1c26b4a65f0e324d04b refs/remotes/origin/external-memory-allocation\n693ea38b2ac5afb55b3df6dbec0089442e1dade6 refs/remotes/origin/external-memory-allocation-ash-next\n2ccc74905a2b65591596651deb689c365722f174 refs/remotes/origin/external-memory-macos-fix\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/main\n888cd2abc48c76f9233a51fcdd1e32a19b42b728 refs/remotes/origin/mapped-slice-unsafe\nbbb5799065b62403e1b53872a8bed1bb7f0026ee refs/remotes/origin/mark-types-as-pub\nefda8616e21e115e259d461dd88670a9931eafe2 refs/remotes/origin/microsoft-directx\n587ff611e90b359c52e696ce535dad75f1eb3106 refs/remotes/origin/traverse-pub\ndfda44356940ecf8aaa4dfa7708dd9ed892c8eb2 refs/remotes/origin/uninit\ndb0758256c5b0c1046bb410810e157f8301cadc0 refs/remotes/origin/unrestricted-windows\n36cef359cf98c93f8ee473d862cdd296fec59156 refs/tags/0.10.0\n57bce4ddf23da1fe459c7db4b807e93c1f026616 refs/tags/0.11.0\n803ce38ef20f7875d5c64007ee80f76396c52be7 refs/tags/0.12.0\n36aea925c67a97d7f68cca0a7e1cb96250321372 refs/tags/0.13.0\n8da216e94309cc3b7f30e768a8a4d1d78fae8da6 refs/tags/0.14.0\n956220c03b0c53a4318534e5bb92162f53f91efb refs/tags/0.15.0\nbd4270a09e6d7574326c042bdc3df03ee6d57878 refs/tags/0.15.1\n3027298ca859e4cf2e687a19263e465642dee08d refs/tags/0.16.0\na1f337882daa54bd28e7a7c9438587c60d3ae225 refs/tags/0.17.0\n92b489d70af87b9ed33ab878764ec47e68161629 refs/tags/0.18.0\n0fec29ea63dde9484cba29879ebb5c52c4ed72b3 refs/tags/0.19.0\ne25131ae51a29b23f4128ca3ff96d8a3478e19a3 refs/tags/0.19.1\n8b353f3a660249faab6314b839d273800f68010b refs/tags/0.2.0\n8b1a50adeb3c978a1d4a5300f3880933ca4c2afa refs/tags/0.20.0\na32c0548b95ccf5df6ca1f14dfc88468464716d1 refs/tags/0.21.0\n54150823e13e323e1f1a2f1088711e53e817cd10 refs/tags/0.22.0\n5a443c5b01bd85cd2806a51433106118c2212b39 refs/tags/0.23.0\n1b66bf58045673eccb1eda9858da3d1218610628 refs/tags/0.24.0\nc48d8e90b2f405d3499b1305515e70c5ed6af056 refs/tags/0.25.0\n098866e9cc616c1881abdc36fcaabde037288492 refs/tags/0.26.0\nac4506546cf56130d3735bc4ca31f8ddeca90abe refs/tags/0.27.0\nc1d4a8dc44f703a581a8d58d5a7b9593e80dd6d7 refs/tags/0.28.0\n2ba7a3d6688eff43b7489c93869f01301d5a8a33 refs/tags/0.3.0\n49a4dbc6ae75ddd17aa9c7097a6cd17d2161e0cb refs/tags/0.4.0\n9e8971a4e94ab850b528c6e9f20b9a9dcf0651c7 refs/tags/0.5.0\n200bd1c227f0b2b33dad3f5324a753b07d973b53 refs/tags/0.6.0\nb71ff49ffaa496e78036667927b883903b2c3efc refs/tags/0.7.0\nc4631b33d2128eb0e7f07daf425ede134bc1e6c1 refs/tags/0.8.0\nbf3e71415b0732e2df2e1f109e5817bedaff1798 refs/tags/0.9.0\nc06e513da0e2db08bfafbb867895410464f9e4e0 refs/tags/0.9.1\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\ws\\pr323\\gpu-allocator": {
+      "status": {
+        "exit": 0,
+        "stdout": "## HEAD (no branch)\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "179ea43f05332c2809addd7922cd056220efc36b\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5 refs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b refs/remotes/fork/fix/growable-memblock-dedicated-threshold\n05d184aa217d210ffd5bd800ed31a7b6291633c8 refs/remotes/origin/0.9-stable\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/HEAD\n6a68a5b4c233361c07dfa8865043a16ade7512db refs/remotes/origin/ash-next\neebd52f53230b6d9084c707704130c5c99ee7bca refs/remotes/origin/ash-next-egui-0.37\ne6c5640394331e3dbbebfdb05f3712f58873e4dd refs/remotes/origin/clippy-1.88\nb6d1207a80e8fbe6fc1fb024103f6f12e7606c0c refs/remotes/origin/d3d12-agility\n1cdc08e129da48e649dc0b3bcdd95153414b84dd refs/remotes/origin/d3d12-agility-ash-next\nd3daa48fd9ce2c36e2967fd4e1c420a2d038791d refs/remotes/origin/d3d12-respect-resource-alignment\n9bf64bab93ef4e79a9220d969bc528ac5b5a8266 refs/remotes/origin/d3d12-respect-resource-alignment-ash-next\n4f7930f2038afd9acacbbd1eb32ff4c2a6b2fe38 refs/remotes/origin/d3d12-stomp-allocator\n6c8e1129e96c52c6a2bea6f274d7864f54bccb3e refs/remotes/origin/d3d12-visualizer\n2dcd3c2a0a7c96af5e15a0b000faac46d489c374 refs/remotes/origin/dependabot/cargo/egui-gte-0.24-and-lte-0.37\n2f14218fe932e8c96223899139cd5cc7867bad84 refs/remotes/origin/dependabot/cargo/egui_extras-gte-0.24-and-lte-0.37\n306cf8ec2b00bfa8609b5fd222680ccb926e9473 refs/remotes/origin/dependabot/cargo/hashbrown-0.17.1\n5451d664bcb5f1a6dccc8e09ad1fb549f196b32f refs/remotes/origin/external-memory\n486751478476a7acc1a9d1c26b4a65f0e324d04b refs/remotes/origin/external-memory-allocation\n693ea38b2ac5afb55b3df6dbec0089442e1dade6 refs/remotes/origin/external-memory-allocation-ash-next\n2ccc74905a2b65591596651deb689c365722f174 refs/remotes/origin/external-memory-macos-fix\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/main\n888cd2abc48c76f9233a51fcdd1e32a19b42b728 refs/remotes/origin/mapped-slice-unsafe\nbbb5799065b62403e1b53872a8bed1bb7f0026ee refs/remotes/origin/mark-types-as-pub\nefda8616e21e115e259d461dd88670a9931eafe2 refs/remotes/origin/microsoft-directx\n587ff611e90b359c52e696ce535dad75f1eb3106 refs/remotes/origin/traverse-pub\ndfda44356940ecf8aaa4dfa7708dd9ed892c8eb2 refs/remotes/origin/uninit\ndb0758256c5b0c1046bb410810e157f8301cadc0 refs/remotes/origin/unrestricted-windows\n36cef359cf98c93f8ee473d862cdd296fec59156 refs/tags/0.10.0\n57bce4ddf23da1fe459c7db4b807e93c1f026616 refs/tags/0.11.0\n803ce38ef20f7875d5c64007ee80f76396c52be7 refs/tags/0.12.0\n36aea925c67a97d7f68cca0a7e1cb96250321372 refs/tags/0.13.0\n8da216e94309cc3b7f30e768a8a4d1d78fae8da6 refs/tags/0.14.0\n956220c03b0c53a4318534e5bb92162f53f91efb refs/tags/0.15.0\nbd4270a09e6d7574326c042bdc3df03ee6d57878 refs/tags/0.15.1\n3027298ca859e4cf2e687a19263e465642dee08d refs/tags/0.16.0\na1f337882daa54bd28e7a7c9438587c60d3ae225 refs/tags/0.17.0\n92b489d70af87b9ed33ab878764ec47e68161629 refs/tags/0.18.0\n0fec29ea63dde9484cba29879ebb5c52c4ed72b3 refs/tags/0.19.0\ne25131ae51a29b23f4128ca3ff96d8a3478e19a3 refs/tags/0.19.1\n8b353f3a660249faab6314b839d273800f68010b refs/tags/0.2.0\n8b1a50adeb3c978a1d4a5300f3880933ca4c2afa refs/tags/0.20.0\na32c0548b95ccf5df6ca1f14dfc88468464716d1 refs/tags/0.21.0\n54150823e13e323e1f1a2f1088711e53e817cd10 refs/tags/0.22.0\n5a443c5b01bd85cd2806a51433106118c2212b39 refs/tags/0.23.0\n1b66bf58045673eccb1eda9858da3d1218610628 refs/tags/0.24.0\nc48d8e90b2f405d3499b1305515e70c5ed6af056 refs/tags/0.25.0\n098866e9cc616c1881abdc36fcaabde037288492 refs/tags/0.26.0\nac4506546cf56130d3735bc4ca31f8ddeca90abe refs/tags/0.27.0\nc1d4a8dc44f703a581a8d58d5a7b9593e80dd6d7 refs/tags/0.28.0\n2ba7a3d6688eff43b7489c93869f01301d5a8a33 refs/tags/0.3.0\n49a4dbc6ae75ddd17aa9c7097a6cd17d2161e0cb refs/tags/0.4.0\n9e8971a4e94ab850b528c6e9f20b9a9dcf0651c7 refs/tags/0.5.0\n200bd1c227f0b2b33dad3f5324a753b07d973b53 refs/tags/0.6.0\nb71ff49ffaa496e78036667927b883903b2c3efc refs/tags/0.7.0\nc4631b33d2128eb0e7f07daf425ede134bc1e6c1 refs/tags/0.8.0\nbf3e71415b0732e2df2e1f109e5817bedaff1798 refs/tags/0.9.0\nc06e513da0e2db08bfafbb867895410464f9e4e0 refs/tags/0.9.1\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\ws\\proposal\\gpu-allocator": {
+      "status": {
+        "exit": 0,
+        "stdout": "## HEAD (no branch)\n M src/d3d12/mod.rs\n M src/lib.rs\n M src/metal/mod.rs\n M src/vulkan/mod.rs\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "179ea43f05332c2809addd7922cd056220efc36b\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5 refs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b refs/remotes/fork/fix/growable-memblock-dedicated-threshold\n05d184aa217d210ffd5bd800ed31a7b6291633c8 refs/remotes/origin/0.9-stable\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/HEAD\n6a68a5b4c233361c07dfa8865043a16ade7512db refs/remotes/origin/ash-next\neebd52f53230b6d9084c707704130c5c99ee7bca refs/remotes/origin/ash-next-egui-0.37\ne6c5640394331e3dbbebfdb05f3712f58873e4dd refs/remotes/origin/clippy-1.88\nb6d1207a80e8fbe6fc1fb024103f6f12e7606c0c refs/remotes/origin/d3d12-agility\n1cdc08e129da48e649dc0b3bcdd95153414b84dd refs/remotes/origin/d3d12-agility-ash-next\nd3daa48fd9ce2c36e2967fd4e1c420a2d038791d refs/remotes/origin/d3d12-respect-resource-alignment\n9bf64bab93ef4e79a9220d969bc528ac5b5a8266 refs/remotes/origin/d3d12-respect-resource-alignment-ash-next\n4f7930f2038afd9acacbbd1eb32ff4c2a6b2fe38 refs/remotes/origin/d3d12-stomp-allocator\n6c8e1129e96c52c6a2bea6f274d7864f54bccb3e refs/remotes/origin/d3d12-visualizer\n2dcd3c2a0a7c96af5e15a0b000faac46d489c374 refs/remotes/origin/dependabot/cargo/egui-gte-0.24-and-lte-0.37\n2f14218fe932e8c96223899139cd5cc7867bad84 refs/remotes/origin/dependabot/cargo/egui_extras-gte-0.24-and-lte-0.37\n306cf8ec2b00bfa8609b5fd222680ccb926e9473 refs/remotes/origin/dependabot/cargo/hashbrown-0.17.1\n5451d664bcb5f1a6dccc8e09ad1fb549f196b32f refs/remotes/origin/external-memory\n486751478476a7acc1a9d1c26b4a65f0e324d04b refs/remotes/origin/external-memory-allocation\n693ea38b2ac5afb55b3df6dbec0089442e1dade6 refs/remotes/origin/external-memory-allocation-ash-next\n2ccc74905a2b65591596651deb689c365722f174 refs/remotes/origin/external-memory-macos-fix\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/main\n888cd2abc48c76f9233a51fcdd1e32a19b42b728 refs/remotes/origin/mapped-slice-unsafe\nbbb5799065b62403e1b53872a8bed1bb7f0026ee refs/remotes/origin/mark-types-as-pub\nefda8616e21e115e259d461dd88670a9931eafe2 refs/remotes/origin/microsoft-directx\n587ff611e90b359c52e696ce535dad75f1eb3106 refs/remotes/origin/traverse-pub\ndfda44356940ecf8aaa4dfa7708dd9ed892c8eb2 refs/remotes/origin/uninit\ndb0758256c5b0c1046bb410810e157f8301cadc0 refs/remotes/origin/unrestricted-windows\n36cef359cf98c93f8ee473d862cdd296fec59156 refs/tags/0.10.0\n57bce4ddf23da1fe459c7db4b807e93c1f026616 refs/tags/0.11.0\n803ce38ef20f7875d5c64007ee80f76396c52be7 refs/tags/0.12.0\n36aea925c67a97d7f68cca0a7e1cb96250321372 refs/tags/0.13.0\n8da216e94309cc3b7f30e768a8a4d1d78fae8da6 refs/tags/0.14.0\n956220c03b0c53a4318534e5bb92162f53f91efb refs/tags/0.15.0\nbd4270a09e6d7574326c042bdc3df03ee6d57878 refs/tags/0.15.1\n3027298ca859e4cf2e687a19263e465642dee08d refs/tags/0.16.0\na1f337882daa54bd28e7a7c9438587c60d3ae225 refs/tags/0.17.0\n92b489d70af87b9ed33ab878764ec47e68161629 refs/tags/0.18.0\n0fec29ea63dde9484cba29879ebb5c52c4ed72b3 refs/tags/0.19.0\ne25131ae51a29b23f4128ca3ff96d8a3478e19a3 refs/tags/0.19.1\n8b353f3a660249faab6314b839d273800f68010b refs/tags/0.2.0\n8b1a50adeb3c978a1d4a5300f3880933ca4c2afa refs/tags/0.20.0\na32c0548b95ccf5df6ca1f14dfc88468464716d1 refs/tags/0.21.0\n54150823e13e323e1f1a2f1088711e53e817cd10 refs/tags/0.22.0\n5a443c5b01bd85cd2806a51433106118c2212b39 refs/tags/0.23.0\n1b66bf58045673eccb1eda9858da3d1218610628 refs/tags/0.24.0\nc48d8e90b2f405d3499b1305515e70c5ed6af056 refs/tags/0.25.0\n098866e9cc616c1881abdc36fcaabde037288492 refs/tags/0.26.0\nac4506546cf56130d3735bc4ca31f8ddeca90abe refs/tags/0.27.0\nc1d4a8dc44f703a581a8d58d5a7b9593e80dd6d7 refs/tags/0.28.0\n2ba7a3d6688eff43b7489c93869f01301d5a8a33 refs/tags/0.3.0\n49a4dbc6ae75ddd17aa9c7097a6cd17d2161e0cb refs/tags/0.4.0\n9e8971a4e94ab850b528c6e9f20b9a9dcf0651c7 refs/tags/0.5.0\n200bd1c227f0b2b33dad3f5324a753b07d973b53 refs/tags/0.6.0\nb71ff49ffaa496e78036667927b883903b2c3efc refs/tags/0.7.0\nc4631b33d2128eb0e7f07daf425ede134bc1e6c1 refs/tags/0.8.0\nbf3e71415b0732e2df2e1f109e5817bedaff1798 refs/tags/0.9.0\nc06e513da0e2db08bfafbb867895410464f9e4e0 refs/tags/0.9.1\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": " src/d3d12/mod.rs  | 140 +++++++++++++++++++++++++++++++-------\n src/lib.rs        | 200 ++++++++++++++++++++++++++++++++++--------------------\n src/metal/mod.rs  |  52 +++++++-------\n src/vulkan/mod.rs |  64 +++++++----------\n 4 files changed, 300 insertions(+), 156 deletions(-)\n",
+        "stderr": "warning: in the working copy of 'src/d3d12/mod.rs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/metal/mod.rs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/vulkan/mod.rs', LF will be replaced by CRLF the next time Git touches it\n"
+      }
+    },
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\ws\\proto\\gpu-allocator": {
+      "status": {
+        "exit": 0,
+        "stdout": "## HEAD (no branch)\n M Cargo.toml\n M src/d3d12/mod.rs\n M src/lib.rs\n M src/metal/mod.rs\n M src/vulkan/mod.rs\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "179ea43f05332c2809addd7922cd056220efc36b\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5 refs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b refs/remotes/fork/fix/growable-memblock-dedicated-threshold\n05d184aa217d210ffd5bd800ed31a7b6291633c8 refs/remotes/origin/0.9-stable\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/HEAD\n6a68a5b4c233361c07dfa8865043a16ade7512db refs/remotes/origin/ash-next\neebd52f53230b6d9084c707704130c5c99ee7bca refs/remotes/origin/ash-next-egui-0.37\ne6c5640394331e3dbbebfdb05f3712f58873e4dd refs/remotes/origin/clippy-1.88\nb6d1207a80e8fbe6fc1fb024103f6f12e7606c0c refs/remotes/origin/d3d12-agility\n1cdc08e129da48e649dc0b3bcdd95153414b84dd refs/remotes/origin/d3d12-agility-ash-next\nd3daa48fd9ce2c36e2967fd4e1c420a2d038791d refs/remotes/origin/d3d12-respect-resource-alignment\n9bf64bab93ef4e79a9220d969bc528ac5b5a8266 refs/remotes/origin/d3d12-respect-resource-alignment-ash-next\n4f7930f2038afd9acacbbd1eb32ff4c2a6b2fe38 refs/remotes/origin/d3d12-stomp-allocator\n6c8e1129e96c52c6a2bea6f274d7864f54bccb3e refs/remotes/origin/d3d12-visualizer\n2dcd3c2a0a7c96af5e15a0b000faac46d489c374 refs/remotes/origin/dependabot/cargo/egui-gte-0.24-and-lte-0.37\n2f14218fe932e8c96223899139cd5cc7867bad84 refs/remotes/origin/dependabot/cargo/egui_extras-gte-0.24-and-lte-0.37\n306cf8ec2b00bfa8609b5fd222680ccb926e9473 refs/remotes/origin/dependabot/cargo/hashbrown-0.17.1\n5451d664bcb5f1a6dccc8e09ad1fb549f196b32f refs/remotes/origin/external-memory\n486751478476a7acc1a9d1c26b4a65f0e324d04b refs/remotes/origin/external-memory-allocation\n693ea38b2ac5afb55b3df6dbec0089442e1dade6 refs/remotes/origin/external-memory-allocation-ash-next\n2ccc74905a2b65591596651deb689c365722f174 refs/remotes/origin/external-memory-macos-fix\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/main\n888cd2abc48c76f9233a51fcdd1e32a19b42b728 refs/remotes/origin/mapped-slice-unsafe\nbbb5799065b62403e1b53872a8bed1bb7f0026ee refs/remotes/origin/mark-types-as-pub\nefda8616e21e115e259d461dd88670a9931eafe2 refs/remotes/origin/microsoft-directx\n587ff611e90b359c52e696ce535dad75f1eb3106 refs/remotes/origin/traverse-pub\ndfda44356940ecf8aaa4dfa7708dd9ed892c8eb2 refs/remotes/origin/uninit\ndb0758256c5b0c1046bb410810e157f8301cadc0 refs/remotes/origin/unrestricted-windows\n36cef359cf98c93f8ee473d862cdd296fec59156 refs/tags/0.10.0\n57bce4ddf23da1fe459c7db4b807e93c1f026616 refs/tags/0.11.0\n803ce38ef20f7875d5c64007ee80f76396c52be7 refs/tags/0.12.0\n36aea925c67a97d7f68cca0a7e1cb96250321372 refs/tags/0.13.0\n8da216e94309cc3b7f30e768a8a4d1d78fae8da6 refs/tags/0.14.0\n956220c03b0c53a4318534e5bb92162f53f91efb refs/tags/0.15.0\nbd4270a09e6d7574326c042bdc3df03ee6d57878 refs/tags/0.15.1\n3027298ca859e4cf2e687a19263e465642dee08d refs/tags/0.16.0\na1f337882daa54bd28e7a7c9438587c60d3ae225 refs/tags/0.17.0\n92b489d70af87b9ed33ab878764ec47e68161629 refs/tags/0.18.0\n0fec29ea63dde9484cba29879ebb5c52c4ed72b3 refs/tags/0.19.0\ne25131ae51a29b23f4128ca3ff96d8a3478e19a3 refs/tags/0.19.1\n8b353f3a660249faab6314b839d273800f68010b refs/tags/0.2.0\n8b1a50adeb3c978a1d4a5300f3880933ca4c2afa refs/tags/0.20.0\na32c0548b95ccf5df6ca1f14dfc88468464716d1 refs/tags/0.21.0\n54150823e13e323e1f1a2f1088711e53e817cd10 refs/tags/0.22.0\n5a443c5b01bd85cd2806a51433106118c2212b39 refs/tags/0.23.0\n1b66bf58045673eccb1eda9858da3d1218610628 refs/tags/0.24.0\nc48d8e90b2f405d3499b1305515e70c5ed6af056 refs/tags/0.25.0\n098866e9cc616c1881abdc36fcaabde037288492 refs/tags/0.26.0\nac4506546cf56130d3735bc4ca31f8ddeca90abe refs/tags/0.27.0\nc1d4a8dc44f703a581a8d58d5a7b9593e80dd6d7 refs/tags/0.28.0\n2ba7a3d6688eff43b7489c93869f01301d5a8a33 refs/tags/0.3.0\n49a4dbc6ae75ddd17aa9c7097a6cd17d2161e0cb refs/tags/0.4.0\n9e8971a4e94ab850b528c6e9f20b9a9dcf0651c7 refs/tags/0.5.0\n200bd1c227f0b2b33dad3f5324a753b07d973b53 refs/tags/0.6.0\nb71ff49ffaa496e78036667927b883903b2c3efc refs/tags/0.7.0\nc4631b33d2128eb0e7f07daf425ede134bc1e6c1 refs/tags/0.8.0\nbf3e71415b0732e2df2e1f109e5817bedaff1798 refs/tags/0.9.0\nc06e513da0e2db08bfafbb867895410464f9e4e0 refs/tags/0.9.1\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": " Cargo.toml        |   2 +\n src/d3d12/mod.rs  | 182 ++++++++++++++++++++++++++++++++++++++++++-------\n src/lib.rs        | 200 ++++++++++++++++++++++++++++++++++--------------------\n src/metal/mod.rs  |  61 ++++++++++-------\n src/vulkan/mod.rs |  72 ++++++++++----------\n 5 files changed, 361 insertions(+), 156 deletions(-)\n",
+        "stderr": "warning: in the working copy of 'Cargo.toml', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/d3d12/mod.rs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/lib.rs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/metal/mod.rs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'src/vulkan/mod.rs', LF will be replaced by CRLF the next time Git touches it\n"
+      }
+    },
+    "<workspace>\\research\\upstream\\winit-wgpu\\repos\\gpu-allocator": {
+      "status": {
+        "exit": 0,
+        "stdout": "## fix/growable-memblock-dedicated-threshold...fork/fix/growable-memblock-dedicated-threshold\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "179ea43f05332c2809addd7922cd056220efc36b\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "179ea43f05332c2809addd7922cd056220efc36b refs/heads/fix/growable-memblock-dedicated-threshold\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b refs/remotes/fork/fix/growable-memblock-dedicated-threshold\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/HEAD\nfc22df05140b15ed6d764beabd12a1b807011bc5 refs/remotes/origin/main\n0fec29ea63dde9484cba29879ebb5c52c4ed72b3 refs/tags/0.19.0\ne25131ae51a29b23f4128ca3ff96d8a3478e19a3 refs/tags/0.19.1\n8b1a50adeb3c978a1d4a5300f3880933ca4c2afa refs/tags/0.20.0\na32c0548b95ccf5df6ca1f14dfc88468464716d1 refs/tags/0.21.0\n54150823e13e323e1f1a2f1088711e53e817cd10 refs/tags/0.22.0\n5a443c5b01bd85cd2806a51433106118c2212b39 refs/tags/0.23.0\n1b66bf58045673eccb1eda9858da3d1218610628 refs/tags/0.24.0\nc48d8e90b2f405d3499b1305515e70c5ed6af056 refs/tags/0.25.0\n098866e9cc616c1881abdc36fcaabde037288492 refs/tags/0.26.0\nac4506546cf56130d3735bc4ca31f8ddeca90abe refs/tags/0.27.0\nc1d4a8dc44f703a581a8d58d5a7b9593e80dd6d7 refs/tags/0.28.0\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "<workspace>\\research\\upstream\\winit-wgpu\\repos\\wgpu": {
+      "status": {
+        "exit": 0,
+        "stdout": "## feat/dx12-transient-memory-pool...fork/feat/dx12-transient-memory-pool\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "22827ee25285b56c4056fe6bb1de27917caf45a9\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "22827ee25285b56c4056fe6bb1de27917caf45a9 refs/heads/feat/dx12-transient-memory-pool\n793698d89332250d5abe92e61769625233be9ac9 refs/heads/feat/lazy-default-external-texture-params\n60cef2be828e03ba54e2e1598001b4625c0c2163 refs/heads/trunk\n60cef2be828e03ba54e2e1598001b4625c0c2163 refs/remotes/fork/HEAD\n22827ee25285b56c4056fe6bb1de27917caf45a9 refs/remotes/fork/feat/dx12-transient-memory-pool\n793698d89332250d5abe92e61769625233be9ac9 refs/remotes/fork/feat/lazy-default-external-texture-params\n60cef2be828e03ba54e2e1598001b4625c0c2163 refs/remotes/fork/trunk\n60cef2be828e03ba54e2e1598001b4625c0c2163 refs/remotes/origin/HEAD\n60cef2be828e03ba54e2e1598001b4625c0c2163 refs/remotes/origin/trunk\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "<workspace>\\research\\upstream\\winit-wgpu\\repos\\winit": {
+      "status": {
+        "exit": 0,
+        "stdout": "## fix/win32-buffered-event-stranding...fork/fix/win32-buffered-event-stranding\n",
+        "stderr": ""
+      },
+      "head": {
+        "exit": 0,
+        "stdout": "fb3ee36a65e8856ddeccc016fd553f3a60010553\n",
+        "stderr": ""
+      },
+      "refs": {
+        "exit": 0,
+        "stdout": "fb3ee36a65e8856ddeccc016fd553f3a60010553 refs/heads/fix/win32-buffered-event-stranding\nb1a0534633c3afffd604c8ed7156e7d8617b266d refs/heads/master\n252f03ff3fb8c2e662cc5ae953782d4d82adca0f refs/heads/pr-4653\n8c17fde16cd616370d96a86c2f13acf54b43cd38 refs/heads/pr-4856\n185efb6e317a36a3c9e0e1709748c364e0ba37c5 refs/heads/pr-4859\nfb3ee36a65e8856ddeccc016fd553f3a60010553 refs/remotes/fork/fix/win32-buffered-event-stranding\nb1a0534633c3afffd604c8ed7156e7d8617b266d refs/remotes/origin/HEAD\nb1a0534633c3afffd604c8ed7156e7d8617b266d refs/remotes/origin/master\n",
+        "stderr": ""
+      },
+      "diff": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  },
+  "remote_heads": {
+    "allocator-upstream": {
+      "url": "https://github.com/Traverse-Research/gpu-allocator.git",
+      "refs": [
+        "refs/heads/main",
+        "refs/pull/323/head"
+      ],
+      "rc": 0,
+      "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5\trefs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b\trefs/pull/323/head\n",
+      "stderr": ""
+    },
+    "allocator-fork": {
+      "url": "https://github.com/simzy39/gpu-allocator.git",
+      "refs": [
+        "refs/heads/fix/growable-memblock-dedicated-threshold"
+      ],
+      "rc": 0,
+      "stdout": "179ea43f05332c2809addd7922cd056220efc36b\trefs/heads/fix/growable-memblock-dedicated-threshold\n",
+      "stderr": ""
+    },
+    "wgpu": {
+      "url": "https://github.com/gfx-rs/wgpu.git",
+      "refs": [
+        "refs/pull/11129/head",
+        "refs/pull/11130/head"
+      ],
+      "rc": 0,
+      "stdout": "793698d89332250d5abe92e61769625233be9ac9\trefs/pull/11129/head\n22827ee25285b56c4056fe6bb1de27917caf45a9\trefs/pull/11130/head\n",
+      "stderr": ""
+    }
+  },
+  "patches": {
+    "candidate-on-pr323-179ea43.patch": {
+      "base": "179ea43f05332c2809addd7922cd056220efc36b",
+      "sha256": "168786a10ab3dddde056a4395a6b85f6a6be6958cae5e6bd8622ff74c0328a17",
+      "apply_check_rc": 0,
+      "stderr": "",
+      "final_apply_check": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "candidate-on-main-fc22df0.patch": {
+      "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+      "sha256": "c9e1a6b3b620d15fc6ceca59924baeab8a09881c83e0636a3b83d9dc772b053e",
+      "apply_check_rc": 0,
+      "stderr": "",
+      "final_apply_check": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  }
+}

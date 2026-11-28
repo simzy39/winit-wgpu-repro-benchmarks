@@ -1,0 +1,114 @@
+commit 23d97047885100859650f66c5e34e75660157eaf
+Author:     Elabajaba <Elabajaba@users.noreply.github.com>
+AuthorDate: Fri May 12 05:36:00 2023 -0400
+Commit:     GitHub <noreply@github.com>
+CommitDate: Fri May 12 11:36:00 2023 +0200
+
+    Configurable allocation sizes (#161)
+    
+    This adds an AllocationSizes struct to both the Vulkan and DX12 Allocator and AllocatorCreateDesc which allows users to configure the size of the memory blocks that are created to be suballocated from.
+    
+    This doesn't currently clamp it to 256MB, which afaik is a problem for systems that don't support Resizable BAR, but I also don't know how to properly detect if someone is or isn't using Resizable BAR.
+    
+    I also don't know if we need to enforce alignment, and if so what values do we need to use for alignment?
+    
+    Commits:
+    * add AllocationSizes struct
+    * memblock_size 4MB alignment and clamp between 4MB and 256MB
+    * readme
+
+diff --git a/src/lib.rs b/src/lib.rs
+index 04096d2..f23acc9 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -24,6 +24,7 @@
+ //!     physical_device,
+ //!     debug_settings: Default::default(),
+ //!     buffer_device_address: true,  // Ideally, check the BufferDeviceAddressFeatures struct.
++//!     allocation_sizes: Default::default(),
+ //! });
+ //! # }
+ //! # #[cfg(not(feature = "vulkan"))]
+@@ -48,6 +49,7 @@
+ //! #     physical_device,
+ //! #     debug_settings: Default::default(),
+ //! #     buffer_device_address: true,  // Ideally, check the BufferDeviceAddressFeatures struct.
++//! #     allocation_sizes: Default::default(),
+ //! # }).unwrap();
+ //!
+ //! // Setup vulkan info
+@@ -89,6 +91,7 @@
+ //! let mut allocator = Allocator::new(&AllocatorCreateDesc {
+ //!     device,
+ //!     debug_settings: Default::default(),
++//!     allocation_sizes: Default::default(),
+ //! });
+ //! # }
+ //! # #[cfg(not(feature = "d3d12"))]
+@@ -108,6 +111,7 @@
+ //! # let mut allocator = Allocator::new(&AllocatorCreateDesc {
+ //! #     device: device,
+ //! #     debug_settings: Default::default(),
++//! #     allocation_sizes: Default::default(),
+ //! # }).unwrap();
+ //!
+ //! let buffer_desc = Direct3D12::D3D12_RESOURCE_DESC {
+@@ -210,3 +214,58 @@ impl Default for AllocatorDebugSettings {
+         }
+     }
+ }
++
++/// The sizes of the memory blocks that the allocator will create.
++///
++/// Useful for tuning the allocator to your application's needs. For example most games will be fine with the default
++/// values, but eg. an app might want to use smaller block sizes to reduce the amount of memory used.
++///
++/// Clamped between 4MB and 256MB, and rounds up to the nearest multiple of 4MB for alignment reasons.
++#[derive(Clone, Copy, Debug)]
++pub struct AllocationSizes {
++    /// The size of the memory blocks that will be created for the GPU only memory type.
++    ///
++    /// Defaults to 256MB.
++    device_memblock_size: u64,
++    /// The size of the memory blocks that will be created for the CPU visible memory types.
++    ///
++    /// Defaults to 64MB.
++    host_memblock_size: u64,
++}
++
++impl AllocationSizes {
++    pub fn new(device_memblock_size: u64, host_memblock_size: u64) -> Self {
++        const FOUR_MB: u64 = 4 * 1024 * 1024;
++        const TWO_HUNDRED_AND_FIFTY_SIX_MB: u64 = 256 * 1024 * 1024;
++
++        let mut device_memblock_size =
++            device_memblock_size.clamp(FOUR_MB, TWO_HUNDRED_AND_FIFTY_SIX_MB);
++        let mut host_memblock_size = host_memblock_size.clamp(FOUR_MB, TWO_HUNDRED_AND_FIFTY_SIX_MB);
++
++        if device_memblock_size % FOUR_MB != 0 {
++            let val = device_memblock_size / FOUR_MB + 1;
++            device_memblock_size = val * FOUR_MB;
++            log::warn!("Device memory block size must be a multiple of 4MB, clamping to {}MB", device_memblock_size / 1024 / 1024)
++        }
++        
++        if host_memblock_size % FOUR_MB != 0 {
++            let val = host_memblock_size / FOUR_MB + 1;
++            host_memblock_size = val * FOUR_MB;
++            log::warn!("Host memory block size must be a multiple of 4MB, clamping to {}MB", host_memblock_size / 1024 / 1024)
++        }
++
++        Self {
++            device_memblock_size,
++            host_memblock_size,
++        }
++    }
++}
++
++impl Default for AllocationSizes {
++    fn default() -> Self {
++        Self {
++            device_memblock_size: 256 * 1024 * 1024,
++            host_memblock_size: 64 * 1024 * 1024,
++        }
++    }
++}

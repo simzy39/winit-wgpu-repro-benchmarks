@@ -1,0 +1,623 @@
+[
+  {
+    "id": 53734,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53734",
+    "sha256": "276d1fdb07b47544e7d736ce3c8ce244393201d1b371ec82e7b3cbc983557474",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 8294236160,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ]
+        ]
+      },
+      "1": {
+        "size": 12733411328,
+        "flags": [],
+        "types": [
+          [],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53724,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53724",
+    "sha256": "560aa9dc6aa49f62ee111a524b83654fc440b33d12fffc514a89543d56cab7bc",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 8407482368,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ]
+        ]
+      },
+      "1": {
+        "size": 17139750912,
+        "flags": [],
+        "types": [
+          [],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ]
+        ]
+      },
+      "2": {
+        "size": 224395264,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53706,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53706",
+    "sha256": "6e274b4a34f34ef04463f2437e83728d90fb224336c33dba768813c754bcfb5b",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 8432648192,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ]
+        ]
+      },
+      "1": {
+        "size": 17044152320,
+        "flags": [],
+        "types": [
+          [],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ]
+        ]
+      },
+      "2": {
+        "size": 4250927104,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53681,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53681",
+    "sha256": "cc4929721dc484301057b92e0f02dd4a3052b728bf42ef30fbccc772d02012bf",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 17027432448,
+        "flags": [],
+        "types": [
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ]
+        ]
+      },
+      "1": {
+        "size": 17163091968,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53621,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53621",
+    "sha256": "68312edbf4cec1b5ce8aaaa2f7297ebd76b67572e520ee5b604d75f1c3df202b",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 16703946752,
+        "flags": [],
+        "types": [
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ]
+        ]
+      },
+      "1": {
+        "size": 17163091968,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53443,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53443",
+    "sha256": "02a59831c0692f93570ebfdcf568ee3f541181a78380e4a9eb93883f3880fcb7",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 8491368448,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ]
+        ]
+      },
+      "1": {
+        "size": 34210889728,
+        "flags": [],
+        "types": [
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53710,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53710",
+    "sha256": "fca1113c46ff6ada07505c74eed46a546bfe5169cb757a9b2776e48caf32f2fb",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 8549085184,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53744,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53744",
+    "sha256": "4c32ef6b12a8608c791d2d2fe61cd7a023a768e733f7e5624d38c2fe68c73d8d",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 5648072704,
+        "flags": [],
+        "types": [
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ]
+        ]
+      },
+      "1": {
+        "size": 11296153600,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "DEVICE_COHERENT_BIT_AMD",
+            "DEVICE_UNCACHED_BIT_AMD"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53741,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53741",
+    "sha256": "e1c38585fdbbbf0773a28a177ae62c1326be89fa44a612044fce9992d416af97",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 3916648448,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "LAZILY_ALLOCATED_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53733,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53733",
+    "sha256": "cf6b24ff3429a848a67a52d24f2ea1831dafb40ac7059f158b833b365998d8f6",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 11802947584,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "LAZILY_ALLOCATED_BIT"
+          ]
+        ]
+      },
+      "1": {
+        "size": 268435456,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT",
+            "PROTECTED_BIT"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": 53743,
+    "url": "https://vulkan.gpuinfo.org/displayreport.php?id=53743",
+    "sha256": "72cd885adcdf647fd3ea44aabfb4555b2944bac938acde567fe5539e1a10a693",
+    "tables_equal": true,
+    "heaps": {
+      "0": {
+        "size": 34359738368,
+        "flags": [
+          "DEVICE_LOCAL_BIT"
+        ],
+        "types": [
+          [
+            "DEVICE_LOCAL_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "HOST_VISIBLE_BIT",
+            "HOST_COHERENT_BIT",
+            "HOST_CACHED_BIT"
+          ],
+          [
+            "DEVICE_LOCAL_BIT",
+            "LAZILY_ALLOCATED_BIT"
+          ]
+        ]
+      }
+    }
+  }
+]

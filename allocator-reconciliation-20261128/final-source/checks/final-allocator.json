@@ -1,0 +1,196 @@
+[
+  {
+    "name": "std",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final"
+    ],
+    "rc": 0,
+    "wall_s": 13.791571000008844
+  },
+  {
+    "name": "nostd",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final"
+    ],
+    "rc": 0,
+    "wall_s": 23.581284899963066
+  },
+  {
+    "name": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--all-targets",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 20.145736299920827
+  },
+  {
+    "name": "clippy-nostd",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 54.9037700999761
+  },
+  {
+    "name": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--no-deps",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final"
+    ],
+    "rc": 0,
+    "wall_s": 7.273025200003758
+  },
+  {
+    "name": "aarch64-apple-darwin",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,metal",
+      "--lib",
+      "--target",
+      "aarch64-apple-darwin",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final"
+    ],
+    "rc": 0,
+    "wall_s": 30.776128400000744
+  },
+  {
+    "name": "x86_64-apple-darwin",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,metal",
+      "--lib",
+      "--target",
+      "x86_64-apple-darwin",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-final"
+    ],
+    "rc": 0,
+    "wall_s": 8.426955200033262
+  },
+  {
+    "name": "msrv-std-vulkan",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\final-std-vulkan\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 49.50356069998816
+  },
+  {
+    "name": "msrv-std-d3d12",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\final-std-d3d12\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 82.6867461000802
+  },
+  {
+    "name": "msrv-nostd-vulkan",
+    "command": [
+      "cargo",
+      "+1.81.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\final-nostd-vulkan\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 44.23805419995915
+  },
+  {
+    "name": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "-p",
+      "gpu-allocator",
+      "--",
+      "--check"
+    ],
+    "rc": 0,
+    "wall_s": 1.1324110000859946
+  }
+]

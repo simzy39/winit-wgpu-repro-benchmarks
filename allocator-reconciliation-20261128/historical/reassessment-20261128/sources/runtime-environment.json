@@ -1,0 +1,20 @@
+{
+  "os": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "TotalVisibleMemorySize": 16471416
+  },
+  "cpu": {
+    "Name": "Intel(R) Core(TM) Ultra 7 155H",
+    "NumberOfCores": 16,
+    "NumberOfLogicalProcessors": 22
+  },
+  "gpu": {
+    "Name": "Intel(R) Arc(TM) Graphics",
+    "DriverVersion": "31.0.101.5328"
+  },
+  "power": "Power Scheme GUID: 42a0edc3-d13a-40d3-b8d0-70372f50ea7c  (Acer)",
+  "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "cargo": "cargo 1.100.0 (3acc79c0c 2026-11-05)"
+}

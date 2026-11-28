@@ -1,0 +1,241 @@
+{
+  "base": "60cef2be828e03ba54e2e1598001b4625c0c2163",
+  "control_change": "tests/src/init.rs clears GPU_BASED_VALIDATION after required test flags; core validation asserted enabled. Not a conformance configuration.",
+  "source_status": " M tests/src/init.rs\n",
+  "lock_unchanged": true,
+  "allocator": "unmodified registry dependency, no override",
+  "our_wgpu_pr_patches": [],
+  "build_command": [
+    "cargo",
+    "nextest",
+    "list",
+    "--locked",
+    "--all-features",
+    "-p",
+    "wgpu-test",
+    "--test",
+    "wgpu-gpu",
+    "--message-format",
+    "json",
+    "--list-type",
+    "binaries-only"
+  ],
+  "isolated_target": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-core-validation",
+  "excluded_seed_patterns": [
+    "wgpu",
+    "naga",
+    "gpu_allocator",
+    "gpu-allocator"
+  ],
+  "verified_recompiled_local_crates": true,
+  "binary_sha256": "d69e20844ae74e91b36d8ebbae542b9558556ead5725f823dd7e8c108f09f7a9",
+  "rows": [
+    {
+      "trial": 1,
+      "rc": 100,
+      "verified_core_true_gpuav_false_markers": 10,
+      "gpuav_enabled_layer_warning_present": false,
+      "outcomes": [
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+          "failed": true,
+          "type": "test timeout",
+          "details": null
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+          "failed": false,
+          "type": null,
+          "details": null
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "rc": 100,
+      "verified_core_true_gpuav_false_markers": 10,
+      "gpuav_enabled_layer_warning_present": false,
+      "outcomes": [
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+          "failed": false,
+          "type": null,
+          "details": null
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+          "failed": false,
+          "type": null,
+          "details": null
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "rc": 100,
+      "verified_core_true_gpuav_false_markers": 10,
+      "gpuav_enabled_layer_warning_present": false,
+      "outcomes": [
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+          "failed": false,
+          "type": null,
+          "details": null
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+          "failed": true,
+          "type": "test abort",
+          "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)"
+        },
+        {
+          "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+          "failed": false,
+          "type": null,
+          "details": null
+        }
+      ]
+    }
+  ],
+  "frozen_binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\core-validation-bin\\wgpu_gpu-536b1e1bb9a20352.exe",
+  "replay_metadata": "sources/core-validation-frozen-binaries.json",
+  "source_snapshot": "sources/core-validation-init.rs"
+}

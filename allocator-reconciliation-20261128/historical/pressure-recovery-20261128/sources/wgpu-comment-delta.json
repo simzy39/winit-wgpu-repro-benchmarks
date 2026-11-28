@@ -1,0 +1,5 @@
+{
+  "before_sha256": "24768b65a16e25343f6b75b4fdc2659b5ea3293c35a33c046c404bd8d57971bd",
+  "after_sha256": "b210eb72fa6d17c2f62f42b60ef56a348687771dad9fc9b474b779a099cc6a5a",
+  "scope": "Three documentation comment lines only; no executable code changes after the native suite."
+}

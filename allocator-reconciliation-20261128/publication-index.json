@@ -1,0 +1,137 @@
+{
+  "contributions": {
+    "gpa-rollback-issue": {
+      "number": 325,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/issues/325",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "issue",
+      "title": "D3D12 create_resource leaks reserved allocations on creation and option errors",
+      "head_sha": null
+    },
+    "gpa-vulkan-issue": {
+      "number": 326,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/issues/326",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "issue",
+      "title": "Vulkan fallback can exceed heap capacity, mask fatal errors and select feature-dependent memory",
+      "head_sha": null
+    },
+    "gpa-rollback-pr": {
+      "number": 327,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/pull/327",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "pr",
+      "title": "Fix D3D12 resource creation allocation rollback",
+      "head_sha": "8b08388331e0479c965cd602557bbf8feade500c"
+    },
+    "gpa-vulkan-pr": {
+      "number": 328,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/pull/328",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "pr",
+      "title": "Respect Vulkan allocation limits and preserve fallback error causes",
+      "head_sha": "2e51b293fc4561d2c4d63329e3b926e665ba57f5"
+    },
+    "gpa-pressure-issue": {
+      "number": 329,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/issues/329",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "issue",
+      "title": "Allocations can fail while reclaimable empty blocks remain cached",
+      "head_sha": null
+    },
+    "gpa-metal-texture-issue": {
+      "number": 330,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/issues/330",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "issue",
+      "title": "Metal texture allocation descriptor loses Shared storage-mode compatibility",
+      "head_sha": null
+    },
+    "gpa-metal-intel-issue": {
+      "number": 331,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/issues/331",
+      "repo": "Traverse-Research/gpu-allocator",
+      "kind": "issue",
+      "title": "Metal CPU-accessible placement heaps are attempted on Intel macOS without a supported strategy",
+      "head_sha": null
+    },
+    "wgpu-rollback-issue": {
+      "number": 11142,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11142",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "DX12 placed-resource creation errors abandon gpu-allocator allocations",
+      "head_sha": null
+    },
+    "wgpu-gpuav-issue": {
+      "number": 11143,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11143",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "Intel Windows Vulkan ray-query and TLAS tests abort depending on GPUAV configuration",
+      "head_sha": null
+    },
+    "wgpu-mesh-issue": {
+      "number": 11144,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "Eight Intel Windows Vulkan mesh tests fast-fail even without the validation layer",
+      "head_sha": null
+    },
+    "wgpu-crosspool-issue": {
+      "number": 11145,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11145",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "DX12 transient/general pools need coordinated empty-cache reclamation under pressure",
+      "head_sha": null
+    }
+  },
+  "sources": [
+    {
+      "name": "gpa-rollback",
+      "head": "8b08388331e0479c965cd602557bbf8feade500c",
+      "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+      "patch": "gpa-rollback.patch",
+      "committed": true
+    },
+    {
+      "name": "gpa-vulkan",
+      "head": "99e3979dae3a7c4e8300c33cea681a175f1b3747",
+      "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+      "patch": "gpa-vulkan.patch",
+      "committed": true
+    },
+    {
+      "name": "gpa-sizing",
+      "head": "693a9fb44e7d6effa20f988217524c61553f95fe",
+      "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+      "patch": "gpa-sizing.patch",
+      "committed": true
+    },
+    {
+      "name": "wgpu-rollback",
+      "head": "58e05c149e854c2312474182cd0a3ed08e66603f",
+      "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+      "patch": "wgpu-rollback.patch",
+      "committed": true
+    },
+    {
+      "name": "wgpu-lazy",
+      "head": "19244b7c845bfcf17d57d73137a858ebef64eabb",
+      "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+      "patch": "wgpu-lazy.patch",
+      "committed": true
+    },
+    {
+      "name": "wgpu-transient",
+      "head": "219e80584bdf325890a7111e8dc8e07163885fe4",
+      "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+      "patch": "wgpu-transient.patch",
+      "committed": true
+    }
+  ],
+  "validation_note": "Historical native full-suite and final-source checks are distinct. Unfinished publication-source runs are not claimed as complete. See final-source/checks and the completed publication report."
+}

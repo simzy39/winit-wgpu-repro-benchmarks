@@ -1,0 +1,155 @@
+[
+  {
+    "trial": 1,
+    "mode": "original-path",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\wgpu-failure-controls\\candidate-bin\\wgpu_gpu-83e6ce6aa9068e8a.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 100,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 1,
+    "mode": "new-dir-original-name",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\identity-controls\\bin\\wgpu_gpu-83e6ce6aa9068e8a.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 100,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 1,
+    "mode": "new-dir-short-name",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\identity-controls\\bin\\gpu-test.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 2,
+    "mode": "new-dir-short-name",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\identity-controls\\bin\\gpu-test.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 2,
+    "mode": "new-dir-original-name",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\identity-controls\\bin\\wgpu_gpu-83e6ce6aa9068e8a.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 100,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 2,
+    "mode": "original-path",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\wgpu-failure-controls\\candidate-bin\\wgpu_gpu-83e6ce6aa9068e8a.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 100,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 3,
+    "mode": "original-path",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\wgpu-failure-controls\\candidate-bin\\wgpu_gpu-83e6ce6aa9068e8a.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 100,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 3,
+    "mode": "new-dir-original-name",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\identity-controls\\bin\\wgpu_gpu-83e6ce6aa9068e8a.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 100,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "trial": 3,
+    "mode": "new-dir-short-name",
+    "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\identity-controls\\bin\\gpu-test.exe",
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  }
+]

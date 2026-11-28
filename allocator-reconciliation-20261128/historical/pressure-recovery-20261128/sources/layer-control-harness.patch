@@ -1,0 +1,49 @@
+diff --git a/tests/src/init.rs b/tests/src/init.rs
+index 7464b0d..3533f03 100644
+--- a/tests/src/init.rs
++++ b/tests/src/init.rs
+@@ -63,8 +63,25 @@ pub fn initialize_instance(backends: wgpu::Backends, params: &TestParameters) ->
+         .with_env()
+         .union(params.required_instance_flags)
+         .difference(params.forbidden_instance_flags);
++    // Diagnostic control only: retain one executable/path for both modes.
++    let core_only = std::env::var_os("GPUA_DIAGNOSTIC_CORE_ONLY").is_some();
++    let flags = if core_only {
++        flags - wgpu::InstanceFlags::GPU_BASED_VALIDATION
++    } else {
++        flags
++    };
++    let no_layer = std::env::var_os("GPUA_DIAGNOSTIC_NO_LAYER").is_some();
++    let flags = if no_layer {
++        flags - wgpu::InstanceFlags::VALIDATION
++    } else {
++        flags
++    };
++    assert_eq!(flags.contains(wgpu::InstanceFlags::VALIDATION), !no_layer);
++    assert_eq!(flags.contains(wgpu::InstanceFlags::GPU_BASED_VALIDATION), !core_only);
+ 
+-    Instance::new(wgpu::InstanceDescriptor {
++
++
++    let instance = Instance::new(wgpu::InstanceDescriptor {
+         backends,
+         flags,
+         memory_budget_thresholds: wgpu::MemoryBudgetThresholds {
+@@ -114,7 +131,16 @@ pub fn initialize_instance(backends: wgpu::Backends, params: &TestParameters) ->
+             any(target_os = "emscripten", feature = "webgl")
+         ))]
+         display: Some(Box::new(WebDisplayHandle)),
+-    })
++     });
++    #[link(name = "kernel32")]
++    unsafe extern "system" {
++        fn GetModuleHandleA(name: *const u8) -> *mut core::ffi::c_void;
++    }
++    let loaded = unsafe {
++        !GetModuleHandleA(b"VkLayer_khronos_validation.dll\0".as_ptr()).is_null()
++    };
++    eprintln!("LAYER_FLAG_CONTROL: core={} gpuav=false vvl_loaded={loaded}", !no_layer);
++    instance
+ }
+ 
+ /// Initialize a wgpu adapter, using the given adapter report to match the adapter.

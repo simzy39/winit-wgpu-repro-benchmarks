@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323#discussion_r4717871931",
+      "body": "Not sure if this is true, D3D12_HEAP_TYPE_READBACK might also be non host.",
+      "user": {
+        "login": "Jasper-Bekkers",
+        "name": "Jasper-Bekkers",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/49594?v=4",
+        "id": 49594
+      },
+      "id": 4717871931,
+      "pull_request_review_id": 6086279974,
+      "in_reply_to_id": null,
+      "created_at": "2026-11-27T09:49:17Z",
+      "updated_at": "2026-11-27T09:52:18Z",
+      "review": null,
+      "side": "RIGHT",
+      "line": 489,
+      "start_line": null,
+      "path": "src/d3d12/mod.rs",
+      "body_html": "<p dir=\"auto\">Not sure if this is true, D3D12_HEAP_TYPE_READBACK might also be non host.</p>"
+    },
+    {
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323#discussion_r4717880229",
+      "body": "Metal is typically a UMA architecture (on the apple silicon at least) so host/non host distinction is odd to make.",
+      "user": {
+        "login": "Jasper-Bekkers",
+        "name": "Jasper-Bekkers",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/49594?v=4",
+        "id": 49594
+      },
+      "id": 4717880229,
+      "pull_request_review_id": 6086279974,
+      "in_reply_to_id": null,
+      "created_at": "2026-11-27T09:50:08Z",
+      "updated_at": "2026-11-27T09:52:18Z",
+      "review": null,
+      "side": "RIGHT",
+      "line": 404,
+      "start_line": null,
+      "path": "src/metal/mod.rs",
+      "body_html": "<p dir=\"auto\">Metal is typically a UMA architecture (on the apple silicon at least) so host/non host distinction is odd to make.</p>"
+    },
+    {
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323#discussion_r4717890628",
+      "body": "This probably should check DEVICE_LOCAL instead, since DEVICE_LOCAL | HOST_VISIBLE is an option, but HOST_VISIBLE is decoupled from it for a reason.",
+      "user": {
+        "login": "Jasper-Bekkers",
+        "name": "Jasper-Bekkers",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/49594?v=4",
+        "id": 49594
+      },
+      "id": 4717890628,
+      "pull_request_review_id": 6086279974,
+      "in_reply_to_id": null,
+      "created_at": "2026-11-27T09:51:05Z",
+      "updated_at": "2026-11-27T09:52:18Z",
+      "review": null,
+      "side": "RIGHT",
+      "line": 680,
+      "start_line": null,
+      "path": "src/vulkan/mod.rs",
+      "body_html": "<p dir=\"auto\">This probably should check DEVICE_LOCAL instead, since DEVICE_LOCAL | HOST_VISIBLE is an option, but HOST_VISIBLE is decoupled from it for a reason.</p>"
+    },
+    {
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323#pullrequestreview-6086279974",
+      "body": "Looks like some mistakes with the host/device toggle made their way in, or I'm mis-understanding what the `is_host` boolean should be doing.",
+      "user": {
+        "login": "Jasper-Bekkers",
+        "name": "Jasper-Bekkers",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/49594?u=5507b439f521d07ae5dd75f0c4d59a363ffa4de9&v=4",
+        "id": 49594
+      },
+      "id": 6086279974,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": "2026-11-27T09:52:18Z",
+      "updated_at": null,
+      "review": "COMMENTED",
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">Looks like some mistakes with the host/device toggle made their way in, or I'm mis-understanding what the <code class=\"notranslate\">is_host</code> boolean should be doing.</p>"
+    },
+    {
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323#issuecomment-7217925969",
+      "body": "@Jasper-Bekkers \r\n\r\n> Looks like some mistakes with the host/device toggle made their way in, or I'm mis-understanding what the `is_host` boolean should be doing.\r\n\r\nHi Jasper, the `is_host` boolean here is used to select the same `AllocationSizes` policy as the existing allocation path. All three checks are identical to those already present in `MemoryType::allocate()`, but they are problematic and you have found real issues.\r\n\r\nThe intention is to keep allocation and deallocation consistent, rather than introduce or change the host/device classification. If the existing classification needs correcting, I am happy to do that in another PR or would you like me to expand the scope of this PR and do that work here too? (I am up for it.)",
+      "user": {
+        "login": "simzy39",
+        "name": "simzy39",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/45438677?v=4",
+        "id": 45438677
+      },
+      "id": 7217925969,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": "2026-11-27T12:10:28Z",
+      "updated_at": "2026-11-27T12:19:19Z",
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Jasper-Bekkers/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Jasper-Bekkers\">@Jasper-Bekkers</a></p>\n<blockquote>\n<p dir=\"auto\">Looks like some mistakes with the host/device toggle made their way in, or I'm mis-understanding what the <code class=\"notranslate\">is_host</code> boolean should be doing.</p>\n</blockquote>\n<p dir=\"auto\">Hi Jasper, the <code class=\"notranslate\">is_host</code> boolean here is used to select the same <code class=\"notranslate\">AllocationSizes</code> policy as the existing allocation path. All three checks are identical to those already present in <code class=\"notranslate\">MemoryType::allocate()</code>, but they are problematic and you have found real issues.</p>\n<p dir=\"auto\">The intention is to keep allocation and deallocation consistent, rather than introduce or change the host/device classification. If the existing classification needs correcting, I am happy to do that in another PR or would you like me to expand the scope of this PR and do that work here too? (I am up for it.)</p>"
+    },
+    {
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323#issuecomment-7218357763",
+      "body": "Actually, I'll expand this Pr's scope because fixing the allocators will affect whether I can simplify/change this Pr's code.",
+      "user": {
+        "login": "simzy39",
+        "name": "simzy39",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/45438677?v=4",
+        "id": 45438677
+      },
+      "id": 7218357763,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": "2026-11-27T12:32:12Z",
+      "updated_at": "2026-11-27T12:32:26Z",
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">Actually, I'll expand this Pr's scope because fixing the allocators will affect whether I can simplify/change this Pr's code.</p>"
+    }
+  ],
+  "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323",
+  "title": "Traverse-Research/gpu-allocator PR #323 comments",
+  "display_url": "https://github.com/Traverse-Research/gpu-allocator/pull/323",
+  "display_title": "Traverse-Research/gpu-allocator PR #323 comments"
+}

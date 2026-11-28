@@ -1,0 +1,20 @@
+{
+  "root": "<workspace>\\research\\upstream\\gpu-allocator-classification\\reproduction-source-check-20261128-v2",
+  "checks": [
+    {
+      "path": "work/cache2",
+      "rc": 0,
+      "stderr": ""
+    },
+    {
+      "path": "work/vma",
+      "rc": 0,
+      "stderr": ""
+    },
+    {
+      "path": "downstream/bench/cache2-both",
+      "rc": 0,
+      "stderr": ""
+    }
+  ]
+}

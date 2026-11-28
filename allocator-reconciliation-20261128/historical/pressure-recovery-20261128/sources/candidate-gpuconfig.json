@@ -1,0 +1,1681 @@
+{
+  "devices": [
+    {
+      "info": {
+        "name": "Intel(R) Arc(TM) Graphics",
+        "vendor": 32902,
+        "device": 32085,
+        "device_type": "IntegratedGpu",
+        "device_pci_bus_id": "",
+        "driver": "Intel Corporation",
+        "driver_info": "Intel driver",
+        "backend": "Vulkan",
+        "subgroup_min_size": 8,
+        "subgroup_max_size": 32,
+        "transient_saves_memory": false,
+        "limit_bucket": null
+      },
+      "features": "SHADER_FLOAT32_ATOMIC | TEXTURE_FORMAT_16BIT_NORM | TEXTURE_ADAPTER_SPECIFIC_FORMAT_FEATURES | PIPELINE_STATISTICS_QUERY | TIMESTAMP_QUERY_INSIDE_ENCODERS | TIMESTAMP_QUERY_INSIDE_PASSES | MAPPABLE_PRIMARY_BUFFERS | TEXTURE_BINDING_ARRAY | BUFFER_BINDING_ARRAY | STORAGE_RESOURCE_BINDING_ARRAY | SAMPLED_TEXTURE_AND_STORAGE_BUFFER_ARRAY_NON_UNIFORM_INDEXING | STORAGE_TEXTURE_ARRAY_NON_UNIFORM_INDEXING | PARTIALLY_BOUND_BINDING_ARRAY | DEBUG_PRINTF | MULTI_DRAW_INDIRECT_COUNT | ADDRESS_MODE_CLAMP_TO_ZERO | ADDRESS_MODE_CLAMP_TO_BORDER | POLYGON_MODE_LINE | POLYGON_MODE_POINT | CONSERVATIVE_RASTERIZATION | VERTEX_WRITABLE_STORAGE | CLEAR_TEXTURE | EXPERIMENTAL_RAY_TRACING_PIPELINES | MULTIVIEW | TEXTURE_ATOMIC | TEXTURE_FORMAT_NV12 | EXPERIMENTAL_RAY_QUERY | SHADER_I16 | SHADER_EARLY_DEPTH_TEST | SHADER_INT64 | SUBGROUP | SUBGROUP_VERTEX | SUBGROUP_BARRIER | PIPELINE_CACHE | EXPERIMENTAL_MESH_SHADER | EXTENDED_ACCELERATION_STRUCTURE_VERTEX_FORMATS | PASSTHROUGH_SHADERS | SELECTIVE_MULTIVIEW | EXPERIMENTAL_MESH_SHADER_POINTS | MULTISAMPLE_ARRAY | SHADER_DRAW_INDEX | ACCELERATION_STRUCTURE_BINDING_ARRAY | MEMORY_DECORATION_COHERENT | MEMORY_DECORATION_VOLATILE | UNRESTRICTED_BYTES_PER_ROW | CORE_FEATURES_AND_LIMITS | DEPTH_CLIP_CONTROL | DEPTH32FLOAT_STENCIL8 | TEXTURE_COMPRESSION_BC | TEXTURE_COMPRESSION_BC_SLICED_3D | TEXTURE_COMPRESSION_ETC2 | TIMESTAMP_QUERY | INDIRECT_FIRST_INSTANCE | SHADER_F16 | RG11B10UFLOAT_RENDERABLE | BGRA8UNORM_STORAGE | FLOAT32_FILTERABLE | FLOAT32_BLENDABLE | DUAL_SOURCE_BLENDING | CLIP_DISTANCES | IMMEDIATES | PRIMITIVE_INDEX | TEXTURE_COMPONENT_SWIZZLE",
+      "limits": {
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxTextureArrayLayers": 2048,
+        "maxBindGroups": 8,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 33554432,
+        "maxDynamicUniformBuffersPerPipelineLayout": 16,
+        "maxDynamicStorageBuffersPerPipelineLayout": 16,
+        "maxSampledTexturesPerShaderStage": 3355441,
+        "maxSamplersPerShaderStage": 3355442,
+        "maxStorageBuffersPerShaderStage": 3355442,
+        "maxStorageBuffersInVertexStage": 3355442,
+        "maxStorageBuffersInFragmentStage": 3355442,
+        "maxStorageTexturesPerShaderStage": 3355442,
+        "maxStorageTexturesInVertexStage": 3355442,
+        "maxStorageTexturesInFragmentStage": 3355442,
+        "maxUniformBuffersPerShaderStage": 3355441,
+        "maxBindingArrayElementsPerShaderStage": 33554432,
+        "maxBindingArrayAccelerationStructureElementsPerShaderStage": 8,
+        "maxBindingArraySamplerElementsPerShaderStage": 33554432,
+        "maxUniformBufferBindingSize": 134217724,
+        "maxStorageBufferBindingSize": 1073741820,
+        "maxVertexBuffers": 16,
+        "maxBufferSize": 4294967295,
+        "maxVertexAttributes": 32,
+        "maxVertexBufferArrayStride": 4092,
+        "maxInterStageShaderVariables": 31,
+        "minUniformBufferOffsetAlignment": 64,
+        "minStorageBufferOffsetAlignment": 64,
+        "maxColorAttachments": 8,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupsPerDimension": 65536,
+        "maxImmediateSize": 256,
+        "maxNonSamplerBindings": 4294967295,
+        "maxTaskWorkgroupTotalCount": 4194304,
+        "maxTaskWorkgroupsPerDimension": 65535,
+        "maxMeshWorkgroupTotalCount": 4194304,
+        "maxMeshWorkgroupsPerDimension": 65535,
+        "maxTaskInvocationsPerWorkgroup": 1024,
+        "maxTaskInvocationsPerDimension": 1024,
+        "maxMeshInvocationsPerWorkgroup": 1024,
+        "maxMeshInvocationsPerDimension": 1024,
+        "maxTaskPayloadSize": 65504,
+        "maxMeshOutputVertices": 1024,
+        "maxMeshOutputPrimitives": 1024,
+        "maxMeshOutputLayers": 2048,
+        "maxMeshMultiviewViewCount": 1,
+        "maxBlasPrimitiveCount": 536870911,
+        "maxBlasGeometryCount": 16777215,
+        "maxTlasInstanceCount": 16777215,
+        "maxAccelerationStructuresPerShaderStage": 8,
+        "maxBuffersAndAccelerationStructuresPerShaderStage": 4294967295,
+        "maxMultiviewViewCount": 16,
+        "maxRayDispatchCount": 4294967295,
+        "maxRayRecursionDepth": 256
+      },
+      "downlevel_caps": {
+        "flags": "COMPUTE_SHADERS | FRAGMENT_WRITABLE_STORAGE | INDIRECT_EXECUTION | BASE_VERTEX | READ_ONLY_DEPTH_STENCIL | NON_POWER_OF_TWO_MIPMAPPED_TEXTURES | CUBE_ARRAY_TEXTURES | COMPARISON_SAMPLERS | INDEPENDENT_BLEND | VERTEX_STORAGE | ANISOTROPIC_FILTERING | FRAGMENT_STORAGE | MULTISAMPLED_SHADING | DEPTH_TEXTURE_AND_BUFFER_COPIES | WEBGPU_TEXTURE_FORMAT_SUPPORT | BUFFER_BINDINGS_NOT_16_BYTE_ALIGNED | UNRESTRICTED_INDEX_BUFFER | FULL_DRAW_INDEX_UINT32 | DEPTH_BIAS_CLAMP | VIEW_FORMATS | UNRESTRICTED_EXTERNAL_TEXTURE_COPIES | SURFACE_VIEW_FORMATS | NONBLOCKING_QUERY_RESOLVE | MSL2_1 | TEXTURE_COMPRESSION | LINEAR_INTERPOLATION | ARBITRARY_BINDING_VIEW_DIMENSIONS",
+        "limits": {},
+        "shader_model": "Sm5"
+      },
+      "texture_format_features": {
+        "bc4-r-snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rg32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "bc1-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-12x10-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rg16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-10x8-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "eac-r11snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc1-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgb10a2uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC | BLENDABLE"
+        },
+        "astc-5x5-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgba16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "r32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC"
+        },
+        "rgb9e5ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "bc3-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-12x10-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-12x10-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x6-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc3-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-4x4-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rg32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-8x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "r8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "etc2-rgb8a1unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-5x5-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "eac-rg11unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-4x4-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "etc2-rgba8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "r8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-5x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "depth32float-stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "r32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC"
+        },
+        "rg16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "eac-r11unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc4-r-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "r64uint": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "bc2-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rg8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "etc2-rgb8a1unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x5-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc2-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x6-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "eac-rg11snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x5-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x8-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "depth24plus-stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "rgba8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-10x5-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc5-rg-snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bgra8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | BLENDABLE"
+        },
+        "r8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-6x5-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x10-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-12x12-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "nv12": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | BLENDABLE"
+        },
+        "bc7-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-4x4-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x10-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "r16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rg16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgba8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bgra8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-8x6-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "r8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "p010": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "etc2-rgba8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x5-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-12x12-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "depth32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "depth16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "rgba16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgba8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-6x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc7-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x8-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x8-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-12x12-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rg11b10ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "r16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "r16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-6x6-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc6h-rgb-float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-5x4-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rg8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgb10a2unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-10x8-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc6h-rgb-ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc5-rg-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "etc2-rgb8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x6-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x8-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-5x4-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-6x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "rgba32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-6x5-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x10-hdr": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "r16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgba8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "depth24plus": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE"
+        },
+        "astc-5x4-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-6x6-unorm": {
+          "allowed_usages": "",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "etc2-rgb8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        }
+      }
+    },
+    {
+      "info": {
+        "name": "Intel(R) Arc(TM) Graphics",
+        "vendor": 32902,
+        "device": 32085,
+        "device_type": "IntegratedGpu",
+        "device_pci_bus_id": "0000:00:02.0",
+        "driver": "31.0.101.5328",
+        "driver_info": "",
+        "backend": "Dx12",
+        "subgroup_min_size": 8,
+        "subgroup_max_size": 32,
+        "transient_saves_memory": false,
+        "limit_bucket": null
+      },
+      "features": "TEXTURE_FORMAT_16BIT_NORM | TEXTURE_ADAPTER_SPECIFIC_FORMAT_FEATURES | TIMESTAMP_QUERY_INSIDE_ENCODERS | TIMESTAMP_QUERY_INSIDE_PASSES | MAPPABLE_PRIMARY_BUFFERS | TEXTURE_BINDING_ARRAY | STORAGE_RESOURCE_BINDING_ARRAY | SAMPLED_TEXTURE_AND_STORAGE_BUFFER_ARRAY_NON_UNIFORM_INDEXING | STORAGE_TEXTURE_ARRAY_NON_UNIFORM_INDEXING | PARTIALLY_BOUND_BINDING_ARRAY | MULTI_DRAW_INDIRECT_COUNT | ADDRESS_MODE_CLAMP_TO_ZERO | ADDRESS_MODE_CLAMP_TO_BORDER | POLYGON_MODE_LINE | CONSERVATIVE_RASTERIZATION | VERTEX_WRITABLE_STORAGE | CLEAR_TEXTURE | MULTIVIEW | TEXTURE_ATOMIC | TEXTURE_FORMAT_NV12 | TEXTURE_FORMAT_P010 | EXTERNAL_TEXTURE | EXPERIMENTAL_RAY_QUERY | SHADER_I16 | SHADER_EARLY_DEPTH_TEST | SHADER_INT64 | SUBGROUP | EXPERIMENTAL_MESH_SHADER | EXPERIMENTAL_MESH_SHADER_MULTIVIEW | EXTENDED_ACCELERATION_STRUCTURE_VERTEX_FORMATS | PASSTHROUGH_SHADERS | SELECTIVE_MULTIVIEW | ACCELERATION_STRUCTURE_BINDING_ARRAY | MEMORY_DECORATION_COHERENT | UNRESTRICTED_BYTES_PER_ROW | CORE_FEATURES_AND_LIMITS | DEPTH_CLIP_CONTROL | DEPTH32FLOAT_STENCIL8 | TEXTURE_COMPRESSION_BC | TEXTURE_COMPRESSION_BC_SLICED_3D | TIMESTAMP_QUERY | INDIRECT_FIRST_INSTANCE | SHADER_F16 | RG11B10UFLOAT_RENDERABLE | BGRA8UNORM_STORAGE | FLOAT32_FILTERABLE | FLOAT32_BLENDABLE | DUAL_SOURCE_BLENDING | IMMEDIATES | PRIMITIVE_INDEX | TEXTURE_COMPONENT_SWIZZLE",
+      "limits": {
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxTextureArrayLayers": 2048,
+        "maxBindGroups": 8,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 4294967295,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxSampledTexturesPerShaderStage": 393212,
+        "maxSamplersPerShaderStage": 2048,
+        "maxStorageBuffersPerShaderStage": 262144,
+        "maxStorageBuffersInVertexStage": 262144,
+        "maxStorageBuffersInFragmentStage": 262144,
+        "maxStorageTexturesPerShaderStage": 262144,
+        "maxStorageTexturesInVertexStage": 262144,
+        "maxStorageTexturesInFragmentStage": 262144,
+        "maxUniformBuffersPerShaderStage": 1048576,
+        "maxBindingArrayElementsPerShaderStage": 1048576,
+        "maxBindingArrayAccelerationStructureElementsPerShaderStage": 393212,
+        "maxBindingArraySamplerElementsPerShaderStage": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxVertexBuffers": 16,
+        "maxBufferSize": 2147483647,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxInterStageShaderVariables": 31,
+        "minUniformBufferOffsetAlignment": 256,
+        "minStorageBufferOffsetAlignment": 32,
+        "maxColorAttachments": 8,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxImmediateSize": 128,
+        "maxNonSamplerBindings": 1000000,
+        "maxTaskWorkgroupTotalCount": 4194304,
+        "maxTaskWorkgroupsPerDimension": 65535,
+        "maxMeshWorkgroupTotalCount": 4194304,
+        "maxMeshWorkgroupsPerDimension": 65535,
+        "maxTaskInvocationsPerWorkgroup": 768,
+        "maxTaskInvocationsPerDimension": 64,
+        "maxMeshInvocationsPerWorkgroup": 128,
+        "maxMeshInvocationsPerDimension": 128,
+        "maxTaskPayloadSize": 16384,
+        "maxMeshOutputVertices": 256,
+        "maxMeshOutputPrimitives": 256,
+        "maxMeshOutputLayers": 8,
+        "maxMeshMultiviewViewCount": 4,
+        "maxBlasPrimitiveCount": 536870912,
+        "maxBlasGeometryCount": 16777216,
+        "maxTlasInstanceCount": 16777216,
+        "maxAccelerationStructuresPerShaderStage": 393212,
+        "maxBuffersAndAccelerationStructuresPerShaderStage": 4294967295,
+        "maxMultiviewViewCount": 4,
+        "maxRayDispatchCount": 0,
+        "maxRayRecursionDepth": 0
+      },
+      "downlevel_caps": {
+        "flags": "COMPUTE_SHADERS | FRAGMENT_WRITABLE_STORAGE | INDIRECT_EXECUTION | BASE_VERTEX | READ_ONLY_DEPTH_STENCIL | NON_POWER_OF_TWO_MIPMAPPED_TEXTURES | CUBE_ARRAY_TEXTURES | COMPARISON_SAMPLERS | INDEPENDENT_BLEND | VERTEX_STORAGE | ANISOTROPIC_FILTERING | FRAGMENT_STORAGE | MULTISAMPLED_SHADING | DEPTH_TEXTURE_AND_BUFFER_COPIES | WEBGPU_TEXTURE_FORMAT_SUPPORT | BUFFER_BINDINGS_NOT_16_BYTE_ALIGNED | UNRESTRICTED_INDEX_BUFFER | FULL_DRAW_INDEX_UINT32 | DEPTH_BIAS_CLAMP | VIEW_FORMATS | UNRESTRICTED_EXTERNAL_TEXTURE_COPIES | SURFACE_VIEW_FORMATS | NONBLOCKING_QUERY_RESOLVE | MSL2_1 | TEXTURE_COMPRESSION | LINEAR_INTERPOLATION | ARBITRARY_BINDING_VIEW_DIMENSIONS",
+        "limits": {},
+        "shader_model": "Sm5"
+      },
+      "texture_format_features": {
+        "astc-10x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc5-rg-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rg32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-6x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "eac-r11snorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgb8a1unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-12x12-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-5x4-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-6x6-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "depth24plus": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-10x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x8-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "r16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "etc2-rgb8a1unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "depth24plus-stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc4-r-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-10x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x8-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x6-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-5x4-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgba8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc5-rg-snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "etc2-rgb8unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-6x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-6x6-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "depth32float-stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc7-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-10x6-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "etc2-rgb8unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "r8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "depth32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-10x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r64uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "bc6h-rgb-float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-5x4-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-10x8-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc6h-rgb-ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "r16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rg16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc7-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "r32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC"
+        },
+        "nv12": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | BLENDABLE"
+        },
+        "rgba16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgb10a2uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgba16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-4x4-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-5x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x10-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc1-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "r8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-8x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bgra8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgba16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-12x10-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-4x4-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "p010": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | BLENDABLE"
+        },
+        "rgba32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "bgra8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | BLENDABLE"
+        },
+        "astc-5x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x8-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgba16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-4x4-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | BLENDABLE"
+        },
+        "rgba16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-10x10-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-8x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x8-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc3-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "eac-rg11unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-12x12-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC"
+        },
+        "stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc2-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rgb10a2unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-6x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-6x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "eac-rg11snorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "depth16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-8x6-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x8-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc4-r-snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rg11b10ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-12x12-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "eac-r11unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgba8unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc1-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "bc3-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-10x10-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-12x10-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-8x6-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgb9e5ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-12x10-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgba8unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-5x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc2-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        }
+      }
+    },
+    {
+      "info": {
+        "name": "Microsoft Basic Render Driver",
+        "vendor": 5140,
+        "device": 140,
+        "device_type": "Cpu",
+        "device_pci_bus_id": "",
+        "driver": "1.0.20.0",
+        "driver_info": "",
+        "backend": "Dx12",
+        "subgroup_min_size": 4,
+        "subgroup_max_size": 128,
+        "transient_saves_memory": false,
+        "limit_bucket": null
+      },
+      "features": "TEXTURE_FORMAT_16BIT_NORM | TEXTURE_ADAPTER_SPECIFIC_FORMAT_FEATURES | TIMESTAMP_QUERY_INSIDE_ENCODERS | TIMESTAMP_QUERY_INSIDE_PASSES | MAPPABLE_PRIMARY_BUFFERS | TEXTURE_BINDING_ARRAY | STORAGE_RESOURCE_BINDING_ARRAY | SAMPLED_TEXTURE_AND_STORAGE_BUFFER_ARRAY_NON_UNIFORM_INDEXING | STORAGE_TEXTURE_ARRAY_NON_UNIFORM_INDEXING | PARTIALLY_BOUND_BINDING_ARRAY | MULTI_DRAW_INDIRECT_COUNT | ADDRESS_MODE_CLAMP_TO_ZERO | ADDRESS_MODE_CLAMP_TO_BORDER | POLYGON_MODE_LINE | CONSERVATIVE_RASTERIZATION | VERTEX_WRITABLE_STORAGE | CLEAR_TEXTURE | MULTIVIEW | TEXTURE_ATOMIC | TEXTURE_FORMAT_NV12 | TEXTURE_FORMAT_P010 | EXTERNAL_TEXTURE | EXPERIMENTAL_RAY_QUERY | SHADER_I16 | SHADER_EARLY_DEPTH_TEST | SHADER_INT64 | SUBGROUP | SHADER_INT64_ATOMIC_MIN_MAX | SHADER_INT64_ATOMIC_ALL_OPS | TEXTURE_INT64_ATOMIC | EXPERIMENTAL_MESH_SHADER | EXPERIMENTAL_MESH_SHADER_MULTIVIEW | EXTENDED_ACCELERATION_STRUCTURE_VERTEX_FORMATS | PASSTHROUGH_SHADERS | SHADER_BARYCENTRICS | SELECTIVE_MULTIVIEW | SHADER_PER_VERTEX | ACCELERATION_STRUCTURE_BINDING_ARRAY | MEMORY_DECORATION_COHERENT | UNRESTRICTED_BYTES_PER_ROW | CORE_FEATURES_AND_LIMITS | DEPTH_CLIP_CONTROL | DEPTH32FLOAT_STENCIL8 | TEXTURE_COMPRESSION_BC | TEXTURE_COMPRESSION_BC_SLICED_3D | TIMESTAMP_QUERY | INDIRECT_FIRST_INSTANCE | SHADER_F16 | RG11B10UFLOAT_RENDERABLE | BGRA8UNORM_STORAGE | FLOAT32_FILTERABLE | FLOAT32_BLENDABLE | DUAL_SOURCE_BLENDING | IMMEDIATES | PRIMITIVE_INDEX | TEXTURE_COMPONENT_SWIZZLE",
+      "limits": {
+        "maxTextureDimension1D": 16384,
+        "maxTextureDimension2D": 16384,
+        "maxTextureDimension3D": 2048,
+        "maxTextureArrayLayers": 2048,
+        "maxBindGroups": 8,
+        "maxBindGroupsPlusVertexBuffers": 24,
+        "maxBindingsPerBindGroup": 4294967295,
+        "maxDynamicUniformBuffersPerPipelineLayout": 8,
+        "maxDynamicStorageBuffersPerPipelineLayout": 4,
+        "maxSampledTexturesPerShaderStage": 393212,
+        "maxSamplersPerShaderStage": 2048,
+        "maxStorageBuffersPerShaderStage": 262144,
+        "maxStorageBuffersInVertexStage": 262144,
+        "maxStorageBuffersInFragmentStage": 262144,
+        "maxStorageTexturesPerShaderStage": 262144,
+        "maxStorageTexturesInVertexStage": 262144,
+        "maxStorageTexturesInFragmentStage": 262144,
+        "maxUniformBuffersPerShaderStage": 1048576,
+        "maxBindingArrayElementsPerShaderStage": 1048576,
+        "maxBindingArrayAccelerationStructureElementsPerShaderStage": 393212,
+        "maxBindingArraySamplerElementsPerShaderStage": 2048,
+        "maxUniformBufferBindingSize": 65536,
+        "maxStorageBufferBindingSize": 2147483644,
+        "maxVertexBuffers": 16,
+        "maxBufferSize": 2147483647,
+        "maxVertexAttributes": 30,
+        "maxVertexBufferArrayStride": 2048,
+        "maxInterStageShaderVariables": 31,
+        "minUniformBufferOffsetAlignment": 256,
+        "minStorageBufferOffsetAlignment": 32,
+        "maxColorAttachments": 8,
+        "maxColorAttachmentBytesPerSample": 128,
+        "maxComputeWorkgroupStorageSize": 32768,
+        "maxComputeInvocationsPerWorkgroup": 1024,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeWorkgroupSizeY": 1024,
+        "maxComputeWorkgroupSizeZ": 64,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxImmediateSize": 128,
+        "maxNonSamplerBindings": 1000000,
+        "maxTaskWorkgroupTotalCount": 4194304,
+        "maxTaskWorkgroupsPerDimension": 65535,
+        "maxMeshWorkgroupTotalCount": 4194304,
+        "maxMeshWorkgroupsPerDimension": 65535,
+        "maxTaskInvocationsPerWorkgroup": 768,
+        "maxTaskInvocationsPerDimension": 64,
+        "maxMeshInvocationsPerWorkgroup": 128,
+        "maxMeshInvocationsPerDimension": 128,
+        "maxTaskPayloadSize": 16384,
+        "maxMeshOutputVertices": 256,
+        "maxMeshOutputPrimitives": 256,
+        "maxMeshOutputLayers": 8,
+        "maxMeshMultiviewViewCount": 4,
+        "maxBlasPrimitiveCount": 536870912,
+        "maxBlasGeometryCount": 16777216,
+        "maxTlasInstanceCount": 16777216,
+        "maxAccelerationStructuresPerShaderStage": 393212,
+        "maxBuffersAndAccelerationStructuresPerShaderStage": 4294967295,
+        "maxMultiviewViewCount": 4,
+        "maxRayDispatchCount": 0,
+        "maxRayRecursionDepth": 0
+      },
+      "downlevel_caps": {
+        "flags": "COMPUTE_SHADERS | FRAGMENT_WRITABLE_STORAGE | INDIRECT_EXECUTION | BASE_VERTEX | READ_ONLY_DEPTH_STENCIL | NON_POWER_OF_TWO_MIPMAPPED_TEXTURES | CUBE_ARRAY_TEXTURES | COMPARISON_SAMPLERS | INDEPENDENT_BLEND | VERTEX_STORAGE | ANISOTROPIC_FILTERING | FRAGMENT_STORAGE | MULTISAMPLED_SHADING | DEPTH_TEXTURE_AND_BUFFER_COPIES | WEBGPU_TEXTURE_FORMAT_SUPPORT | BUFFER_BINDINGS_NOT_16_BYTE_ALIGNED | UNRESTRICTED_INDEX_BUFFER | FULL_DRAW_INDEX_UINT32 | DEPTH_BIAS_CLAMP | VIEW_FORMATS | UNRESTRICTED_EXTERNAL_TEXTURE_COPIES | SURFACE_VIEW_FORMATS | NONBLOCKING_QUERY_RESOLVE | MSL2_1 | TEXTURE_COMPRESSION | LINEAR_INTERPOLATION | ARBITRARY_BINDING_VIEW_DIMENSIONS",
+        "limits": {},
+        "shader_model": "Sm5"
+      },
+      "texture_format_features": {
+        "astc-12x10-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-5x4-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "bc5-rg-snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "bc7-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-6x6-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-10x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x6-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-5x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-5x4-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x8-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-6x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-8x8-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-12x10-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "depth32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-12x12-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "bc7-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "bc6h-rgb-ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "r32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC"
+        },
+        "rg16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc4-r-snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "r8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "etc2-rgb8unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-6x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-5x4-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rg16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc5-rg-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "r8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-10x10-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgb8unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x8-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-8x6-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r64uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "depth16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rgba8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "p010": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | BLENDABLE"
+        },
+        "r16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-4x4-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "eac-rg11snorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "bc1-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "eac-rg11unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-4x4-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x10-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-6x6-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x10-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-10x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-8x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "depth32float-stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "bc6h-rgb-float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "nv12": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | BLENDABLE"
+        },
+        "astc-4x4-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "depth24plus": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-6x6-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | BLENDABLE"
+        },
+        "r16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "eac-r11unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rg32float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc2-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rgb9e5ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rg16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "etc2-rgba8unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "depth24plus-stencil8": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16"
+        },
+        "astc-8x6-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bgra8unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | BLENDABLE"
+        },
+        "rg8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc2-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rg16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "rg32sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "r16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bgra8unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgba16uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "eac-r11snorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc1-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rg16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rg11b10ufloat": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rgba16unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "rg8sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-5x5-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgb8a1unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc4-r-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "astc-10x8-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "r32uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT | STORAGE_ATOMIC",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | STORAGE_ATOMIC"
+        },
+        "rgba16sint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-10x6-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba16float": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-12x10-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgba8unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgb10a2unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-8x8-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-12x12-unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "bc3-rgba-unorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rg8snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "astc-6x5-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "astc-8x8-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgb10a2uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-5x5-unorm": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "rgba16snorm": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "FILTERABLE | MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | MULTISAMPLE_RESOLVE | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE | BLENDABLE"
+        },
+        "bc3-rgba-unorm-srgb": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING",
+          "flags": "FILTERABLE"
+        },
+        "rg8uint": {
+          "allowed_usages": "COPY_SRC | COPY_DST | TEXTURE_BINDING | STORAGE_BINDING | RENDER_ATTACHMENT | TRANSIENT_ATTACHMENT",
+          "flags": "MULTISAMPLE_X2 | MULTISAMPLE_X4 | MULTISAMPLE_X8 | MULTISAMPLE_X16 | STORAGE_READ_ONLY | STORAGE_WRITE_ONLY | STORAGE_READ_WRITE"
+        },
+        "astc-12x12-hdr": {
+          "allowed_usages": "",
+          "flags": ""
+        },
+        "etc2-rgb8a1unorm-srgb": {
+          "allowed_usages": "",
+          "flags": ""
+        }
+      }
+    }
+  ]
+}

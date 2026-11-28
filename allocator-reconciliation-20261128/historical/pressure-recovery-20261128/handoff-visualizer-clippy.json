@@ -1,0 +1,19 @@
+{
+  "command": [
+    "cargo",
+    "clippy",
+    "--offline",
+    "-p",
+    "gpu-allocator",
+    "--no-default-features",
+    "--features",
+    "std,vulkan,d3d12,visualizer",
+    "--all-targets",
+    "--target-dir",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator",
+    "--",
+    "-D",
+    "warnings"
+  ],
+  "rc": 0
+}

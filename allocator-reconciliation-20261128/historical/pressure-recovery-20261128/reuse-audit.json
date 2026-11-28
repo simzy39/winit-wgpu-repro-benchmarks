@@ -1,0 +1,1453 @@
+{
+  "compared_cells": 180,
+  "matching_cells": 180,
+  "rows": [
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "cache2",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "main",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "manual",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "d3d12",
+      "config": "performance",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "manual",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "burst_release",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "fragmentation",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "large_buffers",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "large_uploads",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "readback_ring",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "small_bursts",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "textures",
+      "differences": {}
+    },
+    {
+      "variant": "pr323",
+      "backend": "vulkan",
+      "config": "performance",
+      "workload": "upload_ring",
+      "differences": {}
+    }
+  ],
+  "provenance": {
+    "main": {
+      "harness_matches_frozen": true,
+      "old_build": {
+        "name": "main",
+        "exe_sha256": "40b3b4508b70770833da69886539cbc8fd8123677cbb857820c92ace72cd2bee",
+        "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lock_sha256": "3710df6d24737383a161a7f04f464eb9eb17842db6de23abe7095889029afb7c",
+        "command": [
+          "cargo",
+          "build",
+          "--release",
+          "--offline",
+          "-p",
+          "gpua-policy-bench",
+          "--target-dir",
+          "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-main"
+        ]
+      },
+      "new_build": {
+        "name": "main",
+        "command": [
+          "cargo",
+          "build",
+          "--release",
+          "--locked",
+          "--offline",
+          "--target-dir",
+          "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-isolated-direct-main",
+          "-p",
+          "gpua-policy-bench"
+        ],
+        "target": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-isolated-direct-main",
+        "exe_sha256": "d112166f1b16ee5bed6c58504291ab884a9dfc2dc78bf3a7bab8342d03b12570",
+        "lock_sha256": "3710df6d24737383a161a7f04f464eb9eb17842db6de23abe7095889029afb7c",
+        "allocator_source_files": {
+          "src\\allocator\\dedicated_block_allocator\\mod.rs": "725e53b8f71ee52e9466100fb200887be751ea9e5d03ebcabf56f07de4d8c504",
+          "src\\allocator\\dedicated_block_allocator\\visualizer.rs": "3fa067994215c69ec93cbf86a3fcbf8c88bb5ed76e3edf29354d8fd5a9b25fde",
+          "src\\allocator\\free_list_allocator\\mod.rs": "1303d99a370dcffd37069d4023d631f241c3769f4ed50b09ce791483a73627d9",
+          "src\\allocator\\free_list_allocator\\visualizer.rs": "e7bcf0bddb83d14ae6fcc0d7b70116b4d15d1a764e51fec6eb55345c6b208125",
+          "src\\allocator\\mod.rs": "489764ec0d313e407082ee8d38b6e698b85b49ae2bdde8d9be5bd1e5b30c6ce2",
+          "src\\d3d12\\mod.rs": "b6837795a8a875dcb5570c5320d6978b63b11af4bbf7f34196a22e82edcc9050",
+          "src\\d3d12\\visualizer.rs": "5d12fad85ebdbea95a922a6df70fb80f4cde2b8fa8f2fad99a1127668144e440",
+          "src\\lib.rs": "129f4a431878bca4b9f1a8dffbf67db4215fc5a0b91612240c03474133563c9d",
+          "src\\metal\\mod.rs": "e0b5063b89883368642af02880f567723a25bb4df3a66d5a3af5b6d9143155ad",
+          "src\\metal\\visualizer.rs": "b1632142d4fb0331ca71fa230d5882b9697c13f22dd795501ca09f1aa9c52c70",
+          "src\\result.rs": "0daa430ca3eec5b87338a4330097130456cda4f0bcac57550542dfb16e0f7c18",
+          "src\\visualizer\\allocation_reports.rs": "3f4275f53243c9977c8967e02c6cfe62f3f941873c96c69e052b7056db05b351",
+          "src\\visualizer\\memory_chunks.rs": "c4f5710f11e08cc6c1c065376e5f8a467f3f082f075e37bece0ab332fa043f0f",
+          "src\\visualizer\\mod.rs": "a7d605b5d0c4f08be38cb30b10689a7bb4ead6d48bc763a2d33941378a6eed54",
+          "src\\vulkan\\mod.rs": "c519b93c21e2f65344fe379750d1fe08b382e4d074adc00e6c0e4542725c65a0",
+          "src\\vulkan\\visualizer.rs": "1b1986965239503b887f714efeb213cd5c7be52cca263fc2ff82a0e72b6761a1"
+        },
+        "excluded_seed_patterns": [
+          "gpu_allocator",
+          "gpu-allocator",
+          "gpua_policy_bench",
+          "gpua-policy-bench"
+        ],
+        "verified_recompiled": true
+      }
+    },
+    "pr323": {
+      "harness_matches_frozen": true,
+      "old_build": {
+        "name": "pr323",
+        "exe_sha256": "51c80f011784664fa97a05bd5ea4586db6d2b8ed520be32ab3dabcede35436c4",
+        "source_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lock_sha256": "3710df6d24737383a161a7f04f464eb9eb17842db6de23abe7095889029afb7c",
+        "command": [
+          "cargo",
+          "build",
+          "--release",
+          "--offline",
+          "-p",
+          "gpua-policy-bench",
+          "--target-dir",
+          "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-pr323"
+        ]
+      },
+      "new_build": {
+        "name": "pr323",
+        "command": [
+          "cargo",
+          "build",
+          "--release",
+          "--locked",
+          "--offline",
+          "--target-dir",
+          "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-isolated-direct-pr323",
+          "-p",
+          "gpua-policy-bench"
+        ],
+        "target": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-isolated-direct-pr323",
+        "exe_sha256": "e2f670aca238694ac6a84f987ff0c92d33b35ed40e3e4829c3e9bc2f8a841555",
+        "lock_sha256": "3710df6d24737383a161a7f04f464eb9eb17842db6de23abe7095889029afb7c",
+        "allocator_source_files": {
+          "src\\allocator\\dedicated_block_allocator\\mod.rs": "725e53b8f71ee52e9466100fb200887be751ea9e5d03ebcabf56f07de4d8c504",
+          "src\\allocator\\dedicated_block_allocator\\visualizer.rs": "3fa067994215c69ec93cbf86a3fcbf8c88bb5ed76e3edf29354d8fd5a9b25fde",
+          "src\\allocator\\free_list_allocator\\mod.rs": "1303d99a370dcffd37069d4023d631f241c3769f4ed50b09ce791483a73627d9",
+          "src\\allocator\\free_list_allocator\\visualizer.rs": "e7bcf0bddb83d14ae6fcc0d7b70116b4d15d1a764e51fec6eb55345c6b208125",
+          "src\\allocator\\mod.rs": "489764ec0d313e407082ee8d38b6e698b85b49ae2bdde8d9be5bd1e5b30c6ce2",
+          "src\\d3d12\\mod.rs": "860bb6f809a224a806010b7c781f9c9479f44b82cd12524cd58bebb1b2942a9a",
+          "src\\d3d12\\visualizer.rs": "5d12fad85ebdbea95a922a6df70fb80f4cde2b8fa8f2fad99a1127668144e440",
+          "src\\lib.rs": "f199f2d9ac24efad1099dd10b3f16004fa265fcd001c77eb7e0191d7d31672fe",
+          "src\\metal\\mod.rs": "82dee0e279d7c0e2f4922cf5eface4eb782c9e20c86b8bc486c5fbe7bf72d9da",
+          "src\\metal\\visualizer.rs": "b1632142d4fb0331ca71fa230d5882b9697c13f22dd795501ca09f1aa9c52c70",
+          "src\\result.rs": "0daa430ca3eec5b87338a4330097130456cda4f0bcac57550542dfb16e0f7c18",
+          "src\\visualizer\\allocation_reports.rs": "3f4275f53243c9977c8967e02c6cfe62f3f941873c96c69e052b7056db05b351",
+          "src\\visualizer\\memory_chunks.rs": "c4f5710f11e08cc6c1c065376e5f8a467f3f082f075e37bece0ab332fa043f0f",
+          "src\\visualizer\\mod.rs": "a7d605b5d0c4f08be38cb30b10689a7bb4ead6d48bc763a2d33941378a6eed54",
+          "src\\vulkan\\mod.rs": "1db7eacc62730097be46a311380b07db09e31f5f0f2d8685430012f4a441e5c3",
+          "src\\vulkan\\visualizer.rs": "1b1986965239503b887f714efeb213cd5c7be52cca263fc2ff82a0e72b6761a1"
+        },
+        "excluded_seed_patterns": [
+          "gpu_allocator",
+          "gpu-allocator",
+          "gpua_policy_bench",
+          "gpua-policy-bench"
+        ],
+        "verified_recompiled": true
+      }
+    },
+    "cache2": {
+      "harness_matches_frozen": true,
+      "old_build": {
+        "name": "cache2",
+        "exe_sha256": "406d5cbad2c43af7ede275799a705349a1205ad3d602f82a4c6bcf6d69de54c3",
+        "source_diff_sha256": "f1663e7ec93a574bd600f38c4dc7132074b7ebf564552f3c53e652c54e0c5809",
+        "lock_sha256": "3710df6d24737383a161a7f04f464eb9eb17842db6de23abe7095889029afb7c",
+        "command": [
+          "cargo",
+          "build",
+          "--release",
+          "--offline",
+          "-p",
+          "gpua-policy-bench",
+          "--target-dir",
+          "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-cache2"
+        ]
+      },
+      "new_build": {
+        "name": "cache2",
+        "command": [
+          "cargo",
+          "build",
+          "--release",
+          "--locked",
+          "--offline",
+          "--target-dir",
+          "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-isolated-direct-cache2",
+          "-p",
+          "gpua-policy-bench"
+        ],
+        "target": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-isolated-direct-cache2",
+        "exe_sha256": "42ce43c4d5dae8b76d19c421cd813f69c66538beb9b039c025e9ebdd087f994a",
+        "lock_sha256": "3710df6d24737383a161a7f04f464eb9eb17842db6de23abe7095889029afb7c",
+        "allocator_source_files": {
+          "src\\allocator\\dedicated_block_allocator\\mod.rs": "725e53b8f71ee52e9466100fb200887be751ea9e5d03ebcabf56f07de4d8c504",
+          "src\\allocator\\dedicated_block_allocator\\visualizer.rs": "3fa067994215c69ec93cbf86a3fcbf8c88bb5ed76e3edf29354d8fd5a9b25fde",
+          "src\\allocator\\free_list_allocator\\mod.rs": "1303d99a370dcffd37069d4023d631f241c3769f4ed50b09ce791483a73627d9",
+          "src\\allocator\\free_list_allocator\\visualizer.rs": "e7bcf0bddb83d14ae6fcc0d7b70116b4d15d1a764e51fec6eb55345c6b208125",
+          "src\\allocator\\mod.rs": "489764ec0d313e407082ee8d38b6e698b85b49ae2bdde8d9be5bd1e5b30c6ce2",
+          "src\\d3d12\\mod.rs": "afbff226ec1dbcee241571a64ed9f141c09b228f1d76909126eebaccebb05abc",
+          "src\\d3d12\\visualizer.rs": "5d12fad85ebdbea95a922a6df70fb80f4cde2b8fa8f2fad99a1127668144e440",
+          "src\\lib.rs": "8ab48ff98c23279505753ae995041e531b33a75ce8a7712f62d68a3da8032bec",
+          "src\\metal\\mod.rs": "9fbe568081136961e66c8491ff7ca0f11572eefd1b8a56ad3f1c668a59ed544d",
+          "src\\metal\\visualizer.rs": "b1632142d4fb0331ca71fa230d5882b9697c13f22dd795501ca09f1aa9c52c70",
+          "src\\result.rs": "0daa430ca3eec5b87338a4330097130456cda4f0bcac57550542dfb16e0f7c18",
+          "src\\visualizer\\allocation_reports.rs": "3f4275f53243c9977c8967e02c6cfe62f3f941873c96c69e052b7056db05b351",
+          "src\\visualizer\\memory_chunks.rs": "c4f5710f11e08cc6c1c065376e5f8a467f3f082f075e37bece0ab332fa043f0f",
+          "src\\visualizer\\mod.rs": "a7d605b5d0c4f08be38cb30b10689a7bb4ead6d48bc763a2d33941378a6eed54",
+          "src\\vulkan\\capacity_tests.rs": "2435fd9e1b879fb75b7eecd990cc0f1a5ce957f6e4db036cd2994f477aa14914",
+          "src\\vulkan\\mod.rs": "c0aadba6851636df7c85d3a70e8e1242a4720ece31cd59b1a2d3cec40f26c9ab",
+          "src\\vulkan\\visualizer.rs": "1b1986965239503b887f714efeb213cd5c7be52cca263fc2ff82a0e72b6761a1"
+        },
+        "excluded_seed_patterns": [
+          "gpu_allocator",
+          "gpu-allocator",
+          "gpua_policy_bench",
+          "gpua-policy-bench"
+        ],
+        "verified_recompiled": true
+      }
+    }
+  },
+  "timings": "Old absolute timings are not pooled with new measurements."
+}

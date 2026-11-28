@@ -1,0 +1,6 @@
+{
+  "actual_full_report": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\target\\nextest\\default\\junit.xml",
+  "archived_as": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\sources\\candidate-full-junit.xml",
+  "reason": "Saved binary metadata and build target-directory overrides do not override nextest workspace-relative report store. Full log and actual candidate workspace report agree. Earlier two-test snapshot preserved and excluded.",
+  "testcase_nodes": 2207
+}

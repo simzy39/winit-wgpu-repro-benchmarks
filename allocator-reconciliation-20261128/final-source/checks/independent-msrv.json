@@ -1,0 +1,50 @@
+[
+  {
+    "name": "gpa-rollback",
+    "mode": "std-d3d12",
+    "toolchain": "1.71.0",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--locked",
+      "--offline",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-rollback-std-d3d12\\Cargo.toml"
+    ],
+    "rc": 0
+  },
+  {
+    "name": "gpa-vulkan",
+    "mode": "std-vulkan",
+    "toolchain": "1.71.0",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--locked",
+      "--offline",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-vulkan-std-vulkan\\Cargo.toml"
+    ],
+    "rc": 0
+  },
+  {
+    "name": "gpa-vulkan",
+    "mode": "nostd-vulkan",
+    "toolchain": "1.81.0",
+    "command": [
+      "cargo",
+      "+1.81.0",
+      "check",
+      "--locked",
+      "--offline",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-vulkan-nostd-vulkan\\Cargo.toml"
+    ],
+    "rc": 0
+  }
+]

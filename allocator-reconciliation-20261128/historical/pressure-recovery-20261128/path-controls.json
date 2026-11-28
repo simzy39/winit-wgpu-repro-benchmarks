@@ -1,0 +1,146 @@
+[
+  {
+    "label": "old-pr323",
+    "trial": 1,
+    "exe_sha256": "7cbb4af09f09cf772159c438e328bf39a469e0aef97aca2ba1e9ca55948a7d5d",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "old-cache2",
+    "trial": 1,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "upstream",
+    "trial": 1,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "upstream",
+    "trial": 2,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "old-cache2",
+    "trial": 2,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "old-pr323",
+    "trial": 2,
+    "exe_sha256": "7cbb4af09f09cf772159c438e328bf39a469e0aef97aca2ba1e9ca55948a7d5d",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "old-pr323",
+    "trial": 3,
+    "exe_sha256": "7cbb4af09f09cf772159c438e328bf39a469e0aef97aca2ba1e9ca55948a7d5d",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "old-cache2",
+    "trial": 3,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  },
+  {
+    "label": "upstream",
+    "trial": 3,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "rc": 0,
+    "outcomes": [
+      {
+        "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+        "failed": false
+      },
+      {
+        "name": "[Executed] [Dx12/Microsoft Basic Render Driver/2] wgpu_gpu::device::request_device_error_message_native",
+        "failed": false
+      }
+    ]
+  }
+]

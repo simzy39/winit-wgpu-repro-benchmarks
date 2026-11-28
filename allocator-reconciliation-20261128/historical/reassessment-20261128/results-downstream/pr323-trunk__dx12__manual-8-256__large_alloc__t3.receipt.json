@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\pr323-trunk.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_alloc",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\pr323-trunk__dx12__manual-8-256__large_alloc__t3.json"
+  ],
+  "exe_sha256": "a654aaf6c92c0864a19f8e06ad111e53da312977d17b2f6d4d565ddbe95a62ea",
+  "validation_error": false,
+  "utc": "2026-11-27T20:36:10.160261+00:00",
+  "wall_s": 1.5224066000664607,
+  "cpu_times": {
+    "kernel_cpu_ms": 296.875,
+    "user_cpu_ms": 171.875,
+    "total_cpu_ms": 468.75
+  },
+  "settle_after_s": 2
+}

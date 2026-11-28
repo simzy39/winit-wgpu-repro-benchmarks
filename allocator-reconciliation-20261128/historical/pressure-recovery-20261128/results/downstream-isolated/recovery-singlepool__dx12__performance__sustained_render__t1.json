@@ -1,0 +1,332 @@
+{
+  "backend": "dx12",
+  "hints": "performance",
+  "workload": "sustained_render",
+  "adapter_name": "Intel(R) Arc(TM) Graphics",
+  "adapter_backend": "Dx12",
+  "adapter_device_type": "IntegratedGpu",
+  "adapter_driver": "31.0.101.5328",
+  "adapter_driver_info": "",
+  "stages": [
+    {
+      "stage": "0_process_start",
+      "working_set_bytes": 11157504,
+      "private_working_set_bytes": 1433600,
+      "private_commit_bytes": 2281472,
+      "peak_working_set_bytes": 11157504,
+      "reserved_va_bytes": 4418830336,
+      "dxgi_local_usage_bytes": 0,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 0,
+      "allocator_block_sizes": [],
+      "allocator_allocations": 0,
+      "allocator_allocated_bytes": 0,
+      "allocator_reserved_bytes": 0,
+      "allocator_unused_bytes": 0,
+      "allocator_utilization_pct": 0.0,
+      "allocation_names": []
+    },
+    {
+      "stage": "1_instance_new",
+      "working_set_bytes": 12705792,
+      "private_working_set_bytes": 1589248,
+      "private_commit_bytes": 2805760,
+      "peak_working_set_bytes": 12705792,
+      "reserved_va_bytes": 4442595328,
+      "dxgi_local_usage_bytes": 0,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 0,
+      "allocator_block_sizes": [],
+      "allocator_allocations": 0,
+      "allocator_allocated_bytes": 0,
+      "allocator_reserved_bytes": 0,
+      "allocator_unused_bytes": 0,
+      "allocator_utilization_pct": 0.0,
+      "allocation_names": []
+    },
+    {
+      "stage": "2_adapter_request",
+      "working_set_bytes": 30740480,
+      "private_working_set_bytes": 6578176,
+      "private_commit_bytes": 30040064,
+      "peak_working_set_bytes": 32104448,
+      "reserved_va_bytes": 4694962176,
+      "dxgi_local_usage_bytes": 167936,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 0,
+      "allocator_block_sizes": [],
+      "allocator_allocations": 0,
+      "allocator_allocated_bytes": 0,
+      "allocator_reserved_bytes": 0,
+      "allocator_unused_bytes": 0,
+      "allocator_utilization_pct": 0.0,
+      "allocation_names": []
+    },
+    {
+      "stage": "3_device_request",
+      "working_set_bytes": 247955456,
+      "private_working_set_bytes": 213864448,
+      "private_commit_bytes": 238821376,
+      "peak_working_set_bytes": 248897536,
+      "reserved_va_bytes": 4898643968,
+      "dxgi_local_usage_bytes": 206295040,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 1,
+      "allocator_block_sizes": [
+        134217728
+      ],
+      "allocator_allocations": 2,
+      "allocator_allocated_bytes": 589824,
+      "allocator_reserved_bytes": 134217728,
+      "allocator_unused_bytes": 133627904,
+      "allocator_utilization_pct": 0.439453125,
+      "allocation_names": [
+        [
+          "(wgpu internal) Indirect dispatch validation destination buffer",
+          65536
+        ],
+        [
+          "(wgpu internal) zero init buffer",
+          524288
+        ]
+      ]
+    },
+    {
+      "stage": "4_first_buf_and_tex",
+      "working_set_bytes": 248127488,
+      "private_working_set_bytes": 213868544,
+      "private_commit_bytes": 238821376,
+      "peak_working_set_bytes": 248897536,
+      "reserved_va_bytes": 4898643968,
+      "dxgi_local_usage_bytes": 206295040,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 1,
+      "allocator_block_sizes": [
+        134217728
+      ],
+      "allocator_allocations": 4,
+      "allocator_allocated_bytes": 1835008,
+      "allocator_reserved_bytes": 134217728,
+      "allocator_unused_bytes": 132382720,
+      "allocator_utilization_pct": 1.3671875,
+      "allocation_names": [
+        [
+          "first_tex_512",
+          1114112
+        ],
+        [
+          "(wgpu internal) zero init buffer",
+          524288
+        ],
+        [
+          "first_buf_64k",
+          131072
+        ],
+        [
+          "(wgpu internal) Indirect dispatch validation destination buffer",
+          65536
+        ]
+      ]
+    },
+    {
+      "stage": "5_first_upload",
+      "working_set_bytes": 316444672,
+      "private_working_set_bytes": 282099712,
+      "private_commit_bytes": 307179520,
+      "peak_working_set_bytes": 316444672,
+      "reserved_va_bytes": 4966846464,
+      "dxgi_local_usage_bytes": 273403904,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 2,
+      "allocator_block_sizes": [
+        134217728,
+        67108864
+      ],
+      "allocator_allocations": 6,
+      "allocator_allocated_bytes": 2949120,
+      "allocator_reserved_bytes": 201326592,
+      "allocator_unused_bytes": 198377472,
+      "allocator_utilization_pct": 1.46484375,
+      "allocation_names": []
+    },
+    {
+      "stage": "6_pipeline_creation",
+      "working_set_bytes": 317329408,
+      "private_working_set_bytes": 282550272,
+      "private_commit_bytes": 307253248,
+      "peak_working_set_bytes": 318160896,
+      "reserved_va_bytes": 4966846464,
+      "dxgi_local_usage_bytes": 273481728,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 2,
+      "allocator_block_sizes": [
+        134217728,
+        67108864
+      ],
+      "allocator_allocations": 6,
+      "allocator_allocated_bytes": 2949120,
+      "allocator_reserved_bytes": 201326592,
+      "allocator_unused_bytes": 198377472,
+      "allocator_utilization_pct": 1.46484375,
+      "allocation_names": []
+    },
+    {
+      "stage": "7_first_submit_and_poll",
+      "working_set_bytes": 318365696,
+      "private_working_set_bytes": 283103232,
+      "private_commit_bytes": 307908608,
+      "peak_working_set_bytes": 318365696,
+      "reserved_va_bytes": 4966846464,
+      "dxgi_local_usage_bytes": 273944576,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 2,
+      "allocator_block_sizes": [
+        134217728,
+        67108864
+      ],
+      "allocator_allocations": 4,
+      "allocator_allocated_bytes": 1835008,
+      "allocator_reserved_bytes": 201326592,
+      "allocator_unused_bytes": 199491584,
+      "allocator_utilization_pct": 0.9114583333333334,
+      "allocation_names": []
+    },
+    {
+      "stage": "8_workload_complete",
+      "working_set_bytes": 385888256,
+      "private_working_set_bytes": 350441472,
+      "private_commit_bytes": 375595008,
+      "peak_working_set_bytes": 385888256,
+      "reserved_va_bytes": 5033955328,
+      "dxgi_local_usage_bytes": 341200896,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 3,
+      "allocator_block_sizes": [
+        134217728,
+        67108864,
+        67108864
+      ],
+      "allocator_allocations": 7,
+      "allocator_allocated_bytes": 10878976,
+      "allocator_reserved_bytes": 268435456,
+      "allocator_unused_bytes": 257556480,
+      "allocator_utilization_pct": 4.052734375,
+      "allocation_names": []
+    },
+    {
+      "stage": "9_resources_dropped",
+      "working_set_bytes": 385970176,
+      "private_working_set_bytes": 350441472,
+      "private_commit_bytes": 375595008,
+      "peak_working_set_bytes": 385970176,
+      "reserved_va_bytes": 5033955328,
+      "dxgi_local_usage_bytes": 341184512,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 3,
+      "allocator_block_sizes": [
+        134217728,
+        67108864,
+        67108864
+      ],
+      "allocator_allocations": 2,
+      "allocator_allocated_bytes": 589824,
+      "allocator_reserved_bytes": 268435456,
+      "allocator_unused_bytes": 267845632,
+      "allocator_utilization_pct": 0.2197265625,
+      "allocation_names": [
+        [
+          "(wgpu internal) zero init buffer",
+          524288
+        ],
+        [
+          "(wgpu internal) Indirect dispatch validation destination buffer",
+          65536
+        ]
+      ]
+    },
+    {
+      "stage": "10_extended_idle",
+      "working_set_bytes": 385970176,
+      "private_working_set_bytes": 350441472,
+      "private_commit_bytes": 375595008,
+      "peak_working_set_bytes": 385970176,
+      "reserved_va_bytes": 5033955328,
+      "dxgi_local_usage_bytes": 341184512,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 3,
+      "allocator_block_sizes": [
+        134217728,
+        67108864,
+        67108864
+      ],
+      "allocator_allocations": 2,
+      "allocator_allocated_bytes": 589824,
+      "allocator_reserved_bytes": 268435456,
+      "allocator_unused_bytes": 267845632,
+      "allocator_utilization_pct": 0.2197265625,
+      "allocation_names": []
+    },
+    {
+      "stage": "11_device_dropped",
+      "working_set_bytes": 384081920,
+      "private_working_set_bytes": 348475392,
+      "private_commit_bytes": 373436416,
+      "peak_working_set_bytes": 385970176,
+      "reserved_va_bytes": 5032644608,
+      "dxgi_local_usage_bytes": 6524928,
+      "dxgi_local_budget_bytes": 7743261287,
+      "dxgi_non_local_usage_bytes": 0,
+      "dxgi_non_local_budget_bytes": 0,
+      "allocator_blocks": 0,
+      "allocator_block_sizes": [],
+      "allocator_allocations": 0,
+      "allocator_allocated_bytes": 0,
+      "allocator_reserved_bytes": 0,
+      "allocator_unused_bytes": 0,
+      "allocator_utilization_pct": 0.0,
+      "allocation_names": []
+    }
+  ],
+  "cpu_op_timing": {
+    "samples": 225,
+    "p50_us": 4009.6000000000004,
+    "p90_us": 4152.0,
+    "p99_us": 4277.5,
+    "mean_us": 4017.6648888888917,
+    "total_ms": 903.9746000000007
+  },
+  "gpu_pass_timing": {
+    "samples": 225,
+    "p50_us": 3579.9478292655945,
+    "p90_us": 3661.0415772857664,
+    "p99_us": 3805.468657093048,
+    "mean_us": 3579.28139409668,
+    "total_ms": 805.3383136717529
+  },
+  "device_create_us": 102958.40000000001,
+  "peak_working_set_bytes": 385970176,
+  "peak_private_commit_bytes": 375595008,
+  "peak_allocator_reserved_bytes": 268435456
+}

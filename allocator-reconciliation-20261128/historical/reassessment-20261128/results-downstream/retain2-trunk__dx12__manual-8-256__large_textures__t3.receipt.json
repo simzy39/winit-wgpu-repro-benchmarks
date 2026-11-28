@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\retain2-trunk.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_textures",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\retain2-trunk__dx12__manual-8-256__large_textures__t3.json"
+  ],
+  "exe_sha256": "8f14b4d4d17b0afc7c99a3e7cea6b3846bf48c2467b4380849d325bbe064e14c",
+  "validation_error": false,
+  "utc": "2026-11-27T20:35:20.263292+00:00",
+  "wall_s": 1.6169970000628382,
+  "cpu_times": {
+    "kernel_cpu_ms": 312.5,
+    "user_cpu_ms": 171.875,
+    "total_cpu_ms": 484.375
+  },
+  "settle_after_s": 2
+}

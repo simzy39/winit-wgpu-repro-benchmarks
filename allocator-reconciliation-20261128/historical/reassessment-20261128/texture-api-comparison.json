@@ -1,0 +1,2734 @@
+{
+  "matching_texture_allocation_inputs": true,
+  "allocation_inputs": {
+    "pr323-alone": [
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      }
+    ],
+    "cache2-alone": [
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      }
+    ],
+    "pr323-original_order": [
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      }
+    ],
+    "cache2-original_order": [
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      }
+    ]
+  },
+  "events": {
+    "pr323-alone": [
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 0,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 1,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 0
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 1
+      }
+    ],
+    "cache2-alone": [
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 0,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 1,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 1
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 0
+      }
+    ],
+    "pr323-original_order": [
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 0,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 0,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 1,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 1,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 0
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 0
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 2,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 2,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 2
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 2
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 3,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 3,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 3
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 3
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 4,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 4,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 4
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 4
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 5,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 5,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 5
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 5
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 6,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 6,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 6
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 6
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 7,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 7,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 7
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 7
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 8,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 8,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 8
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 8
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 9,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 9,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 9
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 9
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 10,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 10,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 10
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 10
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 11,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 11,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 11
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 11
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 12,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 12,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 12
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 12
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 13,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 13,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 13
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 13
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 14,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 14,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 14
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 14
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 15,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 15,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 15
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 15
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 16,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 16,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 16
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 16
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 17,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 17,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 17
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 17
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 18,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 18,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 18
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 18
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 19,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 19,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 19
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 19
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 20,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 20,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 20
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 20
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 21,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 21,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 21
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 21
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 22,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 22,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 22
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 22
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 23,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 23,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 23
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 23
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 24,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 24,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 24
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 24
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 25,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 25,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 25
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 25
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 26,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 26,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 26
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 26
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 27,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 27,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 27
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 27
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 28,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 28,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 28
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 28
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 29,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 29,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 29
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 29
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 30,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 30,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 30
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 30
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 31,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 31,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 31
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 31
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 32,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 32,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 32
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 32
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 33,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 33,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 33
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 33
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 34,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 34,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 34
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 34
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 35,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 35,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 35
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 35
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 36,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 36,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 36
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 36
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 37,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 37,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 37
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 37
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 38,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 38,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 38
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 38
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 39,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 39,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 39
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 39
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 40,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 40,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 40
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 40
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 41,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 41,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 41
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 41
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 42,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 42,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 42
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 42
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 43,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 43,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 43
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 43
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 44,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 44,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 44
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 44
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 45,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 45,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 45
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 45
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 46,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 46,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 46
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 46
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 47,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 47,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 47
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 47
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 48,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 48,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 48
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 48
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 49,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 49,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 49
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 49
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 50,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 50,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 50
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 50
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 1
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 1
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 51,
+        "bytes": 67108864,
+        "memory_type": 2,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 51,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 51
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 51
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 52,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 53,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 52
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 53
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 54,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 54,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 55,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 56,
+        "bytes": 67108864,
+        "memory_type": 2,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 56,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 55
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 54
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 54
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 56
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 56
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 57,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 57,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 58,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 58,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 59,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 59,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 60,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 60,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 57
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 57
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 58
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 58
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 59
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 59
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 61,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 61,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 62,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 62,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 63,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 63,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 60
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 60
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 61
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 61
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 62
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 62
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 64,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 64,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 65,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 65,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 66,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 66,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 63
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 63
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 64
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 64
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 65
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 65
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 67,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 67,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 68,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 68,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 69,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 69,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 66
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 66
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 67
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 67
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 68
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 68
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 69
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 69
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 70,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 70,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 71,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 71,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 72,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 72,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 73,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 73,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 74,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 74,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 75,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 75,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 76,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 76,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 77,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 77,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 70
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 70
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 71
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 71
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 72
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 72
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 73
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 73
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 74
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 74
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 75
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 75
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 76
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 76
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 77
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 77
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 78,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 79,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 80,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 81,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 78
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 79
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 80
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 81
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 82,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 82,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 83,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 83,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 83
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 83
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 84,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 84,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 84
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 84
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 85,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 85,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 85
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 85
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 86,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 86,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 86
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 86
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 82
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 82
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 87,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 87
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 88,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 89,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 90,
+        "bytes": 314638336,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 88
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 90
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 89
+      }
+    ],
+    "cache2-original_order": [
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 0,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 0,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 1,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 1,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 1
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 1
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 0
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 0
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 2,
+        "bytes": 67108864,
+        "memory_type": 2,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 2,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 2
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 2
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 3,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 4,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 4
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 3
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 5,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 5,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 6,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 7,
+        "bytes": 67108864,
+        "memory_type": 2,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 7,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 6
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 5
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 5
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 7
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 7
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 8,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 8,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 9,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 9,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 10,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 10,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 11,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 11,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 9
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 9
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 10
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 10
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 11
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 11
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 12,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 12,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 13,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 13,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 14,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 14,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 12
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 12
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 13
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 13
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 14
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 14
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 15,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 15,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 16,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 16,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 17,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 17,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 15
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 15
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 16
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 16
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 17
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 17
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 18,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 18,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 19,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 19,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 20,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 20,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 18
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 18
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 19
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 19
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 20
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 20
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 8
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 8
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 21,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 21,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 22,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 22,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 23,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 23,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 24,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 24,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 25,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 25,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 26,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 26,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 27,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 27,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 28,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 28,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 22
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 22
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 23
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 23
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 24
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 24
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 25
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 25
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 26
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 26
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 27
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 27
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 28
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 28
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 21
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 21
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 29,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 30,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 31,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 32,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 30
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 31
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 32
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 29
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 33,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 33,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 34,
+        "bytes": 67108864,
+        "memory_type": 1,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkMapMemory",
+        "allocation_id": 34,
+        "offset": "0",
+        "size": "18446744073709551615",
+        "flags": "0"
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 33
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 33
+      },
+      {
+        "api": "vkUnmapMemory",
+        "allocation_id": 34
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 34
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 35,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 35
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 36,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 37,
+        "bytes": 268435456,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkAllocateMemory",
+        "allocation_id": 38,
+        "bytes": 314638336,
+        "memory_type": 0,
+        "pNext": "NULL"
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 37
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 38
+      },
+      {
+        "api": "vkFreeMemory",
+        "allocation_id": 36
+      }
+    ]
+  },
+  "interpretation": "Texture allocations request two 256 MiB blocks from type zero with null pNext in all four traces. Cache retention intentionally changes which empty handle is freed first. Trace timings are excluded."
+}

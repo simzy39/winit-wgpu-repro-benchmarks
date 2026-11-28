@@ -1,0 +1,22 @@
+{
+  "direct": {
+    "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "cargo": "cargo 1.100.0 (3acc79c0c 2026-11-05)",
+    "rustup": "stable-x86_64-pc-windows-msvc (default)"
+  },
+  "allocator_checks": {
+    "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "cargo": "cargo 1.100.0 (3acc79c0c 2026-11-05)",
+    "rustup": "stable-x86_64-pc-windows-msvc (default)"
+  },
+  "wgpu_bench": {
+    "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "cargo": "cargo 1.100.0 (3acc79c0c 2026-11-05)",
+    "rustup": "stable-x86_64-pc-windows-msvc (default)"
+  },
+  "wgpu_full_tests": {
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+    "rustup": "1.97.1-x86_64-pc-windows-msvc (overridden by '<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\downstream\\validation\\rust-toolchain.toml')"
+  }
+}

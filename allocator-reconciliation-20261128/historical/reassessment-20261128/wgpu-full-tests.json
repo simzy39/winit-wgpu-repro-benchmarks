@@ -1,0 +1,16 @@
+{
+  "command": [
+    "cargo",
+    "xtask",
+    "test"
+  ],
+  "rc": 1,
+  "utc": "2026-11-27T23:14:35.763415+00:00",
+  "wall_s": 1333.0004069000715,
+  "environment": {
+    "WGPU_BACKEND": "dx12,vulkan",
+    "NEXTEST_TEST_THREADS": "2",
+    "CARGO_BUILD_JOBS": "3",
+    "local_atl": "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\tools\\atl"
+  }
+}

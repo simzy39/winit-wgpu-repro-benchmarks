@@ -1,0 +1,290 @@
+[
+  {
+    "variant": "pr323",
+    "mode": "std-vulkan",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\pr323-std-vulkan-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "std-vulkan",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\pr323-std-vulkan-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "std-d3d12",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\pr323-std-d3d12-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "std-d3d12",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\pr323-std-d3d12-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "nostd-vulkan",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\pr323-nostd-vulkan-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "nostd-vulkan",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\pr323-nostd-vulkan-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "std-vulkan",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\cache2-std-vulkan-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "std-vulkan",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\cache2-std-vulkan-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "std-d3d12",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\cache2-std-d3d12-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "std-d3d12",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\cache2-std-d3d12-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "nostd-vulkan",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\cache2-nostd-vulkan-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "nostd-vulkan",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\cache2-nostd-vulkan-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "std-vulkan",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\recovery-std-vulkan-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "std-vulkan",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\recovery-std-vulkan-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "std-d3d12",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\recovery-std-d3d12-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "std-d3d12",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 101,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\recovery-std-d3d12-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "nostd-vulkan",
+    "graph": "latest",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\recovery-nostd-vulkan-latest\\Cargo.toml",
+      "--lib",
+      "--offline"
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "nostd-vulkan",
+    "graph": "compatible",
+    "phase": "build",
+    "rc": 0,
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv\\recovery-nostd-vulkan-compatible\\Cargo.toml",
+      "--lib",
+      "--locked"
+    ]
+  }
+]

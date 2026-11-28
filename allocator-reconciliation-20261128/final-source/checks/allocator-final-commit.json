@@ -1,0 +1,9 @@
+{
+  "sha": "b620867d8af6c6c2da7b8644f1ea2d99848b1aef",
+  "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+  "prerequisites": {
+    "gpa-rollback": "8b08388331e0479c965cd602557bbf8feade500c",
+    "gpa-vulkan": "2e51b293fc4561d2c4d63329e3b926e665ba57f5"
+  },
+  "normal_plan_cells": 60
+}

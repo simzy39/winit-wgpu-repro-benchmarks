@@ -1,0 +1,217 @@
+[
+  {
+    "name": "unit-std",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator"
+    ],
+    "rc": 0,
+    "wall_s": 4.672660700045526
+  },
+  {
+    "name": "unit-nostd",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator"
+    ],
+    "rc": 0,
+    "wall_s": 1.1476386999711394
+  },
+  {
+    "name": "clippy-std",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--all-targets",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 2.347576000029221
+  },
+  {
+    "name": "clippy-nostd",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 1.7212972999550402
+  },
+  {
+    "name": "metal-arm",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,metal",
+      "--lib",
+      "--target",
+      "aarch64-apple-darwin",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 1.7558702999958768
+  },
+  {
+    "name": "metal-intel",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,metal",
+      "--lib",
+      "--target",
+      "x86_64-apple-darwin",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator"
+    ],
+    "rc": 0,
+    "wall_s": 1.03947189997416
+  },
+  {
+    "name": "msrv-std-vulkan",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-std-vulkan\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 2.9452761999564245
+  },
+  {
+    "name": "msrv-std-d3d12",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-std-d3d12\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 2.0229973000241444
+  },
+  {
+    "name": "msrv-nostd-vulkan",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-nostd-vulkan\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 1.420765500050038
+  },
+  {
+    "name": "msrv-metal",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--offline",
+      "--locked",
+      "--lib",
+      "--target",
+      "aarch64-apple-darwin",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-extra\\metal\\Cargo.toml"
+    ],
+    "rc": 0,
+    "wall_s": 0.902407499961555
+  },
+  {
+    "name": "rustdoc",
+    "command": [
+      "cargo",
+      "doc",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-deps",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--document-private-items",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-allocator"
+    ],
+    "rc": 0,
+    "wall_s": 1.918591000023298
+  },
+  {
+    "name": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "-p",
+      "gpu-allocator",
+      "--",
+      "--check"
+    ],
+    "rc": 0,
+    "wall_s": 0.27109239995479584
+  }
+]

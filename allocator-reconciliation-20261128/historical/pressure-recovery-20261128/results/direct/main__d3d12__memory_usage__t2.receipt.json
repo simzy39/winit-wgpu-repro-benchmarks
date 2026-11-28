@@ -1,0 +1,14 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin\\bench-main.exe",
+    "d3d12",
+    "memory_usage",
+    "2",
+    "main"
+  ],
+  "exe_sha256": "d6781422cc5dd2fad0e6cd995d736115065d53df1c83b3d35ee13c41ec715245",
+  "wall_s": 0.7677917000837624,
+  "utc": "2026-11-28T01:48:09.105854+00:00",
+  "settle_s": 2
+}

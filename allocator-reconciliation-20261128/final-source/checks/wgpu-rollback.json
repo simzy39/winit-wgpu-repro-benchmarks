@@ -1,0 +1,44 @@
+[
+  {
+    "name": "unit",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "wgpu-hal",
+      "--all-features",
+      "--lib",
+      "dx12::suballocation::tests::"
+    ],
+    "rc": 0,
+    "wall_s": 63.42589879990555
+  },
+  {
+    "name": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "wgpu-hal",
+      "--all-features",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 115.92077480000444
+  },
+  {
+    "name": "full",
+    "command": [
+      "cargo",
+      "xtask",
+      "test"
+    ],
+    "rc": 1,
+    "wall_s": 198.43827400007285
+  }
+]

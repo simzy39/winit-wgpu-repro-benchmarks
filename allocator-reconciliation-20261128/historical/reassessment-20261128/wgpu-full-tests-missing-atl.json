@@ -1,0 +1,14 @@
+{
+  "command": [
+    "cargo",
+    "xtask",
+    "test"
+  ],
+  "rc": 1,
+  "utc": "2026-11-27T22:51:01.103180+00:00",
+  "wall_s": 416.5813241000287,
+  "environment": {
+    "WGPU_BACKEND": "dx12,vulkan",
+    "NEXTEST_TEST_THREADS": "2"
+  }
+}

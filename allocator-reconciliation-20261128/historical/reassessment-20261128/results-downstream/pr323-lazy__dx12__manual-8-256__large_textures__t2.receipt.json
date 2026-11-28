@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\pr323-lazy.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_textures",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\pr323-lazy__dx12__manual-8-256__large_textures__t2.json"
+  ],
+  "exe_sha256": "69dce8d9b9d75e3d464dc165b61f87eaf625a06dac7b3f14dcb1f275efbc4911",
+  "validation_error": false,
+  "utc": "2026-11-27T20:29:17.114336+00:00",
+  "wall_s": 1.2146669999929145,
+  "cpu_times": {
+    "kernel_cpu_ms": 234.375,
+    "user_cpu_ms": 125.0,
+    "total_cpu_ms": 359.375
+  },
+  "settle_after_s": 2
+}

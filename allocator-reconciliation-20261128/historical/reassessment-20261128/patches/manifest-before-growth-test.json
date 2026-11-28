@@ -1,0 +1,14 @@
+{
+  "candidate-on-pr323-179ea43.patch": {
+    "base": "179ea43f05332c2809addd7922cd056220efc36b",
+    "sha256": "dc7bdd883c3113179424f33595a8150738437609c3d7f1a67175b33a67842718",
+    "apply_check_rc": 0,
+    "stderr": ""
+  },
+  "candidate-on-main-fc22df0.patch": {
+    "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+    "sha256": "9cd5cb70be1d052172d870fe8aab1735b2bf6596f61152039bd4abb58c910258",
+    "apply_check_rc": 0,
+    "stderr": ""
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "head": "219e80584bdf325890a7111e8dc8e07163885fe4",
+  "original_base": "22827ee25285b56c4056fe6bb1de27917caf45a9",
+  "apply_check": 0,
+  "diagnostic": "",
+  "release_blocker": "Needs a real allocator release and normal dependency update. Patch also contains the independently submitted resource rollback."
+}

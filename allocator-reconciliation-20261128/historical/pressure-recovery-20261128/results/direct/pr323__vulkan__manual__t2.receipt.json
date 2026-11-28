@@ -1,0 +1,14 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin\\bench-pr323.exe",
+    "vulkan",
+    "manual",
+    "2",
+    "pr323"
+  ],
+  "exe_sha256": "9891d8b37bf9d098546c25cef556091511f11b7822654c5bfc4c57a4f20536ab",
+  "wall_s": 1.4551739000016823,
+  "utc": "2026-11-28T01:48:05.994801+00:00",
+  "settle_s": 2
+}

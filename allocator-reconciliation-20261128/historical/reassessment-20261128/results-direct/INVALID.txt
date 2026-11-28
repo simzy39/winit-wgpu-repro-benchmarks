@@ -1,0 +1,1 @@
+INVALID PILOT: Cargo reused a shared target artifact across allocator worktrees. Do not use these measurements. Replaced with isolated target directories and results-direct-verified.

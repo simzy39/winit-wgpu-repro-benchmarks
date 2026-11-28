@@ -1,0 +1,17 @@
+diff --git a/tests/src/init.rs b/tests/src/init.rs
+index 7464b0d..5d52dd5 100644
+--- a/tests/src/init.rs
++++ b/tests/src/init.rs
+@@ -63,6 +63,12 @@ pub fn initialize_instance(backends: wgpu::Backends, params: &TestParameters) ->
+         .with_env()
+         .union(params.required_instance_flags)
+         .difference(params.forbidden_instance_flags);
++    // Diagnostic control only: override the tests' explicit GPUAV request.
++    let flags = flags - wgpu::InstanceFlags::GPU_BASED_VALIDATION;
++    assert!(flags.contains(wgpu::InstanceFlags::VALIDATION));
++    assert!(!flags.contains(wgpu::InstanceFlags::GPU_BASED_VALIDATION));
++    eprintln!("CORE_ONLY_CONTROL: core=true gpuav=false flags={flags:?}");
++
+ 
+     Instance::new(wgpu::InstanceDescriptor {
+         backends,

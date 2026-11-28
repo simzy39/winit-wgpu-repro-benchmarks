@@ -1,0 +1,110 @@
+[
+  {
+    "mode": "default",
+    "trial": 1,
+    "rc": 100,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "VK_LAYER_VALIDATE_CORE": "1",
+    "VK_LAYER_GPUAV_ENABLE": null,
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ]
+  },
+  {
+    "mode": "gpuav-off",
+    "trial": 1,
+    "rc": 100,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "VK_LAYER_VALIDATE_CORE": "1",
+    "VK_LAYER_GPUAV_ENABLE": "0",
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ]
+  },
+  {
+    "mode": "gpuav-off",
+    "trial": 2,
+    "rc": 100,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "VK_LAYER_VALIDATE_CORE": "1",
+    "VK_LAYER_GPUAV_ENABLE": "0",
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ]
+  },
+  {
+    "mode": "default",
+    "trial": 2,
+    "rc": 100,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "VK_LAYER_VALIDATE_CORE": "1",
+    "VK_LAYER_GPUAV_ENABLE": null,
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ]
+  },
+  {
+    "mode": "default",
+    "trial": 3,
+    "rc": 100,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "VK_LAYER_VALIDATE_CORE": "1",
+    "VK_LAYER_GPUAV_ENABLE": null,
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ]
+  },
+  {
+    "mode": "gpuav-off",
+    "trial": 3,
+    "rc": 100,
+    "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954",
+    "VK_LAYER_VALIDATE_CORE": "1",
+    "VK_LAYER_GPUAV_ENABLE": "0",
+    "outcomes": [
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "failed": true
+      },
+      {
+        "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+        "failed": true
+      }
+    ]
+  }
+]

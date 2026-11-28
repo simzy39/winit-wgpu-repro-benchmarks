@@ -1,0 +1,425 @@
+{
+  "tests": 2207,
+  "passed": 2183,
+  "failed": 24,
+  "skipped": 0,
+  "new_failure_names": [
+    {
+      "binary": "wgpu-test::wgpu-compile",
+      "name": "compile_fail",
+      "failure": {
+        "message": "thread 'compile_fail' (36956) panicked at <user-home>\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\trybuild-1.0.119\\src\\run.rs:62:13",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread 'compile_fail' (36956) panicked at <user-home>\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\trybuild-1.0.119\\src\\run.rs:62:13:\ntests failed\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "time_s": 117.64,
+      "historical": false,
+      "clean_upstream": null
+    }
+  ],
+  "rows": [
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::binding_array_samplers",
+      "failure": {
+        "message": "thread '<unnamed>' (28524) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (28524) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\binding_array\\samplers.rs:13:55: test \"wgpu_gpu::binding_array::samplers::binding_array_samplers\" did not behave as expected",
+      "time_s": 0.787,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (25776) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (25776) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\binding_array\\samplers.rs:13:55: test \"wgpu_gpu::binding_array::samplers::binding_array_samplers\" did not behave as expected",
+        "time_s": 1.229
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::partial_binding_array_samplers",
+      "failure": {
+        "message": "thread '<unnamed>' (34072) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (34072) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\binding_array\\samplers.rs:36:63: test \"wgpu_gpu::binding_array::samplers::partial_binding_array_samplers\" did not behave as expected",
+      "time_s": 0.435,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (36192) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (36192) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\binding_array\\samplers.rs:36:63: test \"wgpu_gpu::binding_array::samplers::partial_binding_array_samplers\" did not behave as expected",
+        "time_s": 0.585
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+      "failure": {
+        "message": "thread '<unnamed>' (2344) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (2344) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\multiview\\mod.rs:17:54: test \"wgpu_gpu::multiview::draw_multiview_single\" did not behave as expected",
+      "time_s": 0.42,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "pass",
+        "message": null,
+        "details": null,
+        "time_s": 1.725
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16",
+      "failure": {
+        "message": "thread '<unnamed>' (33500) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (33500) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\shader\\zero_init_workgroup_mem.rs:35:72: test \"wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16\" did not behave as expected",
+      "time_s": 1.175,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (2068) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (2068) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\shader\\zero_init_workgroup_mem.rs:35:72: test \"wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16\" did not behave as expected",
+        "time_s": 1.94
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::subgroup_operations::subgroup_operations",
+      "failure": {
+        "message": "thread '<unnamed>' (30176) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (30176) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\subgroup_operations\\mod.rs:17:52: test \"wgpu_gpu::subgroup_operations::subgroup_operations\" did not behave as expected",
+      "time_s": 0.88,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (33556) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (33556) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\subgroup_operations\\mod.rs:17:52: test \"wgpu_gpu::subgroup_operations::subgroup_operations\" did not behave as expected",
+        "time_s": 1.747
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::transfer::copy_unaligned_rows",
+      "failure": {
+        "message": "thread '<unnamed>' (31204) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (31204) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\transfer.rs:196:52: test \"wgpu_gpu::transfer::copy_unaligned_rows\" did not behave as expected",
+      "time_s": 0.452,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (27736) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (27736) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\transfer.rs:196:52: test \"wgpu_gpu::transfer::copy_unaligned_rows\" did not behave as expected",
+        "time_s": 0.459
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+      "failure": {
+        "message": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+      "time_s": 0.293,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "details": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "time_s": 0.453
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.527,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.425
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.534,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.476
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.493,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.732
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.523,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.526
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.469,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.785
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.394,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.452
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.485,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.654
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.815,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 0.484
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::multiview::draw_multiview_multisample",
+      "failure": {
+        "message": "thread '<unnamed>' (36804) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (36804) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\multiview\\mod.rs:65:59: test \"wgpu_gpu::multiview::draw_multiview_multisample\" did not behave as expected",
+      "time_s": 0.431,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (9916) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (9916) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\multiview\\mod.rs:65:59: test \"wgpu_gpu::multiview::draw_multiview_multisample\" did not behave as expected",
+        "time_s": 0.496
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+      "failure": {
+        "message": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+      "time_s": 0.44,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "details": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "time_s": 53.373
+      }
+    },
+    {
+      "binary": "naga::naga",
+      "name": "wgsl_errors::recursion_depth_template",
+      "failure": {
+        "message": "process aborted with code 0xc00000fd: Recursion too deep; the stack overflowed. (os error 1001)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc00000fd: Recursion too deep; the stack overflowed. (os error 1001)",
+      "time_s": 0.036,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc00000fd: Recursion too deep; the stack overflowed. (os error 1001)",
+        "details": "process aborted with code 0xc00000fd: Recursion too deep; the stack overflowed. (os error 1001)",
+        "time_s": 0.086
+      }
+    },
+    {
+      "binary": "wgpu-benchmark::bench/wgpu-benchmark",
+      "name": "Computepass Encoding",
+      "failure": {
+        "message": "2 errors occurred executing test",
+        "type": "test abort"
+      },
+      "details": "2 errors occurred executing test:\n* process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)\n* thread 'main' (37668) panicked at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:225:5:\n  panic in a function that cannot unwind\n  stack backtrace:\n     0:     0x7ff63bc3987e - std::backtrace_rs::backtrace::win64::trace\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\..\\..\\backtrace\\src\\backtrace\\win64.rs:85\n     1:     0x7ff63bc3987e - std::backtrace_rs::backtrace::trace_unsynchronized\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\..\\..\\backtrace\\src\\backtrace\\mod.rs:66\n     2:     0x7ff63bc3987e - std::sys::backtrace::_print_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:74\n     3:     0x7ff63bc3987e - std::sys::backtrace::impl$0::print::impl$0::fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:44\n     4:     0x7ff63bc4f571 - core::fmt::write\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\fmt\\mod.rs:0\n     5:     0x7ff63bc405e4 - std::io::default_write_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\io\\mod.rs:622\n     6:     0x7ff63bc405e4 - std::io::Write::write_fmt<std::sys::stdio::windows::Stderr>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\io\\mod.rs:1977\n     7:     0x7ff63bc227b9 - std::sys::backtrace::BacktraceLock::print\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:47\n     8:     0x7ff63bc227b9 - std::panicking::default_hook::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:292\n     9:     0x7ff63bc32dea - std::panicking::default_hook\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:319\n    10:     0x7ff63bc330a3 - std::panicking::panic_with_hook\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:825\n    11:     0x7ff63bc228c4 - std::panicking::panic_handler::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:691\n    12:     0x7ff63bc2044f - std::sys::backtrace::__rust_end_short_backtrace<std::panicking::panic_handler::closure_env$0,never$>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:182\n    13:     0x7ff63bc232ae - std::panicking::panic_handler\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:689\n    14:     0x7ff63de53117 - core::panicking::panic_nounwind_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\intrinsics\\mod.rs:2450\n    15:     0x7ff63de53091 - core::panicking::panic_nounwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:225\n    16:     0x7ff63de5324a - core::panicking::panic_cannot_unwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:337\n    17:     0x7ff63cb93a06 - wgpu_hal::vulkan::instance::debug_utils_messenger_callback\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-hal\\src\\vulkan\\instance.rs:18\n    18:     0x7fff2e83bb00 - _CxxFrameHandler3\n    19:     0x7fff2e823a9d - is_exception_typeof\n    20:     0x7fff2e83ae8d - _C_specific_handler\n    21:     0x7fff2e822ce2 - is_exception_typeof\n    22:     0x7fff2e83b8f8 - _CxxFrameHandler3\n    23:     0x7fff4b0fabbf - _chkstk\n    24:     0x7fff4afadd30 - RtlUnwindEx\n    25:     0x7fff2e83b3d6 - _C_specific_handler\n    26:     0x7fff2e821c20 - is_exception_typeof\n    27:     0x7fff2e822dd8 - is_exception_typeof\n    28:     0x7fff2e83b8f8 - _CxxFrameHandler3\n    29:     0x7fff4b0fab3f - _chkstk\n    30:     0x7fff4b056995 - RtlWow64GetCurrentMachine\n    31:     0x7fff4afa9f3d - RtlRaiseException\n    32:     0x7fff487756ca - RaiseException\n    33:     0x7fff2e8255a9 - CxxThrowException\n    34:     0x7ff63bc4086d - panic_unwind::imp::throw_exception\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\panic_unwind\\src\\seh.rs:368\n    35:     0x7ff63bc40745 - panic_unwind::imp::panic\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\panic_unwind\\src\\seh.rs:302\n    36:     0x7ff63bc40745 - panic_unwind::__rust_start_panic\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\panic_unwind\\src\\lib.rs:108\n    37:     0x7ff63bc22fbf - std::panicking::rust_panic\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:886\n    38:     0x7ff63bc3311e - std::panicking::panic_with_hook\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:850\n    39:     0x7ff63bc2288e - std::panicking::panic_handler::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:698\n    40:     0x7ff63bc2044f - std::sys::backtrace::__rust_end_short_backtrace<std::panicking::panic_handler::closure_env$0,never$>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:182\n    41:     0x7ff63bc232ae - std::panicking::panic_handler\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:689\n    42:     0x7ff63de5333d - core::panicking::panic_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:80\n    43:     0x7ff63c43eb7f - core::panicking::panic_display<alloc::string::String>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:259\n    44:     0x7ff63cb937ee - wgpu_hal::vulkan::instance::debug_utils_messenger_callback\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-hal\\src\\vulkan\\instance.rs:195\n    45:     0x7ffe8675010c - vkNegotiateLoaderLayerInterfaceVersion\n    46:     0x7ffe85eec104 - <unknown>\n    47:     0x7ffe861097ec - <unknown>\n    48:     0x7ffe8610c2ad - <unknown>\n    49:     0x7ffe8604f498 - <unknown>\n    50:     0x7ffe861b0c49 - vkEnumerateInstanceExtensionProperties\n    51:     0x7ff63c3c5e93 - ash::device::Device::queue_submit\n                                 at <user-home>\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ash-0.38.0+1.3.281\\src\\device.rs:2470\n    52:     0x7ff63c3f49c6 - wgpu_hal::vulkan::impl$41::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-hal\\src\\vulkan\\mod.rs:1708\n    53:     0x7ff63c1de3d5 - wgpu_hal::dynamic::queue::impl$0::submit<wgpu_hal::vulkan::Queue>\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-hal\\src\\dynamic\\queue.rs:47\n    54:     0x7ff63bd38edd - wgpu_core::device::queue::Queue::submit_pending_submission\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-core\\src\\device\\queue.rs:2085\n    55:     0x7ff63bd2e4ea - wgpu_core::device::queue::PendingSubmission::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-core\\src\\device\\queue.rs:861\n    56:     0x7ff63bd305d0 - wgpu_core::device::queue::Queue::submit_inner\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-core\\src\\device\\queue.rs:1874\n    57:     0x7ff63bd3a297 - wgpu_core::device::queue::Queue::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu-core\\src\\device\\queue.rs:1932\n    58:     0x7ff63b69ac9c - wgpu::backend::wgpu_core::impl$42::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu\\src\\backend\\wgpu_core.rs:1874\n    59:     0x7ff63b5b8cab - wgpu::api::queue::Queue::submit<array$<wgpu::api::command_buffer::CommandBuffer,0> >\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\wgpu\\src\\api\\queue.rs:294\n    60:     0x7ff63b5cd7ae - wgpu_benchmark::computepass::run_bench::closure$3\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\benches\\benches\\wgpu-benchmark\\computepass.rs:573\n    61:     0x7ff63b4f8196 - wgpu_benchmark::iter::iter_auto::closure$0<wgpu_benchmark::computepass::run_bench::closure_env$3>\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\iter.rs:51\n    62:     0x7ff63b4f34ed - wgpu_benchmark::iter::iter<wgpu_benchmark::iter::iter_auto::closure_env$0<wgpu_benchmark::computepass::run_bench::closure_env$3> >\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\iter.rs:24\n    63:     0x7ff63b4f57ff - wgpu_benchmark::iter::iter_auto<wgpu_benchmark::computepass::run_bench::closure_env$3>\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\iter.rs:44\n    64:     0x7ff63b626c81 - wgpu_benchmark::computepass::run_bench\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\benches\\benches\\wgpu-benchmark\\computepass.rs:564\n    65:     0x7ff63bbcb16d - wgpu_benchmark::main\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\lib.rs:244\n    66:     0x7ff63b4f2d3d - wgpu_benchmark::main\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\benches\\benches\\wgpu-benchmark\\main.rs:102\n    67:     0x7ff63b52580b - core::ops::function::FnOnce::call_once<void (*)(),tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\ops\\function.rs:250\n    68:     0x7ff63b674b7e - std::sys::backtrace::__rust_begin_short_backtrace<void (*)(),tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:166\n    69:     0x7ff63b67d881 - std::rt::lang_start::closure$0<tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:206\n    70:     0x7ff63bc318b0 - std::rt::lang_start_internal::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:175\n    71:     0x7ff63bc318b0 - std::panicking::catch_unwind::do_call\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:581\n    72:     0x7ff63bc318b0 - std::panicking::catch_unwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:544\n    73:     0x7ff63bc318b0 - std::panic::catch_unwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panic.rs:359\n    74:     0x7ff63bc318b0 - std::rt::lang_start_internal\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:171\n    75:     0x7ff63b67d86a - std::rt::lang_start<tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:205\n    76:     0x7ff63b4f3379 - main\n    77:     0x7ff63de50c84 - invoke_main\n                                 at <drive>/a\\_work\\1\\s\\src\\vctools\\crt\\vcstartup\\src\\startup\\exe_common.inl:78\n    78:     0x7ff63de50c84 - __scrt_common_main_seh\n                                 at <drive>/a\\_work\\1\\s\\src\\vctools\\crt\\vcstartup\\src\\startup\\exe_common.inl:288\n    79:     0x7fff4939dda7 - BaseThreadInitThunk\n    80:     0x7fff4b059c6c - RtlUserThreadStart\n  thread caused non-unwinding panic. aborting.\n",
+      "time_s": 4.227,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "2 errors occurred executing test",
+        "details": "2 errors occurred executing test:\n* process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)\n* thread 'main' (15764) panicked at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:225:5:\n  panic in a function that cannot unwind\n  stack backtrace:\n     0:     0x7ff6672404be - std::backtrace_rs::backtrace::win64::trace\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\..\\..\\backtrace\\src\\backtrace\\win64.rs:85\n     1:     0x7ff6672404be - std::backtrace_rs::backtrace::trace_unsynchronized\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\..\\..\\backtrace\\src\\backtrace\\mod.rs:66\n     2:     0x7ff6672404be - std::sys::backtrace::_print_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:74\n     3:     0x7ff6672404be - std::sys::backtrace::impl$0::print::impl$0::fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:44\n     4:     0x7ff6672561b1 - core::fmt::write\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\fmt\\mod.rs:0\n     5:     0x7ff667247224 - std::io::default_write_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\io\\mod.rs:622\n     6:     0x7ff667247224 - std::io::Write::write_fmt<std::sys::stdio::windows::Stderr>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\io\\mod.rs:1977\n     7:     0x7ff6672293f9 - std::sys::backtrace::BacktraceLock::print\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:47\n     8:     0x7ff6672293f9 - std::panicking::default_hook::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:292\n     9:     0x7ff667239a2a - std::panicking::default_hook\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:319\n    10:     0x7ff667239ce3 - std::panicking::panic_with_hook\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:825\n    11:     0x7ff667229504 - std::panicking::panic_handler::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:691\n    12:     0x7ff66722708f - std::sys::backtrace::__rust_end_short_backtrace<std::panicking::panic_handler::closure_env$0,never$>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:182\n    13:     0x7ff667229eee - std::panicking::panic_handler\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:689\n    14:     0x7ff66944b877 - core::panicking::panic_nounwind_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\intrinsics\\mod.rs:2450\n    15:     0x7ff66944b7f1 - core::panicking::panic_nounwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:225\n    16:     0x7ff66944b9aa - core::panicking::panic_cannot_unwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:337\n    17:     0x7ff668199a76 - wgpu_hal::vulkan::instance::debug_utils_messenger_callback\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-hal\\src\\vulkan\\instance.rs:18\n    18:     0x7fff2e83bb00 - _CxxFrameHandler3\n    19:     0x7fff2e823a9d - is_exception_typeof\n    20:     0x7fff2e83ae8d - _C_specific_handler\n    21:     0x7fff2e822ce2 - is_exception_typeof\n    22:     0x7fff2e83b8f8 - _CxxFrameHandler3\n    23:     0x7fff4b0fabbf - _chkstk\n    24:     0x7fff4afadd30 - RtlUnwindEx\n    25:     0x7fff2e83b3d6 - _C_specific_handler\n    26:     0x7fff2e821c20 - is_exception_typeof\n    27:     0x7fff2e822dd8 - is_exception_typeof\n    28:     0x7fff2e83b8f8 - _CxxFrameHandler3\n    29:     0x7fff4b0fab3f - _chkstk\n    30:     0x7fff4b056995 - RtlWow64GetCurrentMachine\n    31:     0x7fff4afa9f3d - RtlRaiseException\n    32:     0x7fff487756ca - RaiseException\n    33:     0x7fff2e8255a9 - CxxThrowException\n    34:     0x7ff6672474ad - panic_unwind::imp::throw_exception\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\panic_unwind\\src\\seh.rs:368\n    35:     0x7ff667247385 - panic_unwind::imp::panic\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\panic_unwind\\src\\seh.rs:302\n    36:     0x7ff667247385 - panic_unwind::__rust_start_panic\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\panic_unwind\\src\\lib.rs:108\n    37:     0x7ff667229bff - std::panicking::rust_panic\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:886\n    38:     0x7ff667239d5e - std::panicking::panic_with_hook\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:850\n    39:     0x7ff6672294ce - std::panicking::panic_handler::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:698\n    40:     0x7ff66722708f - std::sys::backtrace::__rust_end_short_backtrace<std::panicking::panic_handler::closure_env$0,never$>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:182\n    41:     0x7ff667229eee - std::panicking::panic_handler\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:689\n    42:     0x7ff66944ba9d - core::panicking::panic_fmt\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:80\n    43:     0x7ff667a9a7af - core::panicking::panic_display<alloc::string::String>\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:259\n    44:     0x7ff66819985e - wgpu_hal::vulkan::instance::debug_utils_messenger_callback\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-hal\\src\\vulkan\\instance.rs:195\n    45:     0x7ffe740a010c - vkNegotiateLoaderLayerInterfaceVersion\n    46:     0x7ffe7383c104 - <unknown>\n    47:     0x7ffe73a597ec - <unknown>\n    48:     0x7ffe73a5c2ad - <unknown>\n    49:     0x7ffe7399f498 - <unknown>\n    50:     0x7ffe73b00c49 - vkEnumerateInstanceExtensionProperties\n    51:     0x7ff6679ed943 - ash::device::Device::queue_submit\n                                 at <user-home>\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ash-0.38.0+1.3.281\\src\\device.rs:2470\n    52:     0x7ff667a1c2c6 - wgpu_hal::vulkan::impl$41::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-hal\\src\\vulkan\\mod.rs:1708\n    53:     0x7ff6677e73a5 - wgpu_hal::dynamic::queue::impl$0::submit<wgpu_hal::vulkan::Queue>\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-hal\\src\\dynamic\\queue.rs:47\n    54:     0x7ff6673416fd - wgpu_core::device::queue::Queue::submit_pending_submission\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-core\\src\\device\\queue.rs:2085\n    55:     0x7ff667336d0a - wgpu_core::device::queue::PendingSubmission::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-core\\src\\device\\queue.rs:861\n    56:     0x7ff667338df0 - wgpu_core::device::queue::Queue::submit_inner\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-core\\src\\device\\queue.rs:1874\n    57:     0x7ff667342ab7 - wgpu_core::device::queue::Queue::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu-core\\src\\device\\queue.rs:1932\n    58:     0x7ff666c9ad4c - wgpu::backend::wgpu_core::impl$42::submit\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu\\src\\backend\\wgpu_core.rs:1874\n    59:     0x7ff666bc005b - wgpu::api::queue::Queue::submit<array$<wgpu::api::command_buffer::CommandBuffer,0> >\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\wgpu\\src\\api\\queue.rs:294\n    60:     0x7ff666ae682e - wgpu_benchmark::computepass::run_bench::closure$3\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\benches\\wgpu-benchmark\\computepass.rs:573\n    61:     0x7ff666b1d4e6 - wgpu_benchmark::iter::iter_auto::closure$0<wgpu_benchmark::computepass::run_bench::closure_env$3>\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\iter.rs:51\n    62:     0x7ff666b1883d - wgpu_benchmark::iter::iter<wgpu_benchmark::iter::iter_auto::closure_env$0<wgpu_benchmark::computepass::run_bench::closure_env$3> >\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\iter.rs:24\n    63:     0x7ff666b1ab4f - wgpu_benchmark::iter::iter_auto<wgpu_benchmark::computepass::run_bench::closure_env$3>\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\iter.rs:44\n    64:     0x7ff666af6211 - wgpu_benchmark::computepass::run_bench\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\benches\\wgpu-benchmark\\computepass.rs:564\n    65:     0x7ff6671c6ebd - wgpu_benchmark::main\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\src\\lib.rs:244\n    66:     0x7ff666b5bebd - wgpu_benchmark::main\n                                 at <workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\benches\\benches\\wgpu-benchmark\\main.rs:102\n    67:     0x7ff666b2396b - core::ops::function::FnOnce::call_once<void (*)(),tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\ops\\function.rs:250\n    68:     0x7ff666c382be - std::sys::backtrace::__rust_begin_short_backtrace<void (*)(),tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\sys\\backtrace.rs:166\n    69:     0x7ff666c39021 - std::rt::lang_start::closure$0<tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:206\n    70:     0x7ff6672384f0 - std::rt::lang_start_internal::closure$0\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:175\n    71:     0x7ff6672384f0 - std::panicking::catch_unwind::do_call\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:581\n    72:     0x7ff6672384f0 - std::panicking::catch_unwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panicking.rs:544\n    73:     0x7ff6672384f0 - std::panic::catch_unwind\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\panic.rs:359\n    74:     0x7ff6672384f0 - std::rt::lang_start_internal\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:171\n    75:     0x7ff666c3900a - std::rt::lang_start<tuple$<> >\n                                 at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\std\\src\\rt.rs:205\n    76:     0x7ff666b5c4f9 - main\n    77:     0x7ff6694493e4 - invoke_main\n                                 at <drive>/a\\_work\\1\\s\\src\\vctools\\crt\\vcstartup\\src\\startup\\exe_common.inl:78\n    78:     0x7ff6694493e4 - __scrt_common_main_seh\n                                 at <drive>/a\\_work\\1\\s\\src\\vctools\\crt\\vcstartup\\src\\startup\\exe_common.inl:288\n    79:     0x7fff4939dda7 - BaseThreadInitThunk\n    80:     0x7fff4b059c6c - RtlUserThreadStart\n  thread caused non-unwinding panic. aborting.\n",
+        "time_s": 7.847
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu-compile",
+      "name": "compile_fail",
+      "failure": {
+        "message": "thread 'compile_fail' (36956) panicked at <user-home>\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\trybuild-1.0.119\\src\\run.rs:62:13",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread 'compile_fail' (36956) panicked at <user-home>\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\trybuild-1.0.119\\src\\run.rs:62:13:\ntests failed\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "time_s": 117.64,
+      "historical": false,
+      "clean_upstream": null
+    },
+    {
+      "binary": "wgpu-examples",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] mesh_shader",
+      "failure": {
+        "message": "thread '<unnamed>' (25656) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (25656) panicked at tests\\src\\run.rs:125:9:\nexamples\\features\\src\\framework.rs:649:9: test \"mesh_shader\" did not behave as expected",
+      "time_s": 2.413,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (34200) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (34200) panicked at tests\\src\\run.rs:125:9:\nexamples\\features\\src\\framework.rs:649:9: test \"mesh_shader\" did not behave as expected",
+        "time_s": 10.111
+      }
+    },
+    {
+      "binary": "wgpu-examples",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] ray_cube_compute",
+      "failure": {
+        "message": "thread '<unnamed>' (4944) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (4944) panicked at tests\\src\\run.rs:125:9:\nexamples\\features\\src\\framework.rs:649:9: test \"ray_cube_compute\" did not behave as expected",
+      "time_s": 52.408,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread '<unnamed>' (1900) panicked at tests\\src\\run.rs:125:9",
+        "details": "thread '<unnamed>' (1900) panicked at tests\\src\\run.rs:125:9:\nexamples\\features\\src\\framework.rs:649:9: test \"ray_cube_compute\" did not behave as expected",
+        "time_s": 72.301
+      }
+    },
+    {
+      "binary": "wgpu-examples",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] mesh_shader",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": 0.78,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test abort",
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "time_s": 1.619
+      }
+    },
+    {
+      "binary": "wgpu-test::wgpu_surface",
+      "name": "surface_configure",
+      "failure": {
+        "message": "thread 'main' (6384) panicked at tests\\tests\\wgpu_surface.rs:118:13",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread 'main' (6384) panicked at tests\\tests\\wgpu_surface.rs:118:13:\nUnexpected get_current_texture result: Suboptimal(SurfaceTexture { texture: Texture { inner: Core(CoreTexture { wgpu_texture: Texture { state: Valid(TextureState { inner: <snatchable> }), device: Device { label: \"\", limits: Limits { max_texture_dimension_1d: 16384, max_texture_dimension_2d: 16384, max_texture_dimension_3d: 2048, max_texture_array_layers: 256, max_bind_groups: 4, max_bind_groups_plus_vertex_buffers: 24, max_bindings_per_bind_group: 1000, max_dynamic_uniform_buffers_per_pipeline_layout: 8, max_dynamic_storage_buffers_per_pipeline_layout: 0, max_sampled_textures_per_shader_stage: 16, max_samplers_per_shader_stage: 16, max_storage_buffers_per_shader_stage: 0, max_storage_buffers_in_vertex_stage: 0, max_storage_buffers_in_fragment_stage: 0, max_storage_textures_per_shader_stage: 0, max_storage_textures_in_vertex_stage: 0, max_storage_textures_in_fragment_stage: 0, max_uniform_buffers_per_shader_stage: 11, max_binding_array_elements_per_shader_stage: 0, max_binding_array_acceleration_structure_elements_per_shader_stage: 0, max_binding_array_sampler_elements_per_shader_stage: 0, max_uniform_buffer_binding_size: 16384, max_storage_buffer_binding_size: 0, max_vertex_buffers: 8, max_buffer_size: 268435456, max_vertex_attributes: 16, max_vertex_buffer_array_stride: 255, max_inter_stage_shader_variables: 15, min_uniform_buffer_offset_alignment: 256, min_storage_buffer_offset_alignment: 256, max_color_attachments: 4, max_color_attachment_bytes_per_sample: 32, max_compute_workgroup_storage_size: 0, max_compute_invocations_per_workgroup: 0, max_compute_workgroup_size_x: 0, max_compute_workgroup_size_y: 0, max_compute_workgroup_size_z: 0, max_compute_workgroups_per_dimension: 0, max_immediate_size: 0, max_non_sampler_bindings: 1000000, max_task_workgroup_total_count: 0, max_task_workgroups_per_dimension: 0, max_mesh_workgroup_total_count: 0, max_mesh_workgroups_per_dimension: 0, max_task_invocations_per_workgroup: 0, max_task_invocations_per_dimension: 0, max_mesh_invocations_per_workgroup: 0, max_mesh_invocations_per_dimension: 0, max_task_payload_size: 0, max_mesh_output_vertices: 0, max_mesh_output_primitives: 0, max_mesh_output_layers: 0, max_mesh_multiview_view_count: 0, max_blas_primitive_count: 0, max_blas_geometry_count: 0, max_tlas_instance_count: 0, max_acceleration_structures_per_shader_stage: 0, max_buffers_and_acceleration_structures_per_shader_stage: 19, max_multiview_view_count: 0, max_ray_dispatch_count: 0, max_ray_recursion_depth: 0 }, features: Features { features_wgpu: FeaturesWGPU(0x0), features_webgpu: FeaturesWebGPU(0x0) }, downlevel: DownlevelCapabilities { flags: DownlevelFlags(COMPUTE_SHADERS | FRAGMENT_WRITABLE_STORAGE | INDIRECT_EXECUTION | BASE_VERTEX | READ_ONLY_DEPTH_STENCIL | NON_POWER_OF_TWO_MIPMAPPED_TEXTURES | CUBE_ARRAY_TEXTURES | COMPARISON_SAMPLERS | INDEPENDENT_BLEND | VERTEX_STORAGE | ANISOTROPIC_FILTERING | FRAGMENT_STORAGE | MULTISAMPLED_SHADING | DEPTH_TEXTURE_AND_BUFFER_COPIES | WEBGPU_TEXTURE_FORMAT_SUPPORT | BUFFER_BINDINGS_NOT_16_BYTE_ALIGNED | UNRESTRICTED_INDEX_BUFFER | FULL_DRAW_INDEX_UINT32 | DEPTH_BIAS_CLAMP | VIEW_FORMATS | UNRESTRICTED_EXTERNAL_TEXTURE_COPIES | SURFACE_VIEW_FORMATS | NONBLOCKING_QUERY_RESOLVE | MSL2_1 | TEXTURE_COMPRESSION | LINEAR_INTERPOLATION | ARBITRARY_BINDING_VIEW_DIMENSIONS), limits: DownlevelLimits, shader_model: Sm5 } }, desc: TextureDescriptor { label: \"<Surface Texture>\", size: (512, 512, 1), mip_level_count: 1, sample_count: 1, dimension: D2, format: Bgra8UnormSrgb, usage: TextureUsages(RENDER_ATTACHMENT), view_formats: [], texture_binding_view_dimension: None }, _hal_usage: TextureUses(COLOR_TARGET), format_features: TextureFormatFeatures { allowed_usages: TextureUsages(RENDER_ATTACHMENT), flags: TextureFormatFeatureFlags(MULTISAMPLE_X4 | MULTISAMPLE_RESOLVE) }, initialization_status: RwLock { data: TextureInitTracker { mips: [InitTracker { uninitialized_ranges: [0..1] }] } }, full_range: TextureSelector { mips: 0..1, layers: 0..1 }, tracking_data: TrackingData { tracker_index: TrackerIndex(0), tracker_indices: SharedTrackerIndexAllocator { inner: Mutex { data:  } } }, clear_mode: RwLock { data: Surface { clear_view: ManuallyDrop { value: MaybeDangling(TextureView { raw_texture: 0x220000000022, raw: 0x280000000028, _layers: 4294967295, format: Bgra8UnormSrgb, raw_format: B8G8R8A8_SRGB, base_mip_level: 0, dimension: D2, texture_identity: ResourceIdentity { id: 0, _phantom: PhantomData<ash::vk::definitions::Image> }, view_identity: ResourceIdentity { id: 0, _phantom: PhantomData<ash::vk::definitions::ImageView> } }) } } }, views: Mutex { data: WeakVec { inner: [] } }, bind_groups: Mutex { data: WeakVec { inner: [] } }, texture_binding_view_dimension: None } }) }, presented: false, detail: Core(CoreSurfaceOutputDetail { wgpu_surface: 0x1b538042370 }) })\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+      "time_s": 0.854,
+      "historical": true,
+      "clean_upstream": {
+        "outcome": "test failure with exit code 101",
+        "message": "thread 'main' (33180) panicked at tests\\tests\\wgpu_surface.rs:118:13",
+        "details": "thread 'main' (33180) panicked at tests\\tests\\wgpu_surface.rs:118:13:\nUnexpected get_current_texture result: Suboptimal(SurfaceTexture { texture: Texture { inner: Core(CoreTexture { wgpu_texture: Texture { state: Valid(TextureState { inner: <snatchable> }), device: Device { label: \"\", limits: Limits { max_texture_dimension_1d: 16384, max_texture_dimension_2d: 16384, max_texture_dimension_3d: 2048, max_texture_array_layers: 256, max_bind_groups: 4, max_bind_groups_plus_vertex_buffers: 24, max_bindings_per_bind_group: 1000, max_dynamic_uniform_buffers_per_pipeline_layout: 8, max_dynamic_storage_buffers_per_pipeline_layout: 0, max_sampled_textures_per_shader_stage: 16, max_samplers_per_shader_stage: 16, max_storage_buffers_per_shader_stage: 0, max_storage_buffers_in_vertex_stage: 0, max_storage_buffers_in_fragment_stage: 0, max_storage_textures_per_shader_stage: 0, max_storage_textures_in_vertex_stage: 0, max_storage_textures_in_fragment_stage: 0, max_uniform_buffers_per_shader_stage: 11, max_binding_array_elements_per_shader_stage: 0, max_binding_array_acceleration_structure_elements_per_shader_stage: 0, max_binding_array_sampler_elements_per_shader_stage: 0, max_uniform_buffer_binding_size: 16384, max_storage_buffer_binding_size: 0, max_vertex_buffers: 8, max_buffer_size: 268435456, max_vertex_attributes: 16, max_vertex_buffer_array_stride: 255, max_inter_stage_shader_variables: 15, min_uniform_buffer_offset_alignment: 256, min_storage_buffer_offset_alignment: 256, max_color_attachments: 4, max_color_attachment_bytes_per_sample: 32, max_compute_workgroup_storage_size: 0, max_compute_invocations_per_workgroup: 0, max_compute_workgroup_size_x: 0, max_compute_workgroup_size_y: 0, max_compute_workgroup_size_z: 0, max_compute_workgroups_per_dimension: 0, max_immediate_size: 0, max_non_sampler_bindings: 1000000, max_task_workgroup_total_count: 0, max_task_workgroups_per_dimension: 0, max_mesh_workgroup_total_count: 0, max_mesh_workgroups_per_dimension: 0, max_task_invocations_per_workgroup: 0, max_task_invocations_per_dimension: 0, max_mesh_invocations_per_workgroup: 0, max_mesh_invocations_per_dimension: 0, max_task_payload_size: 0, max_mesh_output_vertices: 0, max_mesh_output_primitives: 0, max_mesh_output_layers: 0, max_mesh_multiview_view_count: 0, max_blas_primitive_count: 0, max_blas_geometry_count: 0, max_tlas_instance_count: 0, max_acceleration_structures_per_shader_stage: 0, max_buffers_and_acceleration_structures_per_shader_stage: 19, max_multiview_view_count: 0, max_ray_dispatch_count: 0, max_ray_recursion_depth: 0 }, features: Features { features_wgpu: FeaturesWGPU(0x0), features_webgpu: FeaturesWebGPU(0x0) }, downlevel: DownlevelCapabilities { flags: DownlevelFlags(COMPUTE_SHADERS | FRAGMENT_WRITABLE_STORAGE | INDIRECT_EXECUTION | BASE_VERTEX | READ_ONLY_DEPTH_STENCIL | NON_POWER_OF_TWO_MIPMAPPED_TEXTURES | CUBE_ARRAY_TEXTURES | COMPARISON_SAMPLERS | INDEPENDENT_BLEND | VERTEX_STORAGE | ANISOTROPIC_FILTERING | FRAGMENT_STORAGE | MULTISAMPLED_SHADING | DEPTH_TEXTURE_AND_BUFFER_COPIES | WEBGPU_TEXTURE_FORMAT_SUPPORT | BUFFER_BINDINGS_NOT_16_BYTE_ALIGNED | UNRESTRICTED_INDEX_BUFFER | FULL_DRAW_INDEX_UINT32 | DEPTH_BIAS_CLAMP | VIEW_FORMATS | UNRESTRICTED_EXTERNAL_TEXTURE_COPIES | SURFACE_VIEW_FORMATS | NONBLOCKING_QUERY_RESOLVE | MSL2_1 | TEXTURE_COMPRESSION | LINEAR_INTERPOLATION | ARBITRARY_BINDING_VIEW_DIMENSIONS), limits: DownlevelLimits, shader_model: Sm5 } }, desc: TextureDescriptor { label: \"<Surface Texture>\", size: (512, 512, 1), mip_level_count: 1, sample_count: 1, dimension: D2, format: Bgra8UnormSrgb, usage: TextureUsages(RENDER_ATTACHMENT), view_formats: [], texture_binding_view_dimension: None }, _hal_usage: TextureUses(COLOR_TARGET), format_features: TextureFormatFeatures { allowed_usages: TextureUsages(RENDER_ATTACHMENT), flags: TextureFormatFeatureFlags(MULTISAMPLE_X4 | MULTISAMPLE_RESOLVE) }, initialization_status: RwLock { data: TextureInitTracker { mips: [InitTracker { uninitialized_ranges: [0..1] }] } }, full_range: TextureSelector { mips: 0..1, layers: 0..1 }, tracking_data: TrackingData { tracker_index: TrackerIndex(0), tracker_indices: SharedTrackerIndexAllocator { inner: Mutex { data:  } } }, clear_mode: RwLock { data: Surface { clear_view: ManuallyDrop { value: MaybeDangling(TextureView { raw_texture: 0x250000000025, raw: 0x2b000000002b, _layers: 4294967295, format: Bgra8UnormSrgb, raw_format: B8G8R8A8_SRGB, base_mip_level: 0, dimension: D2, texture_identity: ResourceIdentity { id: 0, _phantom: PhantomData<ash::vk::definitions::Image> }, view_identity: ResourceIdentity { id: 0, _phantom: PhantomData<ash::vk::definitions::ImageView> } }) } } }, views: Mutex { data: WeakVec { inner: [] } }, bind_groups: Mutex { data: WeakVec { inner: [] } }, texture_binding_view_dimension: None } }) }, presented: false, detail: Core(CoreSurfaceOutputDetail { wgpu_surface: 0x1f34f6df2b0 }) })\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+        "time_s": 1.037
+      }
+    }
+  ]
+}

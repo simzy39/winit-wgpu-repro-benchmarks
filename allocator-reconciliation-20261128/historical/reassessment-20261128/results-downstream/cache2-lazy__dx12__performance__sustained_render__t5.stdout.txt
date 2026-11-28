@@ -1,0 +1,18 @@
+=== wgpu-mem-bench backend=dx12 hints=performance workload=sustained_render ===
+0_process_start            WS=  10.62 PrivWS=   1.38 PrivCom=   2.21 VA=  4215.1 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+1_instance_new             WS=  12.08 PrivWS=   1.51 PrivCom=   2.68 VA=  4236.8 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+  adapter: Intel(R) Arc(TM) Graphics (Dx12, IntegratedGpu, driver=31.0.101.5328 )
+2_adapter_request          WS=  29.34 PrivWS=   6.33 PrivCom=  28.89 VA=  4477.5 | DXGI L=  0.16 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+3_device_request           WS= 236.76 PrivWS= 204.30 PrivCom= 228.44 VA=  4671.7 | DXGI L=196.74 NL=  0.00 | Alloc blks=1 res=128.00 alloc=  0.56 unused=127.44 (  0.4%)
+  device_request blocks=[134217728] allocs=[("(wgpu internal) Indirect dispatch validation destination buffer", 65536), ("(wgpu internal) zero init buffer", 524288)]
+4_first_buf_and_tex        WS= 236.92 PrivWS= 204.30 PrivCom= 228.44 VA=  4671.7 | DXGI L=196.74 NL=  0.00 | Alloc blks=1 res=128.00 alloc=  1.75 unused=126.25 (  1.4%)
+5_first_upload             WS= 302.06 PrivWS= 269.37 PrivCom= 293.67 VA=  4736.8 | DXGI L=260.74 NL=  0.00 | Alloc blks=2 res=192.00 alloc=  2.81 unused=189.19 (  1.5%)
+6_pipeline_creation        WS= 302.62 PrivWS= 269.52 PrivCom= 293.14 VA=  4736.8 | DXGI L=260.81 NL=  0.00 | Alloc blks=2 res=192.00 alloc=  2.81 unused=189.19 (  1.5%)
+7_first_submit_and_poll    WS= 303.67 PrivWS= 270.12 PrivCom= 293.75 VA=  4736.8 | DXGI L=261.25 NL=  0.00 | Alloc blks=2 res=192.00 alloc=  1.75 unused=190.25 (  0.9%)
+8_workload_complete        WS= 368.01 PrivWS= 334.29 PrivCom= 358.21 VA=  4800.8 | DXGI L=325.39 NL=  0.00 | Alloc blks=3 res=256.00 alloc= 10.38 unused=245.62 (  4.1%)
+9_resources_dropped        WS= 368.09 PrivWS= 334.29 PrivCom= 358.21 VA=  4800.8 | DXGI L=325.38 NL=  0.00 | Alloc blks=3 res=256.00 alloc=  0.56 unused=255.44 (  0.2%)
+  after_drop blocks=[134217728, 67108864, 67108864] allocs=[("(wgpu internal) Indirect dispatch validation destination buffer", 65536), ("(wgpu internal) zero init buffer", 524288)]
+10_extended_idle           WS= 368.09 PrivWS= 334.29 PrivCom= 358.21 VA=  4800.8 | DXGI L=325.38 NL=  0.00 | Alloc blks=3 res=256.00 alloc=  0.56 unused=255.44 (  0.2%)
+11_device_dropped          WS= 366.45 PrivWS= 332.58 PrivCom= 356.81 VA=  4799.5 | DXGI L=  6.22 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+  CPU timing: n=225 p50=5023.3us p90=5403.4us p99=7496.5us mean=5093.2us
+  GPU timing: n=225 p50=4469.4us p90=4550.8us p99=4608.5us mean=4377.9us

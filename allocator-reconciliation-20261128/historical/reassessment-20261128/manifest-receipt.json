@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-28T00:14:26.868122+00:00",
+  "files": 4317,
+  "bytes": 2968855552,
+  "verify_failures": [],
+  "excluded": "Cargo targets, Git internals, generated worktrees (canonical source patches/harnesses are archived), Python caches, manifest itself and this receipt"
+}

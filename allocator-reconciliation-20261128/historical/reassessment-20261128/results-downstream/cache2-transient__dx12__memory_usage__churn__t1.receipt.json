@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\cache2-transient.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "memory_usage",
+    "--workload",
+    "churn",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\cache2-transient__dx12__memory_usage__churn__t1.json"
+  ],
+  "exe_sha256": "e459e21ae06a6c67ed257f495799490bfeddfddc958f0c19827c118371bed926",
+  "validation_error": false,
+  "utc": "2026-11-27T20:22:27.973805+00:00",
+  "wall_s": 0.9349247999489307,
+  "cpu_times": {
+    "kernel_cpu_ms": 93.75,
+    "user_cpu_ms": 203.125,
+    "total_cpu_ms": 296.875
+  },
+  "settle_after_s": 2
+}

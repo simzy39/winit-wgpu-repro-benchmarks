@@ -1,0 +1,27 @@
+[
+  {
+    "name": "candidate-hal-unit",
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "wgpu-hal",
+      "--lib",
+      "--features",
+      "dx12",
+      "suballocation::tests"
+    ],
+    "rc": 0,
+    "wall_s": 60.20369260001462
+  },
+  {
+    "name": "candidate-full",
+    "command": [
+      "cargo",
+      "xtask",
+      "test"
+    ],
+    "rc": 1,
+    "wall_s": 1176.944393199985
+  }
+]

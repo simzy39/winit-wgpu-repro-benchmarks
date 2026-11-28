@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\pr323-lazy.exe",
+    "--backend",
+    "vulkan",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_alloc",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\pr323-lazy__vulkan__manual-8-256__large_alloc__t3.json"
+  ],
+  "exe_sha256": "69dce8d9b9d75e3d464dc165b61f87eaf625a06dac7b3f14dcb1f275efbc4911",
+  "validation_error": false,
+  "utc": "2026-11-27T20:38:03.458048+00:00",
+  "wall_s": 1.086570700048469,
+  "cpu_times": {
+    "kernel_cpu_ms": 187.5,
+    "user_cpu_ms": 62.5,
+    "total_cpu_ms": 250.0
+  },
+  "settle_after_s": 2
+}

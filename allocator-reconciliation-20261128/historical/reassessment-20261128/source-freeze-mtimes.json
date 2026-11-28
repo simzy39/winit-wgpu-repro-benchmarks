@@ -1,0 +1,40 @@
+{
+  "note": "Production source files predate both benchmark binaries. Only cfg(test) capacity tests changed later; mtimes supplement, rather than replace, source/patch hashes.",
+  "files": [
+    {
+      "path": "bin-verified/bench-cache2.exe",
+      "mtime_utc": "2026-11-27T19:37:00.302865+00:00",
+      "sha256": "406d5cbad2c43af7ede275799a705349a1205ad3d602f82a4c6bcf6d69de54c3"
+    },
+    {
+      "path": "bin-wgpu/cache2-both.exe",
+      "mtime_utc": "2026-11-27T19:43:18.705039+00:00",
+      "sha256": "40ca7e7d0cb42e6ed4e4e1d1b8cd2b38f39034f1457631ba00d273bef883b463"
+    },
+    {
+      "path": "work/cache2/gpu-allocator/src/lib.rs",
+      "mtime_utc": "2026-11-27T19:36:35.000407+00:00",
+      "sha256": "e6206bd119ac69924aecfd8f3b256e31e38dc8a20849f3994ed41703a5c24f24"
+    },
+    {
+      "path": "work/cache2/gpu-allocator/src/vulkan/mod.rs",
+      "mtime_utc": "2026-11-27T19:19:58.574634+00:00",
+      "sha256": "c0aadba6851636df7c85d3a70e8e1242a4720ece31cd59b1a2d3cec40f26c9ab"
+    },
+    {
+      "path": "work/cache2/gpu-allocator/src/d3d12/mod.rs",
+      "mtime_utc": "2026-11-27T19:19:58.577191+00:00",
+      "sha256": "afbff226ec1dbcee241571a64ed9f141c09b228f1d76909126eebaccebb05abc"
+    },
+    {
+      "path": "work/cache2/gpu-allocator/src/metal/mod.rs",
+      "mtime_utc": "2026-11-27T19:19:58.601650+00:00",
+      "sha256": "9fbe568081136961e66c8491ff7ca0f11572eefd1b8a56ad3f1c668a59ed544d"
+    },
+    {
+      "path": "work/cache2/gpu-allocator/src/vulkan/capacity_tests.rs",
+      "mtime_utc": "2026-11-27T20:13:59.246388+00:00",
+      "sha256": "c27a8d2f996fbda8bbdaaef57d17eef5d6aac1e4efe530272c67b6274b89bf5c"
+    }
+  ]
+}

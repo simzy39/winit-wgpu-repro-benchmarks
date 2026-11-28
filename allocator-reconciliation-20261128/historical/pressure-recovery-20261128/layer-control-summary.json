@@ -1,0 +1,15 @@
+{
+  "outcomes": {
+    "core": {
+      "test abort": 24
+    },
+    "none": {
+      "test abort": 24
+    }
+  },
+  "executions": 48,
+  "same_binary_per_mode": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\layer-control-bin\\wgpu_gpu-536b1e1bb9a20352.exe",
+  "exe_sha256": "22b8da17611a4f36e8d3e8be64e5d0ed416bd5f7307817171a1c474e56212a47",
+  "validation_dll_absent_in_all_24_none_executions": true,
+  "root_cause_limit": "These native mesh aborts do not require the SDK validation DLL. Driver/upstream shader path remains unresolved; no specific component blamed."
+}

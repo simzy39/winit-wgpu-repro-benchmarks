@@ -1,0 +1,23 @@
+[workspace]
+
+[package]
+name = "wgpu-mem-bench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wgpu = { path = "<workspace>/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/wgpu/singlepool/wgpu" }
+winit = "0.30.13"
+pollster = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Dxgi",
+    "Win32_System_Memory",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Threading",
+] }
+
+[patch.crates-io]
+gpu-allocator = { path = "<workspace>/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/work/recovery/gpu-allocator" }

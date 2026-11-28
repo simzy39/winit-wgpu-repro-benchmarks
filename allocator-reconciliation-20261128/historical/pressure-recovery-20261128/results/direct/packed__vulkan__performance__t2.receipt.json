@@ -1,0 +1,14 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin\\bench-packed.exe",
+    "vulkan",
+    "performance",
+    "2",
+    "packed"
+  ],
+  "exe_sha256": "38c67822b3d22b2517d64d8e26fa9f9c7bd8e4b989019e0881a4a41b55a78a1b",
+  "wall_s": 1.210090999957174,
+  "utc": "2026-11-28T01:47:26.511208+00:00",
+  "settle_s": 2
+}

@@ -1,0 +1,22 @@
+diff --git a/tests/src/init.rs b/tests/src/init.rs
+index 7464b0d..0ec9d0e 100644
+--- a/tests/src/init.rs
++++ b/tests/src/init.rs
+@@ -63,6 +63,17 @@ pub fn initialize_instance(backends: wgpu::Backends, params: &TestParameters) ->
+         .with_env()
+         .union(params.required_instance_flags)
+         .difference(params.forbidden_instance_flags);
++    // Diagnostic control only: retain one executable/path for both modes.
++    let core_only = std::env::var_os("GPUA_DIAGNOSTIC_CORE_ONLY").is_some();
++    let flags = if core_only {
++        flags - wgpu::InstanceFlags::GPU_BASED_VALIDATION
++    } else {
++        flags
++    };
++    assert!(flags.contains(wgpu::InstanceFlags::VALIDATION));
++    assert_eq!(flags.contains(wgpu::InstanceFlags::GPU_BASED_VALIDATION), !core_only);
++    eprintln!("GPUAV_FLAG_CONTROL: core=true gpuav={} flags={flags:?}", !core_only);
++
+ 
+     Instance::new(wgpu::InstanceDescriptor {
+         backends,

@@ -1,0 +1,34 @@
+{
+  "mode_outcomes": {
+    "on": {
+      "test abort": 30
+    },
+    "off": {
+      "pass": 6,
+      "test abort": 24
+    }
+  },
+  "native_gpuav_warning_by_trial": {
+    "on": [
+      true,
+      true,
+      true
+    ],
+    "off": [
+      false,
+      false,
+      false
+    ]
+  },
+  "verified_native_off_control": true,
+  "same_binary_and_path": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\gpuav-flag-control-bin\\wgpu_gpu-536b1e1bb9a20352.exe",
+  "exe_sha256": "caae2b7b46d4ed80559e8a2b1a457012b5aba3f518dd22e60b520089e9cec1b7",
+  "tests": 10,
+  "executions": 60,
+  "ordinary_native_suite_unchanged": {
+    "passed": 2184,
+    "failed": 23,
+    "executed": 2207,
+    "profile_exclusions": 18
+  }
+}

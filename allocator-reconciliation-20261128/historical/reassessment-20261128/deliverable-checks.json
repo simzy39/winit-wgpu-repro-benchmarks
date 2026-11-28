@@ -1,0 +1,43 @@
+{
+  "sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "broken_local_links": [],
+  "raw_process_counts": {
+    "results-direct-verified": 405,
+    "results-cache-limits": 80,
+    "results-downstream": 520
+  },
+  "source_freeze_verified": true,
+  "full_wgpu_tests": {
+    "passed": 2179,
+    "failed": 23,
+    "timed_out": 3,
+    "triage": {
+      "reproduces without candidate allocator": 24,
+      "executable-path sensitive with identical candidate bytes": 1,
+      "not reproduced in either focused control": 1
+    }
+  },
+  "validation_config_restored": true,
+  "historical_hashes_verified": 438
+}

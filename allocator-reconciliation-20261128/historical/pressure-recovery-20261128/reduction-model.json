@@ -1,0 +1,120 @@
+[
+  {
+    "scenario": "count_limited",
+    "policy": "exact",
+    "unit": "MiB",
+    "budget": 48,
+    "count_limit": 2,
+    "successes": 2,
+    "calls": [
+      64,
+      1,
+      64,
+      1
+    ],
+    "blocks": [
+      {
+        "size": 1,
+        "free": 0
+      },
+      {
+        "size": 1,
+        "free": 0
+      }
+    ]
+  },
+  {
+    "scenario": "count_limited",
+    "policy": "geometric",
+    "unit": "MiB",
+    "budget": 48,
+    "count_limit": 2,
+    "successes": 48,
+    "calls": [
+      64,
+      32,
+      64,
+      32,
+      16
+    ],
+    "blocks": [
+      {
+        "size": 32,
+        "free": 0
+      },
+      {
+        "size": 16,
+        "free": 0
+      }
+    ]
+  },
+  {
+    "scenario": "no_memory",
+    "policy": "exact",
+    "unit": "MiB",
+    "budget": 0,
+    "count_limit": 4096,
+    "successes": 0,
+    "calls": [
+      64,
+      1
+    ],
+    "blocks": []
+  },
+  {
+    "scenario": "no_memory",
+    "policy": "geometric",
+    "unit": "MiB",
+    "budget": 0,
+    "count_limit": 4096,
+    "successes": 0,
+    "calls": [
+      64,
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "blocks": []
+  },
+  {
+    "scenario": "large_resource",
+    "policy": "exact",
+    "unit": "MiB",
+    "budget": 12,
+    "count_limit": 4096,
+    "successes": 1,
+    "calls": [
+      64,
+      9
+    ],
+    "blocks": [
+      {
+        "size": 9,
+        "free": 0
+      }
+    ]
+  },
+  {
+    "scenario": "large_resource",
+    "policy": "geometric",
+    "unit": "MiB",
+    "budget": 12,
+    "count_limit": 4096,
+    "successes": 1,
+    "calls": [
+      64,
+      32,
+      16,
+      9
+    ],
+    "blocks": [
+      {
+        "size": 9,
+        "free": 0
+      }
+    ]
+  }
+]

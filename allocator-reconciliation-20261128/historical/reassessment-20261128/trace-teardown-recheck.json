@@ -1,0 +1,32 @@
+[
+  {
+    "trial": 1,
+    "rc": 0,
+    "tail": [
+      "    device:                         VkDevice = 0000025A2D360498",
+      "    pAllocator:                     const VkAllocationCallbacks* = NULL",
+      "",
+      "Thread 0, Frame 0:",
+      "vkDestroyInstance(instance, pAllocator) returns void:",
+      "    instance:                       VkInstance = 0000025A2AF363C0",
+      "    pAllocator:                     const VkAllocationCallbacks* = NULL",
+      ""
+    ],
+    "timings_excluded": true
+  },
+  {
+    "trial": 2,
+    "rc": 3221225477,
+    "tail": [
+      "Thread 0, Frame 0:",
+      "vkFreeMemory(device, memory, pAllocator) returns void:",
+      "    device:                         VkDevice = 000001E48C120498",
+      "    memory:                         VkDeviceMemory = 000001E48BC42468",
+      "    pAllocator:                     const VkAllocationCallbacks* = NULL",
+      "",
+      "Thread 0, Frame 0:",
+      "vkDestroyDevice(device, pAllocator) returns void"
+    ],
+    "timings_excluded": true
+  }
+]

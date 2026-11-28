@@ -1,0 +1,36 @@
+[
+  {
+    "name": "gpa-rollback",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-rollback"
+    ],
+    "rc": 101
+  },
+  {
+    "name": "gpa-vulkan",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-vulkan"
+    ],
+    "rc": 101
+  }
+]

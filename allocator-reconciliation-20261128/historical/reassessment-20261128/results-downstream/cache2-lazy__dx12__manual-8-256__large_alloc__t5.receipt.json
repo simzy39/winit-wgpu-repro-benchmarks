@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\cache2-lazy.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_alloc",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\cache2-lazy__dx12__manual-8-256__large_alloc__t5.json"
+  ],
+  "exe_sha256": "9b915b223417aa0ac1b0b188cc244683830a65b90a43050c914670fb2949fd23",
+  "validation_error": false,
+  "utc": "2026-11-27T22:39:52.286580+00:00",
+  "wall_s": 3.049478500033729,
+  "cpu_times": {
+    "kernel_cpu_ms": 468.75,
+    "user_cpu_ms": 156.25,
+    "total_cpu_ms": 625.0
+  },
+  "settle_after_s": 2
+}

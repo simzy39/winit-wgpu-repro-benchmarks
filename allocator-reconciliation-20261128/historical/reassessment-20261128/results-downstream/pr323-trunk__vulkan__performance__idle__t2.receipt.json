@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\pr323-trunk.exe",
+    "--backend",
+    "vulkan",
+    "--hints",
+    "performance",
+    "--workload",
+    "idle",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\pr323-trunk__vulkan__performance__idle__t2.json"
+  ],
+  "exe_sha256": "a654aaf6c92c0864a19f8e06ad111e53da312977d17b2f6d4d565ddbe95a62ea",
+  "validation_error": false,
+  "utc": "2026-11-27T20:30:04.270777+00:00",
+  "wall_s": 0.9716104998951778,
+  "cpu_times": {
+    "kernel_cpu_ms": 93.75,
+    "user_cpu_ms": 93.75,
+    "total_cpu_ms": 187.5
+  },
+  "settle_after_s": 2
+}

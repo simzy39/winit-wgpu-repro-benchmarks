@@ -1,0 +1,86 @@
+{
+  "binary": "wgpu-test::wgpu-gpu",
+  "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+  "runs": [
+    {
+      "trial": 1,
+      "label": "pr323",
+      "rc": 0,
+      "failed": false,
+      "log": "wgpu-failure-controls\\multiview-pr323-1.log",
+      "junit": "wgpu-failure-controls\\multiview-pr323-1.xml"
+    },
+    {
+      "trial": 1,
+      "label": "candidate",
+      "rc": 100,
+      "failed": true,
+      "log": "wgpu-failure-controls\\multiview-candidate-1.log",
+      "junit": "wgpu-failure-controls\\multiview-candidate-1.xml"
+    },
+    {
+      "trial": 2,
+      "label": "candidate",
+      "rc": 100,
+      "failed": true,
+      "log": "wgpu-failure-controls\\multiview-candidate-2.log",
+      "junit": "wgpu-failure-controls\\multiview-candidate-2.xml"
+    },
+    {
+      "trial": 2,
+      "label": "pr323",
+      "rc": 0,
+      "failed": false,
+      "log": "wgpu-failure-controls\\multiview-pr323-2.log",
+      "junit": "wgpu-failure-controls\\multiview-pr323-2.xml"
+    },
+    {
+      "trial": 3,
+      "label": "pr323",
+      "rc": 0,
+      "failed": false,
+      "log": "wgpu-failure-controls\\multiview-pr323-3.log",
+      "junit": "wgpu-failure-controls\\multiview-pr323-3.xml"
+    },
+    {
+      "trial": 3,
+      "label": "candidate",
+      "rc": 100,
+      "failed": true,
+      "log": "wgpu-failure-controls\\multiview-candidate-3.log",
+      "junit": "wgpu-failure-controls\\multiview-candidate-3.xml"
+    },
+    {
+      "trial": 4,
+      "label": "candidate",
+      "rc": 100,
+      "failed": true,
+      "log": "wgpu-failure-controls\\multiview-candidate-4.log",
+      "junit": "wgpu-failure-controls\\multiview-candidate-4.xml"
+    },
+    {
+      "trial": 4,
+      "label": "pr323",
+      "rc": 0,
+      "failed": false,
+      "log": "wgpu-failure-controls\\multiview-pr323-4.log",
+      "junit": "wgpu-failure-controls\\multiview-pr323-4.xml"
+    },
+    {
+      "trial": 5,
+      "label": "pr323",
+      "rc": 0,
+      "failed": false,
+      "log": "wgpu-failure-controls\\multiview-pr323-5.log",
+      "junit": "wgpu-failure-controls\\multiview-pr323-5.xml"
+    },
+    {
+      "trial": 5,
+      "label": "candidate",
+      "rc": 100,
+      "failed": true,
+      "log": "wgpu-failure-controls\\multiview-candidate-5.log",
+      "junit": "wgpu-failure-controls\\multiview-candidate-5.xml"
+    }
+  ]
+}

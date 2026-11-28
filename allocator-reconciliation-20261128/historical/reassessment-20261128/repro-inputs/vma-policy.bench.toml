@@ -1,0 +1,19 @@
+[package]
+name = "gpua-policy-bench"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Block-size policy A/B harness for gpu-allocator variants (generated from Cargo.toml.in by build_variants.sh)."
+
+[dependencies]
+# Variant under test (substituted by build_variants.sh):
+gpu-allocator = { path = "../gpu-allocator", default-features = false, features = ["std", "d3d12", "vulkan"] }
+ash = { version = "0.38", default-features = false, features = ["loaded", "debug"] }
+serde_json = "1"
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Direct3D",
+    "Win32_Graphics_Direct3D12",
+    "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Dxgi_Common",
+] }

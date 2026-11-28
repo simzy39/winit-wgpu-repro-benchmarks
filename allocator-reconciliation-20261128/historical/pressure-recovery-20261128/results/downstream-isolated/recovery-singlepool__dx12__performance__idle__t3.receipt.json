@@ -1,0 +1,19 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin-wgpu-isolated\\recovery-singlepool.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "performance",
+    "--workload",
+    "idle",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\results\\downstream-isolated\\recovery-singlepool__dx12__performance__idle__t3.json"
+  ],
+  "exe_sha256": "519784ab429fdd60ba8ada6d39216f4e569032a71e73d48a7f0574623876366c",
+  "wall_s": 0.7936821999028325,
+  "validation_error": false,
+  "utc": "2026-11-28T02:20:40.115212+00:00",
+  "settle_s": 2
+}

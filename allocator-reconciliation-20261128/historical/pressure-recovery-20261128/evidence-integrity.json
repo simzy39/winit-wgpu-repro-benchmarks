@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-28T06:21:25.015735+00:00",
+  "manifest": "EVIDENCE.sha256",
+  "sha256": "350e07b602ea37ef2086e4c6f12b21c85feb189475e6916863fe439d0ec623ec",
+  "files": 2691,
+  "bytes": 423041515,
+  "read_back_failures": [],
+  "scope": "EVIDENCE_SCOPE.md",
+  "previous_manifests": "prior-integrity-final.json",
+  "repository_and_source_checks": "final-boundary-audit.json"
+}

@@ -1,0 +1,9 @@
+=== wgpu-mem-bench backend=dx12 hints=performance workload=idle ===
+0_process_start            WS=  11.49 PrivWS=   1.41 PrivCom=   2.25 VA=  4215.8 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+1_instance_new             WS=  12.96 PrivWS=   1.55 PrivCom=   2.73 VA=  4237.4 | DXGI L=  0.00 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+  adapter: Intel(R) Arc(TM) Graphics (Dx12, IntegratedGpu, driver=31.0.101.5328 )
+2_adapter_request          WS=  36.08 PrivWS=   6.37 PrivCom=  28.71 VA=  4478.1 | DXGI L=  0.16 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)
+3_device_request           WS= 262.12 PrivWS= 220.38 PrivCom= 243.94 VA=  4672.3 | DXGI L=212.74 NL=  0.00 | Alloc blks=2 res=144.00 alloc=  0.69 unused=143.31 (  0.5%)
+  device_request blocks=[134217728, 16777216] allocs=[("(wgpu internal) zero init buffer", 524288), ("(wgpu internal) Indirect dispatch validation destination buffer", 65536), ("(wgpu internal) default external texture params buffer", 65536), ("(wgpu internal) Staging", 65536)]
+10_extended_idle           WS= 267.08 PrivWS= 220.38 PrivCom= 243.94 VA=  4672.3 | DXGI L=212.74 NL=  0.00 | Alloc blks=2 res=144.00 alloc=  0.69 unused=143.31 (  0.5%)
+11_device_dropped          WS= 266.52 PrivWS= 219.73 PrivCom= 242.90 VA=  4672.1 | DXGI L=  6.16 NL=  0.00 | Alloc blks=0 res=  0.00 alloc=  0.00 unused=  0.00 (  0.0%)

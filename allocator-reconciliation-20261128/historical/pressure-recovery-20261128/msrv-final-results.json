@@ -1,0 +1,191 @@
+[
+  {
+    "variant": "pr323",
+    "mode": "std-vulkan",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\pr323-std-vulkan\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "std-d3d12",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+stable",
+        "update",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\pr323-std-d3d12\\Cargo.toml",
+        "-p",
+        "windows@0.62.2",
+        "--precise",
+        "0.58.0",
+        "--offline"
+      ],
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\pr323-std-d3d12\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "pr323",
+    "mode": "nostd-vulkan",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\pr323-nostd-vulkan\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "std-vulkan",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\cache2-std-vulkan\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "std-d3d12",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+stable",
+        "update",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\cache2-std-d3d12\\Cargo.toml",
+        "-p",
+        "windows@0.62.2",
+        "--precise",
+        "0.58.0",
+        "--offline"
+      ],
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\cache2-std-d3d12\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "cache2",
+    "mode": "nostd-vulkan",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\cache2-nostd-vulkan\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "std-vulkan",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-std-vulkan\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "std-d3d12",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+stable",
+        "update",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-std-d3d12\\Cargo.toml",
+        "-p",
+        "windows@0.62.2",
+        "--precise",
+        "0.58.0",
+        "--offline"
+      ],
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-std-d3d12\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  },
+  {
+    "variant": "recovery",
+    "mode": "nostd-vulkan",
+    "rc": 0,
+    "commands": [
+      [
+        "cargo",
+        "+1.71.0",
+        "check",
+        "--manifest-path",
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\msrv-final\\recovery-nostd-vulkan\\Cargo.toml",
+        "--lib",
+        "--locked",
+        "--offline"
+      ]
+    ]
+  }
+]

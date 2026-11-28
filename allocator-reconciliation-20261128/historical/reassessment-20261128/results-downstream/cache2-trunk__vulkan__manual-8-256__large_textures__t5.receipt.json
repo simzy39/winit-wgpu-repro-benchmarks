@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\cache2-trunk.exe",
+    "--backend",
+    "vulkan",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_textures",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\cache2-trunk__vulkan__manual-8-256__large_textures__t5.json"
+  ],
+  "exe_sha256": "a223fac2a4cd3659e5aa2043d6511121fbb3b2b5113432efcf6b17cd70333eb8",
+  "validation_error": false,
+  "utc": "2026-11-27T22:41:25.137374+00:00",
+  "wall_s": 0.9732567999744788,
+  "cpu_times": {
+    "kernel_cpu_ms": 93.75,
+    "user_cpu_ms": 109.375,
+    "total_cpu_ms": 203.125
+  },
+  "settle_after_s": 2
+}

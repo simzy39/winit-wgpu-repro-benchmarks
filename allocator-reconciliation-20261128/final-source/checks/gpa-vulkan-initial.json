@@ -1,0 +1,59 @@
+[
+  {
+    "name": "std",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-vulkan"
+    ],
+    "rc": 0,
+    "wall_s": 49.758011600002646
+  },
+  {
+    "name": "nostd",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-vulkan"
+    ],
+    "rc": 0,
+    "wall_s": 1.8978341000620276
+  },
+  {
+    "name": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--all-targets",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\target-gpa-vulkan",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 101,
+    "wall_s": 8.315754399984144
+  }
+]

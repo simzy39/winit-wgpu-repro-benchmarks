@@ -1,0 +1,19 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin-wgpu-isolated\\cache2-both.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "performance",
+    "--workload",
+    "sustained_render",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\results\\downstream-isolated\\cache2-both__dx12__performance__sustained_render__t3.json"
+  ],
+  "exe_sha256": "92c1daa22b960f8b0f27142ab24fea3dfd4d8ddab18146baf2dfbdc6e80f1638",
+  "wall_s": 1.9302859000163153,
+  "validation_error": false,
+  "utc": "2026-11-28T02:21:09.619542+00:00",
+  "settle_s": 2
+}

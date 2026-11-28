@@ -1,0 +1,168 @@
+{
+  "selected": "recovery",
+  "cache_selection": "largest eligible empty block, at most one per type and min(2*min,max)",
+  "aggregate_bound": "Vulkan: empty caches per physical heap <= declared heap size; explicit application scalar budget through trim_to",
+  "placement_order": "existing reverse slot order retained",
+  "growth": "occupied shared blocks, excluding empty cache",
+  "recovery": "cause-sensitive, existing compatible Vulkan reuse, cache reclamation/retry, one minimum-size fallback per type; Metal commits pending residency removals",
+  "alternatives": [
+    {
+      "variant": "recovery",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "smallcache",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 34,
+          "equal": 26,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "smallcache",
+      "baseline": "recovery",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 34,
+          "equal": 26,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "heapcap",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "retained_after_release_mib": {
+          "lower": 4,
+          "equal": 56,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "heapcap",
+      "baseline": "recovery",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "retained_after_release_mib": {
+          "lower": 4,
+          "equal": 56,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "packed",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "packed",
+      "baseline": "recovery",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        }
+      }
+    }
+  ],
+  "reason": "Smallest-cache reduces retention but increases churn; aggressive derived aggregate cap can increase peak and creation count; packed placement showed no plan benefit. Preserve simple bounded default and explicit application control.",
+  "final_source_checks": "final-source-checks.json",
+  "final_pair": "final-pair-summary.json",
+  "utc": "2026-11-28T02:11:49.092003+00:00"
+}

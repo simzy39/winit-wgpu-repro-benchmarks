@@ -1,0 +1,173 @@
+{
+  "selected": "recovery",
+  "cache_selection": "largest eligible empty block, at most one per type and min(2*min,max)",
+  "aggregate_bound": "Vulkan: empty caches per physical heap <= declared heap size; explicit application scalar budget through trim_to",
+  "placement_order": "existing reverse slot order retained",
+  "growth": "occupied shared blocks, excluding empty cache",
+  "recovery": "Typed Vulkan/D3D12 memory failures: reclaim/retry then geometric reduction to the aligned resource floor; count/fatal errors never shrink. Metal: conservative exact-floor fallback for ambiguous nil and residency commit.",
+  "alternatives": [
+    {
+      "variant": "recovery",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "smallcache",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 34,
+          "equal": 26,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "smallcache",
+      "baseline": "recovery",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 34,
+          "equal": 26,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "heapcap",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "retained_after_release_mib": {
+          "lower": 4,
+          "equal": 56,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "heapcap",
+      "baseline": "recovery",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 58,
+          "higher": 2
+        },
+        "retained_after_release_mib": {
+          "lower": 4,
+          "equal": 56,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "packed",
+      "baseline": "cache2",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        }
+      }
+    },
+    {
+      "variant": "packed",
+      "baseline": "recovery",
+      "cells": 60,
+      "counts": {
+        "blocks_created": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "peak_capacity_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        },
+        "retained_after_release_mib": {
+          "lower": 0,
+          "equal": 60,
+          "higher": 0
+        }
+      }
+    }
+  ],
+  "reason": "Smallest-cache reduces retention but increases churn; aggressive derived aggregate cap can increase peak and creation count; packed placement showed no plan benefit. Preserve simple bounded default and explicit application control.",
+  "final_source_checks": "handoff-source-checks.json",
+  "final_pair": "final-pair-summary.json",
+  "utc": "2026-11-28T02:11:49.092003+00:00",
+  "reduction_evidence": "reduction-actual.json",
+  "reduction_reason": "Exact-size fallback served only2 of48 1MiB requests under a48MiB budget and2-block limit; geometric served48 using32+16MiB blocks. Tradeoff: seven failed calls instead of two when no size fits. Finite u64/alignment bound, no arbitrary retry cap.",
+  "geometric_native_suite": "backoff-full-wgpu.json",
+  "final_source_delta": "handoff-source-delta.json",
+  "convenience_resource_lifetimes": "Return suballocations on all placed creation/option failures; partial resources drop first; null placed/committed success becomes diagnostic error. Identical-driver old-source controls fail four tests, fixed43 pass."
+}

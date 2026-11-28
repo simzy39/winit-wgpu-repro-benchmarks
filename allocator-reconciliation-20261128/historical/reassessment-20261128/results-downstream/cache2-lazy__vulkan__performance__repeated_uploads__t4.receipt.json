@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\cache2-lazy.exe",
+    "--backend",
+    "vulkan",
+    "--hints",
+    "performance",
+    "--workload",
+    "repeated_uploads",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\cache2-lazy__vulkan__performance__repeated_uploads__t4.json"
+  ],
+  "exe_sha256": "9b915b223417aa0ac1b0b188cc244683830a65b90a43050c914670fb2949fd23",
+  "validation_error": false,
+  "utc": "2026-11-27T20:42:40.170233+00:00",
+  "wall_s": 1.0712274999823421,
+  "cpu_times": {
+    "kernel_cpu_ms": 218.75,
+    "user_cpu_ms": 78.125,
+    "total_cpu_ms": 296.875
+  },
+  "settle_after_s": 2
+}

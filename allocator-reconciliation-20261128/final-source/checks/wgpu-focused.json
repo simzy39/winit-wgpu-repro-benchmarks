@@ -1,0 +1,25 @@
+[
+  {
+    "name": "wgpu-lazy",
+    "check": "historical-source-reuse",
+    "changed_files_since_prior_pr": [
+      ".github/workflows/ci.yml"
+    ],
+    "runtime_unchanged": true,
+    "lock_unchanged": true,
+    "debug_info": "0 for compilation/targeted tests; optimizations and debug assertions retain default test settings."
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "rc": 0,
+    "wall_s": 63.12322120007593
+  }
+]

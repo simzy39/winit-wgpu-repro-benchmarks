@@ -1,0 +1,62 @@
+[
+  {
+    "label": "pr323",
+    "trial": 1,
+    "rc": 0,
+    "failed": false,
+    "exe_sha256": "7cbb4af09f09cf772159c438e328bf39a469e0aef97aca2ba1e9ca55948a7d5d",
+    "compiler": [
+      "[2026-11-28T00:04:38.449Z DEBUG wgpu_hal::dx12::instance] Using static DXC for shader compilation"
+    ]
+  },
+  {
+    "label": "candidate",
+    "trial": 1,
+    "rc": 0,
+    "failed": false,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "compiler": [
+      "[2026-11-28T00:04:47.991Z DEBUG wgpu_hal::dx12::instance] Using static DXC for shader compilation"
+    ]
+  },
+  {
+    "label": "candidate",
+    "trial": 2,
+    "rc": 0,
+    "failed": false,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "compiler": [
+      "[2026-11-28T00:04:56.197Z DEBUG wgpu_hal::dx12::instance] Using static DXC for shader compilation"
+    ]
+  },
+  {
+    "label": "pr323",
+    "trial": 2,
+    "rc": 0,
+    "failed": false,
+    "exe_sha256": "7cbb4af09f09cf772159c438e328bf39a469e0aef97aca2ba1e9ca55948a7d5d",
+    "compiler": [
+      "[2026-11-28T00:05:03.995Z DEBUG wgpu_hal::dx12::instance] Using static DXC for shader compilation"
+    ]
+  },
+  {
+    "label": "pr323",
+    "trial": 3,
+    "rc": 0,
+    "failed": false,
+    "exe_sha256": "7cbb4af09f09cf772159c438e328bf39a469e0aef97aca2ba1e9ca55948a7d5d",
+    "compiler": [
+      "[2026-11-28T00:05:12.055Z DEBUG wgpu_hal::dx12::instance] Using static DXC for shader compilation"
+    ]
+  },
+  {
+    "label": "candidate",
+    "trial": 3,
+    "rc": 0,
+    "failed": false,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16",
+    "compiler": [
+      "[2026-11-28T00:05:21.383Z DEBUG wgpu_hal::dx12::instance] Using static DXC for shader compilation"
+    ]
+  }
+]

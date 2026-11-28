@@ -1,0 +1,104 @@
+[
+  {
+    "scenario": "cross_type_cache",
+    "success": false,
+    "calls": [
+      [
+        0,
+        8388608
+      ],
+      [
+        1,
+        8388608
+      ],
+      [
+        0,
+        16777216
+      ]
+    ],
+    "freed": 0,
+    "native_live_bytes": 16777216,
+    "variant": "cache2"
+  },
+  {
+    "scenario": "minimum_fallback",
+    "success": false,
+    "calls": [
+      [
+        0,
+        16777216
+      ]
+    ],
+    "freed": 0,
+    "native_live_bytes": 0,
+    "variant": "cache2"
+  },
+  {
+    "scenario": "fatal_error",
+    "success": false,
+    "calls": [
+      [
+        0,
+        16777216
+      ]
+    ],
+    "freed": 0,
+    "native_live_bytes": 0,
+    "variant": "cache2"
+  },
+  {
+    "scenario": "cross_type_cache",
+    "success": true,
+    "calls": [
+      [
+        0,
+        8388608
+      ],
+      [
+        1,
+        8388608
+      ],
+      [
+        0,
+        16777216
+      ],
+      [
+        0,
+        16777216
+      ]
+    ],
+    "freed": 1,
+    "native_live_bytes": 25165824,
+    "variant": "recovery"
+  },
+  {
+    "scenario": "minimum_fallback",
+    "success": true,
+    "calls": [
+      [
+        0,
+        16777216
+      ],
+      [
+        0,
+        9437184
+      ]
+    ],
+    "freed": 0,
+    "native_live_bytes": 9437184,
+    "variant": "recovery"
+  },
+  {
+    "scenario": "fatal_error",
+    "success": false,
+    "calls": [
+      [
+        0,
+        16777216
+      ]
+    ],
+    "freed": 0,
+    "native_live_bytes": 0,
+    "variant": "recovery"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "exact",
+    "scenario": "count_limited",
+    "successes": 2,
+    "calls_mib": [
+      64,
+      1,
+      64,
+      1
+    ],
+    "capacity_mib": 2
+  },
+  {
+    "variant": "exact",
+    "scenario": "no_memory",
+    "successes": 0,
+    "calls_mib": [
+      64,
+      1
+    ],
+    "capacity_mib": 0
+  },
+  {
+    "variant": "exact",
+    "scenario": "large_resource",
+    "successes": 1,
+    "calls_mib": [
+      64,
+      9
+    ],
+    "capacity_mib": 9
+  },
+  {
+    "variant": "geometric",
+    "scenario": "count_limited",
+    "successes": 48,
+    "calls_mib": [
+      64,
+      32,
+      64,
+      32,
+      16
+    ],
+    "capacity_mib": 48
+  },
+  {
+    "variant": "geometric",
+    "scenario": "no_memory",
+    "successes": 0,
+    "calls_mib": [
+      64,
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "capacity_mib": 0
+  },
+  {
+    "variant": "geometric",
+    "scenario": "large_resource",
+    "successes": 1,
+    "calls_mib": [
+      64,
+      32,
+      16,
+      9
+    ],
+    "capacity_mib": 9
+  }
+]

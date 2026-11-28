@@ -1,0 +1,9 @@
+{
+  "equal": true,
+  "normalized_sha256": {
+    "pr323": "b80c2d5fc5c81637a57e551a2ee6c296c089157a29d8fc4f831b0190ed30da58",
+    "proto": "b80c2d5fc5c81637a57e551a2ee6c296c089157a29d8fc4f831b0190ed30da58"
+  },
+  "api_calls": 3910,
+  "method": "Keep allocate/free/map/unmap calls and allocation size, type, mapping size, offset and flags. api_dump already anonymized handle and pointer addresses."
+}

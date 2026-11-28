@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\pr323-both.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "performance",
+    "--workload",
+    "repeated_uploads",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\pr323-both__dx12__performance__repeated_uploads__t1.json"
+  ],
+  "exe_sha256": "e3a81afd75170bd65a958f287f4501d1f60cbe3fc6b6d5b098856823fa446f54",
+  "validation_error": false,
+  "utc": "2026-11-27T20:20:59.842160+00:00",
+  "wall_s": 2.079852000111714,
+  "cpu_times": {
+    "kernel_cpu_ms": 250.0,
+    "user_cpu_ms": 687.5,
+    "total_cpu_ms": 937.5
+  },
+  "settle_after_s": 2
+}

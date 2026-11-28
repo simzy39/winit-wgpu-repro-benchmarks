@@ -1,0 +1,234 @@
+[
+  {
+    "name": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "-p",
+      "gpu-allocator",
+      "--",
+      "--check"
+    ],
+    "rc": 0,
+    "wall_s": 2.426586200017482
+  },
+  {
+    "name": "unit-std",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 67.67384689999744
+  },
+  {
+    "name": "doc-tests",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--doc",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 26.455013799946755
+  },
+  {
+    "name": "clippy-std",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--all-targets",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 101,
+    "wall_s": 87.18665599997621
+  },
+  {
+    "name": "clippy-nostd",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 101,
+    "wall_s": 45.50192389998119
+  },
+  {
+    "name": "clippy-visualizer",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12,visualizer",
+      "--all-targets",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 101,
+    "wall_s": 113.00725989998318
+  },
+  {
+    "name": "rustdoc",
+    "command": [
+      "cargo",
+      "doc",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-deps",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--document-private-items",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 5.387981400010176
+  },
+  {
+    "name": "metal-arm",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--target",
+      "aarch64-apple-darwin",
+      "--no-default-features",
+      "--features",
+      "std,metal",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 101,
+    "wall_s": 24.205613400088623
+  },
+  {
+    "name": "metal-intel",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--target",
+      "x86_64-apple-darwin",
+      "--no-default-features",
+      "--features",
+      "std,metal",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 18.691186200012453
+  },
+  {
+    "name": "linux-nostd",
+    "command": [
+      "cargo",
+      "check",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--target",
+      "x86_64-unknown-linux-gnu",
+      "--no-default-features",
+      "--features",
+      "hashbrown,vulkan",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 76.7743661000859
+  },
+  {
+    "name": "example-vulkan",
+    "command": [
+      "cargo",
+      "run",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--example",
+      "vulkan-buffer",
+      "--no-default-features",
+      "--features",
+      "std,vulkan",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 16.500109900021926
+  },
+  {
+    "name": "example-d3d12",
+    "command": [
+      "cargo",
+      "run",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--example",
+      "d3d12-buffer-winrs",
+      "--no-default-features",
+      "--features",
+      "std,d3d12",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\target-validation"
+    ],
+    "rc": 0,
+    "wall_s": 9.430538500077091
+  }
+]

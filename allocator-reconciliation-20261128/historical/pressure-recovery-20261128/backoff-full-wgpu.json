@@ -1,0 +1,11 @@
+{
+  "command": [
+    "cargo",
+    "xtask",
+    "test"
+  ],
+  "rc": 1,
+  "wall_s": 1034.6371136999223,
+  "junit_source": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\candidate\\target\\nextest\\default\\junit.xml",
+  "test_override": "workspace Cargo.toml, inherited by trybuild"
+}

@@ -1,0 +1,1008 @@
+diff --git a/tests/tests/wgpu-gpu/external_texture/mod.rs b/tests/tests/wgpu-gpu/external_texture/mod.rs
+index d4296f0..cd6103e 100644
+--- a/tests/tests/wgpu-gpu/external_texture/mod.rs
++++ b/tests/tests/wgpu-gpu/external_texture/mod.rs
+@@ -15,6 +15,7 @@ pub fn all_tests(vec: &mut Vec<GpuTestInitializer>) {
+         EXTERNAL_TEXTURE_SAMPLE_TRANSFORM,
+         EXTERNAL_TEXTURE_FROM_VIEW_ZERO_INIT_AFTER_DISCARD,
+         EXTERNAL_TEXTURE_ZERO_INIT_AFTER_DISCARD,
++        EXTERNAL_TEXTURE_DEFAULT_PARAMS_LAZY_INIT,
+     ]);
+ }
+ 
+@@ -1249,3 +1250,98 @@ static EXTERNAL_TEXTURE_ZERO_INIT_AFTER_DISCARD: GpuTestConfiguration = GpuTestC
+         );
+         assert_eq!(&loads, &[TRANSPARENT_BLACK_F32; 4]);
+     });
++
++/// Tests that `default_external_texture_params_buffer` is not allocated eagerly
++/// at device creation, and initializes correctly on first `TextureView` ->
++/// `ExternalTexture` binding (including after a prior queue flush and under
++/// concurrent bind group creation).
++#[apply(gpu_test!)]
++static EXTERNAL_TEXTURE_DEFAULT_PARAMS_LAZY_INIT: GpuTestConfiguration =
++    GpuTestConfiguration::new()
++        .parameters(
++            TestParameters::default()
++                .test_features_limits()
++                .features(wgpu::Features::EXTERNAL_TEXTURE),
++        )
++        .run_async(|ctx| async move {
++            if let Some(report) = ctx.device.generate_allocator_report() {
++                assert!(
++                    !report
++                        .allocations
++                        .iter()
++                        .any(|a| a.name.contains("default external texture params")),
++                    "default external texture params buffer should not be allocated eagerly: {:?}",
++                    report.allocations
++                );
++                assert!(
++                    !report
++                        .allocations
++                        .iter()
++                        .any(|a| a.name.contains("Staging")),
++                    "no staging buffer should be allocated eagerly at device creation: {:?}",
++                    report.allocations
++                );
++            }
++
++            let view = create_texture_and_view(
++                &ctx,
++                wgpu::Extent3d {
++                    width: 2,
++                    height: 2,
++                    depth_or_array_layers: 1,
++                },
++                wgpu::TextureFormat::Rgba8Unorm,
++                Some(RGBA_TEXTURE_DATA.as_flattened()),
++            );
++
++            // Flush PendingWrites after the texture upload so
++            // `pending_writes.is_recording == false` when lazy initialization runs.
++            ctx.queue.submit([]);
++
++            #[cfg(not(target_arch = "wasm32"))]
++            {
++                let bgl = ctx
++                    .device
++                    .create_bind_group_layout(&wgpu::BindGroupLayoutDescriptor {
++                        label: None,
++                        entries: &[wgpu::BindGroupLayoutEntry {
++                            binding: 0,
++                            visibility: wgpu::ShaderStages::COMPUTE,
++                            ty: wgpu::BindingType::ExternalTexture,
++                            count: None,
++                        }],
++                    });
++                std::thread::scope(|s| {
++                    for _ in 0..4 {
++                        s.spawn(|| {
++                            let _bg = ctx.device.create_bind_group(&wgpu::BindGroupDescriptor {
++                                label: None,
++                                layout: &bgl,
++                                entries: &[wgpu::BindGroupEntry {
++                                    binding: 0,
++                                    resource: wgpu::BindingResource::TextureView(&view),
++                                }],
++                            });
++                        });
++                    }
++                });
++            }
++
++            let samples = get_samples(
++                &ctx,
++                &[[0.25, 0.25], [0.75, 0.25], [0.25, 0.75], [0.75, 0.75]],
++                wgpu::BindingResource::TextureView(&view),
++            );
++            assert_eq!(&samples, &[RED_F32, GREEN_F32, BLUE_F32, YELLOW_F32]);
++
++            if let Some(report) = ctx.device.generate_allocator_report() {
++                assert!(
++                    report
++                        .allocations
++                        .iter()
++                        .any(|a| a.name.contains("default external texture params")),
++                    "default external texture params buffer should exist after first TextureView -> ExternalTexture binding: {:?}",
++                    report.allocations
++                );
++            }
++        });
+diff --git a/tests/tests/wgpu-gpu/transient_memory.rs b/tests/tests/wgpu-gpu/transient_memory.rs
+index 2853613..c97126f 100644
+--- a/tests/tests/wgpu-gpu/transient_memory.rs
++++ b/tests/tests/wgpu-gpu/transient_memory.rs
+@@ -14,8 +14,10 @@ pub fn all_tests(vec: &mut Vec<GpuTestInitializer>) {
+ static TRANSIENT_BUFFERS_RELEASE_MEMORY_BLOCKS: GpuTestConfiguration = GpuTestConfiguration::new()
+     .parameters(
+         TestParameters::default()
+-            // Only the Vulkan backend has a separate transient memory pool.
+-            .skip(FailureCase::backend(Backends::all() - Backends::VULKAN)),
++            // Only the Vulkan and DX12 backends have a separate transient memory pool.
++            .skip(FailureCase::backend(
++                Backends::all() - Backends::VULKAN - Backends::DX12,
++            )),
+     )
+     .run_async(|ctx| async move {
+         match ctx.adapter_info.backend {
+@@ -26,9 +28,15 @@ static TRANSIENT_BUFFERS_RELEASE_MEMORY_BLOCKS: GpuTestConfiguration = GpuTestCo
+                 target_os = "freebsd",
+                 target_os = "macos"
+             ))]
+-            wgpu::Backend::Vulkan => check_transient_buffers_release_memory_blocks(&ctx),
++            wgpu::Backend::Vulkan => {
++                check_transient_buffers_release_memory_blocks::<wgpu::hal::vulkan::Api>(&ctx)
++            }
++            #[cfg(windows)]
++            wgpu::Backend::Dx12 => {
++                check_transient_buffers_release_memory_blocks::<wgpu::hal::dx12::Api>(&ctx)
++            }
+             other => unreachable!(
+-                "test is configured to skip all backends except Vulkan, but ran on {other:?}"
++                "test is configured to skip all backends except Vulkan and DX12, but ran on {other:?}"
+             ),
+         }
+     });
+@@ -40,7 +48,9 @@ static TRANSIENT_BUFFERS_RELEASE_MEMORY_BLOCKS: GpuTestConfiguration = GpuTestCo
+     target_os = "freebsd",
+     target_os = "macos"
+ ))]
+-fn check_transient_buffers_release_memory_blocks(ctx: &wgpu_test::TestingContext) {
++fn check_transient_buffers_release_memory_blocks<A: wgpu::hal::Api>(
++    ctx: &wgpu_test::TestingContext,
++) {
+     use wgpu::hal::{self, Device as _};
+ 
+     const MB: u64 = 1024 * 1024;
+@@ -54,8 +64,7 @@ fn check_transient_buffers_release_memory_blocks(ctx: &wgpu_test::TestingContext
+ 
+     // SAFETY: the hal device is only used to create and destroy buffers that
+     // are never handed to wgpu-core.
+-    let hal_device =
+-        unsafe { ctx.device.as_hal::<hal::vulkan::Api>() }.expect("adapter backend mismatch");
++    let hal_device = unsafe { ctx.device.as_hal::<A>() }.expect("adapter backend mismatch");
+ 
+     let create = |label: &'static str, size: u64, memory_flags: hal::MemoryFlags| {
+         let (buffer, _) = unsafe {
+@@ -73,7 +82,7 @@ fn check_transient_buffers_release_memory_blocks(ctx: &wgpu_test::TestingContext
+     let report = || {
+         ctx.device
+             .generate_allocator_report()
+-            .expect("Vulkan backend should produce an allocator report")
++            .expect("Vulkan/DX12 backend should produce an allocator report")
+     };
+     let occupied_blocks = |report: &wgpu::AllocatorReport| {
+         report
+diff --git a/tests/tests/wgpu-validation/api/external_texture.rs b/tests/tests/wgpu-validation/api/external_texture.rs
+index 68476c2..fc53b7e 100644
+--- a/tests/tests/wgpu-validation/api/external_texture.rs
++++ b/tests/tests/wgpu-validation/api/external_texture.rs
+@@ -565,6 +565,55 @@ fn external_texture_binding_texture_view() {
+     );
+ }
+ 
++/// Ensures binding a [`TextureView`] to a [`BindingType::ExternalTexture`] slot
++/// does not panic when the default queue has already been dropped before the
++/// lazy default external texture params buffer is initialized.
++#[test]
++fn external_texture_binding_texture_view_after_queue_drop() {
++    let (device, queue) = wgpu::Device::noop(&DeviceDescriptor {
++        required_features: Features::EXTERNAL_TEXTURE,
++        ..Default::default()
++    });
++    drop(queue);
++
++    let bgl = device.create_bind_group_layout(&BindGroupLayoutDescriptor {
++        label: None,
++        entries: &[BindGroupLayoutEntry {
++            binding: 0,
++            visibility: ShaderStages::FRAGMENT,
++            ty: BindingType::ExternalTexture,
++            count: None,
++        }],
++    });
++    let texture = device.create_texture(&TextureDescriptor {
++        label: None,
++        size: Extent3d {
++            width: 4,
++            height: 4,
++            depth_or_array_layers: 1,
++        },
++        mip_level_count: 1,
++        sample_count: 1,
++        dimension: TextureDimension::D2,
++        format: TextureFormat::Rgba8Unorm,
++        usage: TextureUsages::TEXTURE_BINDING,
++        view_formats: &[],
++        texture_binding_view_dimension: None,
++    });
++    let view = texture.create_view(&TextureViewDescriptor::default());
++
++    valid(&device, || {
++        device.create_bind_group(&BindGroupDescriptor {
++            label: None,
++            layout: &bgl,
++            entries: &[BindGroupEntry {
++                binding: 0,
++                resource: BindingResource::TextureView(&view),
++            }],
++        })
++    });
++}
++
+ /// Ensures that submitting a command buffer referencing an external texture, any of
+ /// whose plane textures have already been destroyed, results in an error.
+ #[test]
+diff --git a/wgpu-core/src/device/resource.rs b/wgpu-core/src/device/resource.rs
+index 92c7d27..72d76e2 100644
+--- a/wgpu-core/src/device/resource.rs
++++ b/wgpu-core/src/device/resource.rs
+@@ -313,7 +313,11 @@ pub struct Device {
+     /// that a [`TextureView`] bound to a [`wgt::BindingType::ExternalTexture`]
+     /// binding point will be rendered correctly. Intended to be used as the
+     /// [`hal::ExternalTextureBinding::params`] field.
+-    pub(crate) default_external_texture_params_buffer: ManuallyDrop<Box<dyn hal::DynBuffer>>,
++    ///
++    /// Lazily created and initialized on first use so devices that never bind a
++    /// `TextureView` to an `ExternalTexture` slot avoid allocating a staging
++    /// buffer during device initialization.
++    pub(crate) default_external_texture_params_buffer: OnceCell<Box<dyn hal::DynBuffer>>,
+ 
+     // Drop order matters!
+     //
+@@ -435,10 +439,6 @@ impl Drop for Device {
+         let zero_buffer = unsafe { ManuallyDrop::take(&mut self.zero_buffer) };
+         // SAFETY: We are in the Drop impl and we don't use self.empty_bgl anymore after this point.
+         let empty_bgl = unsafe { ManuallyDrop::take(&mut self.empty_bgl) };
+-        // SAFETY: We are in the Drop impl and we don't use
+-        // self.default_external_texture_params_buffer anymore after this point.
+-        let default_external_texture_params_buffer =
+-            unsafe { ManuallyDrop::take(&mut self.default_external_texture_params_buffer) };
+         // SAFETY: We are in the Drop impl and we don't use self.fence anymore after this point.
+         let fence = unsafe { ManuallyDrop::take(&mut self.fence) };
+         if let Some(indirect_validation) = self.indirect_validation.take() {
+@@ -450,8 +450,12 @@ impl Drop for Device {
+         unsafe {
+             self.raw.destroy_buffer(zero_buffer);
+             self.raw.destroy_bind_group_layout(empty_bgl);
+-            self.raw
+-                .destroy_buffer(default_external_texture_params_buffer);
++            if let Some(default_external_texture_params_buffer) =
++                self.default_external_texture_params_buffer.take()
++            {
++                self.raw
++                    .destroy_buffer(default_external_texture_params_buffer);
++            }
+             self.raw.destroy_fence(fence);
+         }
+     }
+@@ -633,24 +637,6 @@ impl Device {
+             raw.destroy_bind_group_layout(bgl)
+         });
+ 
+-        let default_external_texture_params_buffer = unsafe {
+-            raw_device.create_buffer(&hal::BufferDescriptor {
+-                label: hal_label(
+-                    Some("(wgpu internal) default external texture params buffer"),
+-                    instance_flags,
+-                ),
+-                size: EXTERNAL_TEXTURE_PARAMS_BUFFER_SIZE as _,
+-                usage: wgt::BufferUses::COPY_DST | wgt::BufferUses::UNIFORM,
+-                memory_flags: hal::MemoryFlags::empty(),
+-            })
+-        }
+-        .map_err(DeviceError::from_hal)?
+-        .0;
+-        let default_external_texture_params_buffer =
+-            guard(default_external_texture_params_buffer, |buffer| unsafe {
+-                raw.destroy_buffer(buffer)
+-            });
+-
+         // Cloned as we need them below anyway.
+         let alignments = adapter.raw.capabilities.alignments.clone();
+         let downlevel = adapter.raw.capabilities.downlevel.clone();
+@@ -683,8 +669,6 @@ impl Device {
+         {
+             let zero_buffer = ScopeGuard::into_inner(zero_buffer);
+             let empty_bgl = ScopeGuard::into_inner(empty_bgl);
+-            let default_external_texture_params_buffer =
+-                ScopeGuard::into_inner(default_external_texture_params_buffer);
+             let fence = ScopeGuard::into_inner(fence);
+             let indirect_validation = indirect_validation.map(ScopeGuard::into_inner);
+ 
+@@ -694,9 +678,7 @@ impl Device {
+                 queue: OnceCell::new(),
+                 zero_buffer: ManuallyDrop::new(zero_buffer),
+                 empty_bgl: ManuallyDrop::new(empty_bgl),
+-                default_external_texture_params_buffer: ManuallyDrop::new(
+-                    default_external_texture_params_buffer,
+-                ),
++                default_external_texture_params_buffer: OnceCell::new(),
+                 label: desc.label.to_string(),
+                 command_allocator,
+                 command_indices: RwLock::new(
+@@ -737,86 +719,119 @@ impl Device {
+         }
+     }
+ 
+-    /// Initializes [`Device::default_external_texture_params_buffer`] with
+-    /// required values such that a [`TextureView`] bound to a
+-    /// [`wgt::BindingType::ExternalTexture`] binding point will be rendered
+-    /// correctly.
+-    fn init_default_external_texture_params_buffer(self: &Arc<Self>) -> Result<(), DeviceError> {
+-        let data = ExternalTextureParams {
+-            #[rustfmt::skip]
+-            yuv_conversion_matrix: [
+-                1.0, 0.0, 0.0, 0.0,
+-                0.0, 1.0, 0.0, 0.0,
+-                0.0, 0.0, 1.0, 0.0,
+-                0.0, 0.0, 0.0, 1.0,
+-            ],
+-            #[rustfmt::skip]
+-            gamut_conversion_matrix: [
+-                1.0, 0.0, 0.0, /* padding */ 0.0,
+-                0.0, 1.0, 0.0, /* padding */ 0.0,
+-                0.0, 0.0, 1.0, /* padding */ 0.0,
+-            ],
+-            src_transfer_function: Default::default(),
+-            dst_transfer_function: Default::default(),
+-            size: [0, 0],
+-            #[rustfmt::skip]
+-            sample_transform: [
+-                1.0, 0.0,
+-                0.0, 1.0,
+-                0.0, 0.0
+-            ],
+-            #[rustfmt::skip]
+-            load_transform: [
+-                1.0, 0.0,
+-                0.0, 1.0,
+-                0.0, 0.0
+-            ],
+-            num_planes: 1,
+-            _padding: Default::default(),
+-        };
+-        let mut staging_buffer = StagingBuffer::new(
+-            self,
+-            wgt::BufferSize::new(EXTERNAL_TEXTURE_PARAMS_BUFFER_SIZE as _).unwrap(),
+-        )?;
+-        staging_buffer.write_with_zero_padding(bytemuck::bytes_of(&data));
+-        let staging_buffer = staging_buffer.flush();
+-
+-        let params_buffer = self.default_external_texture_params_buffer.as_ref();
+-        let queue = self.get_queue().unwrap();
+-        let mut pending_writes = queue.pending_writes.lock();
++    /// Returns [`Device::default_external_texture_params_buffer`], lazily
++    /// creating and initializing it on first use with values such that a
++    /// [`TextureView`] bound to a [`wgt::BindingType::ExternalTexture`] binding
++    /// point will be rendered correctly.
++    fn get_or_init_default_external_texture_params_buffer(
++        self: &Arc<Self>,
++    ) -> Result<&dyn hal::DynBuffer, DeviceError> {
++        if let Some(buffer) = self.default_external_texture_params_buffer.get() {
++            return Ok(buffer.as_ref());
++        }
++
++        // Upgrade `Device::queue` outside `OnceCell::get_or_try_init` so that
++        // if the caller concurrently drops the last external `Arc<Queue>`,
++        // `Queue::drop` (which waits for idle and fires user callbacks) runs
++        // after initialization finishes rather than re-entering `OnceCell`.
++        let queue = self.get_queue();
++
++        self.default_external_texture_params_buffer
++            .get_or_try_init(|| {
++                let params_buffer = unsafe {
++                    self.raw.create_buffer(&hal::BufferDescriptor {
++                        label: hal_label(
++                            Some("(wgpu internal) default external texture params buffer"),
++                            self.instance_flags,
++                        ),
++                        size: EXTERNAL_TEXTURE_PARAMS_BUFFER_SIZE as _,
++                        usage: wgt::BufferUses::COPY_DST | wgt::BufferUses::UNIFORM,
++                        memory_flags: hal::MemoryFlags::empty(),
++                    })
++                }
++                .map_err(|e| self.handle_hal_error(e))?
++                .0;
++                let params_buffer = guard(params_buffer, |buffer| unsafe {
++                    self.raw.destroy_buffer(buffer)
++                });
+ 
+-        unsafe {
+-            pending_writes
+-                .command_encoder
+-                .transition_buffers(&[hal::BufferBarrier {
+-                    buffer: params_buffer,
+-                    usage: hal::StateTransition {
+-                        from: wgt::BufferUses::MAP_WRITE,
+-                        to: wgt::BufferUses::COPY_DST,
+-                    },
+-                }]);
+-            pending_writes.command_encoder.copy_buffer_to_buffer(
+-                staging_buffer.raw(),
+-                params_buffer,
+-                &[hal::BufferCopy {
+-                    src_offset: 0,
+-                    dst_offset: 0,
+-                    size: staging_buffer.size,
+-                }],
+-            );
+-            pending_writes.consume(staging_buffer);
+-            pending_writes
+-                .command_encoder
+-                .transition_buffers(&[hal::BufferBarrier {
+-                    buffer: params_buffer,
+-                    usage: hal::StateTransition {
+-                        from: wgt::BufferUses::COPY_DST,
+-                        to: wgt::BufferUses::UNIFORM,
+-                    },
+-                }]);
+-        }
++                // If the queue has already been dropped, no further submissions can
++                // read this buffer, so skip creating a staging buffer and recording
++                // initialization writes.
++                if let Some(queue) = queue.as_ref() {
++                    let data = ExternalTextureParams {
++                        #[rustfmt::skip]
++                        yuv_conversion_matrix: [
++                            1.0, 0.0, 0.0, 0.0,
++                            0.0, 1.0, 0.0, 0.0,
++                            0.0, 0.0, 1.0, 0.0,
++                            0.0, 0.0, 0.0, 1.0,
++                        ],
++                        #[rustfmt::skip]
++                        gamut_conversion_matrix: [
++                            1.0, 0.0, 0.0, /* padding */ 0.0,
++                            0.0, 1.0, 0.0, /* padding */ 0.0,
++                            0.0, 0.0, 1.0, /* padding */ 0.0,
++                        ],
++                        src_transfer_function: Default::default(),
++                        dst_transfer_function: Default::default(),
++                        size: [0, 0],
++                        #[rustfmt::skip]
++                        sample_transform: [
++                            1.0, 0.0,
++                            0.0, 1.0,
++                            0.0, 0.0
++                        ],
++                        #[rustfmt::skip]
++                        load_transform: [
++                            1.0, 0.0,
++                            0.0, 1.0,
++                            0.0, 0.0
++                        ],
++                        num_planes: 1,
++                        _padding: Default::default(),
++                    };
++                    let mut staging_buffer = StagingBuffer::new(
++                        self,
++                        wgt::BufferSize::new(EXTERNAL_TEXTURE_PARAMS_BUFFER_SIZE as _).unwrap(),
++                    )?;
++                    staging_buffer.write_with_zero_padding(bytemuck::bytes_of(&data));
++                    let staging_buffer = staging_buffer.flush();
++
++                    let mut pending_writes = queue.pending_writes.lock();
++                    let encoder = pending_writes.activate();
++
++                    unsafe {
++                        encoder.transition_buffers(&[hal::BufferBarrier {
++                            buffer: params_buffer.as_ref(),
++                            usage: hal::StateTransition {
++                                from: wgt::BufferUses::empty(),
++                                to: wgt::BufferUses::COPY_DST,
++                            },
++                        }]);
++                        encoder.copy_buffer_to_buffer(
++                            staging_buffer.raw(),
++                            params_buffer.as_ref(),
++                            &[hal::BufferCopy {
++                                src_offset: 0,
++                                dst_offset: 0,
++                                size: staging_buffer.size,
++                            }],
++                        );
++                        encoder.transition_buffers(&[hal::BufferBarrier {
++                            buffer: params_buffer.as_ref(),
++                            usage: hal::StateTransition {
++                                from: wgt::BufferUses::COPY_DST,
++                                to: wgt::BufferUses::UNIFORM,
++                            },
++                        }]);
++                    }
++                    pending_writes.consume(staging_buffer);
++                }
+ 
+-        Ok(())
++                Ok(ScopeGuard::into_inner(params_buffer))
++            })
++            .map(|buffer| buffer.as_ref())
+     }
+ 
+     pub fn late_init_resources_with_queue(self: &Arc<Self>) -> Result<(), RequestDeviceError> {
+@@ -831,8 +846,6 @@ impl Device {
+             .set(timestamp_normalizer)
+             .unwrap_or_else(|_| panic!("Called late_init_resources_with_queue twice"));
+ 
+-        self.init_default_external_texture_params_buffer()?;
+-
+         Ok(())
+     }
+ 
+@@ -3792,8 +3805,16 @@ impl Device {
+                 usage: internal_use,
+             },
+         ];
++        let params_buffer = self
++            .default_external_texture_params_buffer
++            .get()
++            .expect(
++                "default external texture params buffer must be initialized before \
++                 create_external_texture_binding_from_view",
++            )
++            .as_ref();
+         let params = hal::BufferBinding::new_unchecked(
+-            self.default_external_texture_params_buffer.as_ref(),
++            params_buffer,
+             0,
+             NonZeroU64::new(size_of::<ExternalTextureParams>() as u64).unwrap(),
+         );
+@@ -3878,6 +3899,22 @@ impl Device {
+ 
+         let mut buffer_init_actions = Vec::new();
+         let mut texture_init_actions = Vec::new();
++
++        // Lazily initialize `default_external_texture_params_buffer` before
++        // taking `snatchable_lock`, because initialization upgrades
++        // `Device::queue` into a temporary `Arc<Queue>` whose drop (if the
++        // last strong queue reference was concurrently dropped) acquires
++        // `snatchable_lock`.
++        if desc.entries.iter().any(|entry| {
++            matches!(entry.resource, Br::TextureView(_))
++                && matches!(
++                    layout.entries.get(entry.binding).map(|decl| decl.ty),
++                    Some(wgt::BindingType::ExternalTexture)
++                )
++        }) {
++            self.get_or_init_default_external_texture_params_buffer()?;
++        }
++
+         let snatch_guard = self.snatchable_lock.read();
+         let mut hal_entries = SmallVec::<[_; 4]>::with_capacity(desc.entries.len());
+         let mut hal_buffers = SmallVec::<[_; 4]>::new();
+diff --git a/wgpu-hal/src/dx12/device.rs b/wgpu-hal/src/dx12/device.rs
+index bb00d2e..9b113b0 100644
+--- a/wgpu-hal/src/dx12/device.rs
++++ b/wgpu-hal/src/dx12/device.rs
+@@ -1859,7 +1859,6 @@ impl crate::Device for super::Device {
+                 label: Some(&label),
+                 size: buffer_size,
+                 usage: wgt::BufferUses::STORAGE_READ_ONLY | wgt::BufferUses::MAP_WRITE,
+-                // D3D12 backend doesn't care about the memory flags
+                 memory_flags: crate::MemoryFlags::empty(),
+             };
+ 
+diff --git a/wgpu-hal/src/dx12/suballocation.rs b/wgpu-hal/src/dx12/suballocation.rs
+index 17c07a7..507fcc2 100644
+--- a/wgpu-hal/src/dx12/suballocation.rs
++++ b/wgpu-hal/src/dx12/suballocation.rs
+@@ -1,4 +1,4 @@
+-use alloc::sync::Arc;
++use alloc::{sync::Arc, vec::Vec};
+ 
+ use gpu_allocator::{d3d12::AllocationCreateDesc, MemoryLocation};
+ use wgpu_sync::Mutex;
+@@ -10,6 +10,22 @@ use crate::{
+     AllocationSizes,
+ };
+ 
++#[derive(Debug, Clone, Copy)]
++pub(crate) enum MemoryPool {
++    General,
++    Transient,
++}
++
++impl MemoryPool {
++    fn from_memory_flags(flags: crate::MemoryFlags) -> Self {
++        if flags.contains(crate::MemoryFlags::TRANSIENT) {
++            Self::Transient
++        } else {
++            Self::General
++        }
++    }
++}
++
+ #[derive(Debug)]
+ pub(crate) enum AllocationType {
+     Buffer,
+@@ -21,6 +37,7 @@ pub(crate) enum AllocationType {
+ enum AllocationInner {
+     /// This resource is suballocated from a heap.
+     Placed {
++        pool: MemoryPool,
+         inner: gpu_allocator::d3d12::Allocation,
+     },
+     /// This resource is a committed resource and does not belong to a
+@@ -39,9 +56,13 @@ pub(crate) struct Allocation {
+ }
+ 
+ impl Allocation {
+-    pub fn placed(inner: gpu_allocator::d3d12::Allocation, ty: AllocationType) -> Self {
++    pub fn placed(
++        pool: MemoryPool,
++        inner: gpu_allocator::d3d12::Allocation,
++        ty: AllocationType,
++    ) -> Self {
+         Self {
+-            inner: AllocationInner::Placed { inner },
++            inner: AllocationInner::Placed { pool, inner },
+             ty,
+         }
+     }
+@@ -55,17 +76,27 @@ impl Allocation {
+ 
+     pub fn size(&self) -> u64 {
+         match self.inner {
+-            AllocationInner::Placed { ref inner } => inner.size(),
++            AllocationInner::Placed { ref inner, .. } => inner.size(),
+             AllocationInner::Committed { size } => size,
+         }
+     }
+ }
+ 
++/// Separate general and transient allocators.
++///
++/// `gpu-allocator` frees a block only after every allocation in it is freed (and
++/// retains the last general block of each memory type), so short-lived resources
++/// such as staging buffers use their own pool with smaller minimum block sizes.
++struct AllocatorInner {
++    general: Mutex<gpu_allocator::d3d12::Allocator>,
++    transient: Mutex<gpu_allocator::d3d12::Allocator>,
++}
++
+ #[derive(Clone)]
+ pub(crate) struct Allocator {
+-    inner: Arc<Mutex<gpu_allocator::d3d12::Allocator>>,
+-    device_memblock_size: u64,
+-    host_memblock_size: u64,
++    inner: Arc<AllocatorInner>,
++    general_sizes: AllocationSizes,
++    transient_sizes: AllocationSizes,
+     pub memory_budget_thresholds: wgt::MemoryBudgetThresholds,
+ }
+ 
+@@ -75,55 +106,86 @@ impl Allocator {
+         memory_hints: &wgt::MemoryHints,
+         memory_budget_thresholds: wgt::MemoryBudgetThresholds,
+     ) -> Result<Self, crate::DeviceError> {
+-        let allocation_sizes = AllocationSizes::from_memory_hints(memory_hints);
+-        let device_memblock_size = allocation_sizes.min_device_memblock_size;
+-        let host_memblock_size = allocation_sizes.min_host_memblock_size;
++        let general_sizes = AllocationSizes::from_memory_hints(memory_hints);
++        let transient_sizes = general_sizes.transient();
+ 
+-        let allocator_desc = gpu_allocator::d3d12::AllocatorCreateDesc {
++        let mut allocator_desc = gpu_allocator::d3d12::AllocatorCreateDesc {
+             device: gpu_allocator::d3d12::ID3D12DeviceVersion::Device(raw.clone()),
+             debug_settings: Default::default(),
+-            allocation_sizes: allocation_sizes.into(),
++            allocation_sizes: general_sizes.into(),
+         };
+ 
+-        let allocator = gpu_allocator::d3d12::Allocator::new(&allocator_desc).inspect_err(|e| {
+-            log::error!("Failed to create d3d12 allocator, error: {e}");
++        let general = gpu_allocator::d3d12::Allocator::new(&allocator_desc).inspect_err(|e| {
++            log::error!("Failed to create d3d12 general allocator, error: {e}");
++        })?;
++
++        allocator_desc.allocation_sizes = transient_sizes.into();
++        let transient = gpu_allocator::d3d12::Allocator::new(&allocator_desc).inspect_err(|e| {
++            log::error!("Failed to create d3d12 transient allocator, error: {e}");
+         })?;
+ 
+         Ok(Self {
+-            inner: Arc::new(Mutex::new(allocator)),
+-            device_memblock_size,
+-            host_memblock_size,
++            inner: Arc::new(AllocatorInner {
++                general: Mutex::new(general),
++                transient: Mutex::new(transient),
++            }),
++            general_sizes,
++            transient_sizes,
+             memory_budget_thresholds,
+         })
+     }
+ 
++    fn allocator(&self, pool: MemoryPool) -> &Mutex<gpu_allocator::d3d12::Allocator> {
++        match pool {
++            MemoryPool::General => &self.inner.general,
++            MemoryPool::Transient => &self.inner.transient,
++        }
++    }
++
++    fn sizes(&self, pool: MemoryPool) -> AllocationSizes {
++        match pool {
++            MemoryPool::General => self.general_sizes,
++            MemoryPool::Transient => self.transient_sizes,
++        }
++    }
++
+     pub(crate) fn generate_report(&self) -> wgt::AllocatorReport {
+-        let mut upstream = self.inner.lock().generate_report();
+-
+-        let allocations = upstream
+-            .allocations
+-            .iter_mut()
+-            .map(|alloc| wgt::AllocationReport {
+-                name: core::mem::take(&mut alloc.name),
+-                offset: alloc.offset,
+-                size: alloc.size,
+-            })
+-            .collect();
+-
+-        let blocks = upstream
+-            .blocks
+-            .iter()
+-            .map(|block| wgt::MemoryBlockReport {
+-                size: block.size,
+-                allocations: block.allocations.clone(),
+-            })
+-            .collect();
++        let mut allocations = Vec::new();
++        let mut blocks = Vec::new();
++        let mut total_allocated_bytes = 0;
++        let mut total_reserved_bytes = 0;
++
++        for allocator in [&self.inner.general, &self.inner.transient] {
++            let upstream = allocator.lock().generate_report();
++
++            // Each block's range indexes into its own report's allocation list.
++            let allocation_base = allocations.len();
++            allocations.extend(upstream.allocations.into_iter().map(|alloc| {
++                wgt::AllocationReport {
++                    name: alloc.name,
++                    offset: alloc.offset,
++                    size: alloc.size,
++                }
++            }));
++            blocks.extend(
++                upstream
++                    .blocks
++                    .into_iter()
++                    .map(|block| wgt::MemoryBlockReport {
++                        size: block.size,
++                        allocations: (block.allocations.start + allocation_base)
++                            ..(block.allocations.end + allocation_base),
++                    }),
++            );
++            total_allocated_bytes += upstream.total_allocated_bytes;
++            total_reserved_bytes += upstream.total_capacity_bytes;
++        }
+ 
+         wgt::AllocatorReport {
+             allocations,
+             blocks,
+-            total_allocated_bytes: upstream.total_allocated_bytes,
+-            total_reserved_bytes: upstream.total_capacity_bytes,
++            total_allocated_bytes,
++            total_reserved_bytes,
+         }
+     }
+ }
+@@ -179,12 +241,13 @@ impl<'a> DeviceAllocationContext<'a> {
+             (false, false) => MemoryLocation::GpuOnly,
+         };
+ 
++        let pool = MemoryPool::from_memory_flags(desc.memory_flags);
+         let raw_desc = conv::map_buffer_descriptor(desc);
+         let allocation_info =
+-            self.error_if_would_oom_on_resource_allocation(&raw_desc, location)?;
++            self.error_if_would_oom_on_resource_allocation(&raw_desc, location, pool)?;
+ 
+         let (resource, allocation) = if self.shared.private_caps.suballocation_supported {
+-            self.create_placed_buffer(desc, raw_desc, allocation_info, location)?
++            self.create_placed_buffer(desc, raw_desc, allocation_info, location, pool)?
+         } else {
+             self.create_committed_buffer(raw_desc, location)?
+         };
+@@ -204,11 +267,12 @@ impl<'a> DeviceAllocationContext<'a> {
+         raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+     ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+         let location = MemoryLocation::GpuOnly;
++        let pool = MemoryPool::from_memory_flags(desc.memory_flags);
+         let allocation_info =
+-            self.error_if_would_oom_on_resource_allocation(&raw_desc, location)?;
++            self.error_if_would_oom_on_resource_allocation(&raw_desc, location, pool)?;
+ 
+         let (resource, allocation) = if self.shared.private_caps.suballocation_supported {
+-            self.create_placed_texture(desc, raw_desc, allocation_info, location)?
++            self.create_placed_texture(desc, raw_desc, allocation_info, location, pool)?
+         } else {
+             self.create_committed_texture(desc, raw_desc)?
+         };
+@@ -228,11 +292,22 @@ impl<'a> DeviceAllocationContext<'a> {
+         raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+     ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+         let location = MemoryLocation::GpuOnly;
++        let pool = if desc.allow_compaction {
++            MemoryPool::Transient
++        } else {
++            MemoryPool::General
++        };
+         let allocation_info =
+-            self.error_if_would_oom_on_resource_allocation(&raw_desc, location)?;
++            self.error_if_would_oom_on_resource_allocation(&raw_desc, location, pool)?;
+ 
+         let (resource, allocation) = if self.shared.private_caps.suballocation_supported {
+-            self.create_placed_acceleration_structure(desc, raw_desc, allocation_info, location)?
++            self.create_placed_acceleration_structure(
++                desc,
++                raw_desc,
++                allocation_info,
++                location,
++                pool,
++            )?
+         } else {
+             self.create_committed_acceleration_structure(desc, raw_desc)?
+         };
+@@ -267,8 +342,8 @@ impl<'a> DeviceAllocationContext<'a> {
+         };
+         counter.sub(allocation.size() as isize);
+ 
+-        if let AllocationInner::Placed { inner } = allocation.inner {
+-            match self.mem_allocator.inner.lock().free(inner) {
++        if let AllocationInner::Placed { pool, inner } = allocation.inner {
++            match self.mem_allocator.allocator(pool).lock().free(inner) {
+                 Ok(_) => (),
+                 // TODO: Don't panic here
+                 Err(e) => panic!("Failed to destroy dx12 {:?}, {e}", allocation.ty),
+@@ -286,10 +361,11 @@ impl<'a> DeviceAllocationContext<'a> {
+         raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+         allocation_info: Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO,
+         location: MemoryLocation,
++        pool: MemoryPool,
+     ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+         let name = desc.label.unwrap_or("Unlabeled buffer");
+ 
+-        let mut allocator = self.mem_allocator.inner.lock();
++        let mut allocator = self.mem_allocator.allocator(pool).lock();
+ 
+         let allocation_desc = AllocationCreateDesc {
+             name,
+@@ -314,7 +390,7 @@ impl<'a> DeviceAllocationContext<'a> {
+         .into_device_result("Placed buffer creation")?;
+ 
+         let resource = resource.ok_or(crate::DeviceError::Unexpected)?;
+-        let wrapped_allocation = Allocation::placed(allocation, AllocationType::Buffer);
++        let wrapped_allocation = Allocation::placed(pool, allocation, AllocationType::Buffer);
+ 
+         Ok((resource, wrapped_allocation))
+     }
+@@ -325,10 +401,11 @@ impl<'a> DeviceAllocationContext<'a> {
+         raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+         allocation_info: Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO,
+         location: MemoryLocation,
++        pool: MemoryPool,
+     ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+         let name = desc.label.unwrap_or("Unlabeled texture");
+ 
+-        let mut allocator = self.mem_allocator.inner.lock();
++        let mut allocator = self.mem_allocator.allocator(pool).lock();
+ 
+         let allocation_desc = AllocationCreateDesc {
+             name,
+@@ -353,7 +430,7 @@ impl<'a> DeviceAllocationContext<'a> {
+         .into_device_result("Placed texture creation")?;
+ 
+         let resource = resource.ok_or(crate::DeviceError::Unexpected)?;
+-        let wrapped_allocation = Allocation::placed(allocation, AllocationType::Texture);
++        let wrapped_allocation = Allocation::placed(pool, allocation, AllocationType::Texture);
+ 
+         Ok((resource, wrapped_allocation))
+     }
+@@ -364,10 +441,11 @@ impl<'a> DeviceAllocationContext<'a> {
+         raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+         allocation_info: Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO,
+         location: MemoryLocation,
++        pool: MemoryPool,
+     ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+         let name = desc.label.unwrap_or("Unlabeled acceleration structure");
+ 
+-        let mut allocator = self.mem_allocator.inner.lock();
++        let mut allocator = self.mem_allocator.allocator(pool).lock();
+ 
+         let allocation_desc = AllocationCreateDesc {
+             name,
+@@ -393,7 +471,7 @@ impl<'a> DeviceAllocationContext<'a> {
+ 
+         let resource = resource.ok_or(crate::DeviceError::Unexpected)?;
+         let wrapped_allocation =
+-            Allocation::placed(allocation, AllocationType::AccelerationStructure);
++            Allocation::placed(pool, allocation, AllocationType::AccelerationStructure);
+ 
+         Ok((resource, wrapped_allocation))
+     }
+@@ -540,6 +618,7 @@ impl<'a> DeviceAllocationContext<'a> {
+         &self,
+         desc: &Direct3D12::D3D12_RESOURCE_DESC,
+         location: MemoryLocation,
++        pool: MemoryPool,
+     ) -> Result<Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO, crate::DeviceError> {
+         let allocation_info = unsafe {
+             self.raw
+@@ -582,12 +661,11 @@ impl<'a> DeviceAllocationContext<'a> {
+             .adapter
+             .query_video_memory_info(memory_segment_group)?;
+ 
++        let sizes = self.mem_allocator.sizes(pool);
+         let memblock_size = match location {
+             MemoryLocation::Unknown => unreachable!(),
+-            MemoryLocation::GpuOnly => self.mem_allocator.device_memblock_size,
+-            MemoryLocation::CpuToGpu | MemoryLocation::GpuToCpu => {
+-                self.mem_allocator.host_memblock_size
+-            }
++            MemoryLocation::GpuOnly => sizes.min_device_memblock_size,
++            MemoryLocation::CpuToGpu | MemoryLocation::GpuToCpu => sizes.min_host_memblock_size,
+         };
+ 
+         if info
+diff --git a/wgpu-hal/src/lib.rs b/wgpu-hal/src/lib.rs
+index b289fbe..d6c87a0 100644
+--- a/wgpu-hal/src/lib.rs
++++ b/wgpu-hal/src/lib.rs
+@@ -503,11 +503,16 @@ impl AllocationSizes {
+ 
+     /// Sizes for the transient pool. Minimum block sizes are reduced because
+     /// gpu-allocator never frees the last block of a memory type.
+-    #[allow(dead_code, reason = "only the vulkan backend has a transient pool")]
++    #[cfg_attr(not(any(dx12, vulkan)), expect(dead_code))]
+     pub(crate) fn transient(self) -> Self {
++        const MB: u64 = 1024 * 1024;
+         Self {
+-            min_device_memblock_size: self.min_device_memblock_size / 4,
+-            min_host_memblock_size: self.min_host_memblock_size / 4,
++            min_device_memblock_size: (self.min_device_memblock_size / 4)
++                .next_multiple_of(4 * MB)
++                .max(4 * MB),
++            min_host_memblock_size: (self.min_host_memblock_size / 4)
++                .next_multiple_of(4 * MB)
++                .max(4 * MB),
+             ..self
+         }
+     }
+@@ -3337,3 +3342,34 @@ pub struct PipelineGroupData<'a, B: DynBuffer + ?Sized> {
+     pub stride: u64,
+     pub count: u64,
+ }
++
++#[cfg(all(test, any(dx12, vulkan)))]
++mod allocation_sizes_tests {
++    use super::AllocationSizes;
++
++    const MB: u64 = 1024 * 1024;
++
++    #[test]
++    fn transient_sizes_quarter_and_clamp_to_minimum() {
++        let perf = AllocationSizes::from_memory_hints(&wgt::MemoryHints::Performance).transient();
++        assert_eq!(perf.min_device_memblock_size, 32 * MB);
++        assert_eq!(perf.max_device_memblock_size, 256 * MB);
++        assert_eq!(perf.min_host_memblock_size, 16 * MB);
++        assert_eq!(perf.max_host_memblock_size, 128 * MB);
++
++        let mem = AllocationSizes::from_memory_hints(&wgt::MemoryHints::MemoryUsage).transient();
++        assert_eq!(mem.min_device_memblock_size, 4 * MB);
++        assert_eq!(mem.max_device_memblock_size, 64 * MB);
++        assert_eq!(mem.min_host_memblock_size, 4 * MB);
++        assert_eq!(mem.max_host_memblock_size, 32 * MB);
++
++        let manual = AllocationSizes::from_memory_hints(&wgt::MemoryHints::Manual {
++            suballocated_device_memory_block_size: (20 * MB)..(64 * MB),
++        })
++        .transient();
++        assert_eq!(manual.min_device_memblock_size, 8 * MB);
++        assert_eq!(manual.max_device_memblock_size, 64 * MB);
++        assert_eq!(manual.min_host_memblock_size, 4 * MB);
++        assert_eq!(manual.max_host_memblock_size, 32 * MB);
++    }
++}

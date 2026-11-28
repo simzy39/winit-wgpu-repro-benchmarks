@@ -1,0 +1,14 @@
+{
+  "backoff_plan": {
+    "path": "bin-final\\backoff-plan-only.exe",
+    "sha256": "ff011276fdf65835b02a61d4144208643f692cce6be6fa9159f633022866d975",
+    "source": "measurement-sources/backoff-final; six verification processes, not five-trial timings"
+  },
+  "native_gpu": {
+    "path": "candidate-control-bin\\wgpu_gpu-4022cdc0eaa67d81.exe",
+    "sha256": "090ec5da337b165fe74df938e619494a84ec25ff3500f38f26d74b51bf8c68f8",
+    "origin": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_gpu-4022cdc0eaa67d81.exe",
+    "source_mtime_ns": 1795843594636058100,
+    "scope": "GPU binary compiled immediately before final geometric full suite. Clean upstream binary df9c6ae37ba8f6de remains separately frozen. No rebuild since final full run."
+  }
+}

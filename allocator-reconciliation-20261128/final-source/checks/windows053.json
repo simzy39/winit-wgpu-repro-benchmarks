@@ -1,0 +1,58 @@
+[
+  {
+    "name": "gpa-rollback",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "update",
+      "-p",
+      "windows@0.58.0",
+      "--precise",
+      "0.53.0",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-rollback-windows053\\Cargo.toml"
+    ],
+    "rc": 0
+  },
+  {
+    "name": "gpa-rollback",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-rollback-windows053\\Cargo.toml"
+    ],
+    "rc": 0
+  },
+  {
+    "name": "gpa-sizing",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "update",
+      "-p",
+      "windows@0.58.0",
+      "--precise",
+      "0.53.0",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-sizing-windows053\\Cargo.toml"
+    ],
+    "rc": 0
+  },
+  {
+    "name": "gpa-sizing",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--locked",
+      "--lib",
+      "--manifest-path",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\checks\\msrv\\gpa-sizing-windows053\\Cargo.toml"
+    ],
+    "rc": 0
+  }
+]

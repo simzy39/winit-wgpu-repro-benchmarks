@@ -1,0 +1,51 @@
+{
+  "candidate-on-pr323-179ea43.patch": {
+    "base": "179ea43f05332c2809addd7922cd056220efc36b",
+    "sha256": "c2ca9cd4e0919c11b4a25f62a58b1506fdf2525d1ad5dccc85cfc923799ae158",
+    "apply_check": true,
+    "replay_equal_git_canonical_blobs": true,
+    "files_compared": 36
+  },
+  "candidate-on-main-fc22df0.patch": {
+    "base": "fc22df05140b15ed6d764beabd12a1b807011bc5",
+    "sha256": "e64e400ad707d816bc078bc988a1690c7454ce10578fe4d7c5c0e02f60fc705b",
+    "apply_check": true,
+    "replay_equal_git_canonical_blobs": true,
+    "files_compared": 36
+  },
+  "wgpu-pressure-followup-on-pr11130-22827ee.patch": {
+    "base": "22827ee25285b56c4056fe6bb1de27917caf45a9",
+    "scope": "HAL followup only; requires new allocator APIs; no lazy-allocation prerequisite",
+    "sha256": "e0105d34c127a91e48350acf0fae1bb8222f8b5e09b8590c7e6e26532bbea4c3",
+    "apply_check": true,
+    "replay_equal_git_canonical_blobs": true
+  },
+  "wgpu-combined-on-base-60cef2b.patch": {
+    "base": "60cef2be828e03ba54e2e1598001b4625c0c2163",
+    "scope": "Both PRs, earlier regression checks and new HAL followup; test-only path override and lock excluded",
+    "sha256": "c4a903e9f968b4a39dd8f36ef80caf44b0ed0f32de1f461e699319f8dfa3b27d",
+    "apply_check": true,
+    "replay_equal_git_canonical_blobs": true,
+    "files_compared": 2757,
+    "excluded_local_testing_files": [
+      ".cargo/config.toml",
+      "Cargo.lock",
+      "Cargo.toml"
+    ]
+  },
+  "experiment-smallcache-on-pr323.patch": {
+    "base": "179ea43f05332c2809addd7922cd056220efc36b",
+    "scope": "Measured experimental implementation, not proposed default",
+    "sha256": "1ecb17c32e951516d10f3a57097c3f2620065ea4e75ffd9ecde729c8dcc4bc9c"
+  },
+  "experiment-heapcap-on-pr323.patch": {
+    "base": "179ea43f05332c2809addd7922cd056220efc36b",
+    "scope": "Measured experimental implementation, not proposed default",
+    "sha256": "2e000bf9311a10dc5dfbf8d29b01dba2cfe63c4406bbb312191602c8f7c29b8d"
+  },
+  "experiment-packed-on-pr323.patch": {
+    "base": "179ea43f05332c2809addd7922cd056220efc36b",
+    "scope": "Measured experimental implementation, not proposed default",
+    "sha256": "562f68b3b2e848c6e10b6991bd5f6cc48a9f6c4003ee7d4af46b8365349b5be4"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "rc": 0,
+  "exe_sha256": "406d5cbad2c43af7ede275799a705349a1205ad3d602f82a4c6bcf6d69de54c3",
+  "stderr": "",
+  "utc": "2026-11-27T20:19:13.856984+00:00",
+  "cpu_times": {
+    "kernel_cpu_ms": 203.125,
+    "user_cpu_ms": 15.625,
+    "total_cpu_ms": 218.75
+  },
+  "wall_s": 1.39579209999647,
+  "settle_after_s": 2
+}

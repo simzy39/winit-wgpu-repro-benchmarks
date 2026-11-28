@@ -1,0 +1,1 @@
+INVALID: shared Cargo target artifacts crossed allocator variants despite package-specific cargo clean commands. Do not use these measurements. Preserved as evidence of the rejected setup. Replacement uses unique target directories, verifies local crate recompilation, records complete allocator source hashes, and writes results/direct-isolated.

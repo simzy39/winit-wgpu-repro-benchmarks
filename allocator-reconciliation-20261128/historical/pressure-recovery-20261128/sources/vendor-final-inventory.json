@@ -1,0 +1,2473 @@
+{
+  "root": "<workspace>\\vendor",
+  "files": [
+    {
+      "path": "gpu-allocator\\.cargo_vcs_info.json",
+      "sha256": "8ff80de3e95904cb426e341952016379cb46ee5708c7e39f65cdcf969d001434",
+      "size": 94,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\Cargo.toml",
+      "sha256": "34fdab93c86a4bc928db3b4d776f6792a536f4c6fd83a51db7e923be3f4da786",
+      "size": 3733,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\Cargo.toml.orig",
+      "sha256": "d39d81255becfed482f19d66322b52c7ca736a41f5d4e99ee4d79e872a548acd",
+      "size": 3135,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\examples\\d3d12-buffer-winrs.rs",
+      "sha256": "5c093cbf626b43f545546f60933b51ea07f35c1dea3ea16e6924e8be53b4a0e2",
+      "size": 8262,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\examples\\metal-buffer.rs",
+      "sha256": "f70bd46823d3febfc126aff4578b013ec6a2842f665bc5b47c0e47ebc51112a8",
+      "size": 5816,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\examples\\vulkan-buffer.rs",
+      "sha256": "49f57f1f4542126047e217c81083b08ed798637fd90d6b7560bc9fab21732953",
+      "size": 6789,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\LICENSE-APACHE",
+      "sha256": "0178e21322b0e88aa3aeb3146f6a9611bc1f8df6d98bdfb34be28b9dd56a8107",
+      "size": 10845,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\LICENSE-MIT",
+      "sha256": "ad41be6cc6538b29b9346648f41432b5e460bad6be073b5eeaa41320ea2921dc",
+      "size": 1065,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\README.md",
+      "sha256": "2825adc54e848dc8be155be3c481bff86b0e2a73cf91ec68eb50f9a8f3c19ce0",
+      "size": 6485,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\allocator\\dedicated_block_allocator\\mod.rs",
+      "sha256": "bd79c3c7e036e85b90d5fddf9076a1b59744eff5b85f20dcdb1aa4573c2c5b70",
+      "size": 4124,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\allocator\\dedicated_block_allocator\\visualizer.rs",
+      "sha256": "5b9019dd73ebe7bb9e9d103c48368014b73cdd4ae7f36a706ae047919f56fac6",
+      "size": 237,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\allocator\\free_list_allocator\\mod.rs",
+      "sha256": "ff337597a0cdcd6e2b0fafbe93604a7bdd3f2c31a57233b099c6b781baf0586d",
+      "size": 14549,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\allocator\\free_list_allocator\\visualizer.rs",
+      "sha256": "46214d07285d72a0a29c8d7e76322243853eba7d25d87ebfbb17c75e7815d07f",
+      "size": 789,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\allocator\\mod.rs",
+      "sha256": "d0a5720b79242dd708a429cdaa1e617aa56e45e837b9fe3dddc30653d0dd21c9",
+      "size": 5057,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\d3d12\\mod.rs",
+      "sha256": "97c2eda9e0b074735a8e7e4f17bdd6e2d323d8d975076247122264bb06124a6c",
+      "size": 41316,
+      "mtime_ns": 1795764820149621900
+    },
+    {
+      "path": "gpu-allocator\\src\\d3d12\\visualizer.rs",
+      "sha256": "54a432e30ead71cfba26aeb6e52f61f5616ef36c97e9f68952d12a68f84382b7",
+      "size": 9394,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\lib.rs",
+      "sha256": "80ee408abdd039b3ef5f27beba6a09b53094ddedb5c8e38a3ad493ab11246ca6",
+      "size": 23402,
+      "mtime_ns": 1795764820150622400
+    },
+    {
+      "path": "gpu-allocator\\src\\metal\\mod.rs",
+      "sha256": "8494d662524e811f99cd1689297ad946de07a9321e74a6f543a24513e72666de",
+      "size": 23373,
+      "mtime_ns": 1795764820152611400
+    },
+    {
+      "path": "gpu-allocator\\src\\metal\\visualizer.rs",
+      "sha256": "a5ee6934a9608c085b14c0ba609477e2a0e5b8cfa14835127ea267e5a1b5c4c9",
+      "size": 7221,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\result.rs",
+      "sha256": "35cc54ad22ab4ef1ce82026cf6c052f53666f8ffb4106b1faa067633af4db07a",
+      "size": 908,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\visualizer\\allocation_reports.rs",
+      "sha256": "4ff36ff39c17d31864061b12230724536393d7bffb8f1f359019bbf22ed6553f",
+      "size": 4849,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\visualizer\\memory_chunks.rs",
+      "sha256": "a0f31694699a2fcd0f9aaa3b8b3fda54fde6bf9ff54b1fb702cded3ac8320376",
+      "size": 4985,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\visualizer\\mod.rs",
+      "sha256": "7d56c956abba968400aa6794e399db4b7ec10135a948beef21ea13ba3bd1fd9e",
+      "size": 1643,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "gpu-allocator\\src\\vulkan\\mod.rs",
+      "sha256": "e489bb9bd79b08daaa485bb2f8d7c8ce04693824eb354b42a112ff9c6e98b383",
+      "size": 39134,
+      "mtime_ns": 1795764820153622300
+    },
+    {
+      "path": "gpu-allocator\\src\\vulkan\\visualizer.rs",
+      "sha256": "672306c9a9b98e3adda03323d2868fdd0f258db61fac66374df12e9b481e228d",
+      "size": 8654,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\build.rs",
+      "sha256": "f3d39c06752630257f6bf5efe76a61e54b32b354704f7c16c76c8e2128fa6b34",
+      "size": 1388,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\Cargo.lock",
+      "sha256": "1609ea0f182c9ccfe11620ba8a137d2a3270589cc9732f0c36e5ee6284d09f7e",
+      "size": 33850,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\Cargo.toml",
+      "sha256": "8edeb60b333b80ced51104816adcfcec0a70d87b94aa94bda3bddbeebaa1d92f",
+      "size": 5084,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\Cargo.toml.orig",
+      "sha256": "18e41608f184e1d2d748736642aa33c48fd46ffd9f398419c8518ca6b8aec7fc",
+      "size": 7209,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\LICENSE.APACHE",
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "size": 10173,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\LICENSE.MIT",
+      "sha256": "dc0d97139e8205818c703741c7be7cb3b96888bd5917b8d6fc6133731e403c21",
+      "size": 1078,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\as_hal.rs",
+      "sha256": "e5823b9c0fac61359d56a2b19af9d9c807a6c89aa73d07022be5a1166e43e2f2",
+      "size": 10030,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\binding_model.rs",
+      "sha256": "07e72628b4aa645ce7e7c35c9e427760d1862916a8fc5ecdb4dfe40d4ab7c93f",
+      "size": 54793,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\allocator.rs",
+      "sha256": "386cb6e60bd332a881dbbe57ff66a0fa83f35e3ee924559f1689418ac6c7273a",
+      "size": 1766,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\bind.rs",
+      "sha256": "188d8507f2399db23c5614151a0c3489fd9edd73ca94d4a539a4fd36d823e832",
+      "size": 20814,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\bundle.rs",
+      "sha256": "acab3fd887277316f974fe60469268a639b0e8b098d863ef4372c62731b94153",
+      "size": 79887,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\clear.rs",
+      "sha256": "a2391466574538b1a0c41564ad75e55baee3816a280cdf46a67dea2c248e1489",
+      "size": 21720,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\compute.rs",
+      "sha256": "2423a0cd75e1751ae42ab5e73644808cb0a0aeae79f98d5fdc7f54473012b897",
+      "size": 58030,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\compute_command.rs",
+      "sha256": "7cb0b83584f40606966d272d22981a94a5ede5ca50778a25dd6481ee3ef39978",
+      "size": 1937,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\draw.rs",
+      "sha256": "2ad390cbc668bb38a653ad156c3fc81e34115f6fc240b2a4b8fb3ad6ba260abc",
+      "size": 7377,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\encoder.rs",
+      "sha256": "b13ca12960f39925f0f36500b8107fb6c5a21da05a433ac8e8a5d6d9b3200691",
+      "size": 2667,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\encoder_command.rs",
+      "sha256": "2f9417c9c6c0cb52db561ed7d8a777fc29b59ade95a98ffaf91e4bb84f3b8cda",
+      "size": 7264,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\ffi.rs",
+      "sha256": "4924adbb42a670b5e9827c0f2175939981e8fc78a36b2fe370426e8c550a4ce7",
+      "size": 375,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\memory_init.rs",
+      "sha256": "ec50657786a476a6be717cef872b644b841dbbe2ba4cf67a0e46839377122135",
+      "size": 16060,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\mod.rs",
+      "sha256": "3d5f34edd4adce9c4ebd45f02523ea218fa991c3f67bacf30a306fc1bccd72c2",
+      "size": 79349,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\pass.rs",
+      "sha256": "17ab893b63b99f1a99a79690ebd15bfaa6c99f4a7702ae2c7d139669b2745dbb",
+      "size": 12274,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\query.rs",
+      "sha256": "e2392dfc4285b4d2d5c8eee398124440d81ae7f452d812cb14b3b7912d652a16",
+      "size": 21734,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\ray_tracing.rs",
+      "sha256": "7a5c080cd4f8a899058c21924089297318678535aa2139193541a468771e7fdb",
+      "size": 52061,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\render.rs",
+      "sha256": "c8bf51592f841c0d246e9f477ee340942e3ebd32344762fb8c6956230aa767a4",
+      "size": 167440,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\render_command.rs",
+      "sha256": "99c1e1b143a015e55bdb2076e35c1be8db58df79ed2b80c05fd070d1a830bb6b",
+      "size": 4578,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\timestamp_writes.rs",
+      "sha256": "da06fb07b8d0917be3e7fb9212d0ffc6b16526e1c1df617213ef354c3e1fb446",
+      "size": 754,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\transfer.rs",
+      "sha256": "3ad39433f5b4704d3465a6bf76984ff04a554926dd2a463cc5b36daaf44c43f6",
+      "size": 60332,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\command\\transition_resources.rs",
+      "sha256": "f3574fc30d5bf0b3913424e0d2527029ec205a9522df2dc1699222ea803c52c4",
+      "size": 4337,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\conv.rs",
+      "sha256": "c71246db2914a48a6b651d38c25b348095cbb7bd6a3f7c3706ec9bda095fbeba",
+      "size": 8649,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\bgl.rs",
+      "sha256": "b081fe1393f1dd917151efc3a10ee0269fecd3920eac3b45411c1197a98c5a06",
+      "size": 3904,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\global.rs",
+      "sha256": "d46a998bda5604173e8f7dfd1608fe5b1a681fc56ab1efc028d3b9dffe3e2c29",
+      "size": 73920,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\life.rs",
+      "sha256": "1c11985bb4a11fd0513a926cd28774fd96c075eea48bf45c89a392974d313157",
+      "size": 15460,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\mod.rs",
+      "sha256": "0fa10a8106a4f3cdd11e9f09a5b4141faa0945e2cd0f6325193c6df87a47b499",
+      "size": 13805,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\queue.rs",
+      "sha256": "ec1e845d9f4ec1a149e31bc28697caf41543c89b0e35116427602ff86395b125",
+      "size": 80792,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\ray_tracing.rs",
+      "sha256": "99313b88c4c6ea0d2e5765a8d19ed15c0bd60a6bead479e8ea585b4f2020c78e",
+      "size": 16546,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\resource.rs",
+      "sha256": "0c0b553d61f9c1a4b4b91c248280ae8267fed1efa89f9267b9a4c9b721e9c46e",
+      "size": 221930,
+      "mtime_ns": 1795765074926655400
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\surface_config.rs",
+      "sha256": "d44273674bc13e410a18a5bd3a260be6388d287a995a25d883edb9452d7de48e",
+      "size": 13953,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\trace\\record.rs",
+      "sha256": "c0149f524bf3513c618d9b679dabaf85ba0a593b650f1efea7eff27d16894894",
+      "size": 45080,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\trace\\replay.rs",
+      "sha256": "24cd8e175810071114855793a1219de0ed01c33daa7d1329195a64df5f11c626",
+      "size": 1610,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\device\\trace.rs",
+      "sha256": "8d9f2a948a84ad9cb04655eabe1fd857cc42f6d1f94da83a4cacc57a00c76da3",
+      "size": 8948,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\error.rs",
+      "sha256": "4f07a0b09b30b2d6cbc855d0091d724000f492018af3b41e80befbeccf2a6f4e",
+      "size": 1692,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\global.rs",
+      "sha256": "74e43f3d9d74c244a818b559ec0a5c5312df2ce03de8e11a2c4e2d02a7f6ef4c",
+      "size": 4227,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\hub.rs",
+      "sha256": "0452287040d38aa840d571a79b96b0b8b3f6dae6850d8ae71fd38366140ee4c1",
+      "size": 14322,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\id.rs",
+      "sha256": "529303b55ca4f159ee224540c798ebc4421e93256d49ef16a4ad775624c427e6",
+      "size": 8927,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\identity.rs",
+      "sha256": "712ccda267eb602655c53672a94346aa4c9f88c0044ae6edcd658a814c9a50cf",
+      "size": 4940,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\indirect_validation\\dispatch.rs",
+      "sha256": "feb39fceceb2748286642d9e7177b5844474e2645f6be3a9b801dd889388fb76",
+      "size": 16812,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\indirect_validation\\draw.rs",
+      "sha256": "fd75e1fac9ba1e7e442b9a455fdff4deaec60216a4eab4cb9f5a697ab3313e19",
+      "size": 41850,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\indirect_validation\\mod.rs",
+      "sha256": "57531928a29f7b0c8e3a17cf3cc21ae1562c4951d5e9703b0e8a883180bcb47c",
+      "size": 3262,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\indirect_validation\\utils.rs",
+      "sha256": "a7fc3c2d81b6f4ce3facbc9b007012c5bd8d5e89d78b41bb8ba154e08cb94cb8",
+      "size": 2260,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\indirect_validation\\validate_draw.wgsl",
+      "sha256": "75ed361eb7f3ca4d0c7841f1077ed2e1c5f97e0150734a2d1535874e55465a86",
+      "size": 3675,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\init_tracker\\buffer.rs",
+      "sha256": "6167a400ab271ba857f1c507e60a46fbd318c185aff87eecf7eb05f7f09b6963",
+      "size": 1240,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\init_tracker\\mod.rs",
+      "sha256": "38773a6e51c165d8e54f1ab56f2a0c20c3a126ac3cb19733ea8b423fc305e214",
+      "size": 14619,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\init_tracker\\texture.rs",
+      "sha256": "384c224ce90df97062d4828107c17500434488c9b7dd6ea83649f9e710995324",
+      "size": 3763,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\instance.rs",
+      "sha256": "3605199dc2f4e4344ae908b496b316f871e66d7174ca1f2b91357411843b70bb",
+      "size": 52408,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\lib.rs",
+      "sha256": "f3876f9c2ccaa4b2cb97c341c32dca0e215726fc5be59a4ba7ee19ebff668b4b",
+      "size": 7605,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\limits.rs",
+      "sha256": "edce18a96fbc13e4c992c5fe95972f8895218fd881a54d10bd808e9229395990",
+      "size": 22165,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\lock\\mod.rs",
+      "sha256": "8d3ae3f8d004d7f7d8a3aefe9f30b35669cb8e2409f5fba27b1fcb116b2429c4",
+      "size": 1852,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\lock\\observing.rs",
+      "sha256": "d848f19cfc7ce092a964b68ab02a399a13f29af9cb686d4dfc2a2b59bbdaff81",
+      "size": 15606,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\lock\\rank.rs",
+      "sha256": "3a240acfc0ff78b7a41a29244ff5ee38263426a12b45668b9bb0faf1888b7663",
+      "size": 8647,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\lock\\ranked.rs",
+      "sha256": "84d85cdaa44be6206d272dd0b501d07bc934dd60d09656de5aa88e4936c95254",
+      "size": 14195,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\lock\\vanilla.rs",
+      "sha256": "0ab88039841ac0e4983364fe1692a6f0a838d6162687f50e8d24f4a95eb00136",
+      "size": 3879,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\pipeline.rs",
+      "sha256": "e35c6269edb20f5f89f8cd2862712e0fe7bab711d56ebc8c85b029094e69001c",
+      "size": 40006,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\pipeline_cache.rs",
+      "sha256": "2e15a195b1e7a25fa2d21aa922acf07cf78c1fe09002db67915e0a6ac2e76c23",
+      "size": 22954,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\pool.rs",
+      "sha256": "e11bfdc73a66321d26715465fa74657dcd26a9b856b80b8369b4aac2132a4295",
+      "size": 10484,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\present.rs",
+      "sha256": "cb53160d93ee210025cf4a483ce700b713d56c16daba87cad6b9934cc803f47b",
+      "size": 18676,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\ray_tracing.rs",
+      "sha256": "da0f5c4bfdf1718c26c51014c8ad6be86678bc8ad4b86fbd62243ed26596f6f7",
+      "size": 18095,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\registry.rs",
+      "sha256": "f8e8d71ffc09f4e7206f54007532994e74eb1ece3a4752a823f046dd0db6f1f2",
+      "size": 5872,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\resource.rs",
+      "sha256": "c7e4dd9b0c747f4ee854542d34d10d93c2346142f957cf5101f5894703b684e5",
+      "size": 98939,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\scratch.rs",
+      "sha256": "ea5c40e4d18a12f09cc1038f2dcdddb69b13e99275ac987d826658229a39b326",
+      "size": 1407,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\snatch.rs",
+      "sha256": "c2dad4e5086ddd021bad68479686f2e61f9889a9e00381a55f1222aa0f4c22a3",
+      "size": 7813,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\storage.rs",
+      "sha256": "a778ea826ffef4c9c345b499d4ca5f7a7f32a447de7e572b806900cb661bc2a5",
+      "size": 6236,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\timestamp_normalization\\common.wgsl",
+      "sha256": "9f65aef0526ff9dde945fae70cef064ad961b0aee4291759ae82974cd2ead0a7",
+      "size": 4191,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\timestamp_normalization\\mod.rs",
+      "sha256": "64f00f6aedd84ed53d45fe895d0f498d8df28df904cb2430ab118329c0535c5b",
+      "size": 16372,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\timestamp_normalization\\timestamp_normalization.wgsl",
+      "sha256": "c0225bf02fdd741542bd20664a6d9195b91936e6f7758c9c4c0ac05b08122e79",
+      "size": 1223,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\blas.rs",
+      "sha256": "18c7b5b89a60ab49bbc0f4f8b85a24502c1d968714ef4c586095e119848d902a",
+      "size": 1729,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\buffer.rs",
+      "sha256": "b5c1ba69545186d1771ce7062d6c2f097f6a66dcec0453df4ccf7e1098a17d12",
+      "size": 26401,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\metadata.rs",
+      "sha256": "b3140163ef3ac1682ed11183d16a19562f11ffe081d9aa7b128bff1ec4db2fdb",
+      "size": 6943,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\mod.rs",
+      "sha256": "cce8080f69372c915f11568a0e9ef289de1498a4ee161cb56ea3a380c9e717c1",
+      "size": 25929,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\query_set.rs",
+      "sha256": "52f73250082af6a9e8d6e574e2c370f1da4d47d8a1d22bd3c60df60b4358c4a5",
+      "size": 1894,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\range.rs",
+      "sha256": "de885c3a7f4cb1c2bf86e2203831bc1905348b8312bc4bd016f7da3f233b774e",
+      "size": 6469,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\stateless.rs",
+      "sha256": "3db699f5f48a319fa07fb16cdf51e1623d6ecac7a476467ee366e014ea665b89",
+      "size": 975,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\track\\texture.rs",
+      "sha256": "f7fd7dfb776d8f524c5f5c53c6ce09bc4de254f9e1a277f9f1c66fd6b3ffb6fa",
+      "size": 55872,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\validation\\shader_io_deductions.rs",
+      "sha256": "b690145ca7286a7f356b9df68ce49421a30bdc242e38e1c07a6568d23587410d",
+      "size": 6561,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\validation.rs",
+      "sha256": "4437697bcabf198358e7198c2d9c4f738000f3afe0ed670cf2ab1b26261e58c9",
+      "size": 85604,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-core\\src\\weak_vec.rs",
+      "sha256": "a4193add5912b91226a3155cc613365b7fafdf2e7929d21d68bc19d149696e85",
+      "size": 1855,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\build.rs",
+      "sha256": "001414f5b7dcdbebb18939ef47ab03a36aaf98d92deb4b40af61ab8c9e440bf6",
+      "size": 1862,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\Cargo.toml",
+      "sha256": "ff549cb0387cea35e13feedc4afc4983c62197008658873ad0770c35a4a7ab32",
+      "size": 12083,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\Cargo.toml.orig",
+      "sha256": "d583c9dee8874dc98c23be3bed6fdfcdda1f3c1212c16dfef9f6ee6d63b82162",
+      "size": 12504,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\examples\\halmark\\main.rs",
+      "sha256": "1ebefa4c0c93891e73a7de19680671cfd8cc7a30f8d2b2f4240818b4f209aac0",
+      "size": 33701,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\examples\\halmark\\shader.wgsl",
+      "sha256": "26c256ec36d6f0e9a1647431ca772766bee4382d64eaa718ba7b488dcfb6bcca",
+      "size": 1154,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\examples\\raw-gles.em.html",
+      "sha256": "3d39e534faa0e66d4f49883fbc55f10c84c84136f944d58542efeea29b340758",
+      "size": 468,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\examples\\raw-gles.rs",
+      "sha256": "84f6a40d746fb1ce4ca10748c901352e918db5ffb246d7f98c07be32738c67f0",
+      "size": 14421,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\examples\\ray-traced-triangle\\main.rs",
+      "sha256": "ff7e2d54be361867bb55127209cfe0ec76e4c6e48e6c7466a3db0312dff77b7f",
+      "size": 44559,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\examples\\ray-traced-triangle\\shader.wgsl",
+      "sha256": "90a66ffa57a642fd806a5b3c96347448158cd562d8951b5afd067bfd0b3d1e98",
+      "size": 1303,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\LICENSE.APACHE",
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "size": 10173,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\LICENSE.MIT",
+      "sha256": "dc0d97139e8205818c703741c7be7cb3b96888bd5917b8d6fc6133731e403c21",
+      "size": 1078,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\README.md",
+      "sha256": "21a389a7336219e3787819bf4c1d54265c1e2f8e08c2af5b37f8d03faf5ae2d8",
+      "size": 5291,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\conv.rs",
+      "sha256": "c2cdc3d1a6ae34f88432e36227558a3f54fcec39fea1ceb4862b74d4d94405f4",
+      "size": 12772,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\exception.rs",
+      "sha256": "0eafc977390cf76b6ab92697a60de05b8fd61fbad5f3d3ea0649d6e93777e1bc",
+      "size": 3526,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\factory.rs",
+      "sha256": "81e479e550a09127384d8080e43d5f5bae8e8dda6082fe41a87bea8f872eb0f1",
+      "size": 6216,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\hdr.rs",
+      "sha256": "329660d1c36edfffc98c06800e3dedacd1d69da19548ddfa5044f296c87f8a4e",
+      "size": 15022,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\mod.rs",
+      "sha256": "34bebcabd5e740fc5afdec52cff845c41953b283da84e6a6c2d15f88efd17b51",
+      "size": 350,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\name.rs",
+      "sha256": "ff942da0da1a497ee4d2be21604f7ba9fae963588105b3d1f63aae1a0c536e82",
+      "size": 829,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\result.rs",
+      "sha256": "ae8317767376c2d011d7562b37a99e14d72f2c8e37b107cd5e15e601c9abba8a",
+      "size": 1060,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\dxgi\\time.rs",
+      "sha256": "d4cb85205f93a1c00f4ad7d6f7bec2bd18746b5724adcb4cf62c7d392680cca2",
+      "size": 3792,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\mod.rs",
+      "sha256": "8fcac93db5e23a097da636b64619991c151f282d3747c4dd13dddb37b54648dd",
+      "size": 8878,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\auxil\\renderdoc.rs",
+      "sha256": "94898f747476e269b2910d42e769f2bbb6be0cb466ad92f9d381f55799d2756e",
+      "size": 4709,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\adapter.rs",
+      "sha256": "3a49d6fa30f43916752916003ffd4de9379d6e2ec91d6a9b3ca156922a994894",
+      "size": 65928,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\command.rs",
+      "sha256": "e63ba5aeb666d783e430b907f6563d09cfb97780d540d0f21957dd41f3490735",
+      "size": 72537,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\conv.rs",
+      "sha256": "2676420e6e1d2aa6386b923c8224aa63a199210c19dd611ee8059de41df0e6de",
+      "size": 19331,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\dcomp.rs",
+      "sha256": "053068fbd393a4b8610c7070a72e5887f0fe09b61d35d2be806083d800b48b08",
+      "size": 3988,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\descriptor.rs",
+      "sha256": "ccd4feb6bd3e0a0ffc26142f8a81fca26180d0f50146b6eb2f670cbc89ea7064",
+      "size": 10216,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\device.rs",
+      "sha256": "366c33a87f0dd0a6fdf8be2edf6638fb494ba1e8710c042e4482a9d673b1d147",
+      "size": 112685,
+      "mtime_ns": 1795764815756602100
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\device_creation.rs",
+      "sha256": "fbaf9487c63f936e3556ea6376d9b41b072c700aa69303f67ea20012ad61a54a",
+      "size": 6775,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\instance.rs",
+      "sha256": "88da287d2ff2bfa4098d54c03193a711b584bcdccee2713a93fdac015ceae7f4",
+      "size": 7721,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\mod.rs",
+      "sha256": "aea978a714e2427df87458bcb36d66f9195cff6ad521c5bab2ca2806a56d94dc",
+      "size": 65717,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\pipeline_desc.rs",
+      "sha256": "631c72108f6735debe9f7059e22574ad50b11aca4dc0ca804e6d89b1373d19ff",
+      "size": 14709,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\sampler.rs",
+      "sha256": "d18d243efe4fa667dbab5b75b5b91d47de94d441976d9f44a46a2b49ba38473d",
+      "size": 9682,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\shader_compilation.rs",
+      "sha256": "e5f91338615badb72398a3853675865f1cf74ecd91948efcdd6aa44d5785e378",
+      "size": 13733,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\suballocation.rs",
+      "sha256": "825ff128867b3a5f029f0808ca1d07dab1b6aa5eb1273fad30ce30eb5830495d",
+      "size": 24133,
+      "mtime_ns": 1795765053426801900
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\types.rs",
+      "sha256": "3fc7619fc09303eb3c936d4ded6889f94ce9e8b9aa62742ce900baa1b1e1cca7",
+      "size": 1205,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dx12\\view.rs",
+      "sha256": "2ba4e4889de11c7f0b1ffbd0301462b424f055f959d84e92ca9f9402754fbd83",
+      "size": 16439,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\adapter.rs",
+      "sha256": "df93d7856ec0c7c42ff6eb65435a16cc918c5d3b4f718ebcd6c695423ab9ca41",
+      "size": 2876,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\command.rs",
+      "sha256": "ee53aa6abd98a6bd82ccb9613d1ac779067cd1e87f2ceb3eb0f1f59fa2abd569",
+      "size": 26665,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\device.rs",
+      "sha256": "4ae7d802fc593d1c3f0fbf4b1caf5649a3970f9ef03819be7a5cbb504dbac719",
+      "size": 23036,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\instance.rs",
+      "sha256": "c5c9f1d3089c0b508c3619aceecaf99234e77af833cf124de792ca3ea8a56f70",
+      "size": 2300,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\mod.rs",
+      "sha256": "8a447369289290fed459e7fb333e51f8ba22adacfea45362b07d4f193d1dd94f",
+      "size": 8005,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\queue.rs",
+      "sha256": "c993c79029b182d21b48006e37715c1083817258764356c9b131b0637e7e8c86",
+      "size": 1999,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\dynamic\\surface.rs",
+      "sha256": "a7b67292ead4c2f3978b4ba17e6a83d94fd80db81b2afbf1aa18da9d392b54b2",
+      "size": 2122,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\adapter.rs",
+      "sha256": "469fb40d3b8f791957767bd0884f69a511d021886116b14c7e8a4c200f052fd0",
+      "size": 61432,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\command.rs",
+      "sha256": "9b53ea51473766e11c78d5fab081695b5a443e067127ccf31e6d7c5a37cc309a",
+      "size": 49499,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\conv.rs",
+      "sha256": "1013e1e48bc6b5b0df60a026251b97653528b112600eb3f8d4e905dbf791d897",
+      "size": 20236,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\device.rs",
+      "sha256": "d6919ff96a805da34c9eb9d05ac8f95f57df2a42a691f90bf1f36425b509b198",
+      "size": 71035,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\egl.rs",
+      "sha256": "25ef4629921f6b87daa559f62f3a6132f766451e4e3674cdec62e9d8ecac2627",
+      "size": 54668,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\emscripten.rs",
+      "sha256": "316d2bb6f2a4bb126dbe68a223f7393399080d116b61c39504454acdf4f9cfaf",
+      "size": 983,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\fence.rs",
+      "sha256": "f63e9c7cc71a1b65d66e6b8e6153c0d855e6b166ca2d521cdd9c4bfc9d67313c",
+      "size": 5979,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\mod.rs",
+      "sha256": "505b231099410c5acd2dc8f940792006dbe4dc14df7cf4b8e527244ce2ff5210",
+      "size": 36245,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\queue.rs",
+      "sha256": "1186a5d89160db28d827f3f8c46ec6a12cf9e0e829514bced433fbf4b84340fe",
+      "size": 88228,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\shaders\\clear.frag",
+      "sha256": "9133ed8ed97d3641fbb6b5f5ea894a3554c629ccc1b80a5fc9221d7293aa1954",
+      "size": 182,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\shaders\\clear.vert",
+      "sha256": "a543768725f4121ff2e9e1fb5b00644931e9d6f2f946c0ef01968afb5a135abd",
+      "size": 209,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\shaders\\srgb_present.frag",
+      "sha256": "dd9a43c339a2fa4ccf7f6a1854c6f400cabf271a7d5e9230768e9f39d47f3ff5",
+      "size": 515,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\shaders\\srgb_present.vert",
+      "sha256": "6e85d489403d80b81cc94790730bb53b309dfc5eeede8f1ea3412a660f31d357",
+      "size": 402,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\web.rs",
+      "sha256": "90f15af538aa2d67e6a3518d39b5e6f763efba8b39e43c3c8106603d1a1b0d48",
+      "size": 17794,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\gles\\wgl.rs",
+      "sha256": "2a02d9370c69a121cfbc91a24d902c0ad2af2cc464c0b64c181ee9b55b4b1041",
+      "size": 30401,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\lib.rs",
+      "sha256": "550edbb4d269fd4a9e7f4cd8a6c935f48c48e1a4eccf392748d2090ca5865f97",
+      "size": 119425,
+      "mtime_ns": 1795765056136229600
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\adapter.rs",
+      "sha256": "50ae470024e8d0aa4f031f4d503aa73bfa8ecac69c4496f1080a07fdfc8a10c3",
+      "size": 82282,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\command.rs",
+      "sha256": "291547df7aad7e691f459ec5a8b91fc7126c7723a2c0604a5ad0f2f95b38ea94",
+      "size": 79392,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\conv.rs",
+      "sha256": "fb7e365642e50c23432eab53e8355356ae2037162e4093b779207818dd2ec67d",
+      "size": 19154,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\device.rs",
+      "sha256": "a4766b4d735d177ede3a06042452ac1e21530879c8e7a773ec6e3339416cae5f",
+      "size": 95978,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\library_from_metallib.rs",
+      "sha256": "4484f4d622c39fac5038cd0bb9ea76eccaf12619b31ec231e2f34415bb72c386",
+      "size": 1734,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\mod.rs",
+      "sha256": "94049a6ab36f04a440517c891ee32f3e79fd6225665c93679cc5faae6ca0077b",
+      "size": 47601,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\surface.rs",
+      "sha256": "450ddebf1d2229df23a460d4c638f5a3e128231dec2382f437b4eeedf89e09e7",
+      "size": 17773,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\metal\\time.rs",
+      "sha256": "c32d69f30e846dfcc0e39e01097fb80df63b2bebb6586143bb62494999850246",
+      "size": 1005,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\noop\\buffer.rs",
+      "sha256": "b5edc5e2c52287dfbd4f619e36097ac233041eb9ab287b889b6ee477d740fa09",
+      "size": 3442,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\noop\\command.rs",
+      "sha256": "858948feef6b328e2333aedc051dfb4bba4d25e6c7b47ac481d4161a3410b473",
+      "size": 10137,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\noop\\mod.rs",
+      "sha256": "709fe65d1d5708e9a8470e9616fb06494faac37f1e2f0a17d1f8fabbddb84ba5",
+      "size": 15236,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\validation_canary.rs",
+      "sha256": "d96300c6005a02e0c5d411cf065837e50c0c37957cb88de89fafec43032fa08a",
+      "size": 1281,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\adapter.rs",
+      "sha256": "1f897cd265879ec3e68efcf09fac52d8f32068184781eab9cf48acaf74820485",
+      "size": 154661,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\command.rs",
+      "sha256": "562877b666133bf5de6961569a4aca34cb5e9f2224b2efe6cefec20dc99e6c93",
+      "size": 54846,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\conv.rs",
+      "sha256": "6930e077c055c6766c5ccb311abf4afa557afcd0d157466131ae62534ccdb30a",
+      "size": 46289,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\descriptor.rs",
+      "sha256": "43a94ad2e10fa563984426f0628755ebadd2522fbcd806b73d6f4fedc05ac0ac",
+      "size": 11780,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\device.rs",
+      "sha256": "357f69123ff9b1f00c0b5b28f59f2ecf9f35912f9b946192c1233ecced20aa18",
+      "size": 121822,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\drm.rs",
+      "sha256": "b071e1092164bf7c9952f33aff26ad8d74789f233516ac986ac63b2e6a0a0210",
+      "size": 9195,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\instance.rs",
+      "sha256": "e10b91b2c0bff2293cbcf0e99e7b30da95f8dc0deb9ac51af16261cbe7a54537",
+      "size": 41979,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\mod.rs",
+      "sha256": "de64a2813099084774ffccd7e47b54784e2efaf27ac24e131f00df3e21209e78",
+      "size": 61960,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\sampler.rs",
+      "sha256": "f65729d6df5cce681b7756b3e48074017f0c7f42da69ca55e26cc723cd14ad59",
+      "size": 6953,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\semaphore_list.rs",
+      "sha256": "919c7dfd5864fa2f2ebb478268aa8bfe8a540ca759efb777066fa1f7216a6f9e",
+      "size": 7366,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\swapchain\\mod.rs",
+      "sha256": "68dc4eb82e3d9aa9d0a0343c430777f9c0a2870314da8806b96ca8a8cd8df0c6",
+      "size": 4711,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "wgpu\\wgpu-hal\\src\\vulkan\\swapchain\\native.rs",
+      "sha256": "9a0be6f9bda9e160d9fea944d661467bb5017018b7a0612d20d47fd3eb2f26f9",
+      "size": 37644,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\.cargo_vcs_info.json",
+      "sha256": "b8b2549c91dbf3dc4087197a6be89ab5acb5511c2d1eadc7349c249f646047bb",
+      "size": 94,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\build.rs",
+      "sha256": "eda62c3ebf765708bf1608b51ccf77501b4aa0253214c419f813c6d08d640b1a",
+      "size": 1004,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\Cargo.lock",
+      "sha256": "b6183ac90e9aabac21f3fd993380cd8d8f7a28c7b7b67f8ae5549e95bedc205f",
+      "size": 56303,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\Cargo.toml",
+      "sha256": "2aeb741d47b763ee198ca915c330a6bf0b1fc094dd69357e80278b7852289c61",
+      "size": 13724,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\Cargo.toml.orig",
+      "sha256": "9e406724f6e8e69ea1986f1f4bc592617c3e19ff855b163cd076939d6c8969b9",
+      "size": 9844,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\docs\\res\\ATTRIBUTION.md",
+      "sha256": "cce791f4d42357649754427331e9a0e0d4ff21f7e49919708991c71a70b7b132",
+      "size": 569,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\docs\\res\\keyboard_left_shift_key.svg",
+      "sha256": "c490cbbd7a0bd7de65d2ae46c074678dc8dd03da76e634996b58e76bef4d9551",
+      "size": 74680,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\docs\\res\\keyboard_numpad_1_key.svg",
+      "sha256": "2892b7039b857875fbfa71a2bbedaa245b92b060aedff71a79a3c555e2fef11c",
+      "size": 74682,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\docs\\res\\keyboard_right_shift_key.svg",
+      "sha256": "0d585a96f7ef3d06b1609c26d6c836b40bef823fb5337dbb661419bf9bc57929",
+      "size": 74679,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\docs\\res\\keyboard_standard_1_key.svg",
+      "sha256": "2fc962bb17eeb482dc79cef05b16937d1096d0d25a784c1c27150540437f3e9a",
+      "size": 74681,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\child_window.rs",
+      "sha256": "a605c0d8d2b7e9bbc585a109f82fe0f032dda2ea80e4efb07c396d34576bc10c",
+      "size": 3821,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\control_flow.rs",
+      "sha256": "3c3ab1670113f7ef4b826f91a1daf6b8419171cac3e6042cc3d871c31fcb858d",
+      "size": 4627,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\data\\cross.png",
+      "sha256": "4db9fec917c6cb3196872073e4168d28c4f3e0ad04c5c41865407088abf279e4",
+      "size": 159,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\data\\cross2.png",
+      "sha256": "fbeeb71e5d6f24898017739d088acefb522d85108a6f1f96183e60e6b4b1f6e6",
+      "size": 129,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\data\\gradient.png",
+      "sha256": "8f80c21867a59959b84f9ced19ff3aba7bf4e1cf0e2c24dea2c8465c8705c7ca",
+      "size": 229,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\data\\icon.png",
+      "sha256": "4340d72fb8b5d95a10e3b2c02230f1060dff0950a137bd1d830c63dbc020dd45",
+      "size": 2950,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\pump_events.rs",
+      "sha256": "9d2b52aee808ba58c4e987eda0562493c15da298de67bba210a5727ceb910c9c",
+      "size": 2430,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\run_on_demand.rs",
+      "sha256": "b12ac771a8e4fd8945170f5dead56905ca6146e98c6203f2e197e50a364d0406",
+      "size": 3377,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\util\\fill.rs",
+      "sha256": "9fb51f71015d6a0bac1ab796c1b4806970f4cda6003d996ce2a5fce97c4f5260",
+      "size": 4177,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\util\\tracing.rs",
+      "sha256": "4df742b6fa78a20e1d1971c789042a154c3cfa83eaea7b670ff56ab6e04f5a86",
+      "size": 694,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\window.rs",
+      "sha256": "f7cd8787211bb307736dd385766dd22e93a74fecae5f4f45928152a0265537e7",
+      "size": 39758,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\examples\\x11_embed.rs",
+      "sha256": "571f44156b395c4b2466f2bedae81c818817a6b87f1d1958e9b52c117df3f5ad",
+      "size": 2251,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\FEATURES.md",
+      "sha256": "0e7a315f1016e07b0e1045511b6072ce13b3fc372c4fe097d0a8eea3d35ec2e1",
+      "size": 15334,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\LICENSE",
+      "sha256": "6dc0e068dcf3a5bc8e054205b85b7720e1d49265bbc64bf515d2cf79197df69a",
+      "size": 11323,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\README.md",
+      "sha256": "c21ecf8dc8b5cab43c5a8ecf0c043ad4eae6663b962ae6e9d10b7a6e3fb13039",
+      "size": 2887,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\application.rs",
+      "sha256": "993ddc2bbffca969224b2045dfd6cefd6cadd923df83f8ba24da8da8e5ab3fb4",
+      "size": 14135,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\mod.rs",
+      "sha256": "55a97a82a15c4006dca76e46bbd7ade72e103f54bbcc111bc55341207dff5140",
+      "size": 1648,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\unreleased.md",
+      "sha256": "21810a83a3b89ef6dc1471c8028bcc9beecb467e88bbb944f2cdb9f04633ad1f",
+      "size": 1192,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.10.md",
+      "sha256": "3ed4a49e068409208aa2d1640693bcf835b5b0a5367fc19a03f458edb366a7cb",
+      "size": 1130,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.11.md",
+      "sha256": "81110653eea2a68ff69b19cd540c1461cff1d9a4353fec08dc3a4e26ff44db07",
+      "size": 1631,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.12.md",
+      "sha256": "41250756388ef71a6889f076a4ee87f63c6c70bf75597ce3dc5bd812d36d2f82",
+      "size": 711,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.13.md",
+      "sha256": "021eb96e41f10de60fc33c0463df68194571ecd6169e17cc8c5c938f7f64e5ce",
+      "size": 1911,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.14.md",
+      "sha256": "8ed872d3e8abdd2c18ae1d65976734442ab41194195b31888c155b2bcba21c98",
+      "size": 2821,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.15.md",
+      "sha256": "3c96f73e28f85926440b9db7b445a1786f30bb7ec2844c3f3f57e7849db32b07",
+      "size": 3935,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.16.md",
+      "sha256": "5c8333b5bf024a2f39d91f93846ffe469d141c7b11e5ce501daa720ba64a9196",
+      "size": 3673,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.17.md",
+      "sha256": "2598e37dbb7e495bec60cafe693041fa5d58335a1a38b37a0779edae24e6942a",
+      "size": 1336,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.18.md",
+      "sha256": "f61eab5f6eace3ff07f66d4340c21926172332c748ba3e3fc4b7e07bdfa92ecf",
+      "size": 4366,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.19.md",
+      "sha256": "ea5ca936d53274e8a4f8bd385ba59fff5df866d889a4a69ca329791a664a3aee",
+      "size": 2130,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.20.md",
+      "sha256": "b04bf3e79ee11fd5f9646ccdc076a50c5a7e9749dc872adcc1f392fa1f1b1723",
+      "size": 13979,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.21.md",
+      "sha256": "ebc856323df17decd003fba57fc5e3f5b8c7ae8eaa763048b4d6dbef8ae09b01",
+      "size": 1346,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.22.md",
+      "sha256": "bd56cb152ac452ee4b354ace3976d3abda73d7db3a81afafee25c84cfdf08705",
+      "size": 2046,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.23.md",
+      "sha256": "6570ab734b9201360f5ca592343114bb3de9a608051333a4601c087dff234d5c",
+      "size": 5137,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.24.md",
+      "sha256": "a7bea6cd9d087c0a6ecddbbe5472dd3fa87735f088614c052db808c5742b57a8",
+      "size": 1970,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.25.md",
+      "sha256": "38d2cd8e8b067779b4c86c0b1d7d81a3b5f4101b2868eb316f41bd55e8bff71e",
+      "size": 2697,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.26.md",
+      "sha256": "b7a52b06cdddeff78c1c3e845ab42f5d41a268ef409c5237ddf3e15c1bbb7772",
+      "size": 2745,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.27.md",
+      "sha256": "51765d0114217504dc17c65894194ceb6928601eade2949fa72fcb6c00051528",
+      "size": 8901,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.28.md",
+      "sha256": "12829235afb1ae4481cc74bfff80997d404c987fda69c81bb657d7b709ead394",
+      "size": 7132,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.29.md",
+      "sha256": "04f9f09219695380622359e3ef74ebda5a89549cf8175b7aa965743a9e6d48b0",
+      "size": 18622,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.30.md",
+      "sha256": "5e436376fe1234cf94b08c4cb1dcd6d2e6e7684e4a33b71e17217a8fd0c18721",
+      "size": 16977,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.8.md",
+      "sha256": "c936e8b8ef369180ab9cf8fc24891d398dca5f238cb39467fe79a2f0b19539a1",
+      "size": 1464,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\changelog\\v0.9.md",
+      "sha256": "fe9f9f731d585e83c2d35d7c2c560fa892c424d3e7ea1d13050ffdb467d50383",
+      "size": 1369,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\cursor.rs",
+      "sha256": "479eb73a7a23a58b718ce7255345f3f65ed2cf46d2e4e7d1716deb469dd9099b",
+      "size": 8117,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\error.rs",
+      "sha256": "549f95a2afff4435eed400c580b7d512229c7958df19258c0ce2ac30474f121d",
+      "size": 3675,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\event.rs",
+      "sha256": "ff5c577343a725173a539c797e243fa8f6150c02181d904bddb9d82581a7a61e",
+      "size": 46250,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\event_loop.rs",
+      "sha256": "f84209476849188122139926697f1fe97e17409a41ef0e8dfadf9bd4718108c7",
+      "size": 24272,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\icon.rs",
+      "sha256": "42780fcdb3dfe001fa24c51e21d326df2961e4232e0b09b0e8d9c3518161e73b",
+      "size": 4082,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\keyboard.rs",
+      "sha256": "fb1400750fb0c6d376415e642c837e0e8ded95f55ba03a8889d336d180620394",
+      "size": 67598,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\lib.rs",
+      "sha256": "924aead3c0bd3e446e8ee51193c636916f8b0b9d2cbb964e81e160db0f07a2ec",
+      "size": 9548,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\monitor.rs",
+      "sha256": "60d8887910f1d3836544f12d000146d95790f8af54476d7288f73f822377083b",
+      "size": 5460,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\android.rs",
+      "sha256": "7a576387937d93c03654067a7197ec65da6c9f3e39b145a32182fe43f93609bc",
+      "size": 8150,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\ios.rs",
+      "sha256": "bfb43e3067cd74067ce6019048141f86c1524b5a7859756f7b938310e9d9984b",
+      "size": 17288,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\macos.rs",
+      "sha256": "c6685a9e320715b00124d66eb5e9be088cf1f165678e832a86459f0026d215e9",
+      "size": 18909,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\mod.rs",
+      "sha256": "371ae3adce64ba6353c03cc5f7251325b50f0516bed4eca50496f1e42b5f6dfc",
+      "size": 1216,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\modifier_supplement.rs",
+      "sha256": "e23c4a667aec84232ce072b7066a2aa2c912a1a7d5c0b7d9b5b648f877fb642d",
+      "size": 1312,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\orbital.rs",
+      "sha256": "e511445fa2d06fc7210a88abbc760395710c60a4c0376d1a4a0ee29e522bf2ac",
+      "size": 201,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\pump_events.rs",
+      "sha256": "bbdc0f490758f91609f1b46998976e071775bf9f17a7c4a3a12bd6781b0c6b3c",
+      "size": 6272,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\run_on_demand.rs",
+      "sha256": "007047afc1e916f1bc01c5ee1bc959dd865049f17be97dc517abb7bacda66262",
+      "size": 4676,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\scancode.rs",
+      "sha256": "2ce520012ee3ab6b5884d2f74e84380811b6e50c7139eee176fb233d75b25df2",
+      "size": 1820,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\startup_notify.rs",
+      "sha256": "c2b3ba714649268109ab48ef5cc7dddd7dab0198518987f8735c174fe6b2c5b8",
+      "size": 3673,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\wayland.rs",
+      "sha256": "4fd4601c7733275031f14c40d33caca8e493197c40bc721fdd055297f9690d00",
+      "size": 4268,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\web.rs",
+      "sha256": "4dac8e96213a4ca4ec586946f18d16dfbad3666ce1e60b34c4e28eac6e213c5e",
+      "size": 16678,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\windows.rs",
+      "sha256": "1a480966b317ac2f3117b26d379954b2d9af1740472a9ae07e055598862a24eb",
+      "size": 27788,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform\\x11.rs",
+      "sha256": "a64f13d1e3e77c4cb3b21faafe87d74e8063bd901e5cb38af98738dbdd0fa911",
+      "size": 9358,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\android\\keycodes.rs",
+      "sha256": "ee8674acc597a71665bedd05e7ac79b8efb76570fcefe616e5eeb81474822475",
+      "size": 27966,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\android\\mod.rs",
+      "sha256": "17e982ffa857b36166b38a89c99bd4c19e199d847dfb3d43f289ca8d4e3bd066",
+      "size": 38104,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\app_state.rs",
+      "sha256": "f2ff4a1093ccd4d52f3db86458ea8fbd18805876082c3a4ccc127e8d8e614a6a",
+      "size": 34620,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\event_loop.rs",
+      "sha256": "df8f0d5e25b799b63edba57168ccfd736283c10149d596aab146019fc770a5aa",
+      "size": 18404,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\mod.rs",
+      "sha256": "0707a46215de8a0c7692ae04ade45de27de19988fd3cb54fd4c5553e7c3aea7c",
+      "size": 1493,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\monitor.rs",
+      "sha256": "76abeeafdab29e5dd46426a3f0eb173931b392dcff356bdc1c218e00adefec37",
+      "size": 9359,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\notification_center.rs",
+      "sha256": "cdcee390403dc4518402248022ad7d7fcd61ac42a041633f3de684d6533bddd3",
+      "size": 886,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\view.rs",
+      "sha256": "95f8cb9caf86ef10174c687eb017d110567d8ad3adba89c25c37f41fb6359cc6",
+      "size": 25388,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\view_controller.rs",
+      "sha256": "fe4d8403c4e8f8bba6cb5f45191532649c6e28886536173dc3f546a3c9c9ff69",
+      "size": 6728,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\ios\\window.rs",
+      "sha256": "731b07469178cf763d44f43e6dc31a2b1dce89788ac4b5a9e8adf641237ea7f4",
+      "size": 26290,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\common\\mod.rs",
+      "sha256": "697b29a56eeebe70eed5e9549b53d15c474d8c7f54a7476f992646f8603aeb25",
+      "size": 13,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\common\\xkb\\compose.rs",
+      "sha256": "d4f11c74f1e1ffd93ecc75d7fa2afdba25212925f0589d7a9c26b9784a43e344",
+      "size": 3424,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\common\\xkb\\keymap.rs",
+      "sha256": "e08d41edd547e57df87b6c8da271f7c956a0d4dcead1cf2b17ab2c67652e0c82",
+      "size": 40223,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\common\\xkb\\mod.rs",
+      "sha256": "4ae8efa819657fa6cd8c38543f8638d7c7c67af18ff3a8b871919252d87c2400",
+      "size": 14275,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\common\\xkb\\state.rs",
+      "sha256": "c7a940941b2d1c679a2da163b244d6ec131c2d5d24f75e5265921cdb938c3cb5",
+      "size": 5925,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\mod.rs",
+      "sha256": "ee825f75ba79a7a12932640e8b085fdc897a35d3ec8105a37987ffd166d1c9f2",
+      "size": 32702,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\event_loop\\mod.rs",
+      "sha256": "dd1ceefa859550fb109460ff9b536307dfa457069899244da0220c0a81267edb",
+      "size": 30268,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\event_loop\\proxy.rs",
+      "sha256": "090756d810c1cdf56832c8b283044f93965f0149db601f40625bb977a05468de",
+      "size": 791,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\event_loop\\sink.rs",
+      "sha256": "3f92a12b7d786f12edfe69925c2ba17194974c427614d4c449335aa843f9d2c2",
+      "size": 1526,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\mod.rs",
+      "sha256": "473911ef643fb20ca22dcc9a7eb9c87344b0914b470b019384d7ba1be1e92111",
+      "size": 2375,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\output.rs",
+      "sha256": "14982bc1e6ba130eb2c3d0da790905d28075cd1cec215b6f74e560fa449f5421",
+      "size": 4658,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\seat\\keyboard\\mod.rs",
+      "sha256": "dd20e74809b3a7987864bc5cabdbeaf62a8474400ddbc4fc86188ed7a84dea62",
+      "size": 14435,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\seat\\mod.rs",
+      "sha256": "70bbd2a8c43a898f4cb2580d38c4f14e478e7331ab65d2e115feb0377fe2fc44",
+      "size": 7788,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\seat\\pointer\\mod.rs",
+      "sha256": "842ea0e853a3fef090ddf2ff6bc68f00c008f38db3b222468f8332451aa569b8",
+      "size": 17688,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\seat\\pointer\\relative_pointer.rs",
+      "sha256": "c1e9a253d23827036950ec58fb78f4d3b326b2f57cdff7381f0c0cef8015bea9",
+      "size": 2747,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\seat\\text_input\\mod.rs",
+      "sha256": "197f1b241915f4d579649e187b653efb7f1bfac9405821f2a2e0eef88e5375c2",
+      "size": 7211,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\seat\\touch\\mod.rs",
+      "sha256": "dd16a75607cab3ba5723ad6b7a2ad6dd09fa2a63fffa57622367f137ea5d3987",
+      "size": 6635,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\state.rs",
+      "sha256": "18beef206a1d0a1cf72ac65b1cefb4984bc204ca0638ecbbe2cb2c8d316422c9",
+      "size": 14800,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\types\\cursor.rs",
+      "sha256": "b513bb85d34e3df1d5bc765e2f88a468e80f43d50464336d5dbaf54332fdf8e7",
+      "size": 1640,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\types\\kwin_blur.rs",
+      "sha256": "6cbb4ce3e2484a01bacfa24a55ea3c1659503b18fc48e8f41f341d437f291ea4",
+      "size": 2068,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\types\\mod.rs",
+      "sha256": "84e32b36a90e15747ce5beae9318f1475d15925a45248147a5b7e9920e74f4c8",
+      "size": 163,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\types\\wp_fractional_scaling.rs",
+      "sha256": "c0897ffeee6f631aac024e9a737b90c18b807a775cf898e64b45fcca84ca97c7",
+      "size": 2611,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\types\\wp_viewporter.rs",
+      "sha256": "77b67951f7bdd959555e8b39a8830d4547b28f73a921a4f347a647a9758d156a",
+      "size": 1931,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\types\\xdg_activation.rs",
+      "sha256": "8d0fd39c97c6eb19b8231df20624777feca1aa45bb38692ab498e37e42aa5bab",
+      "size": 3506,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\window\\mod.rs",
+      "sha256": "30b6c00aa143046e4b1d7277e5fd08ae7ef7f7f084b0c0e62c89e0dda8a5c6c2",
+      "size": 25452,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\wayland\\window\\state.rs",
+      "sha256": "d09f9c19235a36d0a0068eb82428a27e3a4f318f31925368e573310ae791030a",
+      "size": 43519,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\activation.rs",
+      "sha256": "e30310151a7277aa8467adb0890b16482913efa6aea1e518a0b1d5ac83e3ec95",
+      "size": 6250,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\atoms.rs",
+      "sha256": "409f77f94faa03e9ae3ab09d62a01e044aaeb5bbde9c9ee5e55ad6994374138b",
+      "size": 2699,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\dnd.rs",
+      "sha256": "89b186416d72fb36ecfaa350cae884949b1445d7a7b99a926eadba861d550243",
+      "size": 5512,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\event_processor.rs",
+      "sha256": "eefe47e789dae7cd56f3579eb292935d6237c886d486688ed2649b2aa6a76237",
+      "size": 73445,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\ffi.rs",
+      "sha256": "a311e1e922ce9dab1d1761854bcff0b64ff50d7c34848a869ef70820cbcbdd79",
+      "size": 144,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\ime\\callbacks.rs",
+      "sha256": "82fe96afa6d46514b54d3c1a35bc9ea8ef44e91750976c17aada99f521f33325",
+      "size": 7184,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\ime\\context.rs",
+      "sha256": "c4cbbdd20f6eb46e26521c1e877456363a2752e962ea4c4d27ee0f8e98e545f9",
+      "size": 12481,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\ime\\inner.rs",
+      "sha256": "0f8e8070b1590cff566db06d8fd4e849ebfd4066817f60a455cb020dff81ba2d",
+      "size": 2361,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\ime\\input_method.rs",
+      "sha256": "b301d72119cd3c87109540a760a7c0cac5cec58ced425a4bf2a91ff1c7dfb700",
+      "size": 12098,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\ime\\mod.rs",
+      "sha256": "efa84f5da26bdb10bbed3c0c5089e4aa719985b96fa18215db9c71bf3dcd5f10",
+      "size": 7251,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\mod.rs",
+      "sha256": "811861508c9e34923fc77ff9aa610b1b977b641fd72a919e634ce0d38f788d45",
+      "size": 34785,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\monitor.rs",
+      "sha256": "5c49263f0ae5355cf56f379544f28301ebe63f4130e3b5744bfb5e1ae5d16fa0",
+      "size": 10772,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\tests\\xsettings.dat",
+      "sha256": "26968fe327bd1b9617766cc73128812a582c6254eb9ed1d222bc0d0faea43aac",
+      "size": 6840,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\client_msg.rs",
+      "sha256": "76c0c08831829fc010be1150e8f9aa9cc366b25dd344dba381ce7f7d3d3373af",
+      "size": 967,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\cookie.rs",
+      "sha256": "d53987a8d3bb8e0b4462ed3bf670ff35f1f9c8315f622ad199990cd7629adaef",
+      "size": 1516,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\cursor.rs",
+      "sha256": "e3d229d3f27ed087c8916ba9b7e9ec6f08af11a5064e659f45aeb364ca703d22",
+      "size": 5062,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\geometry.rs",
+      "sha256": "fd2054b2e1c086011cb639830038737654fb9ecbd7fd090f5bcc0cc1567a1803",
+      "size": 10455,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\hint.rs",
+      "sha256": "f5f4744d090bbe6280e09ce2d6ea2da76d0d899d87762059a99d1174b39e47f8",
+      "size": 4886,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\icon.rs",
+      "sha256": "598a457838fff1e3eccc4274a13bdd140419ce303684347604712b127d57c6d6",
+      "size": 1159,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\input.rs",
+      "sha256": "a1db43e9940a20581cc4308f9be5b749d9912208c5bfd5fa6ce7d2aac71daaef",
+      "size": 3467,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\keys.rs",
+      "sha256": "5d6af7d9c91107ad5d9d8451bc3f85922bc5dcb87deb9e215956d03d2a69acba",
+      "size": 1636,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\memory.rs",
+      "sha256": "b88e9bb56f20582c85bf07d176011dce4c6357c1de877c6241f2496ad4d27c42",
+      "size": 907,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\mod.rs",
+      "sha256": "180f12c887da4c10904de7cf2934543784c917338b49d182aba7d098b183a899",
+      "size": 2310,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\modifiers.rs",
+      "sha256": "1f99aa3c76936f76eccc1eab18d39aa38916b97c4429e40818279650a09df78b",
+      "size": 5563,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\mouse.rs",
+      "sha256": "5eb02a1b1206dc05d056da762c210e4828158758d10f547277e7e08d8cead38b",
+      "size": 1064,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\randr.rs",
+      "sha256": "220d9343b2b3987c77fd346154fdfd9a23b004c077e1f57c3649c458a935b502",
+      "size": 6438,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\window_property.rs",
+      "sha256": "a079a7c6a7ed75e39b35cc76e4f55aff54b1cb6887711d1323fd60bc36ab4e4a",
+      "size": 5946,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\wm.rs",
+      "sha256": "09ec80c212ce2110022c8d2d81731e1f7c90438722cff8fae8dbbcc5e92ae220",
+      "size": 5226,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\util\\xmodmap.rs",
+      "sha256": "1bd99ff1891b79ff59f38773a1ab5ad3fb9a60fc55643a3787dd3c02b6afb48d",
+      "size": 1609,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\window.rs",
+      "sha256": "caa0e303e2d1956020b1c27ead24dbe9c45fa73559ab38fea9a71d5e111ba8c7",
+      "size": 74470,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\xdisplay.rs",
+      "sha256": "ddfa5f2140c8cded23e14247011a5fdcc6c2a83d2523584f50d2da49b8a094d6",
+      "size": 11135,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\linux\\x11\\xsettings.rs",
+      "sha256": "3429aea240688c0faaab7f9725b586b6cd2f3332d6f9b19ac8da7689605713b0",
+      "size": 9014,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\app.rs",
+      "sha256": "14ba9f49d955a906a115c34fd12fdbbda13ac9b75740606e9fe0daeffa903c5b",
+      "size": 7656,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\app_state.rs",
+      "sha256": "cb346eda09cfb7ddb4941fead441e3242eec0c64639a621e7f3116702531b7a4",
+      "size": 17881,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\cursor.rs",
+      "sha256": "537ee43a90cba74cc73801a45b67ef2356d99c7af12489865d0ff78273c6a9c9",
+      "size": 8808,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\event.rs",
+      "sha256": "dd073f82f85c5950eebb45256521da675e216ec56eaacadb7b413b96f1e894d4",
+      "size": 23632,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\event_handler.rs",
+      "sha256": "05b01ef0413ef0eb1004decf7def1131aa0ac6ce445bbcc03606c9c8b3a862c5",
+      "size": 5303,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\event_loop.rs",
+      "sha256": "c538c57419a311e335842f18e55d3e1ba4d493fa88c111d3e956ef81458f0c89",
+      "size": 18381,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\ffi.rs",
+      "sha256": "ae4aed628db11c332c8de422bb181bec15b22e44712b50d0a8eabb98d25f417d",
+      "size": 9114,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\menu.rs",
+      "sha256": "b0bcc89693df6c2f5ff5cbfadaad83cff7fd5815483e2aaeea07b55e61a32ceb",
+      "size": 3426,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\mod.rs",
+      "sha256": "584af72536847910a3e461fb40b9a0f9a375da3200f7ecf38f5d989b3c143d9d",
+      "size": 1655,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\monitor.rs",
+      "sha256": "456ae20157b0c40f98cf2d7b6850fc07aacb510f5cfda27891c0ffcc2ee47e68",
+      "size": 14690,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\observer.rs",
+      "sha256": "c4b1a7e129237924d6f2f20eed2e66d1d9c111b267d2bf1556bec85accc509b4",
+      "size": 12203,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\util.rs",
+      "sha256": "9c938d322c89cee11fb041ebd43ef77355fb1a38fc77151ce730133929e32955",
+      "size": 679,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\view.rs",
+      "sha256": "de63351d7a757d58883600c3f1702fc369cb77b2ae323a4efca7cb520e9da90e",
+      "size": 45271,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\window.rs",
+      "sha256": "981b8acb0e46f9b153c143b939c8e39a63b994b5d3f8f0c0f24c56b2993bd1f8",
+      "size": 3543,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\macos\\window_delegate.rs",
+      "sha256": "791c8112b5eb95d4c5bf7efff3f458432cdfd77598053c3d756ae610323f36ae",
+      "size": 76164,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\mod.rs",
+      "sha256": "32e11e828a4cee9ad1dcb649beab6b6842f9b5bff4c1e070c67e78c7c1e3d6c6",
+      "size": 2155,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\orbital\\event_loop.rs",
+      "sha256": "20865c2ee7405e5dec577bc5aa6c62ca043ae4c3ff0cbd17f6d029ee27b1726d",
+      "size": 33392,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\orbital\\mod.rs",
+      "sha256": "6b078d029061621f88dca6b1b88eba78671304779352281a9ee8d84e6c5829ca",
+      "size": 6598,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\orbital\\window.rs",
+      "sha256": "a804344a32c90e8ff43a2640f99a63f3a3894a52137dd07a4503a435e7552279",
+      "size": 15331,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\abortable.rs",
+      "sha256": "9a6e1ca49d3cc19cd808dc5d0a94a1da16f7049021449aed05073703f1410f1e",
+      "size": 2100,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\atomic_waker.rs",
+      "sha256": "d06e582da4c06722419566040cf2b9b131139072825d3c6da94183fa42d760ba",
+      "size": 846,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\channel.rs",
+      "sha256": "32c90e56e0c975168e6f1cb05dbec119112f5c34925ebdae02ac3ff933ee66ad",
+      "size": 3200,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\concurrent_queue.rs",
+      "sha256": "b2db7edc5ae541bab5157cc057a5c5594aa4083acd6c564f615387799520c1b4",
+      "size": 1198,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\dispatcher.rs",
+      "sha256": "8e9f12f85ff04ef43af769eb968208076c47bd8135e31af78e65defe972e58e1",
+      "size": 3828,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\mod.rs",
+      "sha256": "3d67f5c7205a9c506bf0273d97b786901225c015058eca4408f9aa09de4b5fa4",
+      "size": 580,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\notifier.rs",
+      "sha256": "a13b0d9e0517da28716b86c5155fcce06294e3386f4267a20eac043e97b7fa90",
+      "size": 1971,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\waker.rs",
+      "sha256": "c6cde0c84e315972bc1735762961e29ff5cfdb4990a16c6e4196705a32305852",
+      "size": 3784,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\async\\wrapper.rs",
+      "sha256": "03aa2bcbf2a4af964f023d34d89344268ecd6851ee14ed62ec80735f7633894e",
+      "size": 2842,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\cursor.rs",
+      "sha256": "4c44bb489893ffa0ce6f72e3949d4f6ec208ef0848ab76e2f2491d49227dd63b",
+      "size": 24430,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\device.rs",
+      "sha256": "b01dba26e4eaaa488e25637428d766d64e0ba3985645f9dd4f7a6c999d77243a",
+      "size": 174,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\error.rs",
+      "sha256": "aa81b02160abb8707f5420d373ce9fd664f3255fedb49982f8539caf3a5e6083",
+      "size": 200,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\event_loop\\mod.rs",
+      "sha256": "6352287ae6a0afb3ebcf3919d12c2dfb3821901f790dd31cdd4bf4a3846069a0",
+      "size": 4203,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\event_loop\\proxy.rs",
+      "sha256": "03062c47460e5c53007bbccb233484435e081c515d7b59edd66bf808b40b3d62",
+      "size": 810,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\event_loop\\runner.rs",
+      "sha256": "e8ecd77ef8c4550ded308827e3975fdc54065ab58413a80b48e2f2bd1325bc8a",
+      "size": 31583,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\event_loop\\state.rs",
+      "sha256": "989601ab5a56c7eb6ba495d027f6093a64a8fb32facd31ad9e2f0da24697c98a",
+      "size": 343,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\event_loop\\window_target.rs",
+      "sha256": "8c47586f4fba7a77d8ce339289893040287b6c78e6d98dc7f12522522ace337e",
+      "size": 26317,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\keyboard.rs",
+      "sha256": "b15c5d89b2989b516ad87dbdc97b0b41aea6d09f929404894a0a907e4c4a2f6d",
+      "size": 24028,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\main_thread.rs",
+      "sha256": "9658c9a69410784162c983144a5c37638eef4cd6967d24eaedd25f01567ab00c",
+      "size": 2595,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\mod.rs",
+      "sha256": "2208e8c703370f19caa7c545badae78fce6f4bd5c569399dfa5497399212c98e",
+      "size": 2230,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\monitor.rs",
+      "sha256": "a746440b15fd8affbef1cc7bec63bbb40e548494a01b67bfc061fb0e4da77d38",
+      "size": 1073,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\animation_frame.rs",
+      "sha256": "6aee3f5a4ed6c2d6b8d5f570da552a618773e4e513c76746efcdd8c316f94043",
+      "size": 1640,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\canvas.rs",
+      "sha256": "f2272f16a45b2245bd2e7dfc9458899d1fd248a9615ab49d5976bd1584d9af56",
+      "size": 19378,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\event.rs",
+      "sha256": "f73d5c0509b1e4a430ac238712e5963d21d378e0701e9c2b67cf839d890e3fb1",
+      "size": 8846,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\event_handle.rs",
+      "sha256": "3e81317e037627fa4874d28ff6d43dff4cc3f2970f33496ed345910f33eed108",
+      "size": 1137,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\fullscreen.rs",
+      "sha256": "6cf26354391839b55f8d9f1426f842349bb159384a79598a47628da64ae5dc1d",
+      "size": 3135,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\intersection_handle.rs",
+      "sha256": "af2024c3fea10a70fa9fdbb6cca474730fecc9ccdcf1d3bb7cec6305fdb7346b",
+      "size": 1002,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\media_query_handle.rs",
+      "sha256": "0c6dde21f28ee2f47db2cf10f859e158e156549dd1c10141be02d9496ea720ab",
+      "size": 1473,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\mod.rs",
+      "sha256": "60c26a5a11e998a7ebaa0432fdc11aa1458a9b6676ca6c398487f7d9dbbdffc9",
+      "size": 7321,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\pointer.rs",
+      "sha256": "e6277ddcc06acf6d3e09ba95ea54e618c3d355a82f92fa8ee56463bd30c6f643",
+      "size": 9605,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\resize_scaling.rs",
+      "sha256": "fe98de29d14f60d10447ddd87ffec46bd24bfdf90095b608143f8d253627e06e",
+      "size": 10212,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\schedule.rs",
+      "sha256": "351aa8dc3019b4efd8af1457129faafc35ea8ce0581b39b9ac95d141753f2c09",
+      "size": 11056,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\worker.js",
+      "sha256": "13d7ad44fd0ad212cb3691cda3b94c0350b8f553447ec3395647472ed8e008cf",
+      "size": 244,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\web_sys\\worker.min.js",
+      "sha256": "1781ca3da664be395164092322711dd677283d98753c6b4bfe448586e9fcc8fd",
+      "size": 127,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\web\\window.rs",
+      "sha256": "fc6a7844845ec3b9d84188b59c9ef4bc8f5357a922f34bcb62d7a1dd3ec29424",
+      "size": 13810,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\dark_mode.rs",
+      "sha256": "9fa225a2462e0a0467b7608fc126515f5138d7762f0f86688b17ef9d627f0fe1",
+      "size": 5721,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\definitions.rs",
+      "sha256": "d3eb11a33c6daf98682796f7c019238fdc8bd2d389119699a20c1ed7d9dbddaf",
+      "size": 4494,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\dpi.rs",
+      "sha256": "de57490ede1509fadd0b92404450bb1044aa42fb59a14619e32497618e1dac46",
+      "size": 4356,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\drop_handler.rs",
+      "sha256": "47abcad8770ba1d5ec8c877c8e725aa330c472ef07ec4ffcb60c1e7ae33c41c8",
+      "size": 8361,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\event_loop\\runner.rs",
+      "sha256": "4e326ae68d6dc7a7feda80e2caf8cf9c6af8de04ee7ef35f8f4bece6a410fd47",
+      "size": 16588,
+      "mtime_ns": 1795765337261488300
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\event_loop.rs",
+      "sha256": "b96a0c8ac4c1afcb4a46cc3999c48b4dc64cdb74797351db2c0befc56ed70163",
+      "size": 110498,
+      "mtime_ns": 1795764800891888700
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\icon.rs",
+      "sha256": "89dd2f1e567852327cdc20adfb78ce12404f9ecc6786178d4caffe425a8d96c5",
+      "size": 7503,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\ime.rs",
+      "sha256": "fb98b36a12d98bacf7fa88e8444f5d85713d51110e9ada028ce5ca12677a7feb",
+      "size": 5440,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\keyboard.rs",
+      "sha256": "93188bdea60bce1014d624f289d25063b59a14985a318ca736bf62d8ba3e5d16",
+      "size": 51671,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\keyboard_layout.rs",
+      "sha256": "d324796eaf474c35905f1b539cafaedaa3ee639e8ad7ad9ec559aeb2c56cf722",
+      "size": 42736,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\minimal_ime.rs",
+      "sha256": "f400011bf7f57b50dd6f47066b6b1f354339217887938c26cbd22a062594805c",
+      "size": 2118,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\mod.rs",
+      "sha256": "c739237f4903d6be9aaa3e913e50ae01575a689a4678486a3b82e214adf7020d",
+      "size": 5208,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\monitor.rs",
+      "sha256": "fb177904e37746a41ff7607b60863282c505a885180dc9e069904f379b66f206",
+      "size": 8274,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\raw_input.rs",
+      "sha256": "d36ff2c05cecc97b8b4e293a0a7dff4046a033b128101b07cc04812cbcc24b7a",
+      "size": 11228,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\util.rs",
+      "sha256": "beed128bdedfb31daaa28da786bc6bdae037cbb41e5bf4db4d10678a44c72a68",
+      "size": 10488,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\window.rs",
+      "sha256": "337a9fe3162e6ec2c4075b0a483fcdb9f424d57ac4c758bffc17adf712845bd7",
+      "size": 58448,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\platform_impl\\windows\\window_state.rs",
+      "sha256": "505e7ea90e1fa75500cb296cf6ec4cf3f04407c44731ffc9ae1f48e78d8d0f34",
+      "size": 19341,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\utils.rs",
+      "sha256": "a6b2a21ab09102d288d9c9bfdd4c9173ae24cd50b18f3b11c6d9842c69ea3fc9",
+      "size": 623,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\src\\window.rs",
+      "sha256": "977153e4a39ae156c0dcbfcbd7270915fbc12c3459591535b351875a226aff97",
+      "size": 71910,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\tests\\send_objects.rs",
+      "sha256": "dd13b75fa0584cb03f928de109afd08859cffe9fd7828529ea3f4f1041b5085d",
+      "size": 881,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\tests\\serde_objects.rs",
+      "sha256": "25ba1c2321a77a5b67196dd694eea65f7101f59c78d0a64f511ea02457937396",
+      "size": 1086,
+      "mtime_ns": 1153704088000000000
+    },
+    {
+      "path": "winit\\tests\\sync_object.rs",
+      "sha256": "be6f81b8e53b705b6733135d7f3bb3a33294c3c3e28078ffbf3b448d19a98235",
+      "size": 652,
+      "mtime_ns": 1153704088000000000
+    }
+  ],
+  "modified_since_continuation_bootstrap": [],
+  "limit": "Final hashes/timestamps, not a retroactive pre-continuation hash baseline. No task tool writes targeted vendor."
+}

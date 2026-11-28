@@ -1,0 +1,66 @@
+[
+  {
+    "name": "lifetime-control",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--lib",
+      "creation",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-lifetime-control"
+    ],
+    "rc": 101,
+    "expected": 101,
+    "source_sha256": "a028395cbc3bb6870d965ad6d503e518fa5ac740ac7d2386ee65e5396c48d683",
+    "tests_sha256": "6bc0bda0f286f90a11f7542ad7fcc623ee155a044aad89c004e6e96e44da646f"
+  },
+  {
+    "name": "lifetime-review",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--lib",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-lifetime-review"
+    ],
+    "rc": 0,
+    "expected": 0,
+    "source_sha256": "e64c10b3e9814a067fc997f17b34da94efb9360b846dedf34548366c5e530761",
+    "tests_sha256": "6bc0bda0f286f90a11f7542ad7fcc623ee155a044aad89c004e6e96e44da646f"
+  },
+  {
+    "name": "lifetime-clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "gpu-allocator",
+      "--no-default-features",
+      "--features",
+      "std,vulkan,d3d12",
+      "--all-targets",
+      "--target-dir",
+      "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\target-lifetime-clippy",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "expected": 0,
+    "source_sha256": "e64c10b3e9814a067fc997f17b34da94efb9360b846dedf34548366c5e530761",
+    "tests_sha256": "6bc0bda0f286f90a11f7542ad7fcc623ee155a044aad89c004e6e96e44da646f"
+  }
+]

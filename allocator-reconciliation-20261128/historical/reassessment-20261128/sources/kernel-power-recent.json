@@ -1,0 +1,62 @@
+[
+  {
+    "TimeCreated": "2026-11-28T09:39:44.4215381+11:00",
+    "Id": 105,
+    "Message": "Power source change."
+  },
+  {
+    "TimeCreated": "2026-11-28T09:39:30.423953+11:00",
+    "Id": 566,
+    "Message": "The system session has transitioned from 49 to 50.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 5"
+  },
+  {
+    "TimeCreated": "2026-11-28T09:39:30.423303+11:00",
+    "Id": 507,
+    "Message": "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+  },
+  {
+    "TimeCreated": "2026-11-28T07:47:56.9873535+11:00",
+    "Id": 566,
+    "Message": "The system session has transitioned from 48 to 49.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 5"
+  },
+  {
+    "TimeCreated": "2026-11-28T07:47:56.5764074+11:00",
+    "Id": 506,
+    "Message": "The system is entering Modern Standby \r\n\r\nReason: Lid."
+  },
+  {
+    "TimeCreated": "2026-11-28T07:47:56.5754524+11:00",
+    "Id": 566,
+    "Message": "The system session has transitioned from 47 to 48.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 5"
+  },
+  {
+    "TimeCreated": "2026-11-28T05:12:16.996886+11:00",
+    "Id": 566,
+    "Message": "The system session has transitioned from 46 to 47.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 5"
+  },
+  {
+    "TimeCreated": "2026-11-28T05:12:16.9964743+11:00",
+    "Id": 507,
+    "Message": "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+  },
+  {
+    "TimeCreated": "2026-11-28T05:03:51.2353922+11:00",
+    "Id": 566,
+    "Message": "The system session has transitioned from 45 to 46.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 5"
+  },
+  {
+    "TimeCreated": "2026-11-28T05:03:51.0761476+11:00",
+    "Id": 506,
+    "Message": "The system is entering Modern Standby \r\n\r\nReason: Lid."
+  },
+  {
+    "TimeCreated": "2026-11-28T05:03:51.0755984+11:00",
+    "Id": 566,
+    "Message": "The system session has transitioned from 44 to 45.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 5"
+  },
+  {
+    "TimeCreated": "2026-11-27T19:45:16.8664858+11:00",
+    "Id": 105,
+    "Message": "Power source change."
+  }
+]

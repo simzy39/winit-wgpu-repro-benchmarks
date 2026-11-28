@@ -1,0 +1,390 @@
+{
+  "source_files": {
+    "src/lib.rs": "4ab955590c807b020d83ec0c7c459761a3c58656e2b54b298d5d8f5b9844b312",
+    "src/result.rs": "25d0dd0ffc1210155228dd638986dda49f7650b3080784010ee616ac29f65b20",
+    "src/allocator/mod.rs": "489764ec0d313e407082ee8d38b6e698b85b49ae2bdde8d9be5bd1e5b30c6ce2",
+    "src/d3d12/mod.rs": "449a194ae91132456786d92f80588b01f8a9d615211608184e1190333a5adba4",
+    "src/d3d12/pressure_tests.rs": "750dfc3808a099234e2bb61f78d8a2cfb6492ec89ba4c42da868ce0ede27c3c3",
+    "src/d3d12/resource_tests.rs": "7ba64ff023540535378cecec4aaf1a65ab5bb7c551e49c127a3fcc6f20d289ef",
+    "src/d3d12/visualizer.rs": "5d12fad85ebdbea95a922a6df70fb80f4cde2b8fa8f2fad99a1127668144e440",
+    "src/metal/mod.rs": "84f72cae971eab607426c848c377989566181bf89715826231cf3ae7fdc232de",
+    "src/metal/visualizer.rs": "b1632142d4fb0331ca71fa230d5882b9697c13f22dd795501ca09f1aa9c52c70",
+    "src/visualizer/allocation_reports.rs": "3f4275f53243c9977c8967e02c6cfe62f3f941873c96c69e052b7056db05b351",
+    "src/visualizer/memory_chunks.rs": "c4f5710f11e08cc6c1c065376e5f8a467f3f082f075e37bece0ab332fa043f0f",
+    "src/visualizer/mod.rs": "a7d605b5d0c4f08be38cb30b10689a7bb4ead6d48bc763a2d33941378a6eed54",
+    "src/vulkan/capacity_tests.rs": "be6ceda101771e350cc445da96fcabab025ce118a54af403c4efc09669036480",
+    "src/vulkan/mod.rs": "47cc789a385a6c8885ddf2630f21494d8f282e30bb23e78eb14c4def418bf356",
+    "src/vulkan/resource_contract_tests.rs": "cb9e511cb86e2cd78668ec9f6dd16814a957762280ba004739c070d82ce385e7",
+    "src/vulkan/test_support.rs": "7a01444042861344c8fef316e5b019a6fdab47e1e16e29f251226e15ea6989ed",
+    "src/vulkan/visualizer.rs": "1b1986965239503b887f714efeb213cd5c7be52cca263fc2ff82a0e72b6761a1",
+    "src/allocator/dedicated_block_allocator/mod.rs": "725e53b8f71ee52e9466100fb200887be751ea9e5d03ebcabf56f07de4d8c504",
+    "src/allocator/dedicated_block_allocator/visualizer.rs": "3fa067994215c69ec93cbf86a3fcbf8c88bb5ed76e3edf29354d8fd5a9b25fde",
+    "src/allocator/free_list_allocator/mod.rs": "1303d99a370dcffd37069d4023d631f241c3769f4ed50b09ce791483a73627d9",
+    "src/allocator/free_list_allocator/visualizer.rs": "e7bcf0bddb83d14ae6fcc0d7b70116b4d15d1a764e51fec6eb55345c6b208125"
+  },
+  "exe_sha256": "693ef7a8bf3a0cb8921617715fd7081484653de49673891b29fe3c5a8b55d0bb",
+  "cells": 60,
+  "checks": [
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "textures",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "burst_release",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "fragmentation",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "large_buffers",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "large_uploads",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "readback_ring",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "small_bursts",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "textures",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "performance",
+      "workload": "upload_ring",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "burst_release",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "fragmentation",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "large_buffers",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "large_uploads",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "readback_ring",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "small_bursts",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "textures",
+      "changes": []
+    },
+    {
+      "api": "d3d12",
+      "config": "manual",
+      "workload": "upload_ring",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "burst_release",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "fragmentation",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_buffers",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "large_uploads",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "mixed_frames",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "readback_ring",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "small_bursts",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "sporadic_long_lived",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "textures",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "memory_usage",
+      "workload": "upload_ring",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "burst_release",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "fragmentation",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "large_buffers",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "large_uploads",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "mixed_frames",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "readback_ring",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "small_bursts",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "sporadic_long_lived",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "textures",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "performance",
+      "workload": "upload_ring",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "burst_release",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "fragmentation",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "large_buffers",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "large_uploads",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "mixed_frames",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "readback_ring",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "small_bursts",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "sporadic_long_lived",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "textures",
+      "changes": []
+    },
+    {
+      "api": "vulkan",
+      "config": "manual",
+      "workload": "upload_ring",
+      "changes": []
+    }
+  ],
+  "latency_claim": "None: single verification run, concurrent compiler/native validation activity may affect timing."
+}

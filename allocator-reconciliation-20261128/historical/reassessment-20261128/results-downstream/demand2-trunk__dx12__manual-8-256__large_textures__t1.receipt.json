@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\demand2-trunk.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "manual-8-256",
+    "--workload",
+    "large_textures",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\demand2-trunk__dx12__manual-8-256__large_textures__t1.json"
+  ],
+  "exe_sha256": "4bfbc10442f693826394effa8f11668d96de2e30cfd103571b5e0e3a57c3e2a0",
+  "validation_error": false,
+  "utc": "2026-11-27T20:23:37.361577+00:00",
+  "wall_s": 2.3192386999726295,
+  "cpu_times": {
+    "kernel_cpu_ms": 312.5,
+    "user_cpu_ms": 671.875,
+    "total_cpu_ms": 984.375
+  },
+  "settle_after_s": 2
+}

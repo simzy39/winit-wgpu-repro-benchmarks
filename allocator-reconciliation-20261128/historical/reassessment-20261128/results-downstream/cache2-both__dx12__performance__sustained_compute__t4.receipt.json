@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\cache2-both.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "performance",
+    "--workload",
+    "sustained_compute",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\cache2-both__dx12__performance__sustained_compute__t4.json"
+  ],
+  "exe_sha256": "40ca7e7d0cb42e6ed4e4e1d1b8cd2b38f39034f1457631ba00d273bef883b463",
+  "validation_error": false,
+  "utc": "2026-11-27T20:39:56.497091+00:00",
+  "wall_s": 1.1155537999002263,
+  "cpu_times": {
+    "kernel_cpu_ms": 218.75,
+    "user_cpu_ms": 140.625,
+    "total_cpu_ms": 359.375
+  },
+  "settle_after_s": 2
+}

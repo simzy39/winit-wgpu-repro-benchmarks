@@ -1,0 +1,12 @@
+{
+  "allocator": {
+    "rc": 0,
+    "stdout": "fc22df05140b15ed6d764beabd12a1b807011bc5\trefs/heads/main\n179ea43f05332c2809addd7922cd056220efc36b\trefs/pull/323/head\n",
+    "stderr": ""
+  },
+  "wgpu": {
+    "rc": 0,
+    "stdout": "bfa9aff16046e7e248e58129369d4bffeeb33d8d\trefs/heads/trunk\n793698d89332250d5abe92e61769625233be9ac9\trefs/pull/11129/head\n22827ee25285b56c4056fe6bb1de27917caf45a9\trefs/pull/11130/head\n",
+    "stderr": ""
+  }
+}

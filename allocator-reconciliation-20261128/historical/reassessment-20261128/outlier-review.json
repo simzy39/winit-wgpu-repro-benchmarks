@@ -1,0 +1,87 @@
+[
+  {
+    "file": "cache2__vulkan__memory_usage__t1.json",
+    "alloc": {
+      "max": 908.1,
+      "p50": 0.4,
+      "p99": 2.2,
+      "sum_ms": 3.8773
+    },
+    "heap_creation": {
+      "p50": 308.7,
+      "p99": 908.1
+    },
+    "reuse": {
+      "p50": 0.4,
+      "p99": 1.4
+    }
+  },
+  {
+    "file": "cache2__vulkan__memory_usage__t2.json",
+    "alloc": {
+      "max": 845.4,
+      "p50": 0.5,
+      "p99": 2.1,
+      "sum_ms": 3.93
+    },
+    "heap_creation": {
+      "p50": 596.0,
+      "p99": 845.4
+    },
+    "reuse": {
+      "p50": 0.5,
+      "p99": 1.3
+    }
+  },
+  {
+    "file": "cache2__vulkan__memory_usage__t3.json",
+    "alloc": {
+      "max": 1484.4,
+      "p50": 0.4,
+      "p99": 1.7,
+      "sum_ms": 5.4877
+    },
+    "heap_creation": {
+      "p50": 718.5,
+      "p99": 1484.4
+    },
+    "reuse": {
+      "p50": 0.4,
+      "p99": 1.3
+    }
+  },
+  {
+    "file": "cache2__vulkan__memory_usage__t4.json",
+    "alloc": {
+      "max": 14344.6,
+      "p50": 0.4,
+      "p99": 3.0,
+      "sum_ms": 25.8375
+    },
+    "heap_creation": {
+      "p50": 1082.4,
+      "p99": 14344.6
+    },
+    "reuse": {
+      "p50": 0.4,
+      "p99": 2.0
+    }
+  },
+  {
+    "file": "cache2__vulkan__memory_usage__t5.json",
+    "alloc": {
+      "max": 844.5,
+      "p50": 0.4,
+      "p99": 1.4,
+      "sum_ms": 3.3684
+    },
+    "heap_creation": {
+      "p50": 295.2,
+      "p99": 844.5
+    },
+    "reuse": {
+      "p50": 0.4,
+      "p99": 0.9
+    }
+  }
+]

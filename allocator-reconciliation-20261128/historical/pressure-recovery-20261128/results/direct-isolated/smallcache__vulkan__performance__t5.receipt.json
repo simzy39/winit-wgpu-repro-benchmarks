@@ -1,0 +1,14 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin-isolated\\bench-smallcache.exe",
+    "vulkan",
+    "performance",
+    "5",
+    "smallcache"
+  ],
+  "exe_sha256": "76c674554c69a9c30c897779021b891f391cc6125657f6ccbd3e28fa3d893a41",
+  "wall_s": 1.0195188999641687,
+  "utc": "2026-11-28T02:02:21.845143+00:00",
+  "settle_s": 2
+}

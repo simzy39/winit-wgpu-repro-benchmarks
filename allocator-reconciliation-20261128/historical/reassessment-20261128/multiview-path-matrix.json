@@ -1,0 +1,74 @@
+[
+  {
+    "trial": 1,
+    "path_mode": "original",
+    "logging": "default",
+    "RUST_LOG": "warn",
+    "failed": true,
+    "rc": 100,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 1,
+    "path_mode": "common",
+    "logging": "default",
+    "RUST_LOG": "warn",
+    "failed": false,
+    "rc": 0,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 1,
+    "path_mode": "original",
+    "logging": "debug",
+    "RUST_LOG": "warn,wgpu_hal::dx12::instance=debug",
+    "failed": true,
+    "rc": 100,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 1,
+    "path_mode": "common",
+    "logging": "debug",
+    "RUST_LOG": "warn,wgpu_hal::dx12::instance=debug",
+    "failed": false,
+    "rc": 0,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 2,
+    "path_mode": "common",
+    "logging": "debug",
+    "RUST_LOG": "warn,wgpu_hal::dx12::instance=debug",
+    "failed": false,
+    "rc": 0,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 2,
+    "path_mode": "original",
+    "logging": "debug",
+    "RUST_LOG": "warn,wgpu_hal::dx12::instance=debug",
+    "failed": true,
+    "rc": 100,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 2,
+    "path_mode": "common",
+    "logging": "default",
+    "RUST_LOG": "warn",
+    "failed": false,
+    "rc": 0,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  },
+  {
+    "trial": 2,
+    "path_mode": "original",
+    "logging": "default",
+    "RUST_LOG": "warn",
+    "failed": true,
+    "rc": 100,
+    "exe_sha256": "36c6ff16d27f6190242f914c16097e5809600362d104d9a22b5824f09fbc7a16"
+  }
+]

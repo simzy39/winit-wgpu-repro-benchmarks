@@ -1,0 +1,14 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\bin-isolated\\bench-heapcap.exe",
+    "d3d12",
+    "memory_usage",
+    "3",
+    "heapcap"
+  ],
+  "exe_sha256": "de90730f21da54bb84cd8c889ade47c40d54ecbc0b7a06cb74dfd86e53f41dd3",
+  "wall_s": 1.563511300017126,
+  "utc": "2026-11-28T01:58:44.527307+00:00",
+  "settle_s": 2
+}

@@ -1,0 +1,24 @@
+{
+  "rc": 0,
+  "command": [
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\bin-wgpu\\pr323-transient.exe",
+    "--backend",
+    "dx12",
+    "--hints",
+    "performance",
+    "--workload",
+    "sustained_compute",
+    "--json",
+    "<workspace>\\research\\upstream\\gpu-allocator-classification\\reassessment-20261128\\results-downstream\\pr323-transient__dx12__performance__sustained_compute__t1.json"
+  ],
+  "exe_sha256": "4dba2e8f8c579150a4a9f19621a9daff4bdf10123915d2be5012e86df0f11604",
+  "validation_error": false,
+  "utc": "2026-11-27T20:21:58.958913+00:00",
+  "wall_s": 1.6237978000426665,
+  "cpu_times": {
+    "kernel_cpu_ms": 234.375,
+    "user_cpu_ms": 515.625,
+    "total_cpu_ms": 750.0
+  },
+  "settle_after_s": 2
+}

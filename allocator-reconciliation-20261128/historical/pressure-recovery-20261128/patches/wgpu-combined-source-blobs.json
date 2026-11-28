@@ -1,0 +1,9 @@
+{
+  "tests/tests/wgpu-gpu/external_texture/mod.rs": "cd6103ebd16f337ea7de0bf38a2087ca22202a4a",
+  "tests/tests/wgpu-gpu/transient_memory.rs": "c97126f7f93c69204b08e54af66787fce1e5a0e3",
+  "tests/tests/wgpu-validation/api/external_texture.rs": "fc53b7eebc57dea6b30744df5bfc82dc5bde0b50",
+  "wgpu-core/src/device/resource.rs": "72d76e2f811fe64aa2d8077a00d5b65a6490cdb7",
+  "wgpu-hal/src/dx12/device.rs": "9b113b00a71b17cfdfc4e490cf551a73e40177a8",
+  "wgpu-hal/src/dx12/suballocation.rs": "5c530e3c28c1ed79ec77f08c33fa9fb172781903",
+  "wgpu-hal/src/lib.rs": "d6c87a06653eefd0eec0acaae761aad0f180bc14"
+}

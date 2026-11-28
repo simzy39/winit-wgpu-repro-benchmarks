@@ -1,0 +1,33 @@
+{
+  "package": {
+    "id": "Microsoft.VC.14.44.17.14.ATL.X64.base",
+    "version": "14.44.35208",
+    "type": "Vsix",
+    "payloads": [
+      {
+        "fileName": "Microsoft.VC.14.44.17.14.ATL.X64.base.vsix",
+        "sha256": "6dd0b7f8079c654db2b8fdaebc74900e8418b5204914a77bde93a5b01ac0998c",
+        "size": 808455,
+        "url": "https://download.visualstudio.microsoft.com/download/pr/d2fa077f-a814-4fb2-b903-1fca7658d17e/6dd0b7f8079c654db2b8fdaebc74900e8418b5204914a77bde93a5b01ac0998c/Microsoft.VC.14.44.17.14.ATL.X64.base.vsix",
+        "signer": {
+          "$ref": "1"
+        }
+      }
+    ],
+    "installSizes": {
+      "targetDrive": 2747690
+    },
+    "dependencies": {
+      "Microsoft.VC.14.44.17.14.Servicing.ATL": "14.44.35208",
+      "Microsoft.VC.14.44.17.14.Props.ATLMFC": "14.44.35208"
+    }
+  },
+  "catalog_sha256": "cf70aac8a1e6b96128c3a7f7cd839052df64a63b71a803b66a9513ee6be605a1",
+  "libraries": {
+    "atls.lib": {
+      "member": "Contents/VC/Tools/MSVC/14.44.35207/atlmfc/lib/x64/atls.lib",
+      "sha256": "bd162c7a998225a3524471cfc1889b0fdc48d0ff2bcc26177e56c47a137ace5c"
+    }
+  },
+  "scope": "Extracted inside this experiment only; no Visual Studio or global environment change"
+}
