@@ -1,0 +1,55 @@
+{
+  "head": "60cef2be828e03ba54e2e1598001b4625c0c2163",
+  "source_status": "",
+  "registry_allocator": true,
+  "lock_sha256": "023625f59351cc063353637152d9bab601cc4b6da8d530d4d353419e5633e925",
+  "build_command": [
+    "cargo",
+    "test",
+    "--locked",
+    "--offline",
+    "--no-run",
+    "--all-features",
+    "--lib",
+    "-p",
+    "wgpu-examples",
+    "--message-format=json"
+  ],
+  "binary_sha256": "1a0d80b81197f3b2ba074092cc404dde9e385e0599cfd02b20a2cb8e6d9668fd",
+  "binary": "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_examples-0443cda7d6d3066f.exe",
+  "tests": [
+    {
+      "identity": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] ray_aabb_compute",
+      "command": [
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_examples-0443cda7d6d3066f.exe",
+        "--exact",
+        "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] ray_aabb_compute",
+        "--nocapture"
+      ],
+      "rc": 0,
+      "wall_s": 104.05196509999223
+    },
+    {
+      "identity": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] ray_cube_compute",
+      "command": [
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_examples-0443cda7d6d3066f.exe",
+        "--exact",
+        "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] ray_cube_compute",
+        "--nocapture"
+      ],
+      "rc": 0,
+      "wall_s": 4.348551100003533
+    },
+    {
+      "identity": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] ray_cube_compute",
+      "command": [
+        "<workspace>\\research\\upstream\\gpu-allocator-classification\\pressure-recovery-20261128\\wgpu\\upstream\\target\\debug\\deps\\wgpu_examples-0443cda7d6d3066f.exe",
+        "--exact",
+        "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] ray_cube_compute",
+        "--nocapture"
+      ],
+      "rc": 101,
+      "wall_s": 75.3433054999914
+    }
+  ]
+}

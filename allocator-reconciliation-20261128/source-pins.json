@@ -40,5 +40,21 @@
     "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
     "patch": "wgpu-transient.patch",
     "committed": true
+  },
+  {
+    "name": "wgpu-surface",
+    "head": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c",
+    "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+    "patch": "wgpu-surface.patch",
+    "committed": true
+  },
+  {
+    "name": "wgpu-rollback-surface-validation",
+    "head": "1cdcc63e82fffb19572d1a2a5aed8ad416217f35",
+    "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+    "patch": "wgpu-rollback-surface-integration.patch",
+    "committed": true,
+    "purpose": "Exact combined native-validation source; not an additional production PR. Contains only independently proposed rollback and surface-test fixes, with the unchanged registry dependency.",
+    "url": "https://github.com/simzy39/wgpu/commit/1cdcc63e82fffb19572d1a2a5aed8ad416217f35"
   }
 ]

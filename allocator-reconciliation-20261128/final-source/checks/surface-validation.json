@@ -1,0 +1,183 @@
+[
+  {
+    "name": "msrv",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "check",
+      "--locked",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface"
+    ],
+    "rc": 0,
+    "wall_s": 994.8318625999382
+  },
+  {
+    "name": "fmt",
+    "command": [
+      "rustfmt",
+      "--check",
+      "--edition",
+      "2021",
+      "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\work\\wgpu-surface\\tests\\tests\\wgpu_surface.rs"
+    ],
+    "rc": 0,
+    "wall_s": 1.369931099936366
+  },
+  {
+    "name": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 847.0466422999743
+  },
+  {
+    "name": "build",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "--no-run",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface"
+    ],
+    "rc": 0,
+    "wall_s": 262.95752940000966
+  },
+  {
+    "name": "vulkan-1",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "-E",
+      "test(=surface_configure)"
+    ],
+    "rc": 0,
+    "wall_s": 26.55289950000588
+  },
+  {
+    "name": "vulkan-2",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "-E",
+      "test(=surface_configure)"
+    ],
+    "rc": 0,
+    "wall_s": 7.654084999929182
+  },
+  {
+    "name": "vulkan-3",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "-E",
+      "test(=surface_configure)"
+    ],
+    "rc": 0,
+    "wall_s": 8.889748399960808
+  },
+  {
+    "name": "dx12-1",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "-E",
+      "test(=surface_configure)"
+    ],
+    "rc": 0,
+    "wall_s": 7.213851400068961
+  },
+  {
+    "name": "dx12-2",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "-E",
+      "test(=surface_configure)"
+    ],
+    "rc": 0,
+    "wall_s": 6.883475899929181
+  },
+  {
+    "name": "dx12-3",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--all-features",
+      "--test",
+      "wgpu_surface",
+      "-E",
+      "test(=surface_configure)"
+    ],
+    "rc": 0,
+    "wall_s": 7.98625999991782
+  },
+  {
+    "name": "combined-full",
+    "command": [
+      "cargo",
+      "xtask",
+      "test"
+    ],
+    "rc": 1,
+    "wall_s": 1489.7843294000486
+  }
+]

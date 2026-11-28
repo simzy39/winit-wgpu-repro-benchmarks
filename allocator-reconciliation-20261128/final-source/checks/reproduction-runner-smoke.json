@@ -1,0 +1,27 @@
+{
+  "command": [
+    "python",
+    "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\work\\evidence\\allocator-reconciliation-20261128\\reproduce_msrv.py",
+    "--source",
+    "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\work\\gpa-sizing\\gpu-allocator",
+    "--fixture",
+    "final-std-vulkan",
+    "--output",
+    "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\reproduction-msrv-smoke"
+  ],
+  "rc": 0,
+  "wall_s": 134.2020743000321,
+  "consumer_receipt": {
+    "fixture": "final-std-vulkan",
+    "source_head": "693a9fb44e7d6effa20f988217524c61553f95fe",
+    "command": [
+      "cargo",
+      "+1.71.0",
+      "check",
+      "--locked",
+      "--lib"
+    ],
+    "return_code": 0
+  },
+  "purpose": "Packaging/reproduction smoke check, not an additional performance measurement."
+}

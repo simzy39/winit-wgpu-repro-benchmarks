@@ -1,0 +1,1 @@
+The frozen local executable is deliberately excluded from this public source/evidence bundle. Its source, harness-only patch, command receipts and executable SHA-256 are preserved in the adjacent controls and sources. See [GPUAV_CONTROL.md](../GPUAV_CONTROL.md). Rebuild the pinned source to reproduce the diagnostic; do not treat disabled-validation results as conformance passes.

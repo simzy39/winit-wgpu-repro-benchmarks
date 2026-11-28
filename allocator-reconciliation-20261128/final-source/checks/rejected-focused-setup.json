@@ -1,0 +1,8 @@
+{
+  "reason": "Bundled WARP DLL absent in new target while metadata came from bundled WARP; system WARP version mismatched.",
+  "failure_count": 12,
+  "source_changed": false,
+  "expected_warp_package": "1.0.20",
+  "before_copy_exists": false,
+  "expected_dll_sha256": "2a08692cba4c130593329255627fb915d666c90cda53d284594bc8438fd4f49d"
+}

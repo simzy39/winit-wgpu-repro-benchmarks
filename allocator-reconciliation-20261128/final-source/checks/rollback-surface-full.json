@@ -1,0 +1,12 @@
+{
+  "head": "1cdcc63e82fffb19572d1a2a5aed8ad416217f35",
+  "rollback_source": "58e05c149e854c2312474182cd0a3ed08e66603f",
+  "surface_source": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c",
+  "rc": 1,
+  "gpu_binary_hashes_before": {
+    "wgpu_gpu-5cebc48d0ee98924.exe": "14fca94af3df68834edf5c9bd3f5843f9cad8aae79a24e2f716a994d745c112f"
+  },
+  "gpu_binary_hashes_after": {
+    "wgpu_gpu-5cebc48d0ee98924.exe": "14fca94af3df68834edf5c9bd3f5843f9cad8aae79a24e2f716a994d745c112f"
+  }
+}

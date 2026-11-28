@@ -1,0 +1,937 @@
+{
+  "stage": "rollback-first",
+  "source_commit": "58e05c149e854c2312474182cd0a3ed08e66603f",
+  "scope": "Test-generated reference/actual/difference renders, not desktop screenshots.",
+  "images": [
+    {
+      "path": "examples/features/src/boids/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "436d7becc639ae23f9534a74152df739aa2b5b90a139f1169f6d33286129ffbb",
+      "bytes": 98629,
+      "mtime_ns": 1795861123094608000
+    },
+    {
+      "path": "examples/features/src/boids/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "d476f20a7bfd0cb20f26063b907cae768bf00bc598e8531471bac3f4f88113c6",
+      "bytes": 19837,
+      "mtime_ns": 1795861123549215800
+    },
+    {
+      "path": "examples/features/src/boids/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "436d7becc639ae23f9534a74152df739aa2b5b90a139f1169f6d33286129ffbb",
+      "bytes": 98629,
+      "mtime_ns": 1795861269847318400
+    },
+    {
+      "path": "examples/features/src/boids/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "d476f20a7bfd0cb20f26063b907cae768bf00bc598e8531471bac3f4f88113c6",
+      "bytes": 19837,
+      "mtime_ns": 1795861270229164400
+    },
+    {
+      "path": "examples/features/src/boids/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "88c8c2b1aa14db507b14dfc1f49e51501a94ff2f2d9ee4c30f27e1bbc83b419d",
+      "bytes": 98642,
+      "mtime_ns": 1795861329559396300
+    },
+    {
+      "path": "examples/features/src/boids/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "f1c5caaa2e9ba2c79be8a3ce0855b2449df6c7908b26b0314b1cc5721b28b17a",
+      "bytes": 19472,
+      "mtime_ns": 1795861329801335400
+    },
+    {
+      "path": "examples/features/src/boids/screenshot.png",
+      "sha256": "a4c4ba6850c12fbbc57d0f4317fe01fab5ca7d9c53b6296c5a6f05501887f733",
+      "bytes": 118891,
+      "mtime_ns": 1795848690078021900
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "933885da31bd80678840713871b505e1612d08f227d387374d47fbfbd7f72a25",
+      "bytes": 19355,
+      "mtime_ns": 1795861122772086300
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "e96d1ad5c3b49e06d9740494ec7ecc03aa280b172eb5699ad718d4545f844234",
+      "bytes": 18464,
+      "mtime_ns": 1795861122960419600
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "d55e7550c3d401cfffdf6f21767bdfb1216d6f4dba2ca925b1f29a1d54daf58e",
+      "bytes": 19370,
+      "mtime_ns": 1795861270405771000
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "643fece21a022f450e68e99bbde95b2d9715c0b12d28f0693aa7105d6d491832",
+      "bytes": 18215,
+      "mtime_ns": 1795861270634951800
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "0ce50855fc4625a5aa2c06dedfecdb95b2fd0c5bfdde054e6b070c85884eea6e",
+      "bytes": 19356,
+      "mtime_ns": 1795861329037294200
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "189dd7e14b72d35a52fd73588e15f16c21405a74e7e0f68f8ad0cdb186d4bcbe",
+      "bytes": 18411,
+      "mtime_ns": 1795861329224018900
+    },
+    {
+      "path": "examples/features/src/bunnymark/screenshot.png",
+      "sha256": "b4d08c1f60646384d86e05a0373763465f64ae81b91359fa14d3a6a07227e95a",
+      "bytes": 7991,
+      "mtime_ns": 1795848690104153800
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "3a5491069ea49d3ab8a4c36a69897ef2b130a182ac4e11e7aaf0bc9bbb3fdaa6",
+      "bytes": 17594,
+      "mtime_ns": 1795861127137429100
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861127284612700
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "3a5491069ea49d3ab8a4c36a69897ef2b130a182ac4e11e7aaf0bc9bbb3fdaa6",
+      "bytes": 17594,
+      "mtime_ns": 1795861272815036300
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861273037202600
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "3a5491069ea49d3ab8a4c36a69897ef2b130a182ac4e11e7aaf0bc9bbb3fdaa6",
+      "bytes": 17594,
+      "mtime_ns": 1795861331799258600
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861331944432000
+    },
+    {
+      "path": "examples/features/src/conservative_raster/screenshot.png",
+      "sha256": "af39e68bb05f8fa7c50550878c857033405c3f6e09ffcc6c0f83fc238210c17e",
+      "bytes": 8459,
+      "mtime_ns": 1795848690164515800
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "e313f68d9c556f676d892e1ffb060b8a0e427538b0e769b958c8090154f76086",
+      "bytes": 71714,
+      "mtime_ns": 1795861127591726100
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "8314929ea32cc089c935d0f737d478d015941e84d908d9713759f1c88f8dafb6",
+      "bytes": 86396,
+      "mtime_ns": 1795861128018680100
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "037847127ac3024f9eaf77a36e19628e00d7177180a599bc93832b07290a5824",
+      "bytes": 71811,
+      "mtime_ns": 1795861273534919500
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "3ab32a0d2c033256d09a230ffb1972b65db2c9a1ae7f878829b2515415c682c9",
+      "bytes": 37985,
+      "mtime_ns": 1795861274081295600
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-lines-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "dce5c985f953a173ad63d739867b6a1a3e0640878ded71b97d8a98518a8fd66c",
+      "bytes": 82613,
+      "mtime_ns": 1795861131899193400
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-lines-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "e865b57dcc455413758fd7fec5c363c5ace8e7b7b68f44930833e1a12351d25a",
+      "bytes": 104428,
+      "mtime_ns": 1795861132400108100
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-lines-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "185ab89cdf9bd19f7a4590bff13ced9c1e385edc561aa6c30c87d5022470bb2a",
+      "bytes": 82720,
+      "mtime_ns": 1795861276271202700
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-lines-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "8b311f088991218f4eb6f49d3fa8c30602004581868de9c120f0fa64811cae22",
+      "bytes": 72761,
+      "mtime_ns": 1795861276781740000
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-lines-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "d0fd8f37bbabbe1480a3882fa6babda68ae015731dff69abd8123a06dc8137f0",
+      "bytes": 82612,
+      "mtime_ns": 1795861337281542300
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-lines-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "916a4dc97fbfef52e11cd4b350e2e875b8043a9dd530a80cbe8b950bd7825996",
+      "bytes": 104322,
+      "mtime_ns": 1795861337858933400
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "e313f68d9c556f676d892e1ffb060b8a0e427538b0e769b958c8090154f76086",
+      "bytes": 71714,
+      "mtime_ns": 1795861335639999900
+    },
+    {
+      "path": "examples/features/src/cube/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "8314929ea32cc089c935d0f737d478d015941e84d908d9713759f1c88f8dafb6",
+      "bytes": 86396,
+      "mtime_ns": 1795861336181172100
+    },
+    {
+      "path": "examples/features/src/cube/screenshot.png",
+      "sha256": "80192ab74e78af61494953b8c14d0683452239fe1b648667bbccafa498bfe686",
+      "bytes": 54357,
+      "mtime_ns": 1795848690269262200
+    },
+    {
+      "path": "examples/features/src/mesh_shader/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "d1c9deacf7a45ea8ebc5d196fd44b9159404878f5b2507f07ac0e91163f9e9d3",
+      "bytes": 17018,
+      "mtime_ns": 1795861132374993200
+    },
+    {
+      "path": "examples/features/src/mesh_shader/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "9c5f55a7d2ff132c01179ef3debdb9faba9eebc287c4263402f9289c2690fead",
+      "bytes": 126686,
+      "mtime_ns": 1795861133173398900
+    },
+    {
+      "path": "examples/features/src/mesh_shader/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "61ce43a3f6fea6e9bffd08631a57d2ee2fcbf66b0a330275a37dc3cfe83f7cac",
+      "bytes": 182151,
+      "mtime_ns": 1795861277028772400
+    },
+    {
+      "path": "examples/features/src/mesh_shader/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "6148a7fe24e0fc5f9d73b40da46c131efb8f0ff95526b4e4c1b26d0df70801dc",
+      "bytes": 32347,
+      "mtime_ns": 1795861277708493700
+    },
+    {
+      "path": "examples/features/src/mesh_shader/screenshot.png",
+      "sha256": "550212388227824a860b34bce49e012a7194b27762a68e274d966b3b6b0e4ac1",
+      "bytes": 34256,
+      "mtime_ns": 1795848690405505500
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "fbc746bc7bc9c6bf00aaddf88718dcc97c8516609e13af4f765fadc279f247ee",
+      "bytes": 611945,
+      "mtime_ns": 1795861137671341600
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "d13d58ff8838c6ccd8ddaabce0ecda2b1d533f9df6ea232ccc1d2c7d6d47b912",
+      "bytes": 391744,
+      "mtime_ns": 1795861138443909700
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "ae7941e5350095664e8ffabed1923a38c58c34cc92e6e49f71e20eaaba4e7336",
+      "bytes": 611491,
+      "mtime_ns": 1795861282158520700
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "316cfda544f54d29fda509961283fc95d5ceadb8e81035f4edc43eed2bad1f78",
+      "bytes": 365455,
+      "mtime_ns": 1795861283129221300
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "01f4378383be5b9635015071e115f072cde002c794dcd3fe94c4779434cf0026",
+      "bytes": 611920,
+      "mtime_ns": 1795861341682734500
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "0cf4d4c55e4b248844c978a7f3c40cc174ee861511a2a9fa01ca81f0523f5cf1",
+      "bytes": 392424,
+      "mtime_ns": 1795861342427894400
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot.png",
+      "sha256": "b989ff706995a93532dbd1e777dcb5fa560d67b08025b7f5095c47ea6b122127",
+      "bytes": 498615,
+      "mtime_ns": 1795848690518247800
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot_query-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "01f4378383be5b9635015071e115f072cde002c794dcd3fe94c4779434cf0026",
+      "bytes": 611920,
+      "mtime_ns": 1795861341705098000
+    },
+    {
+      "path": "examples/features/src/mipmap/screenshot_query-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "1251b300432e762b39d3297f96c32cd9580e2393f54790155b23829de61cb043",
+      "bytes": 56336,
+      "mtime_ns": 1795861342372928600
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "a673629a5a8ca491cca6e004e637b4f68767844e637cbd9459607a920a9fefec",
+      "bytes": 227184,
+      "mtime_ns": 1795861136756754700
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "cf5474cd36c189da0f75c5baa1e97762ca3e6fb90a2e366c16cbf59ed525423d",
+      "bytes": 662987,
+      "mtime_ns": 1795861137524281700
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "8f873dfcb95eeb3b9c799a2ee47a324d19c00592aff7411337cc20f4b8b506ef",
+      "bytes": 228307,
+      "mtime_ns": 1795861280872133900
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "5dd343e519583d9ef273572248026319fade8c6e37630d84a560a9e0b3990015",
+      "bytes": 668051,
+      "mtime_ns": 1795861281813482500
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "03b4f0404fe4c94d5305c6b42a67c303e1b9854cb39d7a03c8ab175771f0bfa3",
+      "bytes": 200163,
+      "mtime_ns": 1795861345035977800
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "9965f2a76189015b7c610abf543f5b992ec66495627584c31302c4c9d6172929",
+      "bytes": 548154,
+      "mtime_ns": 1795861345876741200
+    },
+    {
+      "path": "examples/features/src/msaa_line/screenshot.png",
+      "sha256": "7549c8ab522eb7ac9cfa771742aca9c37429a7f0a417616efaf4c1d8afd048da",
+      "bytes": 141870,
+      "mtime_ns": 1795848690581124800
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "05308b9aae1c4a123363037cd9267be448b8539597e68e8843293085ad103fb3",
+      "bytes": 129148,
+      "mtime_ns": 1795861141609926700
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "a2ba2b03fc7291b598ca3dd6e9effc78afc74031bc13d2d00a39766fa983efb6",
+      "bytes": 295825,
+      "mtime_ns": 1795861142327116300
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "b9563912c2d9f5b9f5262720b03d09179110f084f7b07c9048bf793ea986a588",
+      "bytes": 128546,
+      "mtime_ns": 1795861285333541000
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "be961597dfe00c926787403843c797192c44a63dc68c7a9b52f613d64095bfbb",
+      "bytes": 184538,
+      "mtime_ns": 1795861286048243800
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "05308b9aae1c4a123363037cd9267be448b8539597e68e8843293085ad103fb3",
+      "bytes": 129148,
+      "mtime_ns": 1795861344746494400
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "a2ba2b03fc7291b598ca3dd6e9effc78afc74031bc13d2d00a39766fa983efb6",
+      "bytes": 295825,
+      "mtime_ns": 1795861345576881300
+    },
+    {
+      "path": "examples/features/src/multiple_render_targets/screenshot.png",
+      "sha256": "2f0a443f044e87c7bbd8d7a6d1ff2952065d2e79fc62f0a7f53b127d5cc75ffc",
+      "bytes": 51569,
+      "mtime_ns": 1795848690604902300
+    },
+    {
+      "path": "examples/features/src/ray_aabb_compute/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "6ac89d381bed263ead653029c5bc9b2407b8b4e1a17523b04e94ae064ef535f6",
+      "bytes": 66155,
+      "mtime_ns": 1795861204496928800
+    },
+    {
+      "path": "examples/features/src/ray_aabb_compute/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "9b51fe1b661ab210578e7f72897f26f5b385780f44283d709915adb3fee7d7b3",
+      "bytes": 297458,
+      "mtime_ns": 1795861205120779800
+    },
+    {
+      "path": "examples/features/src/ray_aabb_compute/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "ab14b60028e648757609bd56a7c5a387f517bfb6eb8935faddd5f5b70e1ff59e",
+      "bytes": 66395,
+      "mtime_ns": 1795861286003253300
+    },
+    {
+      "path": "examples/features/src/ray_aabb_compute/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "33c3f3092eca2dbeff5d8f4d8e81bef3a808e5b49115ded74c4b8bd161afd1f4",
+      "bytes": 143670,
+      "mtime_ns": 1795861286702615300
+    },
+    {
+      "path": "examples/features/src/ray_aabb_compute/screenshot.png",
+      "sha256": "a72279de00210beee2b2d816952bd4ee1d2cfc91d0ccf7937e83a8230d69cfa3",
+      "bytes": 36345,
+      "mtime_ns": 1795848690633830000
+    },
+    {
+      "path": "examples/features/src/ray_cube_compute/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "1387249690331c1d133246a74b0064c37ad19698036b2763a9ab503193f9a832",
+      "bytes": 337691,
+      "mtime_ns": 1795861291051728300
+    },
+    {
+      "path": "examples/features/src/ray_cube_compute/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "45fe064cf61fb4dd392c8701e03ff91010a632b8ddec49597e13baa42475250d",
+      "bytes": 262005,
+      "mtime_ns": 1795861292554157400
+    },
+    {
+      "path": "examples/features/src/ray_cube_compute/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "58f828495e3cbb28552e8887cbebac96da9445d604227d3718e5096741a31d82",
+      "bytes": 334607,
+      "mtime_ns": 1795861409263463600
+    },
+    {
+      "path": "examples/features/src/ray_cube_compute/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "81e1a1acb227b78817c5d5185fc8a873b70753ea6cda771d1117fa1aea5db69d",
+      "bytes": 323073,
+      "mtime_ns": 1795861409908694100
+    },
+    {
+      "path": "examples/features/src/ray_cube_compute/screenshot.png",
+      "sha256": "8ab7ca498641872fd42c1a18b2a07479243e585fb52e9e937b8cb7a784f46ec1",
+      "bytes": 317263,
+      "mtime_ns": 1795848690658885600
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "548a3be4f7ff129f5a3537034a52405425ea639ad165776a47d54ed3c2fb7a3a",
+      "bytes": 227124,
+      "mtime_ns": 1795861209649830200
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "4561799caab1b4033b3edb2685ed775040406c159b638684f81cb6878334e5e6",
+      "bytes": 430322,
+      "mtime_ns": 1795861210327450500
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "32cba6dc35f7a5b4b6d85e8bdda5fa204ec9116bc91f9c400dcb4cf05ccfffb3",
+      "bytes": 227470,
+      "mtime_ns": 1795861291881744100
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "22b185a5b246d91dfc743b700484314d10734969f926815f8ae69cbb3aba3293",
+      "bytes": 331386,
+      "mtime_ns": 1795861292664699200
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "548a3be4f7ff129f5a3537034a52405425ea639ad165776a47d54ed3c2fb7a3a",
+      "bytes": 227124,
+      "mtime_ns": 1795861412821601300
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "4561799caab1b4033b3edb2685ed775040406c159b638684f81cb6878334e5e6",
+      "bytes": 430322,
+      "mtime_ns": 1795861413658830900
+    },
+    {
+      "path": "examples/features/src/ray_cube_fragment/screenshot.png",
+      "sha256": "bd930f8fd30b71ba7d01442e0dec5f4d678dd3b2fd5acd9126eb9468190f0527",
+      "bytes": 344440,
+      "mtime_ns": 1795848690679627300
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "e3122da82eb6a99864b1e3a83568f2230b1372922f4ed5eb0eb1a95a16d7f68c",
+      "bytes": 46434,
+      "mtime_ns": 1795861218079990400
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "dc0102e97be75cd0d15b1ec36506c461bd9f4ea8bc1add0497a6fa3969662831",
+      "bytes": 331130,
+      "mtime_ns": 1795861219051820500
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "c1d26ad7bd1bb33a80495c664a65d7dd59ea86e8f03324c3d35af0db0d7576d3",
+      "bytes": 46422,
+      "mtime_ns": 1795861296985051700
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "c42126cde60099d4d7e4f215d4c62b3367a727faebdf137175256dd6692a09b9",
+      "bytes": 18865,
+      "mtime_ns": 1795861297505496100
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "e3122da82eb6a99864b1e3a83568f2230b1372922f4ed5eb0eb1a95a16d7f68c",
+      "bytes": 46434,
+      "mtime_ns": 1795861417090750100
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "dc0102e97be75cd0d15b1ec36506c461bd9f4ea8bc1add0497a6fa3969662831",
+      "bytes": 331130,
+      "mtime_ns": 1795861418080379200
+    },
+    {
+      "path": "examples/features/src/ray_scene/screenshot.png",
+      "sha256": "ac2851ae13b927a03fc077ec876649b630ea600b4e825ad235bdfc23c1471fa9",
+      "bytes": 78520,
+      "mtime_ns": 1795848690729349400
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "7e9da1b018b16be3664d521ba065c1bc0308729525a67491f1098849ecc8197a",
+      "bytes": 33048,
+      "mtime_ns": 1795861222696476600
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "e5d938eb9bf1e0ee350619c52462e885ac30d922ace01fdc4e7220ac460ac8d6",
+      "bytes": 54588,
+      "mtime_ns": 1795861223273258300
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "7530ffe64818ad93c5df72c7d9035ee8886cd41cb075d85c323567f5bdea4ea0",
+      "bytes": 32910,
+      "mtime_ns": 1795861295804993800
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "0535402deb17f4fc59353a258fa7317ae85dc7962d6a353e0bc7dfb5024daae3",
+      "bytes": 54029,
+      "mtime_ns": 1795861296321128500
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "7e9da1b018b16be3664d521ba065c1bc0308729525a67491f1098849ecc8197a",
+      "bytes": 33048,
+      "mtime_ns": 1795861420616975600
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "e5d938eb9bf1e0ee350619c52462e885ac30d922ace01fdc4e7220ac460ac8d6",
+      "bytes": 54588,
+      "mtime_ns": 1795861421062158500
+    },
+    {
+      "path": "examples/features/src/ray_shadows/screenshot.png",
+      "sha256": "5658ee450ca84db0d6fcff9c4caa0f2e4e8b918fce991570963d36fca503707c",
+      "bytes": 12063,
+      "mtime_ns": 1795848690743319200
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "df42d4d0025804eef128014fa531a36a109852525ee1f8e2ce0551a2ccf10c7a",
+      "bytes": 282887,
+      "mtime_ns": 1795861228547800700
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "a069c339773c64f562db5288757d0edee72ad3ebc063b11d0b76a0f5bd809af3",
+      "bytes": 188661,
+      "mtime_ns": 1795861229460648500
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "ddd2e5e4592a499f75a45ea5dde7e734d267619f67fa25fe5079dd33c867401a",
+      "bytes": 283827,
+      "mtime_ns": 1795861300469144800
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "48690fc8f8e3e28b3d6ba6ec828d97eb23ba108714e774a13f16864d7304ebca",
+      "bytes": 170241,
+      "mtime_ns": 1795861301115188000
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "df42d4d0025804eef128014fa531a36a109852525ee1f8e2ce0551a2ccf10c7a",
+      "bytes": 282887,
+      "mtime_ns": 1795861423939578900
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "a069c339773c64f562db5288757d0edee72ad3ebc063b11d0b76a0f5bd809af3",
+      "bytes": 188661,
+      "mtime_ns": 1795861424829872000
+    },
+    {
+      "path": "examples/features/src/ray_traced_triangle/screenshot.png",
+      "sha256": "8c7c1ffb4e263813c8b0e5faeaaa3258a678b0900b48e4bdc01234765666125e",
+      "bytes": 118279,
+      "mtime_ns": 1795848690782493400
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "5d791beeab13185ca2d8a90daf182cce4a4145d98655268c573a3f641dba6148",
+      "bytes": 101134,
+      "mtime_ns": 1795861236827614900
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "546fc077da3f45f82b0d18ee8331b157a547177e03a54438d7b9f3c8ba29d467",
+      "bytes": 319090,
+      "mtime_ns": 1795861238281807100
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "4ac8b9b4b44dc543cc57b8f28f3b9b61cf97f0ea59250c0c7fc2208c6ab3bbd4",
+      "bytes": 100519,
+      "mtime_ns": 1795861300784107800
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "92f7a763cc64573b43223624646f670bd29ee1790d7c1609a9db9959131b2e4f",
+      "bytes": 285970,
+      "mtime_ns": 1795861301766379300
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "1e525dd915d908f218b43500525be891cb2ff49076902231af5d8c57249c63b3",
+      "bytes": 101139,
+      "mtime_ns": 1795861427524117800
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "c152baac1636e648c7fa5576a4c2d08905a3696d66dbda1a35e3dfe891c129ec",
+      "bytes": 316903,
+      "mtime_ns": 1795861428307975400
+    },
+    {
+      "path": "examples/features/src/shadow/screenshot.png",
+      "sha256": "be9c262745535f1441058ca4c3b6633ab7f2c64899e7eb573d51e70eac02b9c8",
+      "bytes": 81265,
+      "mtime_ns": 1795848690856538800
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "12865d0d0774fc6fdad871fbc6e061d901057149be1a10a0569e73050e277721",
+      "bytes": 718755,
+      "mtime_ns": 1795861237765467500
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "e89bf0cb14804df5becde15e893adcd6b40b7a8fd6b600c71683cb08a65b1ae6",
+      "bytes": 616097,
+      "mtime_ns": 1795861238683719100
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "de3790f9f5f73c1b79469721ae94cfa097ad3bff121eb027532ad082870d076d",
+      "bytes": 717513,
+      "mtime_ns": 1795861306096990400
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "708fdc0cedf8b10df14382f2eed3863bc75717de1ca3937f9396bebd1317e3f0",
+      "bytes": 617794,
+      "mtime_ns": 1795861306905358100
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "3e7be64a798811261f69b994f131f304be64b5d983e97623c82dee90be7238a5",
+      "bytes": 718752,
+      "mtime_ns": 1795861431303600100
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "04ef5569c3243986aac455a7936c32f8994825fbb66bfd1b3b733322421673f2",
+      "bytes": 616083,
+      "mtime_ns": 1795861432028020000
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot.png",
+      "sha256": "454e4acff42056a12524894e66277c4ae08f37cc5b63f3ba568e76a92c49aacb",
+      "bytes": 491283,
+      "mtime_ns": 1795848691164482200
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_bc7-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "1e5ebaf53be723dbad6cd73a96a0b4479c0c3188627dec74ec50a158e576b0d1",
+      "bytes": 682985,
+      "mtime_ns": 1795861246870741500
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_bc7-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "de6c1ecd5548b1d79c3da909561fcb7c4114218b5226586ce9adf347c6c22cc9",
+      "bytes": 615747,
+      "mtime_ns": 1795861248357107900
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_bc7-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "f58954a6ab3c34d97e13b950ef2694864c266ab6aca21861a4316c81f6533403",
+      "bytes": 677417,
+      "mtime_ns": 1795861306533927600
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_bc7-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "67c330555279dfe00f2458538445cbc7dd200edec76b2e0342ee080d7caf2ea6",
+      "bytes": 606456,
+      "mtime_ns": 1795861307256712000
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_bc7-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "b20f16b4e09d561a6662b05cf2266b6503140520609cde151336c3663dae70bc",
+      "bytes": 682979,
+      "mtime_ns": 1795861434754735200
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_bc7-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "0b51a913113dcca6745734fc617a1bed76e37e0307eb0bd4f8f08f733c875b22",
+      "bytes": 615677,
+      "mtime_ns": 1795861435509004500
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_etc2-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "e8695247cebaa4d91e07e5df9ab2ac9c5313f7dab6a69ff87bc3d17b6901778e",
+      "bytes": 602325,
+      "mtime_ns": 1795861438512723100
+    },
+    {
+      "path": "examples/features/src/skybox/screenshot_etc2-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "d7da5e78bdc8fb0af077035ba03f00df3a87dd200f976072dce20b15dd7cdbfb",
+      "bytes": 587415,
+      "mtime_ns": 1795861439388203900
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-linear-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "9ae50066027a5a055ae4bd9c8f52e4c7198ebf9af37c9d0e4d676ca004950efc",
+      "bytes": 1249,
+      "mtime_ns": 1795861240611033800
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-linear-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "032e77f02d90acb5b9a45b2a1c5c16de341ee964e64c2e69ba95e24c5e82310d",
+      "bytes": 1222,
+      "mtime_ns": 1795861240618035000
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-linear-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "9ae50066027a5a055ae4bd9c8f52e4c7198ebf9af37c9d0e4d676ca004950efc",
+      "bytes": 1249,
+      "mtime_ns": 1795861307747569500
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-linear-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "032e77f02d90acb5b9a45b2a1c5c16de341ee964e64c2e69ba95e24c5e82310d",
+      "bytes": 1222,
+      "mtime_ns": 1795861307756582100
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-linear-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "9ae50066027a5a055ae4bd9c8f52e4c7198ebf9af37c9d0e4d676ca004950efc",
+      "bytes": 1249,
+      "mtime_ns": 1795861436489481100
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-linear-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "032e77f02d90acb5b9a45b2a1c5c16de341ee964e64c2e69ba95e24c5e82310d",
+      "bytes": 1222,
+      "mtime_ns": 1795861436497067500
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-srgb-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "638160a968838e1503abb2ef5d6fab569fc022447df2745baa7fee5b52363468",
+      "bytes": 1246,
+      "mtime_ns": 1795861245167912700
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-srgb-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "032e77f02d90acb5b9a45b2a1c5c16de341ee964e64c2e69ba95e24c5e82310d",
+      "bytes": 1222,
+      "mtime_ns": 1795861245177824500
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-srgb-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "f72751ccfa3e8315f9773c796d5a4c6f29586cb037e723ffe74e1d04523c9717",
+      "bytes": 1246,
+      "mtime_ns": 1795861307816198800
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-srgb-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "625ea7d5b40d2127a9b7e449ffe3b40cce4f46193f3992f8ba628b28ac184296",
+      "bytes": 1855,
+      "mtime_ns": 1795861307835749200
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-srgb-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "638160a968838e1503abb2ef5d6fab569fc022447df2745baa7fee5b52363468",
+      "bytes": 1246,
+      "mtime_ns": 1795861437147843200
+    },
+    {
+      "path": "examples/features/src/srgb_blend/screenshot-srgb-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "032e77f02d90acb5b9a45b2a1c5c16de341ee964e64c2e69ba95e24c5e82310d",
+      "bytes": 1222,
+      "mtime_ns": 1795861437163338300
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "90410cff9795968ab07231cda193954874ec25e473898bb35160f23087e3279d",
+      "bytes": 26288,
+      "mtime_ns": 1795861250118184800
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "568013deac5d2f3eb8d0d3b7010670d7d89cb8318ca66355735b8c79ce639e71",
+      "bytes": 47255,
+      "mtime_ns": 1795861250845141100
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "b0b3eae457b993a64bb876c15179bd31589d1e821a298bf347a1a70a74118e90",
+      "bytes": 26288,
+      "mtime_ns": 1795861310825963300
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861311256941100
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "90410cff9795968ab07231cda193954874ec25e473898bb35160f23087e3279d",
+      "bytes": 26288,
+      "mtime_ns": 1795861439541864100
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "568013deac5d2f3eb8d0d3b7010670d7d89cb8318ca66355735b8c79ce639e71",
+      "bytes": 47255,
+      "mtime_ns": 1795861440145208700
+    },
+    {
+      "path": "examples/features/src/stencil_triangles/screenshot.png",
+      "sha256": "07e15930b2a52bd13eb7af0b6c54b6cce7039aefaa860caac0496d54941aedc9",
+      "bytes": 10846,
+      "mtime_ns": 1795848691327358300
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "ea0fd2ab354b1d17e2122a9c953d5c0e34a75ecfba0fe69a191a36e21d52f0d9",
+      "bytes": 17019,
+      "mtime_ns": 1795861255897821600
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861256093373300
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "ea0fd2ab354b1d17e2122a9c953d5c0e34a75ecfba0fe69a191a36e21d52f0d9",
+      "bytes": 17019,
+      "mtime_ns": 1795861313329203600
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861313482165000
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "ea0fd2ab354b1d17e2122a9c953d5c0e34a75ecfba0fe69a191a36e21d52f0d9",
+      "bytes": 17019,
+      "mtime_ns": 1795861443959595700
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "347cf5d26508ab76893af9cb5897b6f11f545edcf505525cf277114495b2da0f",
+      "bytes": 17014,
+      "mtime_ns": 1795861444107176700
+    },
+    {
+      "path": "examples/features/src/texture_arrays/screenshot.png",
+      "sha256": "fe8bd01451fa4a77b7056908213ca251b9a6dd06f0f16e0d2041d8c46990a24e",
+      "bytes": 6568,
+      "mtime_ns": 1795848691375537200
+    },
+    {
+      "path": "examples/features/src/water/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "c404c476a408fd97d016797933567de749dc250e81afcd2e21fdf75059936bc4",
+      "bytes": 191824,
+      "mtime_ns": 1795861262300107200
+    },
+    {
+      "path": "examples/features/src/water/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "d1008679f173dc8dc859822ad7d9a096bfc2f6449de5d0316154bf3d6f664870",
+      "bytes": 26599,
+      "mtime_ns": 1795861262750495100
+    },
+    {
+      "path": "examples/features/src/water/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-actual.png",
+      "sha256": "e97e65865bff9f9e718446d3ed6248f8252afa8c28c5c3d66ef2e847db38be52",
+      "bytes": 191581,
+      "mtime_ns": 1795861319638670400
+    },
+    {
+      "path": "examples/features/src/water/screenshot-dx12-Microsoft_Basic_Render_Driver-1_0_20_0-difference.png",
+      "sha256": "e2625fa140529cc9b4aa7ac39b464699e784c58bacf501ff28d05d4477f56862",
+      "bytes": 197292,
+      "mtime_ns": 1795861322761938900
+    },
+    {
+      "path": "examples/features/src/water/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "40dba9c3c9085c81725dd87c034efbe4f07c56167da81e6a57dc51da6e99f7ff",
+      "bytes": 191829,
+      "mtime_ns": 1795861445342668000
+    },
+    {
+      "path": "examples/features/src/water/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "62eb2f9b1c08561dae45ecb65bb021185bb1583320ed2a504563157839201a3d",
+      "bytes": 17169,
+      "mtime_ns": 1795861445498715700
+    },
+    {
+      "path": "examples/features/src/water/screenshot.png",
+      "sha256": "6ea948e4abf7a8fea08d3b3e8e53751b38e847d49e7181af6c4b54e6122af16a",
+      "bytes": 167690,
+      "mtime_ns": 1795848691622121600
+    }
+  ]
+}

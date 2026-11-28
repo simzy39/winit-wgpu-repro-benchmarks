@@ -1,0 +1,5 @@
+{
+  "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+  "head": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c",
+  "scope": "Test expectation only. Public CurrentSurfaceTexture contract permits using Suboptimal frames. Before-fix source-clean and rollback full runs fail at the Success-only pattern."
+}

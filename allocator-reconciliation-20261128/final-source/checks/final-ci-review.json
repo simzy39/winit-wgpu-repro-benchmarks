@@ -1,0 +1,2853 @@
+{
+  "snapshot_unix": 1795877621.981589,
+  "pull_requests": [
+    {
+      "headRefOid": "693a9fb44e7d6effa20f988217524c61553f95fe",
+      "isDraft": true,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Resolve CPU-accessible block sizing, bounded caching and pressure recovery",
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/323",
+      "repository": "Traverse-Research/gpu-allocator",
+      "number": 323,
+      "action": "updated"
+    },
+    {
+      "headRefOid": "19244b7c845bfcf17d57d73137a858ebef64eabb",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:27Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267295",
+          "name": "Clippy Windows x86_64",
+          "startedAt": "2026-11-28T11:20:26Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266520",
+          "name": "API Operation Windows x86_64",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234257/job/140961266788",
+          "name": "build",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Docs"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234053/job/140961266194",
+          "name": "Validate Shaders: Dota2",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234115/job/140961266497",
+          "name": "publish",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "Publish"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234325/job/140961267380",
+          "name": "Validate: HLSL",
+          "startedAt": "2026-11-28T11:19:18Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234122/job/140961266271",
+          "name": "Discover Standalone Examples",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267095",
+          "name": "Clippy Windows aarch64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:32:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266480",
+          "name": "API Operation Mac aarch64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:48:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267335",
+          "name": "Clippy MacOS x86_64",
+          "startedAt": "2026-11-28T11:42:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266495",
+          "name": "API Operation Linux x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:43:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267304",
+          "name": "Clippy MacOS aarch64",
+          "startedAt": "2026-11-28T11:37:12Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:35:12Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266462",
+          "name": "API Validation Windows x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:42:20Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267285",
+          "name": "Clippy IOS aarch64",
+          "startedAt": "2026-11-28T11:37:59Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:37:09Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266681",
+          "name": "API Validation Mac aarch64",
+          "startedAt": "2026-11-28T11:18:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:43:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267459",
+          "name": "Clippy VisionOS aarch64",
+          "startedAt": "2026-11-28T11:42:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:34:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266305",
+          "name": "API Validation Linux x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267324",
+          "name": "Clippy Linux x86_64",
+          "startedAt": "2026-11-28T11:19:02Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:30:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266463",
+          "name": "Other Windows x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961266995",
+          "name": "Clippy Linux aarch64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:37:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266456",
+          "name": "Other Mac aarch64",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267347",
+          "name": "Clippy FreeBSD x86_64",
+          "startedAt": "2026-11-28T11:20:50Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:19Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234011/job/140961266536",
+          "name": "Other Linux x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267047",
+          "name": "Clippy NetBSD x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:00Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961266994",
+          "name": "Clippy Android aarch64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267026",
+          "name": "Clippy Android ARMv7",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:20Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267036",
+          "name": "Clippy Android x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267042",
+          "name": "Clippy OpenHarmony aarch64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:00Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267049",
+          "name": "Clippy WebAssembly",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267359",
+          "name": "Clippy WebAssembly 64-bit",
+          "startedAt": "2026-11-28T11:20:35Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267011",
+          "name": "Clippy Emscripten",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267031",
+          "name": "Clippy WebAssembly Core 1.0",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267060",
+          "name": "Clippy Linux ppc32",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267168",
+          "name": "wgpu MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:19:27Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234053/job/140961266402",
+          "name": "Validate Shaders: Sascha Willems Vulkan Tutorial",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234325/job/140961267420",
+          "name": "Validate: MSL",
+          "startedAt": "2026-11-28T11:19:58Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234122/job/140961302760",
+          "name": "01-hello-compute",
+          "startedAt": "2026-11-28T11:19:34Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:41Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267018",
+          "name": "wgpu MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234122/job/140961302745",
+          "name": "02-hello-window",
+          "startedAt": "2026-11-28T11:20:05Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267145",
+          "name": "wgpu MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:18:52Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234122/job/140961302725",
+          "name": "03-hdr-surface",
+          "startedAt": "2026-11-28T11:18:58Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267067",
+          "name": "wgpu MSRV Check WebAssembly",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234122/job/140961302859",
+          "name": "custom-backend",
+          "startedAt": "2026-11-28T11:20:28Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267081",
+          "name": "Core MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:19:28Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234053/job/140961266358",
+          "name": "Validate Shaders: dneto0 spirv-samples",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:42Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234325/job/140961267238",
+          "name": "Validate: SPIR-V/GLSL/DOT/WGSL",
+          "startedAt": "2026-11-28T11:18:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:05Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961266982",
+          "name": "Core MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267056",
+          "name": "Core MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267029",
+          "name": "MSRV Minimal Versions",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267118",
+          "name": "Test WebAssembly",
+          "startedAt": "2026-11-28T11:21:12Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:42:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267127",
+          "name": "Test Mac aarch64",
+          "startedAt": "2026-11-28T11:33:01Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267160",
+          "name": "Test Linux x86_64",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961266998",
+          "name": "Test Windows x86_64 (attempt 1)",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:23Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267039",
+          "name": "Doctest",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:00Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961266805",
+          "name": "Miri (limited scope)",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267046",
+          "name": "Format & Typos",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267061",
+          "name": "Clippy cts_runner",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267078",
+          "name": "cargo-deny advisories",
+          "startedAt": "2026-11-28T11:18:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:02Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267089",
+          "name": "cargo-deny",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140961267130",
+          "name": "Zizmor",
+          "startedAt": "2026-11-28T11:18:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:59Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140963159241",
+          "name": "Test Windows x86_64 (retry; attempt ${{ matrix.attempt }})",
+          "startedAt": "2026-11-28T11:25:59Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:05Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139234029/job/140963158586",
+          "name": "Test Windows x86_64",
+          "startedAt": "2026-11-28T11:26:02Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:46Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11129",
+          "name": "Mergify Merge Protections",
+          "startedAt": "2026-11-28T11:18:44Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:49:26Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/queues/status?branch=trunk&pull=11129",
+          "name": "Mergify Merge Queue",
+          "startedAt": "2026-11-28T11:49:26Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:10Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://dashboardbackend.blacksmith.sh/track/run-proof?expires=1798456690&installation_model_id=453409&pr_number=11129&ref=codesmith_check&repository=gfx-rs%2Fwgpu&return_to=https%3A%2F%2Fgithub.com%2Fgfx-rs%2Fwgpu%2Fpull%2F11129&utm_campaign=gfx-rs%2Fwgpu&utm_source=codesmith-check&variant=check&signature=887032017f26b8a605e1cea38d2023c347ecc4be731887ffd60f8a3646256430",
+          "name": "Proof",
+          "startedAt": "2026-11-28T11:18:11Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/runs/140961315995",
+          "name": "zizmor",
+          "startedAt": "2026-11-28T11:18:25Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:46Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11129",
+          "name": "Summary",
+          "startedAt": "2026-11-28T11:18:46Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:43:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11129",
+          "name": "codecov/patch",
+          "startedAt": "2026-11-28T11:43:04Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:43:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11129",
+          "name": "codecov/project",
+          "startedAt": "2026-11-28T11:43:03Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "core: lazily initialize default external texture parameters",
+      "url": "https://github.com/gfx-rs/wgpu/pull/11129",
+      "repository": "gfx-rs/wgpu",
+      "number": 11129,
+      "action": "retained, rebased, updated"
+    },
+    {
+      "headRefOid": "219e80584bdf325890a7111e8dc8e07163885fe4",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:20Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332162",
+          "name": "Clippy Windows x86_64",
+          "startedAt": "2026-11-28T11:22:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331839",
+          "name": "API Operation Windows x86_64",
+          "startedAt": "2026-11-28T11:19:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255395/job/140961331485",
+          "name": "build",
+          "startedAt": "2026-11-28T11:18:55Z",
+          "status": "COMPLETED",
+          "workflowName": "Docs"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255412/job/140961331633",
+          "name": "Validate Shaders: Dota2",
+          "startedAt": "2026-11-28T11:20:43Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255397/job/140961331429",
+          "name": "publish",
+          "startedAt": "2026-11-28T11:19:36Z",
+          "status": "COMPLETED",
+          "workflowName": "Publish"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255453/job/140961331884",
+          "name": "Validate: HLSL",
+          "startedAt": "2026-11-28T11:20:39Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255370/job/140961331411",
+          "name": "Discover Standalone Examples",
+          "startedAt": "2026-11-28T11:19:06Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331835",
+          "name": "Clippy Windows aarch64",
+          "startedAt": "2026-11-28T11:20:51Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:33:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331587",
+          "name": "API Operation Mac aarch64",
+          "startedAt": "2026-11-28T11:19:28Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:51:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331978",
+          "name": "Clippy MacOS x86_64",
+          "startedAt": "2026-11-28T11:44:53Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331829",
+          "name": "API Operation Linux x86_64",
+          "startedAt": "2026-11-28T11:19:12Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332158",
+          "name": "Clippy MacOS aarch64",
+          "startedAt": "2026-11-28T11:48:52Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:39:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331921",
+          "name": "API Validation Windows x86_64",
+          "startedAt": "2026-11-28T11:19:34Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332155",
+          "name": "Clippy IOS aarch64",
+          "startedAt": "2026-11-28T11:47:10Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:51:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331889",
+          "name": "API Validation Mac aarch64",
+          "startedAt": "2026-11-28T11:33:37Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:47:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332078",
+          "name": "Clippy VisionOS aarch64",
+          "startedAt": "2026-11-28T11:45:47Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:35:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331848",
+          "name": "API Validation Linux x86_64",
+          "startedAt": "2026-11-28T11:19:12Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332133",
+          "name": "Clippy Linux x86_64",
+          "startedAt": "2026-11-28T11:22:39Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:32:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331940",
+          "name": "Other Windows x86_64",
+          "startedAt": "2026-11-28T11:19:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332137",
+          "name": "Clippy Linux aarch64",
+          "startedAt": "2026-11-28T11:22:22Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:42:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331845",
+          "name": "Other Mac aarch64",
+          "startedAt": "2026-11-28T11:21:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332217",
+          "name": "Clippy FreeBSD x86_64",
+          "startedAt": "2026-11-28T11:22:42Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255398/job/140961331760",
+          "name": "Other Linux x86_64",
+          "startedAt": "2026-11-28T11:18:50Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332122",
+          "name": "Clippy NetBSD x86_64",
+          "startedAt": "2026-11-28T11:22:19Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332246",
+          "name": "Clippy Android aarch64",
+          "startedAt": "2026-11-28T11:22:53Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:27Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332167",
+          "name": "Clippy Android ARMv7",
+          "startedAt": "2026-11-28T11:22:33Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332165",
+          "name": "Clippy Android x86_64",
+          "startedAt": "2026-11-28T11:22:38Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332107",
+          "name": "Clippy OpenHarmony aarch64",
+          "startedAt": "2026-11-28T11:22:11Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332117",
+          "name": "Clippy WebAssembly",
+          "startedAt": "2026-11-28T11:22:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332088",
+          "name": "Clippy WebAssembly 64-bit",
+          "startedAt": "2026-11-28T11:22:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:41Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332141",
+          "name": "Clippy Emscripten",
+          "startedAt": "2026-11-28T11:19:34Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332216",
+          "name": "Clippy WebAssembly Core 1.0",
+          "startedAt": "2026-11-28T11:22:50Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961332150",
+          "name": "Clippy Linux ppc32",
+          "startedAt": "2026-11-28T11:22:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331938",
+          "name": "wgpu MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:21:59Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255412/job/140961331617",
+          "name": "Validate Shaders: Sascha Willems Vulkan Tutorial",
+          "startedAt": "2026-11-28T11:19:22Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:46Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255453/job/140961331579",
+          "name": "Validate: MSL",
+          "startedAt": "2026-11-28T11:20:53Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:10Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255370/job/140961497587",
+          "name": "01-hello-compute",
+          "startedAt": "2026-11-28T11:21:20Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:44:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331956",
+          "name": "wgpu MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T11:43:32Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255370/job/140961497414",
+          "name": "02-hello-window",
+          "startedAt": "2026-11-28T11:19:42Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331953",
+          "name": "wgpu MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:21:58Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255370/job/140961497422",
+          "name": "03-hdr-surface",
+          "startedAt": "2026-11-28T11:20:50Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331877",
+          "name": "wgpu MSRV Check WebAssembly",
+          "startedAt": "2026-11-28T11:21:42Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255370/job/140961497531",
+          "name": "custom-backend",
+          "startedAt": "2026-11-28T11:21:02Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331849",
+          "name": "Core MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:21:18Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:21:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255412/job/140961331473",
+          "name": "Validate Shaders: dneto0 spirv-samples",
+          "startedAt": "2026-11-28T11:19:18Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255453/job/140961331842",
+          "name": "Validate: SPIR-V/GLSL/DOT/WGSL",
+          "startedAt": "2026-11-28T11:19:34Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:44:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331965",
+          "name": "Core MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T11:43:46Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331909",
+          "name": "Core MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:21:39Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331792",
+          "name": "MSRV Minimal Versions",
+          "startedAt": "2026-11-28T11:20:30Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331771",
+          "name": "Test WebAssembly",
+          "startedAt": "2026-11-28T11:20:28Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:51:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331861",
+          "name": "Test Mac aarch64",
+          "startedAt": "2026-11-28T11:42:54Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331638",
+          "name": "Test Linux x86_64",
+          "startedAt": "2026-11-28T11:18:37Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:02Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331948",
+          "name": "Test Windows x86_64 (attempt 1)",
+          "startedAt": "2026-11-28T11:22:06Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331875",
+          "name": "Doctest",
+          "startedAt": "2026-11-28T11:21:52Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331856",
+          "name": "Miri (limited scope)",
+          "startedAt": "2026-11-28T11:21:29Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:20:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331754",
+          "name": "Format & Typos",
+          "startedAt": "2026-11-28T11:19:45Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331881",
+          "name": "Clippy cts_runner",
+          "startedAt": "2026-11-28T11:21:47Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331917",
+          "name": "cargo-deny advisories",
+          "startedAt": "2026-11-28T11:21:53Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331966",
+          "name": "cargo-deny",
+          "startedAt": "2026-11-28T11:21:56Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140961331959",
+          "name": "Zizmor",
+          "startedAt": "2026-11-28T11:22:02Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:02Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140963881071",
+          "name": "Test Windows x86_64 (retry; attempt ${{ matrix.attempt }})",
+          "startedAt": "2026-11-28T11:29:02Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139255420/job/140963879672",
+          "name": "Test Windows x86_64",
+          "startedAt": "2026-11-28T11:29:04Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:00Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11130",
+          "name": "Mergify Merge Protections",
+          "startedAt": "2026-11-28T11:18:58Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:18Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/queues/status?branch=trunk&pull=11130",
+          "name": "Mergify Merge Queue",
+          "startedAt": "2026-11-28T11:55:18Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:18:27Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://dashboardbackend.blacksmith.sh/track/run-proof?expires=1798456707&installation_model_id=453409&pr_number=11130&ref=codesmith_check&repository=gfx-rs%2Fwgpu&return_to=https%3A%2F%2Fgithub.com%2Fgfx-rs%2Fwgpu%2Fpull%2F11130&utm_campaign=gfx-rs%2Fwgpu&utm_source=codesmith-check&variant=check&signature=6e0bf871b26144d088cae6a18ef039c645820054b7586475586af039f0f9a999",
+          "name": "Proof",
+          "startedAt": "2026-11-28T11:18:27Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:22:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/runs/140962240970",
+          "name": "zizmor",
+          "startedAt": "2026-11-28T11:22:12Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:19:00Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11130",
+          "name": "Summary",
+          "startedAt": "2026-11-28T11:19:00Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:51:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11130",
+          "name": "codecov/patch",
+          "startedAt": "2026-11-28T11:51:34Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:51:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11130",
+          "name": "codecov/project",
+          "startedAt": "2026-11-28T11:51:49Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "hal(dx12): separate transient and general suballocation pools",
+      "url": "https://github.com/gfx-rs/wgpu/pull/11130",
+      "repository": "gfx-rs/wgpu",
+      "number": 11130,
+      "action": "retained, rebased, updated"
+    },
+    {
+      "headRefOid": "8b08388331e0479c965cd602557bbf8feade500c",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Fix D3D12 resource creation allocation rollback",
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/327",
+      "repository": "Traverse-Research/gpu-allocator",
+      "number": 327,
+      "action": "created"
+    },
+    {
+      "headRefOid": "99e3979dae3a7c4e8300c33cea681a175f1b3747",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Respect Vulkan allocation limits and preserve fallback error causes",
+      "url": "https://github.com/Traverse-Research/gpu-allocator/pull/328",
+      "repository": "Traverse-Research/gpu-allocator",
+      "number": 328,
+      "action": "created"
+    },
+    {
+      "headRefOid": "58e05c149e854c2312474182cd0a3ed08e66603f",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:32:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585601",
+          "name": "Clippy Windows x86_64",
+          "startedAt": "2026-11-28T11:26:06Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585188",
+          "name": "API Operation Windows x86_64",
+          "startedAt": "2026-11-28T11:23:38Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672099/job/140962584811",
+          "name": "build",
+          "startedAt": "2026-11-28T11:23:38Z",
+          "status": "COMPLETED",
+          "workflowName": "Docs"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672152/job/140962585315",
+          "name": "Validate Shaders: Dota2",
+          "startedAt": "2026-11-28T11:25:31Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:29Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672178/job/140962585163",
+          "name": "publish",
+          "startedAt": "2026-11-28T11:24:14Z",
+          "status": "COMPLETED",
+          "workflowName": "Publish"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672175/job/140962585117",
+          "name": "Validate: HLSL",
+          "startedAt": "2026-11-28T11:23:38Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:29Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672197/job/140962585290",
+          "name": "Discover Standalone Examples",
+          "startedAt": "2026-11-28T11:25:23Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:31:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585540",
+          "name": "Clippy Windows aarch64",
+          "startedAt": "2026-11-28T11:25:40Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:05:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585083",
+          "name": "API Operation Mac aarch64",
+          "startedAt": "2026-11-28T11:51:25Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:59:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585608",
+          "name": "Clippy MacOS x86_64",
+          "startedAt": "2026-11-28T11:54:42Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:35:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585231",
+          "name": "API Operation Linux x86_64",
+          "startedAt": "2026-11-28T11:26:00Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:13:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585672",
+          "name": "Clippy MacOS aarch64",
+          "startedAt": "2026-11-28T12:05:09Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:43:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585076",
+          "name": "API Validation Windows x86_64",
+          "startedAt": "2026-11-28T11:23:38Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:06:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585593",
+          "name": "Clippy IOS aarch64",
+          "startedAt": "2026-11-28T12:01:47Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:10:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585255",
+          "name": "API Validation Mac aarch64",
+          "startedAt": "2026-11-28T11:51:54Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:01:46Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585604",
+          "name": "Clippy VisionOS aarch64",
+          "startedAt": "2026-11-28T11:59:32Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:42:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962584949",
+          "name": "API Validation Linux x86_64",
+          "startedAt": "2026-11-28T11:23:38Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:30:42Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585634",
+          "name": "Clippy Linux x86_64",
+          "startedAt": "2026-11-28T11:26:51Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:37:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585107",
+          "name": "Other Windows x86_64",
+          "startedAt": "2026-11-28T11:23:38Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:31:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585548",
+          "name": "Clippy Linux aarch64",
+          "startedAt": "2026-11-28T11:27:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:11:12Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585186",
+          "name": "Other Mac aarch64",
+          "startedAt": "2026-11-28T11:51:40Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585629",
+          "name": "Clippy FreeBSD x86_64",
+          "startedAt": "2026-11-28T11:26:41Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:36:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672163/job/140962585173",
+          "name": "Other Linux x86_64",
+          "startedAt": "2026-11-28T11:25:19Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585535",
+          "name": "Clippy NetBSD x86_64",
+          "startedAt": "2026-11-28T11:25:28Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:30:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585526",
+          "name": "Clippy Android aarch64",
+          "startedAt": "2026-11-28T11:27:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:39Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585644",
+          "name": "Clippy Android ARMv7",
+          "startedAt": "2026-11-28T11:27:25Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585610",
+          "name": "Clippy Android x86_64",
+          "startedAt": "2026-11-28T11:27:30Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:31:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585621",
+          "name": "Clippy OpenHarmony aarch64",
+          "startedAt": "2026-11-28T11:27:33Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:30:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585550",
+          "name": "Clippy WebAssembly",
+          "startedAt": "2026-11-28T11:26:40Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585633",
+          "name": "Clippy WebAssembly 64-bit",
+          "startedAt": "2026-11-28T11:27:19Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:42Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585675",
+          "name": "Clippy Emscripten",
+          "startedAt": "2026-11-28T11:27:35Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585599",
+          "name": "Clippy WebAssembly Core 1.0",
+          "startedAt": "2026-11-28T11:27:08Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585577",
+          "name": "Clippy Linux ppc32",
+          "startedAt": "2026-11-28T11:26:29Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585588",
+          "name": "wgpu MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:25:05Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672152/job/140962585080",
+          "name": "Validate Shaders: Sascha Willems Vulkan Tutorial",
+          "startedAt": "2026-11-28T11:24:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:32:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672175/job/140962585322",
+          "name": "Validate: MSL",
+          "startedAt": "2026-11-28T11:32:04Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672197/job/140963037570",
+          "name": "01-hello-compute",
+          "startedAt": "2026-11-28T11:25:44Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:57:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585589",
+          "name": "wgpu MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T11:55:57Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672197/job/140963037554",
+          "name": "02-hello-window",
+          "startedAt": "2026-11-28T11:25:34Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585542",
+          "name": "wgpu MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:23:51Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672197/job/140963037599",
+          "name": "03-hdr-surface",
+          "startedAt": "2026-11-28T11:26:34Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:39Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585635",
+          "name": "wgpu MSRV Check WebAssembly",
+          "startedAt": "2026-11-28T11:25:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:05Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672197/job/140963037708",
+          "name": "custom-backend",
+          "startedAt": "2026-11-28T11:26:18Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585551",
+          "name": "Core MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:23:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672152/job/140962585256",
+          "name": "Validate Shaders: dneto0 spirv-samples",
+          "startedAt": "2026-11-28T11:24:26Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672175/job/140962585360",
+          "name": "Validate: SPIR-V/GLSL/DOT/WGSL",
+          "startedAt": "2026-11-28T11:24:39Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:45:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585505",
+          "name": "Core MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T11:44:55Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585612",
+          "name": "Core MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:26:48Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585313",
+          "name": "MSRV Minimal Versions",
+          "startedAt": "2026-11-28T11:23:46Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:33:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585600",
+          "name": "Test WebAssembly",
+          "startedAt": "2026-11-28T11:26:48Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:06:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585607",
+          "name": "Test Mac aarch64",
+          "startedAt": "2026-11-28T11:57:26Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:30:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585571",
+          "name": "Test Linux x86_64",
+          "startedAt": "2026-11-28T11:26:40Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585477",
+          "name": "Test Windows x86_64 (attempt 1)",
+          "startedAt": "2026-11-28T11:24:19Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585504",
+          "name": "Doctest",
+          "startedAt": "2026-11-28T11:26:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:25:42Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585479",
+          "name": "Miri (limited scope)",
+          "startedAt": "2026-11-28T11:25:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:26:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585512",
+          "name": "Format & Typos",
+          "startedAt": "2026-11-28T11:26:03Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:28:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585686",
+          "name": "Clippy cts_runner",
+          "startedAt": "2026-11-28T11:27:34Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585560",
+          "name": "cargo-deny advisories",
+          "startedAt": "2026-11-28T11:26:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585609",
+          "name": "cargo-deny",
+          "startedAt": "2026-11-28T11:26:33Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140962585667",
+          "name": "Zizmor",
+          "startedAt": "2026-11-28T11:26:49Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:13Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140963924424",
+          "name": "Test Windows x86_64 (retry; attempt ${{ matrix.attempt }})",
+          "startedAt": "2026-11-28T11:29:14Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:29:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46139672120/job/140963923151",
+          "name": "Test Windows x86_64",
+          "startedAt": "2026-11-28T11:29:15Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:08Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11152",
+          "name": "Mergify Merge Protections",
+          "startedAt": "2026-11-28T11:24:07Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:13:37Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/queues/status?branch=trunk&pull=11152",
+          "name": "Mergify Merge Queue",
+          "startedAt": "2026-11-28T12:13:37Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:23:35Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://dashboardbackend.blacksmith.sh/track/run-proof?expires=1798457015&installation_model_id=453409&pr_number=11152&ref=codesmith_check&repository=gfx-rs%2Fwgpu&return_to=https%3A%2F%2Fgithub.com%2Fgfx-rs%2Fwgpu%2Fpull%2F11152&utm_campaign=gfx-rs%2Fwgpu&utm_source=codesmith-check&variant=check&signature=9aa090e24362c1e34fb411b973f51b5f0d2b01c3738908bd4ca75bea3faeb80b",
+          "name": "Proof",
+          "startedAt": "2026-11-28T11:23:35Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:27:02Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/runs/140963402824",
+          "name": "zizmor",
+          "startedAt": "2026-11-28T11:26:59Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:24:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11152",
+          "name": "Summary",
+          "startedAt": "2026-11-28T11:24:07Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:05:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11152",
+          "name": "codecov/patch",
+          "startedAt": "2026-11-28T12:05:43Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:11:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11152",
+          "name": "codecov/project",
+          "startedAt": "2026-11-28T12:11:18Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "hal(dx12): return allocations when resource creation fails",
+      "url": "https://github.com/gfx-rs/wgpu/pull/11152",
+      "repository": "gfx-rs/wgpu",
+      "number": 11152,
+      "action": "created"
+    },
+    {
+      "headRefOid": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:00:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940927",
+          "name": "Clippy Windows x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:00:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940100",
+          "name": "API Operation Windows x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058306/job/140969939951",
+          "name": "build",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Docs"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058361/job/140969940015",
+          "name": "Validate Shaders: Dota2",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058312/job/140969939753",
+          "name": "publish",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Publish"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058421/job/140969940136",
+          "name": "Validate: HLSL",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:27Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058311/job/140969939803",
+          "name": "Discover Standalone Examples",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:00:46Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940706",
+          "name": "Clippy Windows aarch64",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:21:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940104",
+          "name": "API Operation Mac aarch64",
+          "startedAt": "2026-11-28T12:06:47Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:27:02Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940943",
+          "name": "Clippy MacOS x86_64",
+          "startedAt": "2026-11-28T12:20:20Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:04:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969939921",
+          "name": "API Operation Linux x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:20:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940793",
+          "name": "Clippy MacOS aarch64",
+          "startedAt": "2026-11-28T12:15:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:09:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940030",
+          "name": "API Validation Windows x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:26:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940917",
+          "name": "Clippy IOS aarch64",
+          "startedAt": "2026-11-28T12:20:20Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:24:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940131",
+          "name": "API Validation Mac aarch64",
+          "startedAt": "2026-11-28T12:07:00Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:20:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940924",
+          "name": "Clippy VisionOS aarch64",
+          "startedAt": "2026-11-28T12:18:35Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:10:39Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940193",
+          "name": "API Validation Linux x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:58:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940896",
+          "name": "Clippy Linux x86_64",
+          "startedAt": "2026-11-28T11:54:29Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:09:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940077",
+          "name": "Other Windows x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:58:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940842",
+          "name": "Clippy Linux aarch64",
+          "startedAt": "2026-11-28T11:54:43Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:30:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940230",
+          "name": "Other Mac aarch64",
+          "startedAt": "2026-11-28T12:10:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940895",
+          "name": "Clippy FreeBSD x86_64",
+          "startedAt": "2026-11-28T11:54:25Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:03:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058333/job/140969940124",
+          "name": "Other Linux x86_64",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CTS"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940902",
+          "name": "Clippy NetBSD x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:59:19Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940942",
+          "name": "Clippy Android aarch64",
+          "startedAt": "2026-11-28T11:55:17Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940950",
+          "name": "Clippy Android ARMv7",
+          "startedAt": "2026-11-28T11:55:26Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940899",
+          "name": "Clippy Android x86_64",
+          "startedAt": "2026-11-28T11:55:06Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:58:09Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940909",
+          "name": "Clippy OpenHarmony aarch64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:57:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940850",
+          "name": "Clippy WebAssembly",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940586",
+          "name": "Clippy WebAssembly 64-bit",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940977",
+          "name": "Clippy Emscripten",
+          "startedAt": "2026-11-28T11:55:28Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940986",
+          "name": "Clippy WebAssembly Core 1.0",
+          "startedAt": "2026-11-28T11:55:27Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940936",
+          "name": "Clippy Linux ppc32",
+          "startedAt": "2026-11-28T11:55:08Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940626",
+          "name": "wgpu MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058361/job/140969940137",
+          "name": "Validate Shaders: Sascha Willems Vulkan Tutorial",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058421/job/140969939957",
+          "name": "Validate: MSL",
+          "startedAt": "2026-11-28T11:54:58Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:23Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058311/job/140969962196",
+          "name": "01-hello-compute",
+          "startedAt": "2026-11-28T11:55:31Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:14:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940573",
+          "name": "wgpu MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T12:13:04Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058311/job/140969962185",
+          "name": "02-hello-window",
+          "startedAt": "2026-11-28T11:55:28Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940717",
+          "name": "wgpu MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058311/job/140969962155",
+          "name": "03-hdr-surface",
+          "startedAt": "2026-11-28T11:55:10Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940593",
+          "name": "wgpu MSRV Check WebAssembly",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058311/job/140969962193",
+          "name": "custom-backend",
+          "startedAt": "2026-11-28T11:55:27Z",
+          "status": "COMPLETED",
+          "workflowName": "cargo-generate"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940729",
+          "name": "Core MSRV Check Windows x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058361/job/140969939911",
+          "name": "Validate Shaders: dneto0 spirv-samples",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Lazy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058421/job/140969940181",
+          "name": "Validate: SPIR-V/GLSL/DOT/WGSL",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Shaders"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:15:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940634",
+          "name": "Core MSRV Check MacOS x86_64",
+          "startedAt": "2026-11-28T12:14:10Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:29Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940673",
+          "name": "Core MSRV Check Linux x86_64",
+          "startedAt": "2026-11-28T11:54:56Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940339",
+          "name": "MSRV Minimal Versions",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:01:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940614",
+          "name": "Test WebAssembly",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:18:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940564",
+          "name": "Test Mac aarch64",
+          "startedAt": "2026-11-28T12:11:14Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:58:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940668",
+          "name": "Test Linux x86_64",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:00:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940631",
+          "name": "Test Windows x86_64 (attempt 1)",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:56:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940732",
+          "name": "Doctest",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:09Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940551",
+          "name": "Miri (limited scope)",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940545",
+          "name": "Format & Typos",
+          "startedAt": "2026-11-28T11:54:23Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940781",
+          "name": "Clippy cts_runner",
+          "startedAt": "2026-11-28T11:54:53Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940678",
+          "name": "cargo-deny advisories",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:55:24Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940547",
+          "name": "cargo-deny",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:41Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140969940632",
+          "name": "Zizmor",
+          "startedAt": "2026-11-28T11:54:24Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:00:55Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140971522145",
+          "name": "Test Windows x86_64 (retry; attempt ${{ matrix.attempt }})",
+          "startedAt": "2026-11-28T12:00:56Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:01:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/actions/runs/46142058412/job/140971520643",
+          "name": "Test Windows x86_64",
+          "startedAt": "2026-11-28T12:00:57Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:54Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11153",
+          "name": "Mergify Merge Protections",
+          "startedAt": "2026-11-28T11:54:53Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:30:52Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/queues/status?branch=trunk&pull=11153",
+          "name": "Mergify Merge Queue",
+          "startedAt": "2026-11-28T12:30:52Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:20Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://dashboardbackend.blacksmith.sh/track/run-proof?expires=1798458860&installation_model_id=453409&pr_number=11153&ref=codesmith_check&repository=gfx-rs%2Fwgpu&return_to=https%3A%2F%2Fgithub.com%2Fgfx-rs%2Fwgpu%2Fpull%2F11153&utm_campaign=gfx-rs%2Fwgpu&utm_source=codesmith-check&variant=check&signature=4061065a2bd165a3377b5309cc1646f350020fb2913854f4e5961a9b44cdf69a",
+          "name": "Proof",
+          "startedAt": "2026-11-28T11:54:20Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/gfx-rs/wgpu/runs/140969980514",
+          "name": "zizmor",
+          "startedAt": "2026-11-28T11:54:32Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T11:54:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://dashboard.mergify.com/orgs/gfx-rs/repos/wgpu/activity-log?pull_request=11153",
+          "name": "Summary",
+          "startedAt": "2026-11-28T11:54:53Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:21:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11153",
+          "name": "codecov/patch",
+          "startedAt": "2026-11-28T12:21:16Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-28T12:30:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://app.codecov.io/gh/gfx-rs/wgpu/pull/11153",
+          "name": "codecov/project",
+          "startedAt": "2026-11-28T12:30:49Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "tests: accept usable Suboptimal frames after surface reconfiguration",
+      "url": "https://github.com/gfx-rs/wgpu/pull/11153",
+      "repository": "gfx-rs/wgpu",
+      "number": 11153,
+      "action": "created"
+    }
+  ]
+}

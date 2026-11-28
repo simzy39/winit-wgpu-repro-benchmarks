@@ -1,0 +1,26 @@
+[
+  {
+    "bundle": "gpu-allocator-classification",
+    "files": 438,
+    "bytes": 20036801,
+    "failures": [],
+    "manifest_sha256": "735345a0d8912fe23e9e424d22c934abadae5954684056bcdbbb49a35d29098d",
+    "wall_s": 26.174989099963568
+  },
+  {
+    "bundle": "reassessment-20261128",
+    "files": 4317,
+    "bytes": 2968855552,
+    "failures": [],
+    "manifest_sha256": "e8ca58f64c31def4694ff44c5bdfb684a7ed4655c5c85f728d5c89901fdf0735",
+    "wall_s": 533.9647113999818
+  },
+  {
+    "bundle": "pressure-recovery-20261128",
+    "files": 2691,
+    "bytes": 423041515,
+    "failures": [],
+    "manifest_sha256": "350e07b602ea37ef2086e4c6f12b21c85feb189475e6916863fe439d0ec623ec",
+    "wall_s": 188.68438500002958
+  }
+]

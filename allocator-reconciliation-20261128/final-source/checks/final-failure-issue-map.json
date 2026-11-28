@@ -1,0 +1,137 @@
+{
+  "entries": [
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::binding_array_samplers",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/8617",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::partial_binding_array_samplers",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/8617",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/8645",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11146",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::subgroup_operations::subgroup_operations",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/7163",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::transfer::copy_unaligned_rows",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11147",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11143",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::multiview::draw_multiview_multisample",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11148",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11143",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "naga::naga",
+      "identity": "wgsl_errors::recursion_depth_template",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11149",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-benchmark::bench/wgpu-benchmark",
+      "identity": "Computepass Encoding",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/8644",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-examples",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] mesh_shader",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-examples",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] ray_cube_compute",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11154",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    },
+    {
+      "binary": "wgpu-examples",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] mesh_shader",
+      "issue": "https://github.com/gfx-rs/wgpu/issues/11144",
+      "scope": "Observed failure coverage; shared component root cause is not inferred."
+    }
+  ],
+  "all_final_failures_covered": true
+}

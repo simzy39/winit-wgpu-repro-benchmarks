@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-28T06:17:55.290258+00:00",
+  "exported_source_files": 36,
+  "exported_source_byte_equality": true,
+  "wgpu_changed_files_byte_equal": 7,
+  "vendor_files": 411,
+  "vendor_files_newer_than_bootstrap": [],
+  "original_audit_sha256": "7b0da02c668f3905c758713d433aaf5c9bec937c7188c90059ecc0c96ce0c7b7",
+  "public_derivation": "Selected integrity fields; local repository/ref inventories omitted. Original audit and complete original seal remain preserved locally."
+}

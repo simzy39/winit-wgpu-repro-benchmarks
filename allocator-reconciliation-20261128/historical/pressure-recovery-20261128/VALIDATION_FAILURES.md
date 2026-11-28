@@ -15,8 +15,8 @@ the old bug. It is not represented as a second full native run of the convenienc
 The wgpu followup's only later change is three documentation comment lines; the saved
 full-suite source and `sources/wgpu-comment-delta.json` record both hashes.
 
-Authoritative artifacts: [JUnit](sources/backoff-full-junit.xml),
-[complete output](logs/backoff-full-wgpu.log), [triage including failure details](backoff-failure-triage.json),
+Authoritative artifacts: [JUnit](sources/backoff-full-junit.xml.gz),
+[complete output](logs/backoff-full-wgpu.log.gz), [triage including failure details](backoff-failure-triage.json),
 [clean upstream comparison](control-comparison.json).
 Generated feature actual/difference screenshots and colocated references are archived
 under [final-feature-images](sources/final-feature-images/), with hashes and original

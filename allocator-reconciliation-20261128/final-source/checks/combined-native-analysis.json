@@ -1,0 +1,261 @@
+{
+  "junit": {
+    "name": "nextest-run",
+    "tests": "2202",
+    "skipped": "0",
+    "failures": "22",
+    "errors": "0",
+    "uuid": "4daae706-7217-4cfb-a638-96c0141f8325",
+    "timestamp": "2026-11-28T22:56:09.953+11:00",
+    "time": "1299.620"
+  },
+  "failed_entries": 22,
+  "passed_entries": 2180,
+  "failures": [
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::binding_array_samplers",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::binding_array_samplers",
+      "failure": {
+        "message": "thread '<unnamed>' (37620) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (37620) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\binding_array\\samplers.rs:13:55: test \"wgpu_gpu::binding_array::samplers::binding_array_samplers\" did not behave as expected",
+      "time_s": "0.944"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::partial_binding_array_samplers",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::samplers::partial_binding_array_samplers",
+      "failure": {
+        "message": "thread '<unnamed>' (37064) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (37064) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\binding_array\\samplers.rs:36:63: test \"wgpu_gpu::binding_array::samplers::partial_binding_array_samplers\" did not behave as expected",
+      "time_s": "1.004"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::multiview::draw_multiview_single",
+      "failure": {
+        "message": "thread '<unnamed>' (25512) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (25512) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\multiview\\mod.rs:17:54: test \"wgpu_gpu::multiview::draw_multiview_single\" did not behave as expected",
+      "time_s": "2.117"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16",
+      "failure": {
+        "message": "thread '<unnamed>' (26600) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (26600) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\shader\\zero_init_workgroup_mem.rs:35:72: test \"wgpu_gpu::shader::zero_init_workgroup_mem::zero_init_workgroup_memory_parallel_f16\" did not behave as expected",
+      "time_s": "1.314"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::subgroup_operations::subgroup_operations",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::subgroup_operations::subgroup_operations",
+      "failure": {
+        "message": "thread '<unnamed>' (26880) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (26880) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\subgroup_operations\\mod.rs:17:52: test \"wgpu_gpu::subgroup_operations::subgroup_operations\" did not behave as expected",
+      "time_s": "3.834"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::transfer::copy_unaligned_rows",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::transfer::copy_unaligned_rows",
+      "failure": {
+        "message": "thread '<unnamed>' (11684) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (11684) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\transfer.rs:196:52: test \"wgpu_gpu::transfer::copy_unaligned_rows\" did not behave as expected",
+      "time_s": "1.265"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+      "failure": {
+        "message": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+      "time_s": "1.252"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.351"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_draw_indirect",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.153"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "0.868"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_color_readback",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "0.850"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_multi_draw_indirect_count",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.052"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.074"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.084"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::mesh_shader::mesh_pipeline_basic_task_mesh_frag_no_draw",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.027"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::multiview::draw_multiview_multisample",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::multiview::draw_multiview_multisample",
+      "failure": {
+        "message": "thread '<unnamed>' (4300) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (4300) panicked at tests\\src\\run.rs:125:9:\ntests\\tests\\wgpu-gpu\\multiview\\mod.rs:65:59: test \"wgpu_gpu::multiview::draw_multiview_multisample\" did not behave as expected",
+      "time_s": "0.668"
+    },
+    {
+      "binary": "wgpu-test::wgpu-gpu",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::shader::prevent_invalid_ray_query_calls",
+      "failure": {
+        "message": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000005: Invalid access to memory location. (os error 998)",
+      "time_s": "0.792"
+    },
+    {
+      "binary": "naga::naga",
+      "name": "wgsl_errors::recursion_depth_template",
+      "identity": "wgsl_errors::recursion_depth_template",
+      "failure": {
+        "message": "process aborted with code 0xc00000fd: Recursion too deep; the stack overflowed. (os error 1001)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc00000fd: Recursion too deep; the stack overflowed. (os error 1001)",
+      "time_s": "0.100"
+    },
+    {
+      "binary": "wgpu-benchmark::bench/wgpu-benchmark",
+      "name": "Computepass Encoding",
+      "identity": "Computepass Encoding",
+      "failure": {
+        "message": "2 errors occurred executing test",
+        "type": "test abort"
+      },
+      "details": "2 errors occurred executing test:\n* process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)\n* thread 'main' (34820) panicked at /rustc/8bab26f4f68e0e26f0bb7960be334d5b520ea452/library\\core\\src\\panicking.rs:225:5:\n  panic in a function that cannot unwind\n  stack backtrace:\n     0:     0x7ff7baca091e - <unknown>\n     1:     0x7ff7bacb6611 - <unknown>\n     2:     0x7ff7baca7684 - <unknown>\n     3:     0x7ff7bac89859 - <unknown>\n     4:     0x7ff7bac99e8a - <unknown>\n     5:     0x7ff7bac9a143 - <unknown>\n     6:     0x7ff7bac89964 - <unknown>\n     7:     0x7ff7bac874ef - <unknown>\n     8:     0x7ff7bac8a34e - <unknown>\n     9:     0x7ff7bc8ae827 - <unknown>\n    10:     0x7ff7bc8ae7a1 - <unknown>\n    11:     0x7ff7bc8ae95a - <unknown>\n    12:     0x7ff7badca936 - <unknown>\n    13:     0x7fff2e83bb00 - _CxxFrameHandler3\n    14:     0x7fff2e823a9d - is_exception_typeof\n    15:     0x7fff2e83ae8d - _C_specific_handler\n    16:     0x7fff2e822ce2 - is_exception_typeof\n    17:     0x7fff2e83b8f8 - _CxxFrameHandler3\n    18:     0x7fff4b0fabbf - _chkstk\n    19:     0x7fff4afadd30 - RtlUnwindEx\n    20:     0x7fff2e83b3d6 - _C_specific_handler\n    21:     0x7fff2e821c20 - is_exception_typeof\n    22:     0x7fff2e822dd8 - is_exception_typeof\n    23:     0x7fff2e83b8f8 - _CxxFrameHandler3\n    24:     0x7fff4b0fab3f - _chkstk\n    25:     0x7fff4b056995 - RtlWow64GetCurrentMachine\n    26:     0x7fff4afa9f3d - RtlRaiseException\n    27:     0x7fff487756ca - RaiseException\n    28:     0x7fff2e8255a9 - CxxThrowException\n    29:     0x7ff7baca790d - <unknown>\n    30:     0x7ff7baca77e5 - <unknown>\n    31:     0x7ff7bac8a05f - <unknown>\n    32:     0x7ff7bac9a1be - <unknown>\n    33:     0x7ff7bac8992e - <unknown>\n    34:     0x7ff7bac874ef - <unknown>\n    35:     0x7ff7bac8a34e - <unknown>\n    36:     0x7ff7bc8aea4d - <unknown>\n    37:     0x7ff7baef239f - <unknown>\n    38:     0x7ff7badca71e - <unknown>\n    39:     0x7ffeada9010c - vkNegotiateLoaderLayerInterfaceVersion\n    40:     0x7ffead22c104 - <unknown>\n    41:     0x7ffead4497ec - <unknown>\n    42:     0x7ffead44c2ad - <unknown>\n    43:     0x7ffead38f498 - <unknown>\n    44:     0x7ffead4f0c49 - vkEnumerateInstanceExtensionProperties\n    45:     0x7ff7badc0f53 - <unknown>\n    46:     0x7ff7bb2622b6 - <unknown>\n    47:     0x7ff7ba3d3115 - <unknown>\n    48:     0x7ff7bacfa11d - <unknown>\n    49:     0x7ff7bacef42a - <unknown>\n    50:     0x7ff7bacf1810 - <unknown>\n    51:     0x7ff7bacfb4d7 - <unknown>\n    52:     0x7ff7ba1178ec - <unknown>\n    53:     0x7ff7ba0d35cb - <unknown>\n    54:     0x7ff7ba0d685e - <unknown>\n    55:     0x7ff7ba09e306 - <unknown>\n    56:     0x7ff7ba0950ed - <unknown>\n    57:     0x7ff7ba0973ff - <unknown>\n    58:     0x7ff7ba0dbbe1 - <unknown>\n    59:     0x7ff7bac03dad - <unknown>\n    60:     0x7ff7ba09140d - <unknown>\n    61:     0x7ff7ba0ad9db - <unknown>\n    62:     0x7ff7ba0d420e - <unknown>\n    63:     0x7ff7ba07af01 - <unknown>\n    64:     0x7ff7bac98950 - <unknown>\n    65:     0x7ff7ba0771fa - <unknown>\n    66:     0x7ff7ba093139 - <unknown>\n    67:     0x7ff7bc8ac394 - <unknown>\n    68:     0x7fff4939dda7 - BaseThreadInitThunk\n    69:     0x7fff4b059c6c - RtlUserThreadStart\n  thread caused non-unwinding panic. aborting.\n",
+      "time_s": "13.269"
+    },
+    {
+      "binary": "wgpu-examples",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] mesh_shader",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] mesh_shader",
+      "failure": {
+        "message": "thread '<unnamed>' (27824) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (27824) panicked at tests\\src\\run.rs:125:9:\nexamples\\features\\src\\framework.rs:649:9: test \"mesh_shader\" did not behave as expected",
+      "time_s": "9.128"
+    },
+    {
+      "binary": "wgpu-examples",
+      "name": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] ray_cube_compute",
+      "identity": "[Dx12/Intel(R) Arc(TM) Graphics/1] ray_cube_compute",
+      "failure": {
+        "message": "thread '<unnamed>' (10664) panicked at tests\\src\\run.rs:125:9",
+        "type": "test failure with exit code 101"
+      },
+      "details": "thread '<unnamed>' (10664) panicked at tests\\src\\run.rs:125:9:\nexamples\\features\\src\\framework.rs:649:9: test \"ray_cube_compute\" did not behave as expected",
+      "time_s": "12.975"
+    },
+    {
+      "binary": "wgpu-examples",
+      "name": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] mesh_shader",
+      "identity": "[Vulkan/Intel(R) Arc(TM) Graphics/0] mesh_shader",
+      "failure": {
+        "message": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+        "type": "test abort"
+      },
+      "details": "process aborted with code 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application. (os error 1282)",
+      "time_s": "1.365"
+    }
+  ],
+  "new_relative_to_historical_final23": [],
+  "all_cases": 2202,
+  "limitation": "Nextest includes feature-unsupported and skipped-failure harness entries as passing cases; profile exclusions are reported separately."
+}

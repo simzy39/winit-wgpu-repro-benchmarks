@@ -1,0 +1,1 @@
+Complete changed files from wgpu combined patch on 60cef2be828e03ba54e2e1598001b4625c0c2163; workspace dependency override, config and lock excluded. Final HAL-only followup is separately exported on PR11130.

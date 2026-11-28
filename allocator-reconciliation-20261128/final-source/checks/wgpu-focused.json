@@ -21,5 +21,225 @@
     ],
     "rc": 0,
     "wall_s": 63.12322120007593
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "wgpu-core",
+      "--all-features",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 561.3442202999722
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "msrv",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "check",
+      "--locked",
+      "--offline",
+      "-p",
+      "wgpu-core",
+      "--all-features",
+      "--lib"
+    ],
+    "rc": 0,
+    "wall_s": 473.43342310003936
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "regressions-build",
+    "command": [
+      "cargo",
+      "test",
+      "--no-run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--test",
+      "wgpu-gpu",
+      "--test",
+      "wgpu-validation",
+      "--all-features"
+    ],
+    "rc": 0,
+    "wall_s": 979.6860196000198
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "regressions",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "--no-fail-fast",
+      "-p",
+      "wgpu-test",
+      "--test",
+      "wgpu-gpu",
+      "--test",
+      "wgpu-validation",
+      "--all-features",
+      "-E",
+      "test(external_texture)"
+    ],
+    "rc": 100,
+    "wall_s": 51.83175840007607,
+    "rejected_setup": "Bundled WARP missing beside new binary; metadata/runtime adapter mismatch."
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "historical-source-reuse",
+    "changed_files_since_prior_pr": [
+      ".github/workflows/ci.yml"
+    ],
+    "runtime_unchanged": true,
+    "lock_unchanged": true,
+    "debug_info": "0 for compilation/targeted tests; optimizations and debug assertions retain default test settings."
+  },
+  {
+    "name": "wgpu-lazy",
+    "check": "regressions",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "--no-fail-fast",
+      "-p",
+      "wgpu-test",
+      "--test",
+      "wgpu-gpu",
+      "--test",
+      "wgpu-validation",
+      "--all-features",
+      "-E",
+      "test(external_texture)"
+    ],
+    "rc": 0,
+    "wall_s": 29.071018499904312
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "historical-source-reuse",
+    "changed_files_since_prior_pr": [
+      ".github/workflows/ci.yml"
+    ],
+    "runtime_unchanged": true,
+    "lock_unchanged": true,
+    "debug_info": "0 for compilation/targeted tests; optimizations and debug assertions retain default test settings."
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "rc": 0,
+    "wall_s": 28.933417699998245
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--offline",
+      "-p",
+      "wgpu-hal",
+      "--all-features",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "rc": 0,
+    "wall_s": 126.02645280002616
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "msrv",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "check",
+      "--locked",
+      "--offline",
+      "-p",
+      "wgpu-hal",
+      "--all-features",
+      "--lib"
+    ],
+    "rc": 0,
+    "wall_s": 55.21438210003544
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "unit",
+    "command": [
+      "cargo",
+      "test",
+      "--offline",
+      "-p",
+      "wgpu-hal",
+      "--all-features",
+      "--lib",
+      "transient"
+    ],
+    "rc": 0,
+    "wall_s": 106.2353129000403
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "regressions-build",
+    "command": [
+      "cargo",
+      "test",
+      "--no-run",
+      "--offline",
+      "-p",
+      "wgpu-test",
+      "--test",
+      "wgpu-gpu",
+      "--all-features"
+    ],
+    "rc": 0,
+    "wall_s": 166.90083549998235
+  },
+  {
+    "name": "wgpu-transient",
+    "check": "regressions",
+    "command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--offline",
+      "--no-fail-fast",
+      "-p",
+      "wgpu-test",
+      "--test",
+      "wgpu-gpu",
+      "--all-features",
+      "-E",
+      "test(transient_buffers_release_memory_blocks)"
+    ],
+    "rc": 0,
+    "wall_s": 8.673469400033355
   }
 ]

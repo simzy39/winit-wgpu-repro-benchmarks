@@ -1,0 +1,27 @@
+{
+  "newly_failed_relative_to_first_rollback_run": [],
+  "no_longer_failed_relative_to_first_rollback_run": [
+    [
+      "wgpu-examples",
+      "[Vulkan/Intel(R) Arc(TM) Graphics/0] ray_aabb_compute"
+    ],
+    [
+      "wgpu-test::wgpu-gpu",
+      "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::tlas::binding_array_tlas"
+    ],
+    [
+      "wgpu-test::wgpu-gpu",
+      "[Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::ray_tracing::as_aabb::aabb_flags_mismatch"
+    ],
+    [
+      "wgpu-test::wgpu-gpu",
+      "[Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::as_build::blas_compaction"
+    ],
+    [
+      "wgpu-test::wgpu_surface",
+      "surface_configure"
+    ]
+  ],
+  "same_nonempty_gpu_binary_hashes": true,
+  "interpretation": "Full-run outcome variability is recorded without assigning a component cause or treating these counts as a performance comparison."
+}

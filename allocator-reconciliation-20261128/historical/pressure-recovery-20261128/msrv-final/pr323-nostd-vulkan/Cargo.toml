@@ -1,0 +1,9 @@
+[package]
+name="msrv-probe"
+version="0.0.0"
+edition="2021"
+rust-version="1.71"
+[workspace]
+[dependencies]
+gpu-allocator={path="<workspace>/research/upstream/gpu-allocator-classification/pressure-recovery-20261128/work/pr323/gpu-allocator",default-features=false,features=["hashbrown","vulkan"]}
+thiserror={version="=2.0.20",default-features=false}

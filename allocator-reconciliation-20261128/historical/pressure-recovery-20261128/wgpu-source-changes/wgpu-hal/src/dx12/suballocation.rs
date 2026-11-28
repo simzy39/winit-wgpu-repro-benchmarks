@@ -1,0 +1,816 @@
+use alloc::{sync::Arc, vec::Vec};
+
+use gpu_allocator::{d3d12::AllocationCreateDesc, MemoryLocation};
+use wgpu_sync::Mutex;
+use windows::Win32::Graphics::{Direct3D12, Dxgi};
+
+use crate::{
+    auxil::dxgi::{name::ObjectExt as _, result::HResult as _},
+    dx12::conv,
+    AllocationSizes,
+};
+
+#[derive(Debug, Clone, Copy)]
+pub(crate) enum MemoryPool {
+    General,
+    Transient,
+}
+
+impl MemoryPool {
+    fn from_memory_flags(flags: crate::MemoryFlags) -> Self {
+        if flags.contains(crate::MemoryFlags::TRANSIENT) {
+            Self::Transient
+        } else {
+            Self::General
+        }
+    }
+}
+
+#[derive(Debug)]
+pub(crate) enum AllocationType {
+    Buffer,
+    Texture,
+    AccelerationStructure,
+}
+
+#[derive(Debug)]
+enum AllocationInner {
+    /// This resource is suballocated from a heap.
+    Placed {
+        pool: MemoryPool,
+        inner: gpu_allocator::d3d12::Allocation,
+    },
+    /// This resource is a committed resource and does not belong to a
+    /// suballocated heap. We store an approximate size, so we can manage our counters
+    /// correctly.
+    ///
+    /// This is only used for Intel Xe drivers, which have a bug that
+    /// prevents suballocation from working correctly.
+    Committed { size: u64 },
+}
+
+#[derive(Debug)]
+pub(crate) struct Allocation {
+    inner: AllocationInner,
+    ty: AllocationType,
+}
+
+impl Allocation {
+    pub fn placed(
+        pool: MemoryPool,
+        inner: gpu_allocator::d3d12::Allocation,
+        ty: AllocationType,
+    ) -> Self {
+        Self {
+            inner: AllocationInner::Placed { pool, inner },
+            ty,
+        }
+    }
+
+    pub fn none(ty: AllocationType, size: u64) -> Self {
+        Self {
+            inner: AllocationInner::Committed { size },
+            ty,
+        }
+    }
+
+    pub fn size(&self) -> u64 {
+        match self.inner {
+            AllocationInner::Placed { ref inner, .. } => inner.size(),
+            AllocationInner::Committed { size } => size,
+        }
+    }
+}
+
+fn finish_resource_creation<R, A>(
+    allocation: A,
+    resource: Option<R>,
+    result: Result<(), crate::DeviceError>,
+    rollback: impl FnOnce(A) -> Result<(), crate::DeviceError>,
+) -> Result<(R, A), crate::DeviceError> {
+    let error = match (result, resource) {
+        (Ok(()), Some(resource)) => return Ok((resource, allocation)),
+        (Err(error), resource) => {
+            drop(resource);
+            error
+        }
+        (Ok(()), None) => crate::DeviceError::Unexpected,
+    };
+    rollback(allocation)?;
+    Err(error)
+}
+
+/// Separate general and transient allocators.
+///
+/// `gpu-allocator` releases a shared block only after every allocation in it is freed,
+/// and may cache an empty block. Short-lived resources such as staging buffers use
+/// their own pool with smaller minimum block sizes to avoid growing the general pool.
+struct AllocatorInner {
+    general: Mutex<gpu_allocator::d3d12::Allocator>,
+    transient: Mutex<gpu_allocator::d3d12::Allocator>,
+}
+
+#[derive(Clone)]
+pub(crate) struct Allocator {
+    inner: Arc<AllocatorInner>,
+    general_sizes: AllocationSizes,
+    transient_sizes: AllocationSizes,
+    pub memory_budget_thresholds: wgt::MemoryBudgetThresholds,
+}
+
+impl Allocator {
+    pub(crate) fn new(
+        raw: &Direct3D12::ID3D12Device,
+        memory_hints: &wgt::MemoryHints,
+        memory_budget_thresholds: wgt::MemoryBudgetThresholds,
+    ) -> Result<Self, crate::DeviceError> {
+        let general_sizes = AllocationSizes::from_memory_hints(memory_hints);
+        let transient_sizes = general_sizes.transient();
+
+        let mut allocator_desc = gpu_allocator::d3d12::AllocatorCreateDesc {
+            device: gpu_allocator::d3d12::ID3D12DeviceVersion::Device(raw.clone()),
+            debug_settings: Default::default(),
+            allocation_sizes: general_sizes.into(),
+        };
+
+        let general = gpu_allocator::d3d12::Allocator::new(&allocator_desc).inspect_err(|e| {
+            log::error!("Failed to create d3d12 general allocator, error: {e}");
+        })?;
+
+        allocator_desc.allocation_sizes = transient_sizes.into();
+        let transient = gpu_allocator::d3d12::Allocator::new(&allocator_desc).inspect_err(|e| {
+            log::error!("Failed to create d3d12 transient allocator, error: {e}");
+        })?;
+
+        Ok(Self {
+            inner: Arc::new(AllocatorInner {
+                general: Mutex::new(general),
+                transient: Mutex::new(transient),
+            }),
+            general_sizes,
+            transient_sizes,
+            memory_budget_thresholds,
+        })
+    }
+
+    fn allocator(&self, pool: MemoryPool) -> &Mutex<gpu_allocator::d3d12::Allocator> {
+        match pool {
+            MemoryPool::General => &self.inner.general,
+            MemoryPool::Transient => &self.inner.transient,
+        }
+    }
+
+    fn trim(&self) -> u64 {
+        let general = self.inner.general.lock().trim();
+        let transient = self.inner.transient.lock().trim();
+        general + transient
+    }
+
+    fn allocate(
+        &self,
+        pool: MemoryPool,
+        desc: &AllocationCreateDesc<'_>,
+    ) -> Result<gpu_allocator::d3d12::Allocation, gpu_allocator::AllocationError> {
+        let result = self.allocator(pool).lock().allocate(desc);
+        if !matches!(&result, Err(gpu_allocator::AllocationError::OutOfMemory)) {
+            return result;
+        }
+        let other = match pool {
+            MemoryPool::General => MemoryPool::Transient,
+            MemoryPool::Transient => MemoryPool::General,
+        };
+        if self.allocator(other).lock().trim() == 0 {
+            return result;
+        }
+        self.allocator(pool).lock().allocate(desc)
+    }
+
+    fn finish_placed_resource(
+        &self,
+        pool: MemoryPool,
+        allocation: gpu_allocator::d3d12::Allocation,
+        resource: Option<Direct3D12::ID3D12Resource>,
+        result: Result<(), crate::DeviceError>,
+        ty: AllocationType,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        finish_resource_creation(allocation, resource, result, |allocation| {
+            self.allocator(pool)
+                .lock()
+                .free(allocation)
+                .map_err(Into::into)
+        })
+        .map(|(resource, allocation)| (resource, Allocation::placed(pool, allocation, ty)))
+    }
+
+    fn sizes(&self, pool: MemoryPool) -> AllocationSizes {
+        match pool {
+            MemoryPool::General => self.general_sizes,
+            MemoryPool::Transient => self.transient_sizes,
+        }
+    }
+
+    pub(crate) fn generate_report(&self) -> wgt::AllocatorReport {
+        let mut allocations = Vec::new();
+        let mut blocks = Vec::new();
+        let mut total_allocated_bytes = 0;
+        let mut total_reserved_bytes = 0;
+
+        for allocator in [&self.inner.general, &self.inner.transient] {
+            let upstream = allocator.lock().generate_report();
+
+            // Each block's range indexes into its own report's allocation list.
+            let allocation_base = allocations.len();
+            allocations.extend(upstream.allocations.into_iter().map(|alloc| {
+                wgt::AllocationReport {
+                    name: alloc.name,
+                    offset: alloc.offset,
+                    size: alloc.size,
+                }
+            }));
+            blocks.extend(
+                upstream
+                    .blocks
+                    .into_iter()
+                    .map(|block| wgt::MemoryBlockReport {
+                        size: block.size,
+                        allocations: (block.allocations.start + allocation_base)
+                            ..(block.allocations.end + allocation_base),
+                    }),
+            );
+            total_allocated_bytes += upstream.total_allocated_bytes;
+            total_reserved_bytes += upstream.total_capacity_bytes;
+        }
+
+        wgt::AllocatorReport {
+            allocations,
+            blocks,
+            total_allocated_bytes,
+            total_reserved_bytes,
+        }
+    }
+}
+
+/// To allow us to construct buffers from both a `Device` and `CommandEncoder`
+/// without needing each function to take a million arguments, we create a
+/// borrowed context struct that contains the relevant members.
+pub(crate) struct DeviceAllocationContext<'a> {
+    pub(crate) raw: &'a Direct3D12::ID3D12Device,
+    pub(crate) shared: &'a super::DeviceShared,
+    pub(crate) mem_allocator: &'a Allocator,
+    pub(crate) counters: &'a wgt::HalCounters,
+}
+
+impl<'a> From<&'a super::Device> for DeviceAllocationContext<'a> {
+    fn from(device: &'a super::Device) -> Self {
+        Self {
+            raw: &device.raw,
+            shared: &device.shared,
+            mem_allocator: &device.mem_allocator,
+            counters: &device.counters,
+        }
+    }
+}
+
+impl<'a> From<&'a super::CommandEncoder> for DeviceAllocationContext<'a> {
+    fn from(encoder: &'a super::CommandEncoder) -> Self {
+        Self {
+            raw: &encoder.device,
+            shared: &encoder.shared,
+            mem_allocator: &encoder.mem_allocator,
+            counters: &encoder.counters,
+        }
+    }
+}
+
+impl<'a> DeviceAllocationContext<'a> {
+    ///////////////////////
+    // Resource Creation //
+    ///////////////////////
+
+    pub(crate) fn create_buffer(
+        &self,
+        desc: &crate::BufferDescriptor,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let is_cpu_read = desc.usage.contains(wgt::BufferUses::MAP_READ);
+        let is_cpu_write = desc.usage.contains(wgt::BufferUses::MAP_WRITE);
+
+        let location = match (is_cpu_read, is_cpu_write) {
+            (true, true) => MemoryLocation::CpuToGpu,
+            (true, false) => MemoryLocation::GpuToCpu,
+            (false, true) => MemoryLocation::CpuToGpu,
+            (false, false) => MemoryLocation::GpuOnly,
+        };
+
+        let pool = MemoryPool::from_memory_flags(desc.memory_flags);
+        let raw_desc = conv::map_buffer_descriptor(desc);
+        let allocation_info =
+            self.error_if_would_oom_on_resource_allocation(&raw_desc, location, pool)?;
+
+        let (resource, allocation) = if self.shared.private_caps.suballocation_supported {
+            self.create_placed_buffer(desc, raw_desc, allocation_info, location, pool)?
+        } else {
+            self.create_committed_buffer(raw_desc, location)?
+        };
+
+        if let Some(label) = desc.label {
+            if let Err(error) = resource.set_name(label) {
+                drop(resource);
+                if let AllocationInner::Placed { pool, inner } = allocation.inner {
+                    self.mem_allocator.allocator(pool).lock().free(inner)?;
+                }
+                return Err(error);
+            }
+        }
+
+        self.counters.buffer_memory.add(allocation.size() as isize);
+
+        Ok((resource, allocation))
+    }
+
+    pub(crate) fn create_texture(
+        &self,
+        desc: &crate::TextureDescriptor,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let location = MemoryLocation::GpuOnly;
+        let pool = MemoryPool::from_memory_flags(desc.memory_flags);
+        let allocation_info =
+            self.error_if_would_oom_on_resource_allocation(&raw_desc, location, pool)?;
+
+        let (resource, allocation) = if self.shared.private_caps.suballocation_supported {
+            self.create_placed_texture(desc, raw_desc, allocation_info, location, pool)?
+        } else {
+            self.create_committed_texture(desc, raw_desc)?
+        };
+
+        if let Some(label) = desc.label {
+            if let Err(error) = resource.set_name(label) {
+                drop(resource);
+                if let AllocationInner::Placed { pool, inner } = allocation.inner {
+                    self.mem_allocator.allocator(pool).lock().free(inner)?;
+                }
+                return Err(error);
+            }
+        }
+
+        self.counters.texture_memory.add(allocation.size() as isize);
+
+        Ok((resource, allocation))
+    }
+
+    pub(crate) fn create_acceleration_structure(
+        &self,
+        desc: &crate::AccelerationStructureDescriptor,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let location = MemoryLocation::GpuOnly;
+        let pool = if desc.allow_compaction {
+            MemoryPool::Transient
+        } else {
+            MemoryPool::General
+        };
+        let allocation_info =
+            self.error_if_would_oom_on_resource_allocation(&raw_desc, location, pool)?;
+
+        let (resource, allocation) = if self.shared.private_caps.suballocation_supported {
+            self.create_placed_acceleration_structure(
+                desc,
+                raw_desc,
+                allocation_info,
+                location,
+                pool,
+            )?
+        } else {
+            self.create_committed_acceleration_structure(desc, raw_desc)?
+        };
+
+        if let Some(label) = desc.label {
+            if let Err(error) = resource.set_name(label) {
+                drop(resource);
+                if let AllocationInner::Placed { pool, inner } = allocation.inner {
+                    self.mem_allocator.allocator(pool).lock().free(inner)?;
+                }
+                return Err(error);
+            }
+        }
+
+        self.counters
+            .acceleration_structure_memory
+            .add(allocation.size() as isize);
+
+        Ok((resource, allocation))
+    }
+
+    //////////////////////////
+    // Resource Destruction //
+    //////////////////////////
+
+    pub(crate) fn free_resource(
+        &self,
+        resource: Direct3D12::ID3D12Resource,
+        allocation: Allocation,
+    ) {
+        // Make sure the resource is released before we free the allocation.
+        drop(resource);
+
+        let counter = match allocation.ty {
+            AllocationType::Buffer => &self.counters.buffer_memory,
+            AllocationType::Texture => &self.counters.texture_memory,
+            AllocationType::AccelerationStructure => &self.counters.acceleration_structure_memory,
+        };
+        counter.sub(allocation.size() as isize);
+
+        if let AllocationInner::Placed { pool, inner } = allocation.inner {
+            match self.mem_allocator.allocator(pool).lock().free(inner) {
+                Ok(_) => (),
+                // TODO: Don't panic here
+                Err(e) => panic!("Failed to destroy dx12 {:?}, {e}", allocation.ty),
+            };
+        }
+    }
+
+    ///////////////////////////////
+    // Placed Resource Creation ///
+    ///////////////////////////////
+
+    fn create_placed_buffer(
+        &self,
+        desc: &crate::BufferDescriptor<'_>,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+        allocation_info: Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO,
+        location: MemoryLocation,
+        pool: MemoryPool,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let name = desc.label.unwrap_or("Unlabeled buffer");
+
+        let allocation_desc = AllocationCreateDesc {
+            name,
+            location,
+            size: allocation_info.SizeInBytes,
+            alignment: allocation_info.Alignment,
+            resource_category: gpu_allocator::d3d12::ResourceCategory::from(&raw_desc),
+        };
+
+        let allocation = self.mem_allocator.allocate(pool, &allocation_desc)?;
+        let mut resource = None;
+        let result = unsafe {
+            self.raw.CreatePlacedResource(
+                allocation.heap(),
+                allocation.offset(),
+                &raw_desc,
+                Direct3D12::D3D12_RESOURCE_STATE_COMMON,
+                None,
+                &mut resource,
+            )
+        }
+        .into_device_result("Placed buffer creation");
+
+        self.mem_allocator.finish_placed_resource(
+            pool,
+            allocation,
+            resource,
+            result,
+            AllocationType::Buffer,
+        )
+    }
+
+    fn create_placed_texture(
+        &self,
+        desc: &crate::TextureDescriptor<'_>,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+        allocation_info: Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO,
+        location: MemoryLocation,
+        pool: MemoryPool,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let name = desc.label.unwrap_or("Unlabeled texture");
+
+        let allocation_desc = AllocationCreateDesc {
+            name,
+            location,
+            size: allocation_info.SizeInBytes,
+            alignment: allocation_info.Alignment,
+            resource_category: gpu_allocator::d3d12::ResourceCategory::from(&raw_desc),
+        };
+
+        let allocation = self.mem_allocator.allocate(pool, &allocation_desc)?;
+        let mut resource = None;
+        let result = unsafe {
+            self.raw.CreatePlacedResource(
+                allocation.heap(),
+                allocation.offset(),
+                &raw_desc,
+                Direct3D12::D3D12_RESOURCE_STATE_COMMON,
+                None, // clear value
+                &mut resource,
+            )
+        }
+        .into_device_result("Placed texture creation");
+
+        self.mem_allocator.finish_placed_resource(
+            pool,
+            allocation,
+            resource,
+            result,
+            AllocationType::Texture,
+        )
+    }
+
+    fn create_placed_acceleration_structure(
+        &self,
+        desc: &crate::AccelerationStructureDescriptor<'_>,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+        allocation_info: Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO,
+        location: MemoryLocation,
+        pool: MemoryPool,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let name = desc.label.unwrap_or("Unlabeled acceleration structure");
+
+        let allocation_desc = AllocationCreateDesc {
+            name,
+            location,
+            size: allocation_info.SizeInBytes,
+            alignment: allocation_info.Alignment,
+            resource_category: gpu_allocator::d3d12::ResourceCategory::from(&raw_desc),
+        };
+
+        let allocation = self.mem_allocator.allocate(pool, &allocation_desc)?;
+        let mut resource = None;
+        let result = unsafe {
+            self.raw.CreatePlacedResource(
+                allocation.heap(),
+                allocation.offset(),
+                &raw_desc,
+                Direct3D12::D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE,
+                None,
+                &mut resource,
+            )
+        }
+        .into_device_result("Placed acceleration structure creation");
+
+        self.mem_allocator.finish_placed_resource(
+            pool,
+            allocation,
+            resource,
+            result,
+            AllocationType::AccelerationStructure,
+        )
+    }
+
+    /////////////////////////////////
+    // Committed Resource Creation //
+    /////////////////////////////////
+
+    fn create_committed_buffer(
+        &self,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+        location: MemoryLocation,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let is_uma = matches!(
+            self.shared.private_caps.memory_architecture,
+            crate::dx12::MemoryArchitecture::Unified { .. }
+        );
+
+        let heap_properties = Direct3D12::D3D12_HEAP_PROPERTIES {
+            Type: Direct3D12::D3D12_HEAP_TYPE_CUSTOM,
+            CPUPageProperty: match location {
+                MemoryLocation::GpuOnly => Direct3D12::D3D12_CPU_PAGE_PROPERTY_NOT_AVAILABLE,
+                MemoryLocation::CpuToGpu => Direct3D12::D3D12_CPU_PAGE_PROPERTY_WRITE_COMBINE,
+                MemoryLocation::GpuToCpu => Direct3D12::D3D12_CPU_PAGE_PROPERTY_WRITE_BACK,
+                _ => unreachable!(),
+            },
+            MemoryPoolPreference: match (is_uma, location) {
+                // On dedicated GPUs, we only use L1 for GPU-only allocations.
+                (false, MemoryLocation::GpuOnly) => Direct3D12::D3D12_MEMORY_POOL_L1,
+                (_, _) => Direct3D12::D3D12_MEMORY_POOL_L0,
+            },
+            CreationNodeMask: 0,
+            VisibleNodeMask: 0,
+        };
+
+        let mut resource = None;
+
+        unsafe {
+            self.raw.CreateCommittedResource(
+                &heap_properties,
+                if self.shared.private_caps.heap_create_not_zeroed {
+                    Direct3D12::D3D12_HEAP_FLAG_CREATE_NOT_ZEROED
+                } else {
+                    Direct3D12::D3D12_HEAP_FLAG_NONE
+                },
+                &raw_desc,
+                Direct3D12::D3D12_RESOURCE_STATE_COMMON,
+                None,
+                &mut resource,
+            )
+        }
+        .into_device_result("Committed buffer creation")?;
+
+        let resource = resource.ok_or(crate::DeviceError::Unexpected)?;
+        let wrapped_allocation = Allocation::none(AllocationType::Buffer, raw_desc.Width);
+
+        Ok((resource, wrapped_allocation))
+    }
+
+    fn create_committed_texture(
+        &self,
+        desc: &crate::TextureDescriptor,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let heap_properties = Direct3D12::D3D12_HEAP_PROPERTIES {
+            Type: Direct3D12::D3D12_HEAP_TYPE_CUSTOM,
+            CPUPageProperty: Direct3D12::D3D12_CPU_PAGE_PROPERTY_NOT_AVAILABLE,
+            MemoryPoolPreference: match self.shared.private_caps.memory_architecture {
+                crate::dx12::MemoryArchitecture::NonUnified => Direct3D12::D3D12_MEMORY_POOL_L1,
+                crate::dx12::MemoryArchitecture::Unified { .. } => Direct3D12::D3D12_MEMORY_POOL_L0,
+            },
+            CreationNodeMask: 0,
+            VisibleNodeMask: 0,
+        };
+
+        let mut resource = None;
+
+        unsafe {
+            self.raw.CreateCommittedResource(
+                &heap_properties,
+                if self.shared.private_caps.heap_create_not_zeroed {
+                    Direct3D12::D3D12_HEAP_FLAG_CREATE_NOT_ZEROED
+                } else {
+                    Direct3D12::D3D12_HEAP_FLAG_NONE
+                },
+                &raw_desc,
+                Direct3D12::D3D12_RESOURCE_STATE_COMMON,
+                None, // clear value
+                &mut resource,
+            )
+        }
+        .into_device_result("Committed texture creation")?;
+
+        let resource = resource.ok_or(crate::DeviceError::Unexpected)?;
+        let wrapped_allocation = Allocation::none(
+            AllocationType::Texture,
+            desc.format.theoretical_memory_footprint(desc.size),
+        );
+
+        Ok((resource, wrapped_allocation))
+    }
+
+    fn create_committed_acceleration_structure(
+        &self,
+        desc: &crate::AccelerationStructureDescriptor,
+        raw_desc: Direct3D12::D3D12_RESOURCE_DESC,
+    ) -> Result<(Direct3D12::ID3D12Resource, Allocation), crate::DeviceError> {
+        let heap_properties = Direct3D12::D3D12_HEAP_PROPERTIES {
+            Type: Direct3D12::D3D12_HEAP_TYPE_CUSTOM,
+            CPUPageProperty: Direct3D12::D3D12_CPU_PAGE_PROPERTY_NOT_AVAILABLE,
+            MemoryPoolPreference: match self.shared.private_caps.memory_architecture {
+                crate::dx12::MemoryArchitecture::NonUnified => Direct3D12::D3D12_MEMORY_POOL_L1,
+                crate::dx12::MemoryArchitecture::Unified { .. } => Direct3D12::D3D12_MEMORY_POOL_L0,
+            },
+            CreationNodeMask: 0,
+            VisibleNodeMask: 0,
+        };
+
+        let mut resource = None;
+
+        unsafe {
+            self.raw.CreateCommittedResource(
+                &heap_properties,
+                if self.shared.private_caps.heap_create_not_zeroed {
+                    Direct3D12::D3D12_HEAP_FLAG_CREATE_NOT_ZEROED
+                } else {
+                    Direct3D12::D3D12_HEAP_FLAG_NONE
+                },
+                &raw_desc,
+                Direct3D12::D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE,
+                None,
+                &mut resource,
+            )
+        }
+        .into_device_result("Committed acceleration structure creation")?;
+
+        let resource = resource.ok_or(crate::DeviceError::Unexpected)?;
+        let wrapped_allocation = Allocation::none(AllocationType::AccelerationStructure, desc.size);
+
+        Ok((resource, wrapped_allocation))
+    }
+
+    fn error_if_would_oom_on_resource_allocation(
+        &self,
+        desc: &Direct3D12::D3D12_RESOURCE_DESC,
+        location: MemoryLocation,
+        pool: MemoryPool,
+    ) -> Result<Direct3D12::D3D12_RESOURCE_ALLOCATION_INFO, crate::DeviceError> {
+        let allocation_info = unsafe {
+            self.raw
+                .GetResourceAllocationInfo(0, core::slice::from_ref(desc))
+        };
+
+        // Some versions of WARP return SizeInBytes == 0 for very large
+        // allocations. Proceeding to attempt to allocate a zero-sized resource
+        // will result in a device lost error, so it seems preferable to return
+        // an out of memory error now.
+        if allocation_info.SizeInBytes == 0 {
+            return Err(crate::DeviceError::OutOfMemory);
+        }
+
+        let Some(threshold) = self
+            .mem_allocator
+            .memory_budget_thresholds
+            .for_resource_creation
+        else {
+            return Ok(allocation_info);
+        };
+
+        let memory_segment_group = match location {
+            MemoryLocation::Unknown => unreachable!(),
+            MemoryLocation::GpuOnly => Dxgi::DXGI_MEMORY_SEGMENT_GROUP_LOCAL,
+            MemoryLocation::CpuToGpu | MemoryLocation::GpuToCpu => {
+                match self.shared.private_caps.memory_architecture {
+                    super::MemoryArchitecture::Unified { .. } => {
+                        Dxgi::DXGI_MEMORY_SEGMENT_GROUP_LOCAL
+                    }
+                    super::MemoryArchitecture::NonUnified => {
+                        Dxgi::DXGI_MEMORY_SEGMENT_GROUP_NON_LOCAL
+                    }
+                }
+            }
+        };
+
+        let mut info = self
+            .shared
+            .adapter
+            .query_video_memory_info(memory_segment_group)?;
+
+        let sizes = self.mem_allocator.sizes(pool);
+        let memblock_size = match location {
+            MemoryLocation::Unknown => unreachable!(),
+            MemoryLocation::GpuOnly => sizes.min_device_memblock_size,
+            MemoryLocation::CpuToGpu | MemoryLocation::GpuToCpu => sizes.min_host_memblock_size,
+        };
+
+        let exceeds_budget = |info: &Dxgi::DXGI_QUERY_VIDEO_MEMORY_INFO| {
+            info.CurrentUsage
+                .checked_add(allocation_info.SizeInBytes.max(memblock_size))
+                .is_none_or(|usage| usage >= info.Budget / 100 * threshold as u64)
+        };
+        if exceeds_budget(&info) {
+            self.mem_allocator.trim();
+            info = self
+                .shared
+                .adapter
+                .query_video_memory_info(memory_segment_group)?;
+            if exceeds_budget(&info) {
+                return Err(crate::DeviceError::OutOfMemory);
+            }
+        }
+
+        Ok(allocation_info)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::finish_resource_creation;
+    use core::cell::Cell;
+
+    struct Resource<'a>(&'a Cell<bool>);
+    impl Drop for Resource<'_> {
+        fn drop(&mut self) {
+            self.0.set(true);
+        }
+    }
+
+    #[test]
+    fn creation_failure_drops_resource_before_returning_allocation() {
+        let dropped = Cell::new(false);
+        let rolled_back = Cell::new(false);
+        let result = finish_resource_creation(
+            42,
+            Some(Resource(&dropped)),
+            Err(crate::DeviceError::OutOfMemory),
+            |allocation| {
+                assert!(dropped.get());
+                assert_eq!(allocation, 42);
+                rolled_back.set(true);
+                Ok(())
+            },
+        );
+        assert!(matches!(result, Err(crate::DeviceError::OutOfMemory)));
+        assert!(rolled_back.get());
+    }
+
+    #[test]
+    fn null_resource_rolls_back_and_success_keeps_the_allocation() {
+        let rolled_back = Cell::new(false);
+        let result = finish_resource_creation(42, None::<()>, Ok(()), |_| {
+            rolled_back.set(true);
+            Ok(())
+        });
+        assert!(matches!(result, Err(crate::DeviceError::Unexpected)));
+        assert!(rolled_back.get());
+        let result = finish_resource_creation(42, Some(17), Ok(()), |_| {
+            panic!("success must not roll back")
+        });
+        assert!(matches!(result, Ok((17, 42))));
+    }
+}

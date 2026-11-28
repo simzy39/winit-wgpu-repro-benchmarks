@@ -1,0 +1,46 @@
+{
+  "source_head": "60cef2be828e03ba54e2e1598001b4625c0c2163",
+  "scope": "Reference and generated images found after the isolated pristine ray-example controls. Timestamps preserved; no desktop screenshots. Exact process receipts/logs identify which controls executed.",
+  "images": [
+    {
+      "path": "ray_cube_compute/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-actual.png",
+      "sha256": "f5b5934d8f5a587bc00e6eef44b8de0eaaacb39244067c92a8e76774bc0b143d",
+      "mtime_ns": 1795864478545002800
+    },
+    {
+      "path": "ray_cube_compute/screenshot-dx12-Intel_R__Arc_TM__Graphics-31_0_101_5328-difference.png",
+      "sha256": "50b48c7416d288c069c9578730db2c31aad2f2df024341f8d0682867a3feeb63",
+      "mtime_ns": 1795864479409862900
+    },
+    {
+      "path": "ray_cube_compute/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "58f828495e3cbb28552e8887cbebac96da9445d604227d3718e5096741a31d82",
+      "mtime_ns": 1795864402996407000
+    },
+    {
+      "path": "ray_cube_compute/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "81e1a1acb227b78817c5d5185fc8a873b70753ea6cda771d1117fa1aea5db69d",
+      "mtime_ns": 1795864404060856600
+    },
+    {
+      "path": "ray_cube_compute/screenshot.png",
+      "sha256": "8ab7ca498641872fd42c1a18b2a07479243e585fb52e9e937b8cb7a784f46ec1",
+      "mtime_ns": 1795826952902210500
+    },
+    {
+      "path": "ray_aabb_compute/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-actual.png",
+      "sha256": "4af8ab819fe365315e15b43a7e25110f00c5b6256881f02810d6d6bb08ead229",
+      "mtime_ns": 1795864399005519300
+    },
+    {
+      "path": "ray_aabb_compute/screenshot-vulkan-Intel_R__Arc_TM__Graphics-Intel_Corporation-difference.png",
+      "sha256": "89c5a4eeb258a3c74c1d8a8cb74b849fe09b4566208941c7475a65aa15f18486",
+      "mtime_ns": 1795864399682876900
+    },
+    {
+      "path": "ray_aabb_compute/screenshot.png",
+      "sha256": "a72279de00210beee2b2d816952bd4ee1d2cfc91d0ccf7937e83a8230d69cfa3",
+      "mtime_ns": 1795826952612751600
+    }
+  ]
+}

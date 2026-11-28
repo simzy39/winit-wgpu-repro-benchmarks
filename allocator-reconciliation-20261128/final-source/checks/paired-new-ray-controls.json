@@ -1,0 +1,91 @@
+{
+  "baseline_revision": "60cef2be828e03ba54e2e1598001b4625c0c2163",
+  "candidate_revision": "58e05c149e854c2312474182cd0a3ed08e66603f",
+  "baseline_registry_allocator": true,
+  "candidate_registry_allocator": true,
+  "source_changes": "Standalone DX12 resource rollback only; baseline no wgpu patches.",
+  "same_basename_directory_cwd": true,
+  "concurrency": 2,
+  "trial_count": 1,
+  "rows": [
+    {
+      "variant": "baseline",
+      "identity": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+      "command": [
+        "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\native-controls\\common\\wgpu-gpu.exe",
+        "--exact",
+        "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "--nocapture"
+      ],
+      "rc": "timeout100",
+      "wall_s": 100.40742449997924,
+      "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954"
+    },
+    {
+      "variant": "baseline",
+      "identity": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::ray_tracing::as_aabb::aabb_flags_mismatch",
+      "command": [
+        "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\native-controls\\common\\wgpu-gpu.exe",
+        "--exact",
+        "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::ray_tracing::as_aabb::aabb_flags_mismatch",
+        "--nocapture"
+      ],
+      "rc": "timeout100",
+      "wall_s": 100.42164219997358,
+      "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954"
+    },
+    {
+      "variant": "baseline",
+      "identity": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::as_build::blas_compaction",
+      "command": [
+        "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\native-controls\\common\\wgpu-gpu.exe",
+        "--exact",
+        "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::as_build::blas_compaction",
+        "--nocapture"
+      ],
+      "rc": "timeout100",
+      "wall_s": 100.167264000047,
+      "exe_sha256": "b507750739df5ff4dca6edffe48b8bad53af670f4a5faf21049a6b9f714da954"
+    },
+    {
+      "variant": "candidate",
+      "identity": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+      "command": [
+        "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\native-controls\\common\\wgpu-gpu.exe",
+        "--exact",
+        "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::binding_array::tlas::binding_array_tlas",
+        "--nocapture"
+      ],
+      "rc": 0,
+      "wall_s": 47.79491729999427,
+      "exe_sha256": "14fca94af3df68834edf5c9bd3f5843f9cad8aae79a24e2f716a994d745c112f"
+    },
+    {
+      "variant": "candidate",
+      "identity": "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::ray_tracing::as_aabb::aabb_flags_mismatch",
+      "command": [
+        "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\native-controls\\common\\wgpu-gpu.exe",
+        "--exact",
+        "[Executed] [Dx12/Intel(R) Arc(TM) Graphics/1] wgpu_gpu::ray_tracing::as_aabb::aabb_flags_mismatch",
+        "--nocapture"
+      ],
+      "rc": "timeout100",
+      "wall_s": 100.2111225000117,
+      "exe_sha256": "14fca94af3df68834edf5c9bd3f5843f9cad8aae79a24e2f716a994d745c112f"
+    },
+    {
+      "variant": "candidate",
+      "identity": "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::as_build::blas_compaction",
+      "command": [
+        "<workspace>\\research\\upstream\\allocator-wgpu-publication-20261128\\native-controls\\common\\wgpu-gpu.exe",
+        "--exact",
+        "[Executed] [Vulkan/Intel(R) Arc(TM) Graphics/0] wgpu_gpu::ray_tracing::as_build::blas_compaction",
+        "--nocapture"
+      ],
+      "rc": 0,
+      "wall_s": 63.363889800035395,
+      "exe_sha256": "14fca94af3df68834edf5c9bd3f5843f9cad8aae79a24e2f716a994d745c112f"
+    }
+  ],
+  "limits": "A paired process control, not a replacement for the full native suite; different compiler package feature graphs may remain. No driver/component cause inferred."
+}

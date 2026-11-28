@@ -1,0 +1,37 @@
+[
+  {
+    "name": "gpa-rollback",
+    "head": "8b08388331e0479c965cd602557bbf8feade500c",
+    "tracked_diff": []
+  },
+  {
+    "name": "gpa-vulkan",
+    "head": "99e3979dae3a7c4e8300c33cea681a175f1b3747",
+    "tracked_diff": []
+  },
+  {
+    "name": "gpa-sizing",
+    "head": "693a9fb44e7d6effa20f988217524c61553f95fe",
+    "tracked_diff": []
+  },
+  {
+    "name": "wgpu-lazy",
+    "head": "19244b7c845bfcf17d57d73137a858ebef64eabb",
+    "tracked_diff": []
+  },
+  {
+    "name": "wgpu-transient",
+    "head": "219e80584bdf325890a7111e8dc8e07163885fe4",
+    "tracked_diff": []
+  },
+  {
+    "name": "wgpu-surface",
+    "head": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c",
+    "tracked_diff": []
+  },
+  {
+    "name": "wgpu-rollback",
+    "head": "58e05c149e854c2312474182cd0a3ed08e66603f",
+    "tracked_diff": []
+  }
+]

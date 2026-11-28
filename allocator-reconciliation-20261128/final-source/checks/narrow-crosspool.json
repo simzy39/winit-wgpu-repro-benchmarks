@@ -1,0 +1,19 @@
+{
+  "public_base": "219e80584bdf325890a7111e8dc8e07163885fe4",
+  "private_integration_commit": "a8e7b5639cff5e6bfdb0f966d117324bdc741a7e",
+  "base_file_sha256": "234dd2c217737bde57915c0897a6c50883bb0c6a9048b237faae40c7272afade",
+  "future_file_sha256": "b3c39638fa76388f9bcaf0b119308b77ab734752bbc65c542e84065ec3056930",
+  "dependency": "Only the second patch needs unreleased GPA APIs. No production dependency override or guessed release version.",
+  "check_command": [
+    "cargo",
+    "+1.95.0",
+    "check",
+    "--locked",
+    "--offline",
+    "-p",
+    "wgpu-hal",
+    "--all-features",
+    "--lib"
+  ],
+  "registry_base_rc": 0
+}

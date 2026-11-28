@@ -3,19 +3,19 @@
 [![Actions Status](https://img.shields.io/github/actions/workflow/status/Traverse-Research/gpu-allocator/ci.yml?branch=main&logo=github)](https://github.com/Traverse-Research/gpu-allocator/actions)
 [![Latest version](https://img.shields.io/crates/v/gpu-allocator.svg?logo=rust)](https://crates.io/crates/gpu-allocator)
 [![Docs](https://img.shields.io/docsrs/gpu-allocator?logo=docs.rs)](https://docs.rs/gpu-allocator/)
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE-MIT)
-[![LICENSE](https://img.shields.io/badge/license-apache-blue.svg?logo=apache)](LICENSE-APACHE)
-[![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-v1.4%20adopted-ff69b4.svg)](../main/CODE_OF_CONDUCT.md)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/LICENSE-MIT)
+[![LICENSE](https://img.shields.io/badge/license-apache-blue.svg?logo=apache)](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/LICENSE-APACHE)
+[![Contributor Covenant](https://img.shields.io/badge/contributor%20covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/CODE_OF_CONDUCT.md)
 [![MSRV](https://img.shields.io/badge/rustc-1.71.0+-ab6000.svg)](https://blog.rust-lang.org/2023/07/13/Rust-1.71.0.html)
 
-[![Banner](banner.png)](https://traverseresearch.nl)
+[![Banner](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/banner.png)](https://traverseresearch.nl)
 
 ```toml
 [dependencies]
 gpu-allocator = "0.28.0"
 ```
 
-![Visualizer](visualizer.png)
+![Visualizer](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/visualizer.png)
 
 This crate provides a fully written in Rust memory allocator for Vulkan, DirectX 12 and Metal.
 
@@ -197,8 +197,8 @@ Any other features such as the `visualizer` (with all the `egui` dependencies) m
 
 Licensed under either of
 
-- Apache License, Version 2.0, ([LICENSE-APACHE](../master/LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](../master/LICENSE-MIT) or http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0, ([LICENSE-APACHE](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license ([LICENSE-MIT](https://github.com/Traverse-Research/gpu-allocator/blob/fc22df05140b15ed6d764beabd12a1b807011bc5/LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
 at your option.
 

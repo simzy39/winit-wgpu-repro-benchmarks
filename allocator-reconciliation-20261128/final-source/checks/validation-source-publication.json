@@ -1,0 +1,11 @@
+{
+  "head": "1cdcc63e82fffb19572d1a2a5aed8ad416217f35",
+  "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+  "branch": "validation/allocator-reconciliation-20261128",
+  "url": "https://github.com/simzy39/wgpu/commit/1cdcc63e82fffb19572d1a2a5aed8ad416217f35",
+  "purpose": "Exact combined native-validation source; not an additional production PR. Contains only independently proposed rollback and surface-test fixes, with the unchanged registry dependency.",
+  "changed_files": [
+    "tests/tests/wgpu_surface.rs",
+    "wgpu-hal/src/dx12/suballocation.rs"
+  ]
+}

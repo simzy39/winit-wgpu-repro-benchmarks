@@ -30,7 +30,7 @@
       "repo": "Traverse-Research/gpu-allocator",
       "kind": "pr",
       "title": "Respect Vulkan allocation limits and preserve fallback error causes",
-      "head_sha": "2e51b293fc4561d2c4d63329e3b926e665ba57f5"
+      "head_sha": "99e3979dae3a7c4e8300c33cea681a175f1b3747"
     },
     "gpa-pressure-issue": {
       "number": 329,
@@ -87,6 +87,109 @@
       "kind": "issue",
       "title": "DX12 transient/general pools need coordinated empty-cache reclamation under pressure",
       "head_sha": null
+    },
+    "wgpu-f16-issue": {
+      "number": 11146,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11146",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "DX12/Intel Arc: zero_init_workgroup_memory_parallel_f16 reads ones instead of zeroes",
+      "head_sha": null
+    },
+    "wgpu-copy-issue": {
+      "number": 11147,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11147",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "DX12/Intel Arc: copy_unaligned_rows returns incorrect row contents",
+      "head_sha": null
+    },
+    "wgpu-vulkan-multiview-issue": {
+      "number": 11148,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11148",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "Vulkan/Intel Arc: draw_multiview_multisample readback is zero where 96 is expected",
+      "head_sha": null
+    },
+    "wgpu-naga-stack-issue": {
+      "number": 11149,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11149",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "Windows debug test recursion_depth_template overflows the stack before the expected parser limit error",
+      "head_sha": null
+    },
+    "wgpu-surface-issue": {
+      "number": 11150,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11150",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "surface_configure rejects usable Suboptimal frames after reconfiguration",
+      "head_sha": null
+    },
+    "wgpu-ray-timeouts-issue": {
+      "number": 11151,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11151",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "Intel Windows ray-tracing tests exceed timeouts on pristine upstream across DX12 and Vulkan",
+      "head_sha": null
+    },
+    "wgpu-rollback-pr": {
+      "number": 11152,
+      "html_url": "https://github.com/gfx-rs/wgpu/pull/11152",
+      "repo": "gfx-rs/wgpu",
+      "kind": "pr",
+      "title": "hal(dx12): return allocations when resource creation fails",
+      "head_sha": "58e05c149e854c2312474182cd0a3ed08e66603f"
+    },
+    "wgpu-surface-pr": {
+      "number": 11153,
+      "html_url": "https://github.com/gfx-rs/wgpu/pull/11153",
+      "repo": "gfx-rs/wgpu",
+      "kind": "pr",
+      "title": "tests: accept usable Suboptimal frames after surface reconfiguration",
+      "head_sha": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c"
+    },
+    "wgpu-ray-image-issue": {
+      "number": 11154,
+      "html_url": "https://github.com/gfx-rs/wgpu/issues/11154",
+      "repo": "gfx-rs/wgpu",
+      "kind": "issue",
+      "title": "DX12/Intel Arc: ray_cube_compute exceeds the image-comparison threshold on pristine upstream",
+      "head_sha": null
+    },
+    "gpa-sizing-pr": {
+      "kind": "pr",
+      "repo": "Traverse-Research/gpu-allocator",
+      "number": 323,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/pull/323",
+      "head_sha": "693a9fb44e7d6effa20f988217524c61553f95fe",
+      "action": "updated; draft"
+    },
+    "wgpu-lazy-pr": {
+      "kind": "pr",
+      "repo": "gfx-rs/wgpu",
+      "number": 11129,
+      "html_url": "https://github.com/gfx-rs/wgpu/pull/11129",
+      "head_sha": "19244b7c845bfcf17d57d73137a858ebef64eabb",
+      "action": "retained, rebased, updated"
+    },
+    "wgpu-transient-pr": {
+      "kind": "pr",
+      "repo": "gfx-rs/wgpu",
+      "number": 11130,
+      "html_url": "https://github.com/gfx-rs/wgpu/pull/11130",
+      "head_sha": "219e80584bdf325890a7111e8dc8e07163885fe4",
+      "action": "retained, rebased, updated"
+    },
+    "gpa-msrv-policy-closed": {
+      "kind": "issue",
+      "repo": "Traverse-Research/gpu-allocator",
+      "number": 324,
+      "html_url": "https://github.com/Traverse-Research/gpu-allocator/issues/324",
+      "action": "closed as not planned; no MSRV increase needed"
     }
   },
   "sources": [
@@ -131,6 +234,22 @@
       "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
       "patch": "wgpu-transient.patch",
       "committed": true
+    },
+    {
+      "name": "wgpu-surface",
+      "head": "c79c064f4d3aa62382761c3cabb98cf6b1e6b56c",
+      "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+      "patch": "wgpu-surface.patch",
+      "committed": true
+    },
+    {
+      "name": "wgpu-rollback-surface-validation",
+      "head": "1cdcc63e82fffb19572d1a2a5aed8ad416217f35",
+      "base": "bfa9aff16046e7e248e58129369d4bffeeb33d8d",
+      "patch": "wgpu-rollback-surface-integration.patch",
+      "committed": true,
+      "purpose": "Exact combined native-validation source; not an additional production PR. Contains only independently proposed rollback and surface-test fixes, with the unchanged registry dependency.",
+      "url": "https://github.com/simzy39/wgpu/commit/1cdcc63e82fffb19572d1a2a5aed8ad416217f35"
     }
   ],
   "validation_note": "Historical native full-suite and final-source checks are distinct. Unfinished publication-source runs are not claimed as complete. See final-source/checks and the completed publication report."

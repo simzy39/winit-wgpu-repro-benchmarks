@@ -1,0 +1,6967 @@
+{
+ "nondeterministic": [],
+ "proto_vs_pr323_mismatches": [],
+ "pairwise_comparisons": 1500,
+ "cells": {
+  "d3d12/memory_usage/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 882.5,
+   "alloc_p99_us_median": 28901.0,
+   "alloc_total_ms_median": 357.1381,
+   "alloc_total_ms_range": [
+    246.2189,
+    574.9792
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     44,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 44,
+   "peak_capacity_mib": 288.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 288.0,
+   "alloc_p50_us_median": 10.2,
+   "alloc_p99_us_median": 22258.3,
+   "alloc_total_ms_median": 224.8415,
+   "alloc_total_ms_range": [
+    187.0142,
+    378.4558
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     44,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 44,
+   "peak_capacity_mib": 288.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 288.0,
+   "alloc_p50_us_median": 12.9,
+   "alloc_p99_us_median": 15814.0,
+   "alloc_total_ms_median": 275.2254,
+   "alloc_total_ms_range": [
+    126.9354,
+    373.3543
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     28,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 28,
+   "peak_capacity_mib": 312.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 312.0,
+   "alloc_p50_us_median": 3.9,
+   "alloc_p99_us_median": 15356.8,
+   "alloc_total_ms_median": 203.0816,
+   "alloc_total_ms_range": [
+    121.5026,
+    663.7305
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 11835.2,
+   "alloc_p99_us_median": 66455.4,
+   "alloc_total_ms_median": 165.597,
+   "alloc_total_ms_range": [
+    56.3249,
+    254.0444
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 3885.5,
+   "alloc_p99_us_median": 10526.2,
+   "alloc_total_ms_median": 38.0352,
+   "alloc_total_ms_range": [
+    24.1814,
+    121.8443
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 8044.3,
+   "alloc_p99_us_median": 15624.3,
+   "alloc_total_ms_median": 63.5227,
+   "alloc_total_ms_range": [
+    50.2919,
+    88.3142
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 9520.9,
+   "alloc_p99_us_median": 15217.6,
+   "alloc_total_ms_median": 85.3539,
+   "alloc_total_ms_range": [
+    44.9031,
+    105.7854
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 115,
+   "peak_capacity_mib": 148.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 76.0,
+   "driver_peak_delta_mib_median": 149.0,
+   "alloc_p50_us_median": 2.4,
+   "alloc_p99_us_median": 3165.6,
+   "alloc_total_ms_median": 202.6207,
+   "alloc_total_ms_range": [
+    175.933,
+    255.4196
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 115,
+   "peak_capacity_mib": 148.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 149.0,
+   "alloc_p50_us_median": 2.4,
+   "alloc_p99_us_median": 3303.8,
+   "alloc_total_ms_median": 223.0431,
+   "alloc_total_ms_range": [
+    168.7255,
+    445.1662
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 115,
+   "peak_capacity_mib": 148.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 149.0,
+   "alloc_p50_us_median": 2.4,
+   "alloc_p99_us_median": 3858.1,
+   "alloc_total_ms_median": 228.5921,
+   "alloc_total_ms_range": [
+    142.5713,
+    502.5881
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 16,
+   "peak_capacity_mib": 152.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 8.0,
+   "driver_peak_delta_mib_median": 153.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 1508.1,
+   "alloc_total_ms_median": 102.4931,
+   "alloc_total_ms_range": [
+    49.9463,
+    440.8831
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 16.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 1101.2,
+   "alloc_total_ms_median": 8.0278,
+   "alloc_total_ms_range": [
+    3.6166,
+    33.6093
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 768.1,
+   "alloc_total_ms_median": 5.4565,
+   "alloc_total_ms_range": [
+    4.1597,
+    8.4544
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 607.3,
+   "alloc_total_ms_median": 3.8649,
+   "alloc_total_ms_range": [
+    3.0183,
+    75.2478
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 8.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 24.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 24.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 47.0,
+   "alloc_total_ms_median": 4.9064,
+   "alloc_total_ms_range": [
+    3.6658,
+    10.944
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 485.6875,
+   "alloc_p50_us_median": 3523.7,
+   "alloc_p99_us_median": 39861.3,
+   "alloc_total_ms_median": 138.6686,
+   "alloc_total_ms_range": [
+    106.5149,
+    295.5991
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     10,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 32.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 10,
+   "peak_capacity_mib": 544.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 552.25,
+   "alloc_p50_us_median": 143.9,
+   "alloc_p99_us_median": 63560.2,
+   "alloc_total_ms_median": 208.0283,
+   "alloc_total_ms_range": [
+    141.609,
+    812.2705
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     10,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 32.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 10,
+   "peak_capacity_mib": 544.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 552.25,
+   "alloc_p50_us_median": 100.0,
+   "alloc_p99_us_median": 42909.6,
+   "alloc_total_ms_median": 133.8149,
+   "alloc_total_ms_range": [
+    95.8889,
+    627.2366
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     10,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 32.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 10,
+   "peak_capacity_mib": 544.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 552.25,
+   "alloc_p50_us_median": 180.2,
+   "alloc_p99_us_median": 50446.9,
+   "alloc_total_ms_median": 198.0229,
+   "alloc_total_ms_range": [
+    162.5167,
+    346.6975
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 92.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 32.0,
+   "driver_peak_delta_mib_median": 92.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 2033.4,
+   "alloc_total_ms_median": 127.1587,
+   "alloc_total_ms_range": [
+    94.0074,
+    164.0859
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 92.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 92.0,
+   "alloc_p50_us_median": 2.1,
+   "alloc_p99_us_median": 3512.8,
+   "alloc_total_ms_median": 150.1889,
+   "alloc_total_ms_range": [
+    126.0915,
+    426.8353
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 92.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 92.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 1826.9,
+   "alloc_total_ms_median": 94.7987,
+   "alloc_total_ms_range": [
+    68.6066,
+    260.7379
+   ],
+   "trials": 5
+  },
+  "d3d12/memory_usage/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 120.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 120.0,
+   "alloc_p50_us_median": 2.1,
+   "alloc_p99_us_median": 3129.4,
+   "alloc_total_ms_median": 185.099,
+   "alloc_total_ms_range": [
+    81.8961,
+    206.1137
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     6,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 6,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 2.4,
+   "alloc_p99_us_median": 16009.8,
+   "alloc_total_ms_median": 104.7975,
+   "alloc_total_ms_range": [
+    65.7648,
+    179.8884
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 2.6,
+   "alloc_p99_us_median": 30804.3,
+   "alloc_total_ms_median": 253.2675,
+   "alloc_total_ms_range": [
+    217.4753,
+    458.3304
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 2.4,
+   "alloc_p99_us_median": 37167.1,
+   "alloc_total_ms_median": 270.1627,
+   "alloc_total_ms_range": [
+    174.1516,
+    461.4643
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 2.3,
+   "alloc_p99_us_median": 58582.3,
+   "alloc_total_ms_median": 376.8476,
+   "alloc_total_ms_range": [
+    297.903,
+    674.0404
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     4,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 4,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 8107.7,
+   "alloc_p99_us_median": 39448.2,
+   "alloc_total_ms_median": 122.0355,
+   "alloc_total_ms_range": [
+    76.1494,
+    179.1806
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     4,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 4,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 10608.1,
+   "alloc_p99_us_median": 65948.3,
+   "alloc_total_ms_median": 137.3753,
+   "alloc_total_ms_range": [
+    87.0633,
+    166.1267
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     4,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 4,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 8938.1,
+   "alloc_p99_us_median": 39967.6,
+   "alloc_total_ms_median": 107.3521,
+   "alloc_total_ms_range": [
+    49.7973,
+    171.1494
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 48.9,
+   "alloc_p99_us_median": 93534.2,
+   "alloc_total_ms_median": 150.3846,
+   "alloc_total_ms_range": [
+    60.3658,
+    402.5324
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 257.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 28.1,
+   "alloc_total_ms_median": 54.1265,
+   "alloc_total_ms_range": [
+    35.194,
+    66.3399
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 257.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 17.7,
+   "alloc_total_ms_median": 75.2353,
+   "alloc_total_ms_range": [
+    23.269,
+    156.5103
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 257.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 13.6,
+   "alloc_total_ms_median": 49.5871,
+   "alloc_total_ms_range": [
+    25.5764,
+    80.3305
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 385.0,
+   "alloc_p50_us_median": 1.6,
+   "alloc_p99_us_median": 29.3,
+   "alloc_total_ms_median": 99.1426,
+   "alloc_total_ms_range": [
+    69.2757,
+    370.1544
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 10.3,
+   "alloc_total_ms_median": 21.3477,
+   "alloc_total_ms_range": [
+    6.7723,
+    37.7054
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 17.5,
+   "alloc_total_ms_median": 17.0632,
+   "alloc_total_ms_range": [
+    12.3371,
+    58.7552
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 10.6,
+   "alloc_total_ms_median": 10.4241,
+   "alloc_total_ms_range": [
+    6.3752,
+    70.0155
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 128.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 7.5,
+   "alloc_total_ms_median": 31.333,
+   "alloc_total_ms_range": [
+    13.9278,
+    84.1624
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 649.0,
+   "alloc_p50_us_median": 5.5,
+   "alloc_p99_us_median": 260616.0,
+   "alloc_total_ms_median": 372.7129,
+   "alloc_total_ms_range": [
+    111.5851,
+    694.7208
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 649.0,
+   "alloc_p50_us_median": 6.0,
+   "alloc_p99_us_median": 128756.1,
+   "alloc_total_ms_median": 212.8164,
+   "alloc_total_ms_range": [
+    148.4066,
+    292.9361
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 649.0,
+   "alloc_p50_us_median": 5.7,
+   "alloc_p99_us_median": 82731.1,
+   "alloc_total_ms_median": 171.0887,
+   "alloc_total_ms_range": [
+    124.7943,
+    891.2059
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 649.0,
+   "alloc_p50_us_median": 5.3,
+   "alloc_p99_us_median": 149174.7,
+   "alloc_total_ms_median": 278.3118,
+   "alloc_total_ms_range": [
+    142.0565,
+    513.4388
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 5.7,
+   "alloc_total_ms_median": 48.3142,
+   "alloc_total_ms_range": [
+    21.0262,
+    69.5532
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 9.3,
+   "alloc_total_ms_median": 40.3124,
+   "alloc_total_ms_range": [
+    19.8462,
+    72.4578
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 15.0,
+   "alloc_total_ms_median": 53.0214,
+   "alloc_total_ms_range": [
+    19.5252,
+    90.296
+   ],
+   "trials": 5
+  },
+  "d3d12/performance/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 8.3,
+   "alloc_total_ms_median": 25.0154,
+   "alloc_total_ms_range": [
+    11.4878,
+    71.5173
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 881.2,
+   "alloc_p99_us_median": 10370.8,
+   "alloc_total_ms_median": 292.093,
+   "alloc_total_ms_range": [
+    224.9041,
+    403.9991
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 974.9,
+   "alloc_p99_us_median": 5555.1,
+   "alloc_total_ms_median": 242.5807,
+   "alloc_total_ms_range": [
+    205.3861,
+    299.0487
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 1172.0,
+   "alloc_p99_us_median": 24841.5,
+   "alloc_total_ms_median": 381.3588,
+   "alloc_total_ms_range": [
+    298.6791,
+    441.4284
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 33.2,
+   "alloc_total_ms_median": 77.0654,
+   "alloc_total_ms_range": [
+    52.0155,
+    118.1486
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 9477.7,
+   "alloc_p99_us_median": 30049.5,
+   "alloc_total_ms_median": 83.4186,
+   "alloc_total_ms_range": [
+    73.5242,
+    166.2347
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 14036.4,
+   "alloc_p99_us_median": 26716.1,
+   "alloc_total_ms_median": 101.6052,
+   "alloc_total_ms_range": [
+    47.6797,
+    147.5826
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 10340.8,
+   "alloc_p99_us_median": 52940.0,
+   "alloc_total_ms_median": 138.4518,
+   "alloc_total_ms_range": [
+    101.299,
+    193.736
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 37.3,
+   "alloc_p99_us_median": 58816.5,
+   "alloc_total_ms_median": 96.7098,
+   "alloc_total_ms_range": [
+    77.1017,
+    169.9338
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     300,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 302,
+   "peak_capacity_mib": 272.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 264.0,
+   "driver_peak_delta_mib_median": 274.0,
+   "alloc_p50_us_median": 9.3,
+   "alloc_p99_us_median": 2649.6,
+   "alloc_total_ms_median": 411.6937,
+   "alloc_total_ms_range": [
+    297.6477,
+    494.7322
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     300,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 302,
+   "peak_capacity_mib": 272.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 264.0,
+   "driver_peak_delta_mib_median": 274.0,
+   "alloc_p50_us_median": 8.1,
+   "alloc_p99_us_median": 2742.6,
+   "alloc_total_ms_median": 339.9047,
+   "alloc_total_ms_range": [
+    248.4595,
+    848.474
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     300,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 302,
+   "peak_capacity_mib": 272.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 264.0,
+   "driver_peak_delta_mib_median": 274.0,
+   "alloc_p50_us_median": 10.1,
+   "alloc_p99_us_median": 3458.6,
+   "alloc_total_ms_median": 439.6465,
+   "alloc_total_ms_range": [
+    355.2897,
+    1949.4669
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 768.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 768.0,
+   "driver_peak_delta_mib_median": 770.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 18.2,
+   "alloc_total_ms_median": 248.9865,
+   "alloc_total_ms_range": [
+    226.7953,
+    311.969
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     200,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 200,
+   "peak_capacity_mib": 16.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 16.0,
+   "alloc_p50_us_median": 520.1,
+   "alloc_p99_us_median": 7128.4,
+   "alloc_total_ms_median": 169.1461,
+   "alloc_total_ms_range": [
+    145.1844,
+    254.4698
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     200,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 200,
+   "peak_capacity_mib": 16.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 16.0,
+   "alloc_p50_us_median": 429.1,
+   "alloc_p99_us_median": 5841.3,
+   "alloc_total_ms_median": 145.401,
+   "alloc_total_ms_range": [
+    135.8593,
+    565.7563
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     200,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 200,
+   "peak_capacity_mib": 16.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 16.0,
+   "alloc_p50_us_median": 431.9,
+   "alloc_p99_us_median": 4388.9,
+   "alloc_total_ms_median": 175.3947,
+   "alloc_total_ms_range": [
+    74.1611,
+    270.7627
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 12.4,
+   "alloc_total_ms_median": 72.7138,
+   "alloc_total_ms_range": [
+    56.7306,
+    84.0718
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 5.2,
+   "alloc_p99_us_median": 54502.3,
+   "alloc_total_ms_median": 89.0899,
+   "alloc_total_ms_range": [
+    75.8139,
+    128.664
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 5.6,
+   "alloc_p99_us_median": 47354.6,
+   "alloc_total_ms_median": 74.6096,
+   "alloc_total_ms_range": [
+    66.4945,
+    161.6684
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 5.5,
+   "alloc_p99_us_median": 53597.7,
+   "alloc_total_ms_median": 94.3152,
+   "alloc_total_ms_range": [
+    77.6607,
+    164.1413
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 4.8,
+   "alloc_p99_us_median": 96392.3,
+   "alloc_total_ms_median": 171.1468,
+   "alloc_total_ms_range": [
+    151.775,
+    180.6494
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     7,
+     300
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 307,
+   "peak_capacity_mib": 65.5,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 76.0,
+   "alloc_p50_us_median": 9.0,
+   "alloc_p99_us_median": 4129.8,
+   "alloc_total_ms_median": 421.8268,
+   "alloc_total_ms_range": [
+    368.0631,
+    561.1763
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     7,
+     300
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 307,
+   "peak_capacity_mib": 65.5,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 76.0,
+   "alloc_p50_us_median": 8.9,
+   "alloc_p99_us_median": 4021.5,
+   "alloc_total_ms_median": 494.9474,
+   "alloc_total_ms_range": [
+    368.1295,
+    514.5754
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     7,
+     300
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 307,
+   "peak_capacity_mib": 65.5,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 76.0,
+   "alloc_p50_us_median": 10.6,
+   "alloc_p99_us_median": 4437.7,
+   "alloc_total_ms_median": 516.6518,
+   "alloc_total_ms_range": [
+    300.7375,
+    877.2234
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_dev_large/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 5.9,
+   "alloc_total_ms_median": 49.8643,
+   "alloc_total_ms_range": [
+    44.7001,
+    64.0243
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 10312.4,
+   "alloc_total_ms_median": 127.3938,
+   "alloc_total_ms_range": [
+    81.2933,
+    272.1252
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 2.5,
+   "alloc_p99_us_median": 69959.0,
+   "alloc_total_ms_median": 527.9675,
+   "alloc_total_ms_range": [
+    310.0793,
+    854.1645
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 2.4,
+   "alloc_p99_us_median": 52008.0,
+   "alloc_total_ms_median": 370.207,
+   "alloc_total_ms_range": [
+    322.8766,
+    591.0524
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     84,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 84,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 831.6,
+   "alloc_p99_us_median": 10494.7,
+   "alloc_total_ms_median": 327.3985,
+   "alloc_total_ms_range": [
+    165.2677,
+    372.3781
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 53.2,
+   "alloc_p99_us_median": 81754.7,
+   "alloc_total_ms_median": 101.9839,
+   "alloc_total_ms_range": [
+    91.9679,
+    175.3599
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 44.8,
+   "alloc_p99_us_median": 70302.2,
+   "alloc_total_ms_median": 115.4701,
+   "alloc_total_ms_range": [
+    48.7352,
+    138.5769
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 54.4,
+   "alloc_p99_us_median": 38910.3,
+   "alloc_total_ms_median": 74.9264,
+   "alloc_total_ms_range": [
+    50.0321,
+    144.6391
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 352.0,
+   "alloc_p50_us_median": 6571.1,
+   "alloc_p99_us_median": 23221.6,
+   "alloc_total_ms_median": 96.3364,
+   "alloc_total_ms_range": [
+    52.6357,
+    118.3659
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     0,
+     330
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": null,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 332,
+   "peak_capacity_mib": 225.6875,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 280.43359375,
+   "alloc_p50_us_median": 13.1,
+   "alloc_p99_us_median": 8107.6,
+   "alloc_total_ms_median": 759.8571,
+   "alloc_total_ms_range": [
+    536.7587,
+    3139.8373
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     17,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 19,
+   "peak_capacity_mib": 240.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 240.875,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 1772.5,
+   "alloc_total_ms_median": 113.7179,
+   "alloc_total_ms_range": [
+    54.0848,
+    178.1933
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     17,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 19,
+   "peak_capacity_mib": 240.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 240.875,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 2867.4,
+   "alloc_total_ms_median": 101.2852,
+   "alloc_total_ms_range": [
+    56.9066,
+    385.5523
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     17,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 119,
+   "peak_capacity_mib": 132.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 132.875,
+   "alloc_p50_us_median": 2.5,
+   "alloc_p99_us_median": 3542.3,
+   "alloc_total_ms_median": 258.0524,
+   "alloc_total_ms_range": [
+    227.2238,
+    458.809
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 6.4,
+   "alloc_total_ms_median": 14.2955,
+   "alloc_total_ms_range": [
+    11.7788,
+    18.0081
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 12.9,
+   "alloc_total_ms_median": 13.0128,
+   "alloc_total_ms_range": [
+    7.9562,
+    23.834
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 41.4,
+   "alloc_total_ms_median": 22.132,
+   "alloc_total_ms_range": [
+    8.1717,
+    56.3861
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 983.2,
+   "alloc_total_ms_median": 5.0331,
+   "alloc_total_ms_range": [
+    3.1604,
+    5.8914
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 485.6875,
+   "alloc_p50_us_median": 3909.9,
+   "alloc_p99_us_median": 15520.5,
+   "alloc_total_ms_median": 110.8881,
+   "alloc_total_ms_range": [
+    94.8095,
+    128.8407
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 485.6875,
+   "alloc_p50_us_median": 3586.2,
+   "alloc_p99_us_median": 17743.0,
+   "alloc_total_ms_median": 116.3334,
+   "alloc_total_ms_range": [
+    71.2958,
+    285.7871
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 485.6875,
+   "alloc_p50_us_median": 3763.4,
+   "alloc_p99_us_median": 15420.7,
+   "alloc_total_ms_median": 131.2867,
+   "alloc_total_ms_range": [
+    73.7868,
+    224.5014
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 485.6875,
+   "alloc_p50_us_median": 3561.2,
+   "alloc_p99_us_median": 6134.9,
+   "alloc_total_ms_median": 103.7515,
+   "alloc_total_ms_range": [
+    58.7958,
+    143.3304
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 7.2,
+   "alloc_total_ms_median": 32.4599,
+   "alloc_total_ms_range": [
+    24.864,
+    68.6359
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 8.0,
+   "alloc_total_ms_median": 44.3051,
+   "alloc_total_ms_range": [
+    22.2236,
+    58.7175
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 21.1,
+   "alloc_total_ms_median": 41.9692,
+   "alloc_total_ms_range": [
+    27.9846,
+    47.5603
+   ],
+   "trials": 5
+  },
+  "d3d12/asym_host_large/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     56,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 56,
+   "peak_capacity_mib": 108.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 108.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 1888.8,
+   "alloc_total_ms_median": 105.1662,
+   "alloc_total_ms_range": [
+    65.219,
+    172.5953
+   ],
+   "trials": 5
+  },
+  "d3d12/default/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     13,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 13,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 2.5,
+   "alloc_p99_us_median": 17100.8,
+   "alloc_total_ms_median": 197.6613,
+   "alloc_total_ms_range": [
+    88.6421,
+    294.1855
+   ],
+   "trials": 5
+  },
+  "d3d12/default/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     13,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 13,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 2.6,
+   "alloc_p99_us_median": 9498.1,
+   "alloc_total_ms_median": 107.4536,
+   "alloc_total_ms_range": [
+    71.0674,
+    148.3282
+   ],
+   "trials": 5
+  },
+  "d3d12/default/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     13,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 13,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 2.5,
+   "alloc_p99_us_median": 9215.9,
+   "alloc_total_ms_median": 97.0574,
+   "alloc_total_ms_range": [
+    52.6581,
+    143.9757
+   ],
+   "trials": 5
+  },
+  "d3d12/default/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 1.6,
+   "alloc_p99_us_median": 6.0,
+   "alloc_total_ms_median": 47.5933,
+   "alloc_total_ms_range": [
+    18.2158,
+    49.9057
+   ],
+   "trials": 5
+  },
+  "d3d12/default/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 12767.9,
+   "alloc_p99_us_median": 28645.9,
+   "alloc_total_ms_median": 108.0271,
+   "alloc_total_ms_range": [
+    93.3953,
+    261.8921
+   ],
+   "trials": 5
+  },
+  "d3d12/default/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 9030.7,
+   "alloc_p99_us_median": 13946.2,
+   "alloc_total_ms_median": 69.9916,
+   "alloc_total_ms_range": [
+    64.2705,
+    130.9117
+   ],
+   "trials": 5
+  },
+  "d3d12/default/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 9960.2,
+   "alloc_p99_us_median": 22240.4,
+   "alloc_total_ms_median": 76.2329,
+   "alloc_total_ms_range": [
+    65.2452,
+    110.642
+   ],
+   "trials": 5
+  },
+  "d3d12/default/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 36.3,
+   "alloc_p99_us_median": 37535.7,
+   "alloc_total_ms_median": 64.064,
+   "alloc_total_ms_range": [
+    48.9152,
+    185.6077
+   ],
+   "trials": 5
+  },
+  "d3d12/default/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 386.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 11.6,
+   "alloc_total_ms_median": 110.9713,
+   "alloc_total_ms_range": [
+    65.446,
+    133.5094
+   ],
+   "trials": 5
+  },
+  "d3d12/default/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 386.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 15.1,
+   "alloc_total_ms_median": 82.1878,
+   "alloc_total_ms_range": [
+    45.8566,
+    184.8182
+   ],
+   "trials": 5
+  },
+  "d3d12/default/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 386.0,
+   "alloc_p50_us_median": 1.6,
+   "alloc_p99_us_median": 11.5,
+   "alloc_total_ms_median": 63.0226,
+   "alloc_total_ms_range": [
+    41.0941,
+    117.9146
+   ],
+   "trials": 5
+  },
+  "d3d12/default/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0",
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0",
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 768.0,
+   "peak_allocated_mib": 111.9375,
+   "retained_mib": 768.0,
+   "driver_peak_delta_mib_median": 770.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 14.0,
+   "alloc_total_ms_median": 238.5992,
+   "alloc_total_ms_range": [
+    134.5226,
+    407.6397
+   ],
+   "trials": 5
+  },
+  "d3d12/default/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.7,
+   "alloc_p99_us_median": 4.8,
+   "alloc_total_ms_median": 8.8096,
+   "alloc_total_ms_range": [
+    5.0282,
+    14.9752
+   ],
+   "trials": 5
+  },
+  "d3d12/default/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 9.4,
+   "alloc_total_ms_median": 10.1976,
+   "alloc_total_ms_range": [
+    6.2392,
+    29.4349
+   ],
+   "trials": 5
+  },
+  "d3d12/default/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 20.7,
+   "alloc_total_ms_median": 13.1311,
+   "alloc_total_ms_range": [
+    5.4417,
+    32.754
+   ],
+   "trials": 5
+  },
+  "d3d12/default/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "GpuToCpu": "type=4 page=WRITE_BACK pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 21.1,
+   "alloc_total_ms_median": 55.5496,
+   "alloc_total_ms_range": [
+    35.0586,
+    147.348
+   ],
+   "trials": 5
+  },
+  "d3d12/default/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 5.2,
+   "alloc_p99_us_median": 74509.1,
+   "alloc_total_ms_median": 131.1261,
+   "alloc_total_ms_range": [
+    91.4816,
+    209.7287
+   ],
+   "trials": 5
+  },
+  "d3d12/default/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 4.7,
+   "alloc_p99_us_median": 90957.6,
+   "alloc_total_ms_median": 175.4836,
+   "alloc_total_ms_range": [
+    132.397,
+    304.3509
+   ],
+   "trials": 5
+  },
+  "d3d12/default/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 5.0,
+   "alloc_p99_us_median": 59931.0,
+   "alloc_total_ms_median": 112.3097,
+   "alloc_total_ms_range": [
+    81.2402,
+    215.2864
+   ],
+   "trials": 5
+  },
+  "d3d12/default/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "type=1 page=NOT_AVAILABLE pool=L0"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 520.0,
+   "alloc_p50_us_median": 5.1,
+   "alloc_p99_us_median": 59340.5,
+   "alloc_total_ms_median": 106.0771,
+   "alloc_total_ms_range": [
+    89.9817,
+    183.3926
+   ],
+   "trials": 5
+  },
+  "d3d12/default/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     51,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 51,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 2.1,
+   "alloc_p99_us_median": 6842.4,
+   "alloc_total_ms_median": 316.5702,
+   "alloc_total_ms_range": [
+    304.0956,
+    512.5581
+   ],
+   "trials": 5
+  },
+  "d3d12/default/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     51,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 51,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 2.0,
+   "alloc_p99_us_median": 8593.8,
+   "alloc_total_ms_median": 398.5663,
+   "alloc_total_ms_range": [
+    334.9155,
+    1257.8378
+   ],
+   "trials": 5
+  },
+  "d3d12/default/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     51,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 51,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 7471.5,
+   "alloc_total_ms_median": 345.0925,
+   "alloc_total_ms_range": [
+    300.6031,
+    401.7761
+   ],
+   "trials": 5
+  },
+  "d3d12/default/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "type=4 page=WRITE_COMBINE pool=L0"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 1.8,
+   "alloc_p99_us_median": 4.7,
+   "alloc_total_ms_median": 38.0185,
+   "alloc_total_ms_range": [
+    31.3771,
+    72.2988
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 250.0,
+   "alloc_p50_us_median": 265.3,
+   "alloc_p99_us_median": 3908.6,
+   "alloc_total_ms_median": 76.1947,
+   "alloc_total_ms_range": [
+    55.3087,
+    320.3569
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     44,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 44,
+   "peak_capacity_mib": 288.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 288.0,
+   "alloc_p50_us_median": 1.5,
+   "alloc_p99_us_median": 2845.7,
+   "alloc_total_ms_median": 50.128,
+   "alloc_total_ms_range": [
+    31.1516,
+    143.3296
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     44,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 44,
+   "peak_capacity_mib": 288.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 288.0,
+   "alloc_p50_us_median": 1.3,
+   "alloc_p99_us_median": 2547.4,
+   "alloc_total_ms_median": 37.8982,
+   "alloc_total_ms_range": [
+    34.5436,
+    93.2644
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     28,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 28,
+   "peak_capacity_mib": 312.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 312.0,
+   "alloc_p50_us_median": 1.0,
+   "alloc_p99_us_median": 6516.2,
+   "alloc_total_ms_median": 67.0004,
+   "alloc_total_ms_range": [
+    45.5594,
+    216.1946
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 5704.6,
+   "alloc_p99_us_median": 12664.6,
+   "alloc_total_ms_median": 41.9709,
+   "alloc_total_ms_range": [
+    25.2294,
+    100.97
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 1947.3,
+   "alloc_p99_us_median": 5103.8,
+   "alloc_total_ms_median": 14.4063,
+   "alloc_total_ms_range": [
+    13.3501,
+    22.5526
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 1640.1,
+   "alloc_p99_us_median": 5356.0,
+   "alloc_total_ms_median": 14.6564,
+   "alloc_total_ms_range": [
+    8.7155,
+    27.5738
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 2511.8,
+   "alloc_p99_us_median": 6101.9,
+   "alloc_total_ms_median": 18.9914,
+   "alloc_total_ms_range": [
+    5.1499,
+    29.287
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 115,
+   "peak_capacity_mib": 148.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 76.0,
+   "driver_peak_delta_mib_median": 148.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 724.9,
+   "alloc_total_ms_median": 54.7629,
+   "alloc_total_ms_range": [
+    43.93,
+    110.2579
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 115,
+   "peak_capacity_mib": 148.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 148.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 551.9,
+   "alloc_total_ms_median": 62.7438,
+   "alloc_total_ms_range": [
+    24.0686,
+    90.7109
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 115,
+   "peak_capacity_mib": 148.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 148.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 763.0,
+   "alloc_total_ms_median": 56.1129,
+   "alloc_total_ms_range": [
+    26.6242,
+    112.3907
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ],
+    "GpuOnly": [
+     13,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 16,
+   "peak_capacity_mib": 152.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 8.0,
+   "driver_peak_delta_mib_median": 152.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 103.5,
+   "alloc_total_ms_median": 12.1552,
+   "alloc_total_ms_range": [
+    4.9814,
+    78.575
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 16.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 116.8,
+   "alloc_total_ms_median": 2.1581,
+   "alloc_total_ms_range": [
+    1.1494,
+    3.3976
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 125.9,
+   "alloc_total_ms_median": 1.304,
+   "alloc_total_ms_range": [
+    1.2057,
+    1.9863
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 136.8,
+   "alloc_total_ms_median": 1.6328,
+   "alloc_total_ms_range": [
+    1.2685,
+    6.0687
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 8.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 24.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 24.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 2.5,
+   "alloc_total_ms_median": 1.3672,
+   "alloc_total_ms_range": [
+    0.8815,
+    4.7414
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5966796875,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 411.0,
+   "alloc_p50_us_median": 1407.2,
+   "alloc_p99_us_median": 4278.0,
+   "alloc_total_ms_median": 39.6371,
+   "alloc_total_ms_range": [
+    7.2503,
+    102.9079
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     10,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 32.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 10,
+   "peak_capacity_mib": 544.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 544.0,
+   "alloc_p50_us_median": 4.4,
+   "alloc_p99_us_median": 17516.0,
+   "alloc_total_ms_median": 54.7794,
+   "alloc_total_ms_range": [
+    48.5707,
+    162.4374
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     10,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 32.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 10,
+   "peak_capacity_mib": 544.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 544.0,
+   "alloc_p50_us_median": 4.0,
+   "alloc_p99_us_median": 56480.8,
+   "alloc_total_ms_median": 111.3605,
+   "alloc_total_ms_range": [
+    51.299,
+    180.415
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     10,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 32.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 10,
+   "peak_capacity_mib": 544.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 544.0,
+   "alloc_p50_us_median": 2.9,
+   "alloc_p99_us_median": 9506.8,
+   "alloc_total_ms_median": 41.79,
+   "alloc_total_ms_range": [
+    26.4207,
+    155.0633
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 92.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 32.0,
+   "driver_peak_delta_mib_median": 92.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 113.4,
+   "alloc_total_ms_median": 21.4195,
+   "alloc_total_ms_range": [
+    11.3596,
+    49.0406
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 92.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 92.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 135.3,
+   "alloc_total_ms_median": 36.2851,
+   "alloc_total_ms_range": [
+    17.1258,
+    56.4025
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 92.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 92.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 150.2,
+   "alloc_total_ms_median": 44.6156,
+   "alloc_total_ms_range": [
+    3.8783,
+    46.4725
+   ],
+   "trials": 5
+  },
+  "vulkan/memory_usage/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     53,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 53,
+   "peak_capacity_mib": 120.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 120.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 119.1,
+   "alloc_total_ms_median": 27.1393,
+   "alloc_total_ms_range": [
+    15.1911,
+    83.8368
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     6,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 6,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 1733.7,
+   "alloc_total_ms_median": 16.4171,
+   "alloc_total_ms_range": [
+    7.872,
+    187.4986
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 0.7,
+   "alloc_p99_us_median": 16994.8,
+   "alloc_total_ms_median": 129.7398,
+   "alloc_total_ms_range": [
+    49.699,
+    319.7702
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 0.6,
+   "alloc_p99_us_median": 10478.9,
+   "alloc_total_ms_median": 118.392,
+   "alloc_total_ms_range": [
+    34.5661,
+    198.8814
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 0.6,
+   "alloc_p99_us_median": 13596.3,
+   "alloc_total_ms_median": 98.2611,
+   "alloc_total_ms_range": [
+    73.3298,
+    172.0628
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     4,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 4,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 622.3,
+   "alloc_p99_us_median": 35315.3,
+   "alloc_total_ms_median": 71.8781,
+   "alloc_total_ms_range": [
+    15.223,
+    236.6977
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     4,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 4,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 374.9,
+   "alloc_p99_us_median": 30102.4,
+   "alloc_total_ms_median": 66.5332,
+   "alloc_total_ms_range": [
+    20.4939,
+    91.8894
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     4,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 4,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 129.4,
+   "alloc_p99_us_median": 34525.3,
+   "alloc_total_ms_median": 60.0651,
+   "alloc_total_ms_range": [
+    30.4107,
+    100.3145
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 1.9,
+   "alloc_p99_us_median": 12705.3,
+   "alloc_total_ms_median": 15.8012,
+   "alloc_total_ms_range": [
+    8.6105,
+    96.0275
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 0.9,
+   "alloc_total_ms_median": 24.9149,
+   "alloc_total_ms_range": [
+    14.7377,
+    62.4238
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 2.1,
+   "alloc_total_ms_median": 41.3952,
+   "alloc_total_ms_range": [
+    1.4495,
+    218.4215
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.1,
+   "alloc_total_ms_median": 46.7627,
+   "alloc_total_ms_range": [
+    32.2156,
+    67.978
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0,
+    "GpuOnly": 128.0,
+    "GpuToCpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 0.8,
+   "alloc_total_ms_median": 37.7531,
+   "alloc_total_ms_range": [
+    1.4634,
+    93.2722
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.6,
+   "alloc_total_ms_median": 0.3512,
+   "alloc_total_ms_range": [
+    0.3052,
+    18.0875
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.2,
+   "alloc_total_ms_median": 0.3929,
+   "alloc_total_ms_range": [
+    0.3253,
+    10.4874
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 3.5,
+   "alloc_total_ms_median": 0.4039,
+   "alloc_total_ms_range": [
+    0.3838,
+    20.2686
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 128.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 2.4,
+   "alloc_total_ms_median": 0.891,
+   "alloc_total_ms_range": [
+    0.4672,
+    13.4907
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 640.0,
+   "alloc_p50_us_median": 1.1,
+   "alloc_p99_us_median": 19109.3,
+   "alloc_total_ms_median": 22.5474,
+   "alloc_total_ms_range": [
+    1.2877,
+    80.1832
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 640.0,
+   "alloc_p50_us_median": 1.1,
+   "alloc_p99_us_median": 2982.7,
+   "alloc_total_ms_median": 4.4146,
+   "alloc_total_ms_range": [
+    1.5463,
+    98.7889
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 640.0,
+   "alloc_p50_us_median": 1.0,
+   "alloc_p99_us_median": 30351.1,
+   "alloc_total_ms_median": 34.2355,
+   "alloc_total_ms_range": [
+    11.8012,
+    169.586
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 128.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 640.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 640.0,
+   "alloc_p50_us_median": 1.0,
+   "alloc_p99_us_median": 52011.4,
+   "alloc_total_ms_median": 56.9872,
+   "alloc_total_ms_range": [
+    1.4953,
+    105.5715
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.9,
+   "alloc_total_ms_median": 10.3943,
+   "alloc_total_ms_range": [
+    5.9115,
+    14.4957
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.9,
+   "alloc_total_ms_median": 12.8064,
+   "alloc_total_ms_range": [
+    4.9468,
+    62.4323
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 0.8,
+   "alloc_total_ms_median": 7.1677,
+   "alloc_total_ms_range": [
+    5.6001,
+    17.6371
+   ],
+   "trials": 5
+  },
+  "vulkan/performance/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 128.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 0.7,
+   "alloc_total_ms_median": 0.9384,
+   "alloc_total_ms_range": [
+    0.8749,
+    15.0889
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 250.0,
+   "alloc_p50_us_median": 301.2,
+   "alloc_p99_us_median": 5374.8,
+   "alloc_total_ms_median": 152.1584,
+   "alloc_total_ms_range": [
+    69.3257,
+    186.6571
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 250.0,
+   "alloc_p50_us_median": 276.3,
+   "alloc_p99_us_median": 4913.5,
+   "alloc_total_ms_median": 101.716,
+   "alloc_total_ms_range": [
+    69.8174,
+    179.0915
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     160
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 160,
+   "peak_capacity_mib": 250.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 250.0,
+   "alloc_p50_us_median": 331.6,
+   "alloc_p99_us_median": 13875.8,
+   "alloc_total_ms_median": 233.6983,
+   "alloc_total_ms_range": [
+    127.3963,
+    325.4306
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.3,
+   "alloc_p99_us_median": 2.5,
+   "alloc_total_ms_median": 0.7773,
+   "alloc_total_ms_range": [
+    0.3339,
+    11.0098
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 6785.0,
+   "alloc_p99_us_median": 29774.8,
+   "alloc_total_ms_median": 69.3437,
+   "alloc_total_ms_range": [
+    37.6814,
+    88.4648
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 5272.6,
+   "alloc_p99_us_median": 24157.0,
+   "alloc_total_ms_median": 56.5521,
+   "alloc_total_ms_range": [
+    29.28,
+    83.1567
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 6905.1,
+   "alloc_p99_us_median": 28130.0,
+   "alloc_total_ms_median": 78.7543,
+   "alloc_total_ms_range": [
+    1.0417,
+    94.432
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 2.5,
+   "alloc_p99_us_median": 37323.8,
+   "alloc_total_ms_median": 38.0197,
+   "alloc_total_ms_range": [
+    1.2555,
+    60.2159
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     300,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 302,
+   "peak_capacity_mib": 272.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 264.0,
+   "driver_peak_delta_mib_median": 272.0,
+   "alloc_p50_us_median": 1.1,
+   "alloc_p99_us_median": 1399.0,
+   "alloc_total_ms_median": 222.3257,
+   "alloc_total_ms_range": [
+    120.5743,
+    592.3488
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     300,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 302,
+   "peak_capacity_mib": 272.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 264.0,
+   "driver_peak_delta_mib_median": 272.0,
+   "alloc_p50_us_median": 1.0,
+   "alloc_p99_us_median": 1146.2,
+   "alloc_total_ms_median": 208.9773,
+   "alloc_total_ms_range": [
+    105.9723,
+    877.5432
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     300,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 302,
+   "peak_capacity_mib": 272.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 264.0,
+   "driver_peak_delta_mib_median": 272.0,
+   "alloc_p50_us_median": 1.1,
+   "alloc_p99_us_median": 1483.3,
+   "alloc_total_ms_median": 188.9227,
+   "alloc_total_ms_range": [
+    113.5333,
+    640.9161
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 768.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 768.0,
+   "driver_peak_delta_mib_median": 768.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.5,
+   "alloc_total_ms_median": 95.7411,
+   "alloc_total_ms_range": [
+    36.0078,
+    137.9614
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     200,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 200,
+   "peak_capacity_mib": 16.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 16.0,
+   "alloc_p50_us_median": 189.9,
+   "alloc_p99_us_median": 2888.4,
+   "alloc_total_ms_median": 76.6672,
+   "alloc_total_ms_range": [
+    57.2624,
+    115.2082
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     200,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 200,
+   "peak_capacity_mib": 16.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 16.0,
+   "alloc_p50_us_median": 189.4,
+   "alloc_p99_us_median": 2396.9,
+   "alloc_total_ms_median": 71.7469,
+   "alloc_total_ms_range": [
+    54.4081,
+    105.9811
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     200,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 200,
+   "peak_capacity_mib": 16.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 16.0,
+   "alloc_p50_us_median": 200.5,
+   "alloc_p99_us_median": 5466.6,
+   "alloc_total_ms_median": 104.4037,
+   "alloc_total_ms_range": [
+    28.7906,
+    513.6045
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 2.7,
+   "alloc_total_ms_median": 0.9345,
+   "alloc_total_ms_range": [
+    0.7093,
+    25.5694
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 654.9,
+   "alloc_total_ms_median": 1.2646,
+   "alloc_total_ms_range": [
+    1.0999,
+    35.2111
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 664.2,
+   "alloc_total_ms_median": 1.2765,
+   "alloc_total_ms_range": [
+    0.5991,
+    38.8729
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.8,
+   "alloc_p99_us_median": 78604.6,
+   "alloc_total_ms_median": 80.844,
+   "alloc_total_ms_range": [
+    1.2431,
+    107.3986
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.8,
+   "alloc_p99_us_median": 32234.9,
+   "alloc_total_ms_median": 35.6398,
+   "alloc_total_ms_range": [
+    1.2899,
+    84.164
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     7,
+     300
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 307,
+   "peak_capacity_mib": 65.5,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 65.5,
+   "alloc_p50_us_median": 1.1,
+   "alloc_p99_us_median": 1157.7,
+   "alloc_total_ms_median": 184.08,
+   "alloc_total_ms_range": [
+    90.6659,
+    231.0477
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     7,
+     300
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 307,
+   "peak_capacity_mib": 65.5,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 65.5,
+   "alloc_p50_us_median": 1.2,
+   "alloc_p99_us_median": 2111.0,
+   "alloc_total_ms_median": 147.1373,
+   "alloc_total_ms_range": [
+    98.9722,
+    213.7721
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     7,
+     300
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 307,
+   "peak_capacity_mib": 65.5,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 65.5,
+   "alloc_p50_us_median": 1.1,
+   "alloc_p99_us_median": 1442.7,
+   "alloc_total_ms_median": 126.8425,
+   "alloc_total_ms_range": [
+    84.4074,
+    294.6706
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_dev_large/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 0.8,
+   "alloc_total_ms_median": 1.3068,
+   "alloc_total_ms_range": [
+    1.1991,
+    20.9288
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 89.5,
+   "alloc_total_ms_median": 38.7091,
+   "alloc_total_ms_range": [
+    11.3109,
+    58.2587
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 0.6,
+   "alloc_p99_us_median": 11510.3,
+   "alloc_total_ms_median": 120.5575,
+   "alloc_total_ms_range": [
+    55.9668,
+    128.1957
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     12,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 12,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 0.7,
+   "alloc_p99_us_median": 16954.7,
+   "alloc_total_ms_median": 139.3602,
+   "alloc_total_ms_range": [
+    99.6269,
+    220.1916
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     84,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 8.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 84,
+   "peak_capacity_mib": 320.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.0,
+   "alloc_p50_us_median": 144.7,
+   "alloc_p99_us_median": 9717.9,
+   "alloc_total_ms_median": 150.5555,
+   "alloc_total_ms_range": [
+    49.6366,
+    223.5511
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 8.5,
+   "alloc_p99_us_median": 34052.9,
+   "alloc_total_ms_median": 50.0418,
+   "alloc_total_ms_range": [
+    20.0281,
+    108.4042
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 6.0,
+   "alloc_p99_us_median": 14604.4,
+   "alloc_total_ms_median": 27.3483,
+   "alloc_total_ms_range": [
+    13.6828,
+    41.6289
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 448.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 448.0,
+   "alloc_p50_us_median": 3.0,
+   "alloc_p99_us_median": 7392.2,
+   "alloc_total_ms_median": 14.0775,
+   "alloc_total_ms_range": [
+    1.1441,
+    65.3989
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     0,
+     8
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": null
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 320.5,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 320.5,
+   "alloc_p50_us_median": 7103.5,
+   "alloc_p99_us_median": 17975.0,
+   "alloc_total_ms_median": 61.4799,
+   "alloc_total_ms_range": [
+    26.9478,
+    90.8677
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     0,
+     330
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": null,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 332,
+   "peak_capacity_mib": 225.5589599609375,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 225.6875,
+   "alloc_p50_us_median": 1.5,
+   "alloc_p99_us_median": 1519.0,
+   "alloc_total_ms_median": 152.3748,
+   "alloc_total_ms_range": [
+    112.6406,
+    402.9575
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     17,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 19,
+   "peak_capacity_mib": 240.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 240.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 119.1,
+   "alloc_total_ms_median": 42.2293,
+   "alloc_total_ms_range": [
+    16.7668,
+    105.1379
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     17,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 19,
+   "peak_capacity_mib": 240.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 240.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 134.6,
+   "alloc_total_ms_median": 83.2549,
+   "alloc_total_ms_range": [
+    28.0773,
+    101.1185
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     101,
+     0
+    ],
+    "GpuOnly": [
+     17,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0,
+    "GpuOnly": 8.0,
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 119,
+   "peak_capacity_mib": 132.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 4.0,
+   "driver_peak_delta_mib_median": 132.0,
+   "alloc_p50_us_median": 0.6,
+   "alloc_p99_us_median": 559.2,
+   "alloc_total_ms_median": 49.0571,
+   "alloc_total_ms_range": [
+    28.1004,
+    319.4222
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 2.1,
+   "alloc_total_ms_median": 0.4728,
+   "alloc_total_ms_range": [
+    0.3465,
+    2.1971
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 4.2,
+   "alloc_total_ms_median": 0.5751,
+   "alloc_total_ms_range": [
+    0.5105,
+    16.5917
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 2.2,
+   "alloc_total_ms_median": 0.4217,
+   "alloc_total_ms_range": [
+    0.3874,
+    8.9883
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     3,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 4.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 28.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 28.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 131.2,
+   "alloc_total_ms_median": 1.3211,
+   "alloc_total_ms_range": [
+    0.3076,
+    4.07
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5966796875,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 347.0,
+   "alloc_p50_us_median": 1292.7,
+   "alloc_p99_us_median": 19227.2,
+   "alloc_total_ms_median": 81.4817,
+   "alloc_total_ms_range": [
+    49.192,
+    92.2329
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5966796875,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 411.0,
+   "alloc_p50_us_median": 1164.3,
+   "alloc_p99_us_median": 8823.9,
+   "alloc_total_ms_median": 35.0985,
+   "alloc_total_ms_range": [
+    28.8158,
+    385.5734
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5966796875,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 411.0,
+   "alloc_p50_us_median": 1425.3,
+   "alloc_p99_us_median": 3131.7,
+   "alloc_total_ms_median": 31.9338,
+   "alloc_total_ms_range": [
+    1.3985,
+    65.4161
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     0,
+     24
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": null
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 24,
+   "peak_capacity_mib": 409.5966796875,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 411.0,
+   "alloc_p50_us_median": 1838.9,
+   "alloc_p99_us_median": 24963.1,
+   "alloc_total_ms_median": 77.5401,
+   "alloc_total_ms_range": [
+    44.1945,
+    96.4005
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 128.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.2,
+   "alloc_total_ms_median": 7.4828,
+   "alloc_total_ms_range": [
+    3.8642,
+    22.2883
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.0,
+   "alloc_total_ms_median": 10.8183,
+   "alloc_total_ms_range": [
+    6.3793,
+    15.9722
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 192.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 192.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.5,
+   "alloc_total_ms_median": 7.7957,
+   "alloc_total_ms_range": [
+    5.1967,
+    26.0836
+   ],
+   "trials": 5
+  },
+  "vulkan/asym_host_large/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     56,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 4.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 56,
+   "peak_capacity_mib": 108.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 0.0,
+   "driver_peak_delta_mib_median": 108.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 161.2,
+   "alloc_total_ms_median": 26.9054,
+   "alloc_total_ms_range": [
+    11.0863,
+    68.7685
+   ],
+   "trials": 5
+  },
+  "vulkan/default/burst_release/main": {
+   "blocks": {
+    "CpuToGpu": [
+     13,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 13,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.7,
+   "alloc_p99_us_median": 5453.1,
+   "alloc_total_ms_median": 54.6663,
+   "alloc_total_ms_range": [
+    24.1354,
+    98.6366
+   ],
+   "trials": 5
+  },
+  "vulkan/default/burst_release/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     13,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 13,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.6,
+   "alloc_p99_us_median": 9836.3,
+   "alloc_total_ms_median": 92.6076,
+   "alloc_total_ms_range": [
+    30.9163,
+    137.4036
+   ],
+   "trials": 5
+  },
+  "vulkan/default/burst_release/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     13,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 13,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.6,
+   "alloc_p99_us_median": 8870.1,
+   "alloc_total_ms_median": 51.715,
+   "alloc_total_ms_range": [
+    27.4529,
+    87.1645
+   ],
+   "trials": 5
+  },
+  "vulkan/default/burst_release/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 250.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 4.0,
+   "alloc_total_ms_median": 1.3033,
+   "alloc_total_ms_range": [
+    0.81,
+    81.1775
+   ],
+   "trials": 5
+  },
+  "vulkan/default/large_uploads/main": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 3475.5,
+   "alloc_p99_us_median": 22859.9,
+   "alloc_total_ms_median": 71.5105,
+   "alloc_total_ms_range": [
+    0.8395,
+    153.2857
+   ],
+   "trials": 5
+  },
+  "vulkan/default/large_uploads/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 3385.4,
+   "alloc_p99_us_median": 19074.1,
+   "alloc_total_ms_median": 50.375,
+   "alloc_total_ms_range": [
+    31.3186,
+    86.5288
+   ],
+   "trials": 5
+  },
+  "vulkan/default/large_uploads/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     8,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 8,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 4096.6,
+   "alloc_p99_us_median": 21312.0,
+   "alloc_total_ms_median": 58.0075,
+   "alloc_total_ms_range": [
+    46.9144,
+    93.4576
+   ],
+   "trials": 5
+  },
+  "vulkan/default/large_uploads/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 320.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 2.1,
+   "alloc_p99_us_median": 21801.4,
+   "alloc_total_ms_median": 22.8449,
+   "alloc_total_ms_range": [
+    0.9355,
+    74.0038
+   ],
+   "trials": 5
+  },
+  "vulkan/default/mixed_frames/main": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.3,
+   "alloc_total_ms_median": 62.7032,
+   "alloc_total_ms_range": [
+    1.7643,
+    282.1596
+   ],
+   "trials": 5
+  },
+  "vulkan/default/mixed_frames/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.5,
+   "alloc_total_ms_median": 36.6522,
+   "alloc_total_ms_range": [
+    9.7602,
+    53.6743
+   ],
+   "trials": 5
+  },
+  "vulkan/default/mixed_frames/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 384.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 384.0,
+   "driver_peak_delta_mib_median": 384.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.3,
+   "alloc_total_ms_median": 49.9267,
+   "alloc_total_ms_range": [
+    39.0922,
+    92.7043
+   ],
+   "trials": 5
+  },
+  "vulkan/default/mixed_frames/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ],
+    "GpuOnly": [
+     1,
+     0
+    ],
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0,
+    "GpuOnly": 256.0,
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT",
+    "GpuOnly": "DEVICE_LOCAL",
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 3,
+   "peak_capacity_mib": 768.0,
+   "peak_allocated_mib": 111.8089599609375,
+   "retained_mib": 768.0,
+   "driver_peak_delta_mib_median": 768.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.1,
+   "alloc_total_ms_median": 65.8699,
+   "alloc_total_ms_range": [
+    51.4477,
+    173.3168
+   ],
+   "trials": 5
+  },
+  "vulkan/default/readback_ring/main": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.0,
+   "alloc_total_ms_median": 0.3616,
+   "alloc_total_ms_range": [
+    0.3194,
+    0.429
+   ],
+   "trials": 5
+  },
+  "vulkan/default/readback_ring/pr323": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.8,
+   "alloc_total_ms_median": 0.3931,
+   "alloc_total_ms_range": [
+    0.327,
+    0.9133
+   ],
+   "trials": 5
+  },
+  "vulkan/default/readback_ring/proto": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 64.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 64.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 64.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 1.3,
+   "alloc_total_ms_median": 0.3373,
+   "alloc_total_ms_range": [
+    0.282,
+    0.3944
+   ],
+   "trials": 5
+  },
+  "vulkan/default/readback_ring/proto-locality": {
+   "blocks": {
+    "GpuToCpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuToCpu": 256.0
+   },
+   "memory_type": {
+    "GpuToCpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 13.0,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 2.1,
+   "alloc_total_ms_median": 0.9781,
+   "alloc_total_ms_range": [
+    0.782,
+    191.007
+   ],
+   "trials": 5
+  },
+  "vulkan/default/textures/main": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.9,
+   "alloc_p99_us_median": 2118.9,
+   "alloc_total_ms_median": 2.7215,
+   "alloc_total_ms_range": [
+    1.1604,
+    90.3908
+   ],
+   "trials": 5
+  },
+  "vulkan/default/textures/pr323": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.7,
+   "alloc_p99_us_median": 31368.5,
+   "alloc_total_ms_median": 33.2866,
+   "alloc_total_ms_range": [
+    1.2789,
+    57.6845
+   ],
+   "trials": 5
+  },
+  "vulkan/default/textures/proto": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.8,
+   "alloc_p99_us_median": 23124.7,
+   "alloc_total_ms_median": 24.4322,
+   "alloc_total_ms_range": [
+    1.4584,
+    60.9561
+   ],
+   "trials": 5
+  },
+  "vulkan/default/textures/proto-locality": {
+   "blocks": {
+    "GpuOnly": [
+     2,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "GpuOnly": 256.0
+   },
+   "memory_type": {
+    "GpuOnly": "DEVICE_LOCAL"
+   },
+   "blocks_created": 2,
+   "peak_capacity_mib": 512.0,
+   "peak_allocated_mib": 409.5966796875,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 512.0,
+   "alloc_p50_us_median": 0.7,
+   "alloc_p99_us_median": 783.1,
+   "alloc_total_ms_median": 1.2498,
+   "alloc_total_ms_range": [
+    0.7509,
+    113.5535
+   ],
+   "trials": 5
+  },
+  "vulkan/default/upload_ring/main": {
+   "blocks": {
+    "CpuToGpu": [
+     51,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 51,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 121.1,
+   "alloc_total_ms_median": 41.6092,
+   "alloc_total_ms_range": [
+    17.8721,
+    52.4316
+   ],
+   "trials": 5
+  },
+  "vulkan/default/upload_ring/pr323": {
+   "blocks": {
+    "CpuToGpu": [
+     51,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 51,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 166.3,
+   "alloc_total_ms_median": 56.1648,
+   "alloc_total_ms_range": [
+    13.8706,
+    92.1518
+   ],
+   "trials": 5
+  },
+  "vulkan/default/upload_ring/proto": {
+   "blocks": {
+    "CpuToGpu": [
+     51,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 64.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 51,
+   "peak_capacity_mib": 128.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 64.0,
+   "driver_peak_delta_mib_median": 128.0,
+   "alloc_p50_us_median": 0.4,
+   "alloc_p99_us_median": 164.6,
+   "alloc_total_ms_median": 40.8515,
+   "alloc_total_ms_range": [
+    35.774,
+    88.608
+   ],
+   "trials": 5
+  },
+  "vulkan/default/upload_ring/proto-locality": {
+   "blocks": {
+    "CpuToGpu": [
+     1,
+     0
+    ]
+   },
+   "first_shared_mib": {
+    "CpuToGpu": 256.0
+   },
+   "memory_type": {
+    "CpuToGpu": "DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT"
+   },
+   "blocks_created": 1,
+   "peak_capacity_mib": 256.0,
+   "peak_allocated_mib": 64.5,
+   "retained_mib": 256.0,
+   "driver_peak_delta_mib_median": 256.0,
+   "alloc_p50_us_median": 0.5,
+   "alloc_p99_us_median": 0.7,
+   "alloc_total_ms_median": 1.2336,
+   "alloc_total_ms_range": [
+    1.0651,
+    27.3848
+   ],
+   "trials": 5
+  }
+ }
+}
